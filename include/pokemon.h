@@ -82,6 +82,16 @@ struct PokemonSubstruct3
  /* 0x0B */ u32 eventLegal:1; // controls Mew & Deoxys obedience; if set, Pokémon is a fateful encounter in Gen 4+; set for in-game event island legendaries, some distributed events, and Pokémon from XD: Gale of Darkness.
 }; /* size = 12 */
 
+struct PokemonSubstruct4 {
+    u16 abilities[6];
+};
+
+struct PokemonSubstruct5 {
+    // placeholder struct
+};
+
+#define NUM_SUBSTRUCTS 6
+
 // Number of bytes in the largest Pokémon substruct.
 // They are assumed to be the same size, and will be padded to
 // the largest size by the union.
@@ -89,7 +99,9 @@ struct PokemonSubstruct3
 #define NUM_SUBSTRUCT_BYTES (max(sizeof(struct PokemonSubstruct0),     \
                              max(sizeof(struct PokemonSubstruct1),     \
                              max(sizeof(struct PokemonSubstruct2),     \
-                                 sizeof(struct PokemonSubstruct3)))))
+                             max(sizeof(struct PokemonSubstruct3),     \
+                             max(sizeof(struct PokemonSubstruct4),     \
+                                 sizeof(struct PokemonSubstruct5)))))))
 
 union PokemonSubstruct
 {
@@ -97,6 +109,8 @@ union PokemonSubstruct
     struct PokemonSubstruct1 type1;
     struct PokemonSubstruct2 type2;
     struct PokemonSubstruct3 type3;
+    struct PokemonSubstruct4 type4;
+    struct PokemonSubstruct5 type5;
     u16 raw[NUM_SUBSTRUCT_BYTES / 2]; // /2 because it's u16, not u8
 };
 
@@ -117,8 +131,8 @@ struct BoxPokemon
 
     union
     {
-        u32 raw[(NUM_SUBSTRUCT_BYTES * 4) / 4]; // *4 because there are 4 substructs, /4 because it's u32, not u8
-        union PokemonSubstruct substructs[4];
+        u32 raw[(NUM_SUBSTRUCT_BYTES * NUM_SUBSTRUCTS) / 4]; // /4 because it's u32, not u8
+        union PokemonSubstruct substructs[NUM_SUBSTRUCTS];
     } secure;
 };
 
