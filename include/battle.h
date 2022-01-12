@@ -48,7 +48,7 @@
 
 struct ResourceFlags
 {
-    u32 flags[4];
+    u32 flags[MAX_BATTLERS_COUNT_2];
 };
 
 #define RESOURCE_FLAG_FLASH_FIRE        0x1

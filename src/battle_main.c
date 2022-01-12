@@ -2892,7 +2892,7 @@ static void BattleStartClearSetData(void)
     memset(&gWishFutureKnock, 0, sizeof(gWishFutureKnock));
     memset(&gBattleResults, 0, sizeof(gBattleResults));
 
-    for (i = 0; i < MAX_BATTLERS_COUNT; i++)
+    for (i = 0; i < MAX_BATTLERS_COUNT_2; i++)
     {
         gStatuses3[i] = 0;
         gStatuses4[i] = 0;
