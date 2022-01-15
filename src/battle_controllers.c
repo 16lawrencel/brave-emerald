@@ -653,7 +653,10 @@ static void SetBattlePartyIds(void)
                 {
                     if (GET_BATTLER_SIDE2(i) == B_SIDE_PLAYER)
                     {
-                        if (IsValidForBattle(&gPlayerParty[j]) && gBattlerPartyIndexes[i - 2] != j)
+                        if (IsValidForBattle(&gPlayerParty[j])
+                            && gBattlerPartyIndexes[i - 2] != j
+                            && (i < 4 || gBattlerPartyIndexes[i - 4] != j) // for triple battle
+                        )
                         {
                             gBattlerPartyIndexes[i] = j;
                             break;
@@ -661,7 +664,10 @@ static void SetBattlePartyIds(void)
                     }
                     else
                     {
-                        if (IsValidForBattle(&gEnemyParty[j]) && gBattlerPartyIndexes[i - 2] != j)
+                        if (IsValidForBattle(&gEnemyParty[j])
+                            && gBattlerPartyIndexes[i - 2] != j
+                            && (i < 4 || gBattlerPartyIndexes[i - 4] != j) // for triple battle
+                        )
                         {
                             gBattlerPartyIndexes[i] = j;
                             break;
