@@ -1070,12 +1070,20 @@ void HandleLowHpMusicChange(struct Pokemon *mon, u8 battlerId)
     else
     {
         gBattleSpritesDataPtr->battlerData[battlerId].lowHpSong = 0;
-        if (!IsDoubleBattle())
+        if (!IsDoubleBattle() && !IsTripleBattle())
         {
             m4aSongNumStop(SE_LOW_HEALTH);
             return;
         }
         if (IsDoubleBattle() && !gBattleSpritesDataPtr->battlerData[battlerId ^ BIT_FLANK].lowHpSong)
+        {
+            m4aSongNumStop(SE_LOW_HEALTH);
+            return;
+        }
+        if (IsTripleBattle()
+            && !gBattleSpritesDataPtr->battlerData[BATTLER_TO_RIGHT(battlerId)].lowHpSong
+            && !gBattleSpritesDataPtr->battlerData[BATTLER_TO_LEFT(battlerId)].lowHpSong
+            )
         {
             m4aSongNumStop(SE_LOW_HEALTH);
             return;
@@ -1090,6 +1098,11 @@ void BattleStopLowHpSound(void)
     gBattleSpritesDataPtr->battlerData[playerBattler].lowHpSong = 0;
     if (IsDoubleBattle())
         gBattleSpritesDataPtr->battlerData[playerBattler ^ BIT_FLANK].lowHpSong = 0;
+    if (IsTripleBattle())
+    {
+        gBattleSpritesDataPtr->battlerData[BATTLER_TO_RIGHT(playerBattler)].lowHpSong = 0;
+        gBattleSpritesDataPtr->battlerData[BATTLER_TO_LEFT(playerBattler)].lowHpSong = 0;
+    }
 
     m4aSongNumStop(SE_LOW_HEALTH);
 }
@@ -1108,13 +1121,17 @@ void HandleBattleLowHpMusicChange(void)
     {
         u8 playerBattler1 = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
         u8 playerBattler2 = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+        u8 playerBattler3 = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
         u8 battler1PartyId = GetPartyIdFromBattlePartyId(gBattlerPartyIndexes[playerBattler1]);
         u8 battler2PartyId = GetPartyIdFromBattlePartyId(gBattlerPartyIndexes[playerBattler2]);
+        u8 battler3PartyId = GetPartyIdFromBattlePartyId(gBattlerPartyIndexes[playerBattler3]);
 
         if (GetMonData(&gPlayerParty[battler1PartyId], MON_DATA_HP) != 0)
             HandleLowHpMusicChange(&gPlayerParty[battler1PartyId], playerBattler1);
-        if (IsDoubleBattle() && GetMonData(&gPlayerParty[battler2PartyId], MON_DATA_HP) != 0)
+        if ((IsDoubleBattle() || IsTripleBattle()) && GetMonData(&gPlayerParty[battler2PartyId], MON_DATA_HP) != 0)
             HandleLowHpMusicChange(&gPlayerParty[battler2PartyId], playerBattler2);
+        if (IsTripleBattle() && GetMonData(&gPlayerParty[battler3PartyId], MON_DATA_HP) != 0)
+            HandleLowHpMusicChange(&gPlayerParty[battler3PartyId], playerBattler3);
     }
 }
 
@@ -1155,7 +1172,7 @@ void LoadAndCreateEnemyShadowSprites(void)
                                                                                     0xC8);
     gSprites[gBattleSpritesDataPtr->healthBoxesData[battlerId].shadowSpriteId].data[0] = battlerId;
 
-    if (IsDoubleBattle())
+    if (IsDoubleBattle() || IsTripleBattle())
     {
         battlerId = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
         gBattleSpritesDataPtr->healthBoxesData[battlerId].shadowSpriteId = CreateSprite(&gSpriteTemplate_EnemyShadow,
@@ -1164,6 +1181,17 @@ void LoadAndCreateEnemyShadowSprites(void)
                                                                                         0xC8);
         gSprites[gBattleSpritesDataPtr->healthBoxesData[battlerId].shadowSpriteId].data[0] = battlerId;
     }
+
+    if (IsTripleBattle())
+    {
+        battlerId = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+        gBattleSpritesDataPtr->healthBoxesData[battlerId].shadowSpriteId = CreateSprite(&gSpriteTemplate_EnemyShadow,
+                                                                                        GetBattlerSpriteCoord(battlerId, BATTLER_COORD_X),
+                                                                                        GetBattlerSpriteCoord(battlerId, BATTLER_COORD_Y) + 29,
+                                                                                        0xC8);
+        gSprites[gBattleSpritesDataPtr->healthBoxesData[battlerId].shadowSpriteId].data[0] = battlerId;
+    }
+
 }
 
 void SpriteCB_EnemyShadow(struct Sprite *shadowSprite)
