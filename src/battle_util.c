@@ -248,7 +248,7 @@ void HandleAction_UseMove(void)
     gBattleStruct->atkCancellerTracker = 0;
     gMoveResultFlags = 0;
     gMultiHitCounter = 0;
-    gBattleCommunication[6] = 0;
+    gBattleCommunication[MISS_TYPE] = 0;
     gBattleScripting.savedMoveEffect = 0;
     gCurrMovePos = gChosenMovePos = *(gBattleStruct->chosenMovePositions + gBattlerAttacker);
 
@@ -889,8 +889,8 @@ void HandleAction_ActionFinished(void)
     gBattleStruct->dynamicMoveType = 0;
     gBattleScripting.moveendState = 0;
     gBattleScripting.moveendState = 0;
-    gBattleCommunication[3] = 0;
-    gBattleCommunication[4] = 0;
+    gBattleCommunication[MOVE_EFFECT_BYTE] = 0;
+    gBattleCommunication[ACTIONS_CONFIRMED_COUNT] = 0;
     gBattleScripting.multihitMoveEffect = 0;
     gBattleResources->battleScriptsStack->size = 0;
 }

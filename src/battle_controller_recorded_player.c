@@ -1411,7 +1411,7 @@ static void RecordedPlayerHandlePrintSelectionString(void)
 
 static void ChooseActionInBattlePalace(void)
 {
-    if (gBattleCommunication[4] >= gBattlersCount / 2)
+    if (gBattleCommunication[ACTIONS_CONFIRMED_COUNT] >= gBattlersCount / 2)
     {
         BtlController_EmitTwoReturnValues(BUFFER_B, RecordedBattle_GetBattlerAction(gActiveBattler), 0);
         RecordedPlayerBufferExecCompleted();

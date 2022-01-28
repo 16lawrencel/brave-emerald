@@ -3835,6 +3835,12 @@ enum
     STATE_SELECTION_SCRIPT_MAY_RUN
 };
 
+static bool8 _BattlerAbsentOrConfirmedAction(int position)
+{
+    return gBattleStruct->absentBattlerFlags & gBitTable[GetBattlerAtPosition(position)]
+        || gBattleCommunication[GetBattlerAtPosition(position)] == STATE_WAIT_ACTION_CONFIRMED;
+}
+
 static void HandleTurnActionSelectionState(void)
 {
     s32 i;
@@ -3852,9 +3858,17 @@ static void HandleTurnActionSelectionState(void)
         case STATE_BEFORE_ACTION_CHOSEN: // Choose an action.
             *(gBattleStruct->monToSwitchIntoId + gActiveBattler) = PARTY_SIZE;
             if (gBattleTypeFlags & BATTLE_TYPE_MULTI
-                || (position & BIT_FLANK) == B_FLANK_LEFT
-                || gBattleStruct->absentBattlerFlags & gBitTable[GetBattlerAtPosition(BATTLE_PARTNER(position))]
-                || gBattleCommunication[GetBattlerAtPosition(BATTLE_PARTNER(position))] == STATE_WAIT_ACTION_CONFIRMED)
+                || (FLANK_POS(position) == B_FLANK_LEFT)
+                || (
+                    FLANK_POS(position) == B_FLANK_MIDDLE
+                    && _BattlerAbsentOrConfirmedAction(BATTLER_TO_LEFT(position))
+                )
+                || (
+                    FLANK_POS(position) == B_FLANK_RIGHT
+                    && _BattlerAbsentOrConfirmedAction(BATTLER_TO_RIGHT(position))
+                    && _BattlerAbsentOrConfirmedAction(BATTLER_TO_LEFT(position))
+                )
+            )
             {
                 if (gBattleStruct->absentBattlerFlags & gBitTable[gActiveBattler])
                 {
@@ -4838,8 +4852,8 @@ static void CheckQuickClaw_CustapBerryActivation(void)
     }
 
     gBattleMainFunc = RunTurnActionsFunctions;
-    gBattleCommunication[3] = 0;
-    gBattleCommunication[4] = 0;
+    gBattleCommunication[MOVE_EFFECT_BYTE] = 0;
+    gBattleCommunication[ACTIONS_CONFIRMED_COUNT] = 0;
     gBattleScripting.multihitMoveEffect = 0;
     gBattleResources->battleScriptsStack->size = 0;
 }
