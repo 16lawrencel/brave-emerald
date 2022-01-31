@@ -2411,7 +2411,6 @@ static const u8* TryGetStatusString(u8 *src)
         GetMonData(&gPlayerParty[monIndex], MON_DATA_NICKNAME, text);   \
     }                                                                   \
     StringGet_Nickname(text);                                           \
-    StringCopy_Number(text, battlerId); \
     toCpy = text;
 
 u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst)
