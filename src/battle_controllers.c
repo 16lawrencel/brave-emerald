@@ -1195,12 +1195,12 @@ void BtlController_EmitYesNoBox(u8 bufferId)
     PrepareBufferDataTransfer(bufferId, sBattleBuffersTransferData, 4);
 }
 
-void BtlController_EmitChooseMove(u8 bufferId, bool8 isDoubleBattle, bool8 NoPpNumber, struct ChooseMoveStruct *movePpData)
+void BtlController_EmitChooseMove(u8 bufferId, bool8 isDoubleOrTripleBattle, bool8 NoPpNumber, struct ChooseMoveStruct *movePpData)
 {
     s32 i;
 
     sBattleBuffersTransferData[0] = CONTROLLER_CHOOSEMOVE;
-    sBattleBuffersTransferData[1] = isDoubleBattle;
+    sBattleBuffersTransferData[1] = isDoubleOrTripleBattle;
     sBattleBuffersTransferData[2] = NoPpNumber;
     sBattleBuffersTransferData[3] = 0;
     for (i = 0; i < sizeof(*movePpData); i++)

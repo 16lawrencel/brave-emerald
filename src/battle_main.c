@@ -3947,7 +3947,7 @@ static void HandleTurnActionSelectionState(void)
                                                             i);
                         }
 
-                        BtlController_EmitChooseMove(BUFFER_A, (gBattleTypeFlags & BATTLE_TYPE_DOUBLE) != 0, FALSE, &moveInfo);
+                        BtlController_EmitChooseMove(BUFFER_A, (gBattleTypeFlags & (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TRIPLE)) != 0, FALSE, &moveInfo);
                         MarkBattlerForControllerExec(gActiveBattler);
                     }
                     break;

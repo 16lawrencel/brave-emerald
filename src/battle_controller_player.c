@@ -356,7 +356,7 @@ static void UnusedEndBounceEffect(void)
 static void HandleInputChooseTarget(void)
 {
     s32 i;
-    static const u8 identities[MAX_BATTLERS_COUNT] = {B_POSITION_PLAYER_LEFT, B_POSITION_PLAYER_MIDDLE, B_POSITION_OPPONENT_MIDDLE, B_POSITION_OPPONENT_LEFT};
+    static const u8 identities[MAX_BATTLERS_COUNT] = {B_POSITION_PLAYER_LEFT, B_POSITION_PLAYER_MIDDLE, B_POSITION_PLAYER_RIGHT, B_POSITION_OPPONENT_RIGHT, B_POSITION_OPPONENT_MIDDLE, B_POSITION_OPPONENT_LEFT};
     u16 move = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_MOVE1 + gMoveSelectionCursor[gActiveBattler]);
 
     DoBounceEffect(gMultiUsePlayerCursor, BOUNCE_HEALTHBOX, 15, 1);
@@ -425,13 +425,15 @@ static void HandleInputChooseTarget(void)
                 {
                 case B_POSITION_PLAYER_LEFT:
                 case B_POSITION_PLAYER_MIDDLE:
+                case B_POSITION_PLAYER_RIGHT:
                     if (gActiveBattler != gMultiUsePlayerCursor)
                         i++;
-                    else if (gBattleMoves[move].target & MOVE_TARGET_USER_OR_SELECTED)
+                    else if (gBattleMoves[GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_MOVE1 + gMoveSelectionCursor[gActiveBattler])].target & MOVE_TARGET_USER_OR_SELECTED)
                         i++;
                     break;
                 case B_POSITION_OPPONENT_LEFT:
                 case B_POSITION_OPPONENT_MIDDLE:
+                case B_POSITION_OPPONENT_RIGHT:
                     i++;
                     break;
                 }
@@ -464,7 +466,7 @@ static void HandleInputChooseTarget(void)
                 }
                 do
                 {
-                    if (++i > 3)
+                    if (++i >= MAX_BATTLERS_COUNT)
                         i = 0;
                     gMultiUsePlayerCursor = GetBattlerAtPosition(identities[i]);
                 } while (gMultiUsePlayerCursor == gBattlersCount);
@@ -474,13 +476,15 @@ static void HandleInputChooseTarget(void)
                 {
                 case B_POSITION_PLAYER_LEFT:
                 case B_POSITION_PLAYER_MIDDLE:
+                case B_POSITION_PLAYER_RIGHT:
                     if (gActiveBattler != gMultiUsePlayerCursor)
                         i++;
-                    else if (gBattleMoves[move].target & MOVE_TARGET_USER_OR_SELECTED)
+                    else if (gBattleMoves[GetMonData(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_MOVE1 + gMoveSelectionCursor[gActiveBattler])].target & MOVE_TARGET_USER_OR_SELECTED)
                         i++;
                     break;
                 case B_POSITION_OPPONENT_LEFT:
                 case B_POSITION_OPPONENT_MIDDLE:
+                case B_POSITION_OPPONENT_RIGHT:
                     i++;
                     break;
                 }
@@ -615,14 +619,15 @@ static void HandleInputChooseMove(void)
         if (moveTarget & MOVE_TARGET_USER)
             gMultiUsePlayerCursor = gActiveBattler;
         else
+            // TODO: change for triple battle
             gMultiUsePlayerCursor = GetBattlerAtPosition((GetBattlerPosition(gActiveBattler) & BIT_SIDE) ^ BIT_SIDE);
 
-        if (!gBattleResources->bufferA[gActiveBattler][1]) // not a double battle
+        if (!gBattleResources->bufferA[gActiveBattler][1]) // not a double or triple battle
         {
             if (moveTarget & MOVE_TARGET_USER_OR_SELECTED && !gBattleResources->bufferA[gActiveBattler][2])
                 canSelectTarget = 1;
         }
-        else // double battle
+        else // double or triple battle
         {
             if (!(moveTarget & (MOVE_TARGET_RANDOM | MOVE_TARGET_BOTH | MOVE_TARGET_DEPENDS | MOVE_TARGET_FOES_AND_ALLY | MOVE_TARGET_OPPONENTS_FIELD | MOVE_TARGET_USER | MOVE_TARGET_ALLY)))
                 canSelectTarget = 1; // either selected or user
@@ -678,6 +683,11 @@ static void HandleInputChooseMove(void)
 
             if (moveTarget & (MOVE_TARGET_USER | MOVE_TARGET_USER_OR_SELECTED))
                 gMultiUsePlayerCursor = gActiveBattler;
+            else if (
+                (gAbsentBattlerFlags & gBitTable[GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)])
+                && (gAbsentBattlerFlags & gBitTable[GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE)])
+            )
+                gMultiUsePlayerCursor = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
             else if (gAbsentBattlerFlags & gBitTable[GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)])
                 gMultiUsePlayerCursor = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
             else
