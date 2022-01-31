@@ -1772,7 +1772,7 @@ static void Cmd_accuracycheck(void)
             if (GetBattlerHoldEffect(gBattlerAttacker, TRUE) == HOLD_EFFECT_BLUNDER_POLICY)
                 gBattleStruct->blunderPolicy = TRUE;    // Only activates from missing through acc/evasion checks
             
-            if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE &&
+            if (gBattleTypeFlags & (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TRIPLE) &&
                 (gBattleMoves[move].target == MOVE_TARGET_BOTH || gBattleMoves[move].target == MOVE_TARGET_FOES_AND_ALLY))
                 gBattleCommunication[MISS_TYPE] = B_MSG_AVOIDED_ATK;
             else
@@ -3997,7 +3997,29 @@ static void Cmd_getexp(void)
                     }
 
                     // get exp getter battlerId
-                    if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+                    if (gBattleTypeFlags & BATTLE_TYPE_TRIPLE)
+                    {
+                        if (
+                            gBattlerPartyIndexes[B_POSITION_PLAYER_RIGHT] == gBattleStruct->expGetterMonId
+                            && !(gAbsentBattlerFlags & gBitTable[B_POSITION_PLAYER_RIGHT])
+                        )
+                            gBattleStruct->expGetterBattlerId = B_POSITION_PLAYER_RIGHT;
+                        else if (
+                            gBattlerPartyIndexes[B_POSITION_PLAYER_MIDDLE] == gBattleStruct->expGetterMonId
+                            && !(gAbsentBattlerFlags & gBitTable[B_POSITION_PLAYER_MIDDLE])
+                        )
+                            gBattleStruct->expGetterBattlerId = B_POSITION_PLAYER_MIDDLE;
+                        else {
+                            if (!(gAbsentBattlerFlags & gBitTable[B_POSITION_PLAYER_LEFT]))
+                                gBattleStruct->expGetterBattlerId = B_POSITION_PLAYER_LEFT;
+                            else
+                            {
+                                // can we ever get here?
+                                while (1) {}
+                            }
+                        }
+                    }
+                    else if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
                     {
                         if (gBattlerPartyIndexes[2] == gBattleStruct->expGetterMonId && !(gAbsentBattlerFlags & gBitTable[2]))
                             gBattleStruct->expGetterBattlerId = 2;
