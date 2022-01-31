@@ -3617,10 +3617,11 @@ u8 AtkCanceller_UnableToUseMove2(void)
 bool8 HasNoMonsToSwitch(u8 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2)
 {
     struct Pokemon *party;
-    u8 id1, id2;
+    u8 id1, id2, id3;
+    u8 partyIdBattlerOn3, monToSwitch3; // hacky special-case for triple battles - see below
     s32 i;
 
-    if (!(gBattleTypeFlags & BATTLE_TYPE_DOUBLE))
+    if (!(gBattleTypeFlags & (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TRIPLE)))
         return FALSE;
 
     if (BATTLE_TWO_VS_ONE_OPPONENT && GetBattlerSide(battler) == B_SIDE_OPPONENT)
@@ -3724,29 +3725,48 @@ bool8 HasNoMonsToSwitch(u8 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2)
     {
         if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
         {
-            id2 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-            id1 = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+            id1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+            id2 = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+            id3 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
             party = gEnemyParty;
         }
         else
         {
-            id2 = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
-            id1 = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
+            id1 = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
+            id2 = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
+            id3 = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
             party = gPlayerParty;
         }
 
         if (partyIdBattlerOn1 == PARTY_SIZE)
-            partyIdBattlerOn1 = gBattlerPartyIndexes[id2];
+            partyIdBattlerOn1 = gBattlerPartyIndexes[id1];
         if (partyIdBattlerOn2 == PARTY_SIZE)
-            partyIdBattlerOn2 = gBattlerPartyIndexes[id1];
+            partyIdBattlerOn2 = gBattlerPartyIndexes[id2];
+
+        // slightly hacky, since the proper way is to set a partyIdBattlerOn3 in the arguments
+        // but I'm lazy, so going to make a special case for triple battle
+        if (gBattleTypeFlags & BATTLE_TYPE_TRIPLE)
+        {
+            partyIdBattlerOn3 = gBattlerPartyIndexes[id3];
+            monToSwitch3 = gBattleStruct->monToSwitchIntoId[id3];
+        }
+        else
+        {
+            partyIdBattlerOn3 = -1;
+            monToSwitch3 = -1;
+        }
 
         for (i = 0; i < PARTY_SIZE; i++)
         {
             if (GetMonData(&party[i], MON_DATA_HP) != 0
              && GetMonData(&party[i], MON_DATA_SPECIES2) != SPECIES_NONE
              && GetMonData(&party[i], MON_DATA_SPECIES2) != SPECIES_EGG
-             && i != partyIdBattlerOn1 && i != partyIdBattlerOn2
-             && i != *(gBattleStruct->monToSwitchIntoId + id2) && i != id1[gBattleStruct->monToSwitchIntoId])
+             && i != partyIdBattlerOn1
+             && i != partyIdBattlerOn2
+             && i != partyIdBattlerOn3
+             && i != gBattleStruct->monToSwitchIntoId[id1]
+             && i != gBattleStruct->monToSwitchIntoId[id2]
+             && i != monToSwitch3)
                 break;
         }
         return (i == PARTY_SIZE);
