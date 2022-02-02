@@ -639,7 +639,7 @@ static void Cmd_monbg(void)
     if (IsBattlerSpriteVisible(battlerId))
     {
         u8 position = GetBattlerPosition(battlerId);
-        if (position == B_POSITION_OPPONENT_LEFT || position == B_POSITION_PLAYER_MIDDLE || IsContest())
+        if (position == B_POSITION_OPPONENT_LEFT || position == B_POSITION_PLAYER_MIDDLE || position == B_POSITION_PLAYER_RIGHT || IsContest())
             toBG_2 = FALSE;
         else
             toBG_2 = TRUE;
@@ -659,7 +659,7 @@ static void Cmd_monbg(void)
     if (IsBattlerSpriteVisible(battlerId))
     {
         u8 position = GetBattlerPosition(battlerId);
-        if (position == B_POSITION_OPPONENT_LEFT || position == B_POSITION_PLAYER_MIDDLE || IsContest())
+        if (position == B_POSITION_OPPONENT_LEFT || position == B_POSITION_PLAYER_MIDDLE || position == B_POSITION_PLAYER_RIGHT || IsContest())
             toBG_2 = FALSE;
         else
             toBG_2 = TRUE;
