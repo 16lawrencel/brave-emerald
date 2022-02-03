@@ -120,14 +120,87 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterEvent::
 	waitfanfare
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, LittlerootTown_ProfessorBirchsLab_EventScript_NicknameStarter
-	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival
+	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_GiveMoreStarters
 	end
 
 LittlerootTown_ProfessorBirchsLab_EventScript_NicknameStarter::
 	setvar VAR_0x8004, 0
 	call Common_EventScript_NameReceivedPartyMon
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_GiveMoreStarters
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveMoreStarters::
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_GiveMoreStarters, MSGBOX_DEFAULT
+	switch VAR_STARTER_MON
+	case 0, LittlerootTown_ProfessorBirchsLab_EventScript_GiveKantoStarters
+	case 1, LittlerootTown_ProfessorBirchsLab_EventScript_GiveJohtoStarters
+	case 2, LittlerootTown_ProfessorBirchsLab_EventScript_GiveHoennStarters
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveKantoStarters::
+	call LittlerootTown_ProfessorBirchsLab_EventScript_GiveCharmanderStarter
+	call LittlerootTown_ProfessorBirchsLab_EventScript_GiveSquirtleStarter
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival
 	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveJohtoStarters::
+	call LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodileStarter
+	call LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikoritaStarter
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveHoennStarters::
+	call LittlerootTown_ProfessorBirchsLab_EventScript_GiveTreeckoStarter
+	call LittlerootTown_ProfessorBirchsLab_EventScript_GiveTorchicStarter
+	goto LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival
+	end
+
+LittlerootTown_ProfessorBirchsLab_EventScript_ReceiveStarter::
+	bufferspeciesname STR_VAR_1, VAR_TEMP_1
+	givemon VAR_TEMP_1, 5, ITEM_NONE
+
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_ReceivedAdditionalStarter, MSGBOX_DEFAULT
+	waitfanfare
+
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, YES, LittlerootTown_ProfessorBirchsLab_EventScript_Handle_Nickname
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_Handle_Nickname::
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveCharmanderStarter::
+	setvar VAR_TEMP_1, SPECIES_CHARMANDER
+	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceiveStarter
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveSquirtleStarter::
+	setvar VAR_TEMP_1, SPECIES_SQUIRTLE
+	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceiveStarter
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveTotodileStarter::
+	setvar VAR_TEMP_1, SPECIES_TOTODILE
+	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceiveStarter
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveChikoritaStarter::
+	setvar VAR_TEMP_1, SPECIES_CHIKORITA
+	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceiveStarter
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveTreeckoStarter::
+	setvar VAR_TEMP_1, SPECIES_TREECKO
+	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceiveStarter
+	return
+
+LittlerootTown_ProfessorBirchsLab_EventScript_GiveTorchicStarter::
+	setvar VAR_TEMP_1, SPECIES_TORCHIC
+	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceiveStarter
+	return
 
 LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival, MSGBOX_YESNO
@@ -706,6 +779,15 @@ LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon:
 LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon:
 	.string "PROF. BIRCH: While you're at it, why not\n"
 	.string "give a nickname to that {STR_VAR_1}?$"
+
+LittlerootTown_ProfessorBirchsLab_Text_GiveMoreStarters:
+	.string "PROF. BIRCH: By the way, this {STR_VAR_1}\n"
+	.string "was close to two other POKéMON.\p"
+	.string "Could you take care of them for me?$"
+
+LittlerootTown_ProfessorBirchsLab_Text_ReceivedAdditionalStarter:
+	.string "{PLAYER} received the {STR_VAR_1}\n"
+	.string "from PROF. BIRCH!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
 	.string "PROF. BIRCH: If you work at POKéMON\n"
