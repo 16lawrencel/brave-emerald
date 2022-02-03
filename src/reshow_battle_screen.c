@@ -106,30 +106,50 @@ static void CB2_ReshowBattleScreenAfterMenu(void)
             gBattleScripting.reshowMainState--;
         break;
     case 11:
-        CreateBattlerSprite(0);
+        if (!LoadBattlerSpriteGfx(4))
+            gBattleScripting.reshowMainState--;
         break;
     case 12:
-        CreateBattlerSprite(1);
+        if (!LoadBattlerSpriteGfx(5))
+            gBattleScripting.reshowMainState--;
         break;
     case 13:
-        CreateBattlerSprite(2);
+        CreateBattlerSprite(0);
         break;
     case 14:
-        CreateBattlerSprite(3);
+        CreateBattlerSprite(1);
         break;
     case 15:
-        CreateHealthboxSprite(0);
+        CreateBattlerSprite(2);
         break;
     case 16:
-        CreateHealthboxSprite(1);
+        CreateBattlerSprite(3);
         break;
     case 17:
-        CreateHealthboxSprite(2);
+        CreateBattlerSprite(4);
         break;
     case 18:
-        CreateHealthboxSprite(3);
+        CreateBattlerSprite(5);
         break;
     case 19:
+        CreateHealthboxSprite(0);
+        break;
+    case 20:
+        CreateHealthboxSprite(1);
+        break;
+    case 21:
+        CreateHealthboxSprite(2);
+        break;
+    case 22:
+        CreateHealthboxSprite(3);
+        break;
+    case 23:
+        CreateHealthboxSprite(4);
+        break;
+    case 24:
+        CreateHealthboxSprite(5);
+        break;
+    case 25:
         {
             u8 opponentBattler;
             u16 species;
@@ -140,9 +160,16 @@ static void CB2_ReshowBattleScreenAfterMenu(void)
             species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[opponentBattler]], MON_DATA_SPECIES);
             SetBattlerShadowSpriteCallback(opponentBattler, species);
 
-            if (IsDoubleBattle())
+            if (IsDoubleOrTripleBattle())
             {
-                opponentBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+                opponentBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+                species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[opponentBattler]], MON_DATA_SPECIES);
+                SetBattlerShadowSpriteCallback(opponentBattler, species);
+            }
+
+            if (IsTripleBattle())
+            {
+                opponentBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
                 species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[opponentBattler]], MON_DATA_SPECIES);
                 SetBattlerShadowSpriteCallback(opponentBattler, species);
             }
@@ -297,7 +324,7 @@ static void CreateHealthboxSprite(u8 battler)
         else
             UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &gPlayerParty[gBattlerPartyIndexes[battler]], HEALTHBOX_ALL);
 
-        if (GetBattlerPosition(battler) == B_POSITION_OPPONENT_RIGHT || GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT)
+        if (GetBattlerPosition(battler) == B_POSITION_OPPONENT_MIDDLE || GetBattlerPosition(battler) == B_POSITION_PLAYER_MIDDLE)
             DummyBattleInterfaceFunc(gHealthboxSpriteIds[battler], TRUE);
         else
             DummyBattleInterfaceFunc(gHealthboxSpriteIds[battler], FALSE);

@@ -93,7 +93,7 @@ void HandleAction_UseMove(void)
     gBattleStruct->atkCancellerTracker = 0;
     gMoveResultFlags = 0;
     gMultiHitCounter = 0;
-    gBattleCommunication[6] = 0;
+    gBattleCommunication[MISS_TYPE] = 0;
     gCurrMovePos = gChosenMovePos = *(gBattleStruct->chosenMovePositions + gBattlerAttacker);
 
     // choose move
@@ -181,14 +181,14 @@ void HandleAction_UseMove(void)
                     if (Random() & 1)
                         gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
                     else
-                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
                 }
                 else
                 {
                     if (Random() & 1)
                         gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
                     else
-                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
                 }
             }
             else
@@ -226,14 +226,14 @@ void HandleAction_UseMove(void)
             if (Random() & 1)
                 gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
             else
-                gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+                gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
         }
         else
         {
             if (Random() & 1)
                 gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
             else
-                gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
         }
 
         if (gAbsentBattlerFlags & gBitTable[gBattlerTarget]
@@ -673,8 +673,8 @@ void HandleAction_ActionFinished(void)
     gBattleStruct->dynamicMoveType = 0;
     gDynamicBasePower = 0;
     gBattleScripting.moveendState = 0;
-    gBattleCommunication[3] = 0;
-    gBattleCommunication[4] = 0;
+    gBattleCommunication[MOVE_EFFECT_BYTE] = 0;
+    gBattleCommunication[ACTIONS_CONFIRMED_COUNT] = 0;
     gBattleScripting.multihitMoveEffect = 0;
     gBattleResources->battleScriptsStack->size = 0;
 }
@@ -722,10 +722,10 @@ u8 GetBattlerForBattleScript(u8 caseId)
         ret = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
         break;
     case BS_PLAYER2:
-        ret = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+        ret = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
         break;
     case BS_OPPONENT2:
-        ret = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+        ret = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
         break;
     }
     return ret;
@@ -2260,10 +2260,11 @@ u8 AtkCanceller_UnableToUseMove(void)
 bool8 HasNoMonsToSwitch(u8 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2)
 {
     struct Pokemon *party;
-    u8 id1, id2;
+    u8 id1, id2, id3;
+    u8 partyIdBattlerOn3, monToSwitch3; // hacky special-case for triple battles - see below
     s32 i;
 
-    if (!(gBattleTypeFlags & BATTLE_TYPE_DOUBLE))
+    if (!(gBattleTypeFlags & (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TRIPLE)))
         return FALSE;
 
     if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
@@ -2345,29 +2346,48 @@ bool8 HasNoMonsToSwitch(u8 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2)
     {
         if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
         {
-            id2 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-            id1 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+            id1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+            id2 = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+            id3 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
             party = gEnemyParty;
         }
         else
         {
-            id2 = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
-            id1 = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+            id1 = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
+            id2 = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
+            id3 = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
             party = gPlayerParty;
         }
 
         if (partyIdBattlerOn1 == PARTY_SIZE)
-            partyIdBattlerOn1 = gBattlerPartyIndexes[id2];
+            partyIdBattlerOn1 = gBattlerPartyIndexes[id1];
         if (partyIdBattlerOn2 == PARTY_SIZE)
-            partyIdBattlerOn2 = gBattlerPartyIndexes[id1];
+            partyIdBattlerOn2 = gBattlerPartyIndexes[id2];
+
+        // slightly hacky, since the proper way is to set a partyIdBattlerOn3 in the arguments
+        // but I'm lazy, so going to make a special case for triple battle
+        if (gBattleTypeFlags & BATTLE_TYPE_TRIPLE)
+        {
+            partyIdBattlerOn3 = gBattlerPartyIndexes[id3];
+            monToSwitch3 = gBattleStruct->monToSwitchIntoId[id3];
+        }
+        else
+        {
+            partyIdBattlerOn3 = -1;
+            monToSwitch3 = -1;
+        }
 
         for (i = 0; i < PARTY_SIZE; i++)
         {
             if (GetMonData(&party[i], MON_DATA_HP) != 0
              && GetMonData(&party[i], MON_DATA_SPECIES2) != SPECIES_NONE
              && GetMonData(&party[i], MON_DATA_SPECIES2) != SPECIES_EGG
-             && i != partyIdBattlerOn1 && i != partyIdBattlerOn2
-             && i != *(gBattleStruct->monToSwitchIntoId + id2) && i != id1[gBattleStruct->monToSwitchIntoId])
+             && i != partyIdBattlerOn1
+             && i != partyIdBattlerOn2
+             && i != partyIdBattlerOn3
+             && i != gBattleStruct->monToSwitchIntoId[id1]
+             && i != gBattleStruct->monToSwitchIntoId[id2]
+             && i != monToSwitch3)
                 break;
         }
         return (i == PARTY_SIZE);
@@ -3858,14 +3878,14 @@ u8 GetMoveTarget(u16 move, u8 setTarget)
                 if (Random() & 1)
                     targetBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
                 else
-                    targetBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+                    targetBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
             }
             else
             {
                 if (Random() & 1)
                     targetBattler = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
                 else
-                    targetBattler = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                    targetBattler = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
             }
             if (gAbsentBattlerFlags & gBitTable[targetBattler])
                 targetBattler ^= BIT_FLANK;

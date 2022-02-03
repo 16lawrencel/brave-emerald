@@ -23,33 +23,47 @@
  *   +---------------------------+
  */
 
-#define MAX_BATTLERS_COUNT  4
+#define MAX_BATTLERS_COUNT  6
+
+// for double battles
+#define MAX_BATTLERS_COUNT_DOUBLE  4
 
 #define B_POSITION_PLAYER_LEFT        0
 #define B_POSITION_OPPONENT_LEFT      1
-#define B_POSITION_PLAYER_RIGHT       2
-#define B_POSITION_OPPONENT_RIGHT     3
+#define B_POSITION_PLAYER_MIDDLE      2
+#define B_POSITION_OPPONENT_MIDDLE    3
+#define B_POSITION_PLAYER_RIGHT       4
+#define B_POSITION_OPPONENT_RIGHT     5
 
 // These macros can be used with either battler ID or positions to get the partner or the opposite mon
 #define BATTLE_OPPOSITE(id) ((id) ^ 1)
+
+// Only used for double battles
 #define BATTLE_PARTNER(id) ((id) ^ 2)
+
+// Only used for triple battles
+#define BATTLER_TO_RIGHT(id) (((id) + 2) % 6)
+#define BATTLER_TO_LEFT(id) (((id) + 4) % 6)
 
 #define B_SIDE_PLAYER     0
 #define B_SIDE_OPPONENT   1
 
-#define B_FLANK_LEFT  0
-#define B_FLANK_RIGHT 1
+#define FLANK_POS(id) ((id) >> 1)
+
+#define B_FLANK_LEFT    0
+#define B_FLANK_MIDDLE  1
+#define B_FLANK_RIGHT   2
 
 #define BIT_SIDE        1
 #define BIT_FLANK       2
 
 // Battle Type Flags
 #define BATTLE_TYPE_DOUBLE             (1 << 0)
-#define BATTLE_TYPE_LINK               (1 << 1)
-#define BATTLE_TYPE_IS_MASTER          (1 << 2) // In not-link battles, it's always set.
-#define BATTLE_TYPE_TRAINER            (1 << 3)
-#define BATTLE_TYPE_FIRST_BATTLE       (1 << 4)
-#define BATTLE_TYPE_LINK_IN_BATTLE     (1 << 5) // Set on battle entry, cleared on exit. Checked rarely
+#define BATTLE_TYPE_TRIPLE             (1 << 1)
+#define BATTLE_TYPE_LINK               (1 << 2)
+#define BATTLE_TYPE_IS_MASTER          (1 << 3) // In not-link battles, it's always set.
+#define BATTLE_TYPE_TRAINER            (1 << 4)
+#define BATTLE_TYPE_FIRST_BATTLE       (1 << 5)
 #define BATTLE_TYPE_MULTI              (1 << 6)
 #define BATTLE_TYPE_SAFARI             (1 << 7)
 #define BATTLE_TYPE_BATTLE_TOWER       (1 << 8)
