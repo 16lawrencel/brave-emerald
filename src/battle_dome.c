@@ -3007,7 +3007,7 @@ static void Task_ShowTourneyInfoCard(u8 taskId)
         ResetPaletteFade();
         ResetSpriteData();
         FreeAllSpritePalettes();
-        gReservedSpritePaletteCount = 4;
+        gReservedSpritePaletteCount = 6;
         gTasks[taskId].tState++;
         break;
     case 2:
