@@ -775,6 +775,18 @@ static const struct WindowTemplate sHealthboxWindowTemplate = {
     .baseBlock = 0
 };
 
+static u32 _getYForBattleType()
+{
+    /**
+    Used for AddTextPrinterAndCreateWindowOnHealthbox
+    We want to shift text so that it fits on smaller healthbox.
+    **/
+    if (IsTripleBattle())
+        return 5;
+    return 3;
+
+}
+
 static s32 DummiedOutFunction(s16 unused1, s16 unused2, s32 unused3)
 {
     return 9;
@@ -1112,22 +1124,22 @@ void InitBattlerHealthboxCoords(u8 battler)
         switch (GetBattlerPosition(battler))
         {
         case B_POSITION_PLAYER_LEFT:
-            x = 159, y = 51;
+            x = 159, y = 69;
             break;
         case B_POSITION_PLAYER_MIDDLE:
-            x = 165, y = 76;
+            x = 164, y = 85;
             break;
         case B_POSITION_PLAYER_RIGHT:
-            x = 171, y = 101;
+            x = 169, y = 101;
             break;
         case B_POSITION_OPPONENT_LEFT:
             x = 44, y = 19;
             break;
         case B_POSITION_OPPONENT_MIDDLE:
-            x = 38, y = 44;
+            x = 39, y = 35;
             break;
         case B_POSITION_OPPONENT_RIGHT:
-            x = 32, y = 69;
+            x = 34, y = 51;
             break;
         }
     }
@@ -1150,7 +1162,7 @@ static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
     objVram = ConvertIntToDecimalStringN(text + 2, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
     xPos = 5 * (3 - (objVram - (text + 2)));
 
-    windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(text, xPos, 3, 2, &windowId);
+    windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(text, xPos, _getYForBattleType(), 2, &windowId);
     spriteTileNum = gSprites[healthboxSpriteId].oam.tileNum * TILE_SIZE_4BPP;
 
     if (GetBattlerSide(gSprites[healthboxSpriteId].hMain_Battler) == B_SIDE_PLAYER)
@@ -1969,17 +1981,16 @@ static void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
     {
     default:
         StringCopy(ptr, gText_HealthboxGender_None);
-        windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(gDisplayedStringBattle, 0, 3, 2, &windowId);
         break;
     case MON_MALE:
         StringCopy(ptr, gText_HealthboxGender_Male);
-        windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(gDisplayedStringBattle, 0, 3, 2, &windowId);
         break;
     case MON_FEMALE:
         StringCopy(ptr, gText_HealthboxGender_Female);
-        windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(gDisplayedStringBattle, 0, 3, 2, &windowId);
         break;
     }
+
+    windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(gDisplayedStringBattle, 0, _getYForBattleType(), 2, &windowId);
 
     spriteTileNum = gSprites[healthboxSpriteId].oam.tileNum * TILE_SIZE_4BPP;
 
@@ -2621,7 +2632,10 @@ static void TextIntoHealthboxObject(void *dest, u8 *windowTileData, s32 windowWi
 {
     CpuCopy32(windowTileData + 256, dest + 256, windowWidth * TILE_SIZE_4BPP);
 // + 256 as that prevents the top 4 blank rows of sHealthboxWindowTemplate from being copied
-    if (windowWidth > 0)
+
+    // only want to copy top if it's single or double battle
+    // (since healthboxes are bigger there)
+    if (!IsTripleBattle() && windowWidth > 0)
     {
         do
         {
