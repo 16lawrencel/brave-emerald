@@ -243,7 +243,8 @@ void HandleAction_UseMove(void)
         gCurrentActionFuncId = B_ACTION_FINISHED;
         return;
     }
-
+    // TODO: replace with move-specific tick increase
+    gBattlerTicks[gBattlerAttacker] += 50;
     gIsCriticalHit = FALSE;
     gBattleStruct->atkCancellerTracker = 0;
     gMoveResultFlags = 0;
