@@ -7497,7 +7497,7 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
-        .battleType = TYPE_TRIPLE_BATTLE,
+        .battleType = TYPE_SINGLE_BATTLE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_MayRoute103Torchic),
         .party = {.NoItemDefaultMoves = sParty_MayRoute103Torchic},

@@ -88,6 +88,9 @@ void HandleAction_UseMove(void)
         return;
     }
 
+    // TODO: replace with move-specific tick increase
+    gBattlerTicks[gBattlerAttacker] += 50;
+
     gCritMultiplier = 1;
     gBattleScripting.dmgMultiplier = 1;
     gBattleStruct->atkCancellerTracker = 0;
