@@ -108,6 +108,7 @@ void AllocateBattleSpritesData(void)
     gBattleSpritesDataPtr->healthBoxesData = AllocZeroed(sizeof(struct BattleHealthboxInfo) * MAX_BATTLERS_COUNT);
     gBattleSpritesDataPtr->animationData = AllocZeroed(sizeof(struct BattleAnimationInfo));
     gBattleSpritesDataPtr->battleBars = AllocZeroed(sizeof(struct BattleBarInfo) * MAX_BATTLERS_COUNT);
+    gBattleSpritesDataPtr->battleOrderData = AllocZeroed(sizeof(struct BattleOrderInfo) * MAX_BATTLERS_ORDER_COUNT);
 }
 
 void FreeBattleSpritesData(void)
@@ -119,6 +120,7 @@ void FreeBattleSpritesData(void)
     FREE_AND_SET_NULL(gBattleSpritesDataPtr->animationData);
     FREE_AND_SET_NULL(gBattleSpritesDataPtr->healthBoxesData);
     FREE_AND_SET_NULL(gBattleSpritesDataPtr->battlerData);
+    FREE_AND_SET_NULL(gBattleSpritesDataPtr->battleOrderData);
     FREE_AND_SET_NULL(gBattleSpritesDataPtr);
 }
 
@@ -865,6 +867,10 @@ bool8 BattleInitAllSprites(u8 *state1, u8 *battlerId)
     case 6:
         LoadAndCreateEnemyShadowSprites();
         BufferBattlePartyCurrentOrder();
+        (*state1)++;
+        break;
+    case 7:
+        CreateAllBattleOrderMonIconSprites();
         retVal = TRUE;
         break;
     }

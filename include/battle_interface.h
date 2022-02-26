@@ -74,6 +74,8 @@ enum
     HEALTHBOX_SAFARI_BALLS_TEXT
 };
 
+void CreateAllBattleOrderMonIconSprites(void);
+void UpdateBattleOrderMonIconSprites(void);
 u8 GetMegaIndicatorSpriteId(u32 healthboxSpriteId);
 u8 CreateBattlerHealthboxSprites(u8 battler);
 u8 CreateSafariPlayerHealthboxSprites(void);
