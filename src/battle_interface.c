@@ -808,6 +808,16 @@ u8 _GetBattler2WithLowestTicks()
     return bestBattler;
 }
 
+u32 GetBattlerSpeed(u8 battlerId)
+{
+    return 50;
+}
+
+u32 CalculateAddedTicks(u8 battlerId, u8 moveSpeed)
+{
+    return GetBattlerSpeed(battlerId) * moveSpeed;
+}
+
 void CalculateBattleOrder()
 {
     u8 i;
@@ -819,7 +829,7 @@ void CalculateBattleOrder()
     {
         u8 battlerId = _GetBattler2WithLowestTicks();
         gBattlerTurnOrder[i] = battlerId;
-        gBattlerTicks2[battlerId] += 50; // TODO: replace with tick prediction
+        gBattlerTicks2[battlerId] += CalculateAddedTicks(battlerId, 3);
     }
 }
 

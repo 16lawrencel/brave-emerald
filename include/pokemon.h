@@ -255,6 +255,7 @@ struct BattleMove
     u8 type;
     u8 accuracy;
     u8 pp;
+    u8 speed;
     u8 secondaryEffectChance;
     u16 target;
     s8 priority;
