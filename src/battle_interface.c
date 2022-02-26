@@ -794,12 +794,12 @@ struct SpeciesData getSpeciesData(struct BattlePokemon mon)
 u8 _GetBattler2WithLowestTicks()
 {
     u8 i;
-    u8 bestBattler = 0;
-    u32 lowestTicks = gBattlerTicks2[bestBattler];
+    u8 bestBattler = -1;
+    u32 lowestTicks = 0xFFFFFFFF;
 
-    for (i = 1; i < gBattlersCount; i++)
+    for (i = 0; i < gBattlersCount; i++)
     {
-        if (gBattlerTicks2[i] < lowestTicks)
+        if (!(gAbsentBattlerFlags & gBitTable[i]) && gBattlerTicks2[i] < lowestTicks)
         {
             bestBattler = i;
             lowestTicks = gBattlerTicks2[i];

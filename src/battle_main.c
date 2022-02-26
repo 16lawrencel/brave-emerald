@@ -3863,11 +3863,11 @@ static u8 _GetCurrentBattlerToAct()
     u8 bestBattler, curBattler;
     u32 lowestTicks;
 
-    bestBattler = 0;
-    lowestTicks = gBattlerTicks[bestBattler];
-    for (curBattler = 1; curBattler < gBattlersCount; curBattler++)
+    bestBattler = -1;
+    lowestTicks = 0xFFFFFFFF;
+    for (curBattler = 0; curBattler < gBattlersCount; curBattler++)
     {
-        if (gBattlerTicks[curBattler] < lowestTicks)
+        if (!(gAbsentBattlerFlags & gBitTable[curBattler]) && gBattlerTicks[curBattler] < lowestTicks)
         {
             bestBattler = curBattler;
             lowestTicks = gBattlerTicks[bestBattler];
