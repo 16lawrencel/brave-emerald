@@ -907,10 +907,6 @@ bool8 BattleInitAllSprites(u8 *state1, u8 *battlerId)
     case 6:
         LoadAndCreateEnemyShadowSprites();
         BufferBattlePartyCurrentOrder();
-        (*state1)++;
-        break;
-    case 7:
-        CreateAllBattleOrderMonIconSprites();
         retVal = TRUE;
         break;
     }
