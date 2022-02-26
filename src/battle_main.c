@@ -161,6 +161,10 @@ EWRAM_DATA u8 gBattlerPositions[MAX_BATTLERS_COUNT] = {0};
 EWRAM_DATA u8 gActionsByTurnOrder[MAX_BATTLERS_COUNT] = {0};
 EWRAM_DATA u8 gBattlerByTurnOrder[MAX_BATTLERS_COUNT] = {0};
 EWRAM_DATA u32 gBattlerTicks[MAX_BATTLERS_COUNT] = {0};
+EWRAM_DATA u32 gBattlerTicks2[MAX_BATTLERS_COUNT] = {0};
+EWRAM_DATA u8 gBattlerTurnOrder[MAX_BATTLERS_ORDER_COUNT] = {0};
+EWRAM_DATA struct SpeciesData gSpeciesTurnOrder[MAX_BATTLERS_ORDER_COUNT] = {0};
+EWRAM_DATA u8 gSpriteTurnOrder[MAX_BATTLERS_ORDER_COUNT] = {0};
 EWRAM_DATA u8 gCurrentTurnActionNumber = 0;
 EWRAM_DATA u8 gCurrentActionFuncId = 0;
 EWRAM_DATA struct BattlePokemon gBattleMons[MAX_BATTLERS_COUNT] = {0};
@@ -238,6 +242,7 @@ EWRAM_DATA struct BattleHealthboxInfo *gBattleControllerOpponentFlankHealthboxDa
 EWRAM_DATA u16 gBattleMovePower = 0;
 EWRAM_DATA u16 gMoveToLearn = 0;
 EWRAM_DATA u8 gBattleMonForms[MAX_BATTLERS_COUNT] = {0};
+EWRAM_DATA struct BattleOrderBox *gBattleOrderBoxes = NULL;
 
 void (*gPreBattleCallback1)(void);
 void (*gBattleMainFunc)(void);
@@ -4134,6 +4139,8 @@ static void HandleTurnActionSelectionState(void)
     u8 battlerToLeft;
     bool8 battlerConfirmedAction;
     u8 position;
+
+    UpdateBattleOrderMonIconSprites();
 
     battlerConfirmedAction = 0;
     gActiveBattler = gCurrentBattler = _GetCurrentBattlerToAct();
