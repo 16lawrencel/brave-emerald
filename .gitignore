@@ -36,3 +36,5 @@ porymap.project.cfg
 *.sna
 *.diff
 *.sym
+*.js
+__pycache__
