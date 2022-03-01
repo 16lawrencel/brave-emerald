@@ -7,6 +7,7 @@
 #include "battle_interface.h"
 #include "battle_main.h"
 #include "battle_message.h"
+#include "battle_order.h"
 #include "battle_pyramid.h"
 #include "battle_scripts.h"
 #include "battle_setup.h"
@@ -4108,31 +4109,6 @@ static bool8 _BattlerAbsentOrConfirmedAction(int position)
         || gBattleCommunication[GetBattlerAtPosition(position)] == STATE_WAIT_ACTION_CONFIRMED;
 }
 
-static u8 _GetCurrentBattlerToAct()
-{
-    /*
-    Returns the current battler to act, which is the
-    battler with the smallest number of ticks.
-    If tied, returns the first battler.
-    */
-
-    u8 bestBattler, curBattler;
-    u32 lowestTicks;
-
-    bestBattler = -1;
-    lowestTicks = 0xFFFFFFFF;
-    for (curBattler = 0; curBattler < gBattlersCount; curBattler++)
-    {
-        if (!(gAbsentBattlerFlags & gBitTable[curBattler]) && gBattlerTicks[curBattler] < lowestTicks)
-        {
-            bestBattler = curBattler;
-            lowestTicks = gBattlerTicks[bestBattler];
-        }
-    }
-
-    return bestBattler;
-}
-
 static void HandleTurnActionSelectionState(void)
 {
     s32 i;
@@ -4143,7 +4119,7 @@ static void HandleTurnActionSelectionState(void)
     UpdateBattleOrderMonIconSprites();
 
     battlerConfirmedAction = 0;
-    gActiveBattler = gCurrentBattler = _GetCurrentBattlerToAct();
+    gActiveBattler = gCurrentBattler = GetBattlerWithLowestTicks();
     {
         position = GetBattlerPosition(gActiveBattler);
         switch (gBattleCommunication[gActiveBattler])
