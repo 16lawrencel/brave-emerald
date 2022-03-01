@@ -827,15 +827,15 @@ void CalculateBattleOrder()
 // TODO: move this somewhere else
 #define POKE_ICON_BASE_PAL_TAG 56000
 
-static const struct OamData sMonIconOamData =
+static const struct OamData sMonBattleIconOamData =
 {
     .y = 0,
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
     .bpp = ST_OAM_4BPP,
-    .shape = SPRITE_SHAPE(32x32),
+    .shape = SPRITE_SHAPE(16x16),
     .x = 0,
-    .size = SPRITE_SIZE(32x32),
+    .size = SPRITE_SIZE(16x16),
     .tileNum = 0,
     .priority = 1,
     .paletteNum = 0,
@@ -880,10 +880,25 @@ void SpriteCallback_Redraw(struct Sprite* sprite)
     RedrawSprite(sprite);
 }
 
+const u8* GetMonBattleIconTiles(u16 species, bool32 handleDeoxys)
+{
+    const u8* iconSprite = gMonBattleIconTable[species];
+    if (species == SPECIES_DEOXYS && handleDeoxys == TRUE)
+    {
+        iconSprite = (const u8*)(0x400 + (u32)iconSprite); // use the specific Deoxys form icon (Speed in this case)
+    }
+    return iconSprite;
+}
+
+const u8 *GetMonBattleIconPtr(u16 species, u32 personality, bool32 handleDeoxys)
+{
+    return GetMonBattleIconTiles(GetIconSpecies(species, personality), handleDeoxys);
+}
+
 u8 CreateBattleMonTurnIcon(u16 species, u32 personality, bool32 handleDeoxys, s16 x, s16 y, u8 subpriority)
 {
-    struct OamData oam = sMonIconOamData;
-    void *image = (void*) GetMonIconPtr(species, personality, handleDeoxys);
+    struct OamData oam = sMonBattleIconOamData;
+    void *image = (void*) GetMonBattleIconPtr(species, personality, handleDeoxys);
     struct SpriteFrameImage images = {
         NULL,
         sSpriteImageSizes[oam.shape][oam.size],
@@ -935,7 +950,7 @@ void UpdateBattleOrderMonIconSprite(u8 spriteId, u8 battlerId, struct SpeciesDat
         || speciesData.handleDeoxys != oldSpeciesData.handleDeoxys
     )
     {
-        image = (void*) GetMonIconPtr(
+        image = (void*) GetMonBattleIconPtr(
             speciesData.species,
             speciesData.personality,
             speciesData.handleDeoxys
@@ -950,6 +965,7 @@ void UpdateBattleOrderMonIconSprite(u8 spriteId, u8 battlerId, struct SpeciesDat
 void CreateAllBattleOrderMonIconSprites()
 {
     u8 i, battlerId;
+    s16 battleIcon_x, battleIcon_y;
 
     CalculateBattleOrder();
 
@@ -957,7 +973,9 @@ void CreateAllBattleOrderMonIconSprites()
     for (i = 0; i < MAX_BATTLERS_ORDER_COUNT; i++)
     {
         battlerId = gBattlerTurnOrder[i];
-        gSpriteTurnOrder[i] = CreateBattleOrderMonIconSprite(battlerId, 230, 5 + 18 * i);
+        battleIcon_x = 230;
+        battleIcon_y = 5 + 18 * i;
+        gSpriteTurnOrder[i] = CreateBattleOrderMonIconSprite(battlerId, battleIcon_x, battleIcon_y);
         gSpeciesTurnOrder[i] = getSpeciesData(gBattleMons[battlerId]);
     }
 }
