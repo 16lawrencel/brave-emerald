@@ -53,11 +53,11 @@ static const struct UCoords8 sBattlerCoords[][MAX_BATTLERS_COUNT] =
     },
     { // Triple battle
         { 30, 80 },
-        { 220, 40 },
+        { 200, 40 },
         { 70, 84 },
-        { 180, 36 },
-        { 120, 88 },
-        { 130, 32 },
+        { 160, 36 },
+        { 110, 88 },
+        { 120, 32 },
     },
 };
 
