@@ -3834,7 +3834,7 @@ static void TryDoEventsBeforeFirstTurn(void)
         }
         for (i = 0; i < gBattlersCount; i++)
         {
-            gBattlerTicks[i] = 50 + i;
+            gBattlerTicks[i] = CalculateAddedTicks(i, DEFAULT_MOVE_SPEED);
         }
     }
     if (!gBattleStruct->overworldWeatherDone
