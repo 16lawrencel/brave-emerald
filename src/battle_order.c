@@ -258,8 +258,8 @@ void CreateAllBattleOrderMonIconSprites()
     for (i = 0; i < MAX_BATTLERS_ORDER_COUNT; i++)
     {
         battlerId = gBattlerTurnOrder[i];
-        battleIcon_x = 230;
-        battleIcon_y = 5 + 16 * i;
+        battleIcon_x = 232;
+        battleIcon_y = 8 + 16 * i;
         gSpriteTurnOrder[i] = CreateBattleOrderMonIconSprite(battlerId, battleIcon_x, battleIcon_y);
         gSpeciesTurnOrder[i] = getSpeciesData(gBattleMons[battlerId]);
     }
