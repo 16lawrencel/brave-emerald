@@ -2,6 +2,7 @@
 #include "battle.h"
 #include "battle_anim.h"
 #include "battle_arena.h"
+#include "battle_order.h"
 #include "battle_pyramid.h"
 #include "battle_util.h"
 #include "battle_controllers.h"
@@ -243,8 +244,6 @@ void HandleAction_UseMove(void)
         gCurrentActionFuncId = B_ACTION_FINISHED;
         return;
     }
-    // TODO: replace with move-specific tick increase
-    gBattlerTicks[gBattlerAttacker] += 50;
     gIsCriticalHit = FALSE;
     gBattleStruct->atkCancellerTracker = 0;
     gMoveResultFlags = 0;
@@ -293,6 +292,8 @@ void HandleAction_UseMove(void)
     {
         gCurrentMove = gChosenMove = gBattleMons[gBattlerAttacker].moves[gCurrMovePos];
     }
+
+    gBattlerTicks[gBattlerAttacker] += CalculateAddedTicks(gBattlerAttacker, gBattleMoves[gCurrentMove].speed);
 
     if (gBattleMons[gBattlerAttacker].hp != 0)
     {
