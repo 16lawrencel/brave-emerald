@@ -4501,7 +4501,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
         }
         break;
     case ABILITYEFFECT_ENDTURN: // 1
-        if (gBattleMons[battler].hp != 0)
+        if (gBattleMons[battler].hp != 0 && battler == gCurrentBattler)
         {
             gBattlerAttacker = battler;
             switch (gLastUsedAbility)
