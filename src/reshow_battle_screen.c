@@ -15,6 +15,7 @@
 #include "battle_interface.h"
 #include "battle_anim.h"
 #include "data.h"
+#include "battle_order.h"
 
 // this file's functions
 static void CB2_ReshowBattleScreenAfterMenu(void);
@@ -182,6 +183,9 @@ static void CB2_ReshowBattleScreenAfterMenu(void)
                 CreateWirelessStatusIndicatorSprite(0, 0);
             }
         }
+        break;
+    case 26:
+        CreateAllBattleOrderMonIconSprites();
         break;
     default:
         SetVBlankCallback(VBlankCB_Battle);
