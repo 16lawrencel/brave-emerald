@@ -76,10 +76,75 @@ static const u8 sPkblToEscapeFactor[][3] = {
 static const u8 sGoNearCounterToCatchFactor[] = {4, 3, 2, 1};
 static const u8 sGoNearCounterToEscapeFactor[] = {4, 4, 4, 4};
 
+static u8 GetNonAbsentTarget(u8 target)
+{
+    /*
+    Returns a target that's not absent.
+    While the target is absent, picks a random direction and
+    keeps moving in that direction until it finds a non-absent target.
+    TODO: what if there is no possible target? And triple battle range limit
+    */
+
+    bool8 randomDirection = Random() & 1;
+    while (gAbsentBattlerFlags & gBitTable[target])
+    {
+        if (randomDirection)
+            target = BATTLER_TO_RIGHT(target);
+        else
+            target = BATTLER_TO_LEFT(target);
+    }
+
+    return target;
+}
+
+u8 GetRandomTarget(u8 battlerSide)
+{
+    /*
+    Gets a random target on the opposite side of battlerSide.
+    */
+
+    u8 target;
+
+    if (GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER)
+    {
+        switch (Random() % (gBattlersCount / 2))
+        {
+            case 0:
+                target = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+                break;
+            case 1:
+                target = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+                break;
+            case 2:
+            default:
+                target = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+                break;
+        }
+    }
+    else
+    {
+        switch (Random() % (gBattlersCount / 2))
+        {
+            case 0:
+                target = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
+                break;
+            case 1:
+                target = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
+                break;
+            case 2:
+            default:
+                target = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                break;
+        }
+    }
+
+    return GetNonAbsentTarget(target);
+}
+
 void HandleAction_UseMove(void)
 {
     u8 side;
-    u8 var = 4;
+    u8 var = gBattlersCount;
 
     gBattlerAttacker = gBattlerByTurnOrder[gCurrentTurnActionNumber];
 
@@ -157,7 +222,7 @@ void HandleAction_UseMove(void)
     {
         gBattlerTarget = gSideTimers[side].followmeTarget;
     }
-    else if ((gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+    else if (IsDoubleOrTripleBattle()
              && gSideTimers[side].followmeTimer == 0
              && (gBattleMoves[gCurrentMove].power != 0
                  || gBattleMoves[gCurrentMove].target != MOVE_TARGET_USER)
@@ -170,47 +235,29 @@ void HandleAction_UseMove(void)
             if (side != GetBattlerSide(gActiveBattler)
                 && *(gBattleStruct->moveTarget + gBattlerAttacker) != gActiveBattler
                 && gBattleMons[gActiveBattler].ability == ABILITY_LIGHTNING_ROD
-                && GetBattlerTurnOrderNum(gActiveBattler) < var)
+                && GetBattlerTurnOrderNum(gActiveBattler) < gBattlersCount)
             {
                 var = GetBattlerTurnOrderNum(gActiveBattler);
             }
         }
-        if (var == 4)
+        if (var == gBattlersCount)
         {
             if (gBattleMoves[gChosenMove].target & MOVE_TARGET_RANDOM)
             {
-                if (GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER)
-                {
-                    if (Random() & 1)
-                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-                    else
-                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
-                }
-                else
-                {
-                    if (Random() & 1)
-                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
-                    else
-                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
-                }
+                gBattlerTarget = GetRandomTarget(GetBattlerSide(gBattlerAttacker));
             }
             else
             {
-                gBattlerTarget = *(gBattleStruct->moveTarget + gBattlerAttacker);
+                gBattlerTarget = gBattleStruct->moveTarget[gBattlerAttacker];
             }
 
             if (gAbsentBattlerFlags & gBitTable[gBattlerTarget])
             {
-                if (GetBattlerSide(gBattlerAttacker) != GetBattlerSide(gBattlerTarget))
-                {
-                    gBattlerTarget = GetBattlerAtPosition(GetBattlerPosition(gBattlerTarget) ^ BIT_FLANK);
-                }
-                else
+                if (GetBattlerSide(gBattlerAttacker) == GetBattlerSide(gBattlerTarget))
                 {
                     gBattlerTarget = GetBattlerAtPosition(GetBattlerPosition(gBattlerAttacker) ^ BIT_SIDE);
-                    if (gAbsentBattlerFlags & gBitTable[gBattlerTarget])
-                        gBattlerTarget = GetBattlerAtPosition(GetBattlerPosition(gBattlerTarget) ^ BIT_FLANK);
                 }
+                gBattlerTarget = GetNonAbsentTarget(gBattlerTarget);
             }
         }
         else
@@ -221,29 +268,10 @@ void HandleAction_UseMove(void)
             gBattlerTarget = gActiveBattler;
         }
     }
-    else if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE
+    else if (IsDoubleOrTripleBattle()
              && gBattleMoves[gChosenMove].target & MOVE_TARGET_RANDOM)
     {
-        if (GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER)
-        {
-            if (Random() & 1)
-                gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-            else
-                gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
-        }
-        else
-        {
-            if (Random() & 1)
-                gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
-            else
-                gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
-        }
-
-        if (gAbsentBattlerFlags & gBitTable[gBattlerTarget]
-            && GetBattlerSide(gBattlerAttacker) != GetBattlerSide(gBattlerTarget))
-        {
-            gBattlerTarget = GetBattlerAtPosition(GetBattlerPosition(gBattlerTarget) ^ BIT_FLANK);
-        }
+        gBattlerTarget = GetRandomTarget(GetBattlerSide(gBattlerAttacker));
     }
     else
     {
@@ -252,14 +280,9 @@ void HandleAction_UseMove(void)
         {
             if (GetBattlerSide(gBattlerAttacker) != GetBattlerSide(gBattlerTarget))
             {
-                gBattlerTarget = GetBattlerAtPosition(GetBattlerPosition(gBattlerTarget) ^ BIT_FLANK);
-            }
-            else
-            {
                 gBattlerTarget = GetBattlerAtPosition(GetBattlerPosition(gBattlerAttacker) ^ BIT_SIDE);
-                if (gAbsentBattlerFlags & gBitTable[gBattlerTarget])
-                    gBattlerTarget = GetBattlerAtPosition(GetBattlerPosition(gBattlerTarget) ^ BIT_FLANK);
             }
+            gBattlerTarget = GetNonAbsentTarget(gBattlerTarget);
         }
     }
 
@@ -729,6 +752,12 @@ u8 GetBattlerForBattleScript(u8 caseId)
         break;
     case BS_OPPONENT2:
         ret = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+        break;
+    case BS_PLAYER3:
+        ret = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+        break;
+    case BS_OPPONENT3:
+        ret = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
         break;
     }
     return ret;
@@ -3833,6 +3862,7 @@ u8 GetMoveTarget(u16 move, u8 setTarget)
     u8 targetBattler = 0;
     u8 moveTarget;
     u8 side;
+    bool8 randomDirection;
 
     if (setTarget != NO_TARGET_OVERRIDE)
         moveTarget = setTarget - 1;
@@ -3856,6 +3886,7 @@ u8 GetMoveTarget(u16 move, u8 setTarget)
                 && AbilityBattleEffects(ABILITYEFFECT_COUNT_OTHER_SIDE, gBattlerAttacker, ABILITY_LIGHTNING_ROD, 0, 0)
                 && gBattleMons[targetBattler].ability != ABILITY_LIGHTNING_ROD)
             {
+                // TODO: this breaks for triple battles
                 targetBattler ^= BIT_FLANK;
                 RecordAbilityBattle(targetBattler, gBattleMons[targetBattler].ability);
                 gSpecialStatuses[targetBattler].lightningRodRedirected = 1;
@@ -3867,31 +3898,16 @@ u8 GetMoveTarget(u16 move, u8 setTarget)
     case MOVE_TARGET_FOES_AND_ALLY:
     case MOVE_TARGET_OPPONENTS_FIELD:
         targetBattler = GetBattlerAtPosition((GetBattlerPosition(gBattlerAttacker) & BIT_SIDE) ^ BIT_SIDE);
-        if (gAbsentBattlerFlags & gBitTable[targetBattler])
-            targetBattler ^= BIT_FLANK;
+        while (gAbsentBattlerFlags & gBitTable[targetBattler])
+            targetBattler = BATTLER_TO_RIGHT(targetBattler);
         break;
     case MOVE_TARGET_RANDOM:
         side = GetBattlerSide(gBattlerAttacker) ^ BIT_SIDE;
         if (gSideTimers[side].followmeTimer && gBattleMons[gSideTimers[side].followmeTarget].hp)
             targetBattler = gSideTimers[side].followmeTarget;
-        else if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE && moveTarget & MOVE_TARGET_RANDOM)
+        else if (IsDoubleOrTripleBattle())
         {
-            if (GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER)
-            {
-                if (Random() & 1)
-                    targetBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-                else
-                    targetBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
-            }
-            else
-            {
-                if (Random() & 1)
-                    targetBattler = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
-                else
-                    targetBattler = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
-            }
-            if (gAbsentBattlerFlags & gBitTable[targetBattler])
-                targetBattler ^= BIT_FLANK;
+            targetBattler = GetRandomTarget(GetBattlerSide(gBattlerAttacker));
         }
         else
             targetBattler = GetBattlerAtPosition((GetBattlerPosition(gBattlerAttacker) & BIT_SIDE) ^ BIT_SIDE);
