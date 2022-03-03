@@ -72,7 +72,9 @@
 #define BS_OPPONENT1                12
 #define BS_PLAYER2                  13
 #define BS_OPPONENT2                14
-#define BS_ABILITY_BATTLER          15
+#define BS_PLAYER3                  15
+#define BS_OPPONENT3                16
+#define BS_ABILITY_BATTLER          17
 
 // Cmd_accuracycheck
 #define NO_ACC_CALC_CHECK_LOCK_ON 0xFFFF

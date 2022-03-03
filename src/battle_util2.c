@@ -70,21 +70,22 @@ void FreeBattleResources(void)
 
 void AdjustFriendshipOnBattleFaint(u8 battlerId)
 {
-    u8 opposingBattlerId;
+    u8 opposingBattlerId, opposingBattlerId2, opposingBattlerId3;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+    opposingBattlerId = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+    opposingBattlerId2 = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+    opposingBattlerId3 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+
+    if (gBattleMons[opposingBattlerId2].level > gBattleMons[opposingBattlerId].level)
+        opposingBattlerId = opposingBattlerId2;
+
+    if (gBattleMons[opposingBattlerId3].level > gBattleMons[opposingBattlerId].level)
+        opposingBattlerId = opposingBattlerId3;
+
+    if (!IsDoubleOrTripleBattle() && (gBattleMons[opposingBattlerId2].level || gBattleMons[opposingBattlerId3].level))
     {
-        u8 opposingBattlerId2;
-
-        opposingBattlerId = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-        opposingBattlerId2 = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
-
-        if (gBattleMons[opposingBattlerId2].level > gBattleMons[opposingBattlerId].level)
-            opposingBattlerId = opposingBattlerId2;
-    }
-    else
-    {
-        opposingBattlerId = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+        // assertion check that non-existing mons have 0 level
+        while (1) {}
     }
 
     if (gBattleMons[opposingBattlerId].level > gBattleMons[battlerId].level)

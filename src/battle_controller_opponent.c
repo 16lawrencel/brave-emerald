@@ -1677,16 +1677,22 @@ static void OpponentHandleChoosePokemon(void)
 
         if (chosenMonId == PARTY_SIZE)
         {
-            s32 battler1, battler2, firstId, lastId;
+            s32 battler1, battler2, battler3, firstId, lastId;
 
-            if (!(gBattleTypeFlags & BATTLE_TYPE_DOUBLE))
-            {
-                battler2 = battler1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-            }
-            else
+            if (IsTripleBattle())
             {
                 battler1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
                 battler2 = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+                battler3 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+            }
+            else if (IsDoubleBattle())
+            {
+                battler1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+                battler3 = battler2 = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+            }
+            else
+            {
+                battler3 = battler2 = battler1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
             }
 
             GetAIPartyIndexes(gActiveBattler, &firstId, &lastId);
@@ -1695,7 +1701,8 @@ static void OpponentHandleChoosePokemon(void)
             {
                 if (GetMonData(&gEnemyParty[chosenMonId], MON_DATA_HP) != 0
                     && chosenMonId != gBattlerPartyIndexes[battler1]
-                    && chosenMonId != gBattlerPartyIndexes[battler2])
+                    && chosenMonId != gBattlerPartyIndexes[battler2]
+                    && chosenMonId != gBattlerPartyIndexes[battler3])
                 {
                     break;
                 }

@@ -160,7 +160,7 @@ void AnimTask_ShakeMon2(u8 taskId)
     bool8 destroy = FALSE;
     u8 battlerId;
 
-    if (gBattleAnimArgs[0] < MAX_BATTLERS_COUNT)
+    if (gBattleAnimArgs[0] < 4)
     {
         spriteId = GetAnimBattlerSpriteId(gBattleAnimArgs[0]);
         if (spriteId == SPRITE_NONE)
@@ -169,7 +169,7 @@ void AnimTask_ShakeMon2(u8 taskId)
             return;
         }
     }
-    else if (gBattleAnimArgs[0] != 8)
+    else if (gBattleAnimArgs[0] != 10)
     {
         switch (gBattleAnimArgs[0])
         {
@@ -180,11 +180,17 @@ void AnimTask_ShakeMon2(u8 taskId)
             battlerId = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
             break;
         case 6:
-            battlerId = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+            battlerId = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
             break;
         case 7:
-        default:
+            battlerId = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+            break;
+        case 8:
             battlerId = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+            break;
+        case 9:
+        default:
+            battlerId = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
             break;
         }
 
