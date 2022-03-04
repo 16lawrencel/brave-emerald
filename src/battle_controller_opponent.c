@@ -6,6 +6,7 @@
 #include "battle_controllers.h"
 #include "battle_message.h"
 #include "battle_interface.h"
+#include "battle_order.h"
 #include "battle_setup.h"
 #include "battle_tower.h"
 #include "battle_tv.h"
@@ -536,6 +537,7 @@ static void SwitchIn_ShowHealthbox(void)
         StartHealthboxSlideIn(gActiveBattler);
         SetHealthboxSpriteVisible(gHealthboxSpriteIds[gActiveBattler]);
         CopyBattleSpriteInvisibility(gActiveBattler);
+        UpdateBattleOrderMonIconSprites();
         gBattlerControllerFuncs[gActiveBattler] = SwitchIn_ShowSubstitute;
     }
 }
