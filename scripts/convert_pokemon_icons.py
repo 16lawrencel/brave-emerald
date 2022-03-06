@@ -47,7 +47,7 @@ for pokemon in pokemon_list:
         unpacked_vals = unpack_tiles(convert_bytes_to_vals(bt), dims=ICON_DIMS)
         grid = np.array(unpacked_vals).reshape(ICON_DIMS)
         new_grid = grid[icon_y:icon_y+SMALL_DIMS.height, icon_x:icon_x+SMALL_DIMS.width]
-        new_bt = convert_vals_to_bytes(pack_tiles(new_grid.flatten(), dims=SMALL_DIMS))
+        new_bt = convert_vals_to_bytes(pack_tiles(new_grid, dims=SMALL_DIMS))
 
     with open(f"{pokemon_dir}/battle_icon.4bpp", "wb") as f:
         f.write(new_bt)
