@@ -166,6 +166,7 @@ EWRAM_DATA u32 gBattlerTicks2[MAX_BATTLERS_COUNT] = {0};
 EWRAM_DATA u8 gBattlerTurnOrder[MAX_BATTLERS_ORDER_COUNT] = {0};
 EWRAM_DATA struct SpeciesData gSpeciesTurnOrder[MAX_BATTLERS_ORDER_COUNT] = {0};
 EWRAM_DATA u8 gSpriteTurnOrder[MAX_BATTLERS_ORDER_COUNT] = {0};
+EWRAM_DATA u8 gBgTurnOrder[MAX_BATTLERS_ORDER_COUNT] = {0};
 EWRAM_DATA u8 gCurrentTurnActionNumber = 0;
 EWRAM_DATA u8 gCurrentActionFuncId = 0;
 EWRAM_DATA struct BattlePokemon gBattleMons[MAX_BATTLERS_COUNT] = {0};

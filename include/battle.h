@@ -651,6 +651,7 @@ extern u32 gBattlerTicks2[MAX_BATTLERS_COUNT];
 extern u8 gBattlerTurnOrder[MAX_BATTLERS_ORDER_COUNT];
 extern struct SpeciesData gSpeciesTurnOrder[MAX_BATTLERS_ORDER_COUNT];
 extern u8 gSpriteTurnOrder[MAX_BATTLERS_ORDER_COUNT];
+extern u8 gBgTurnOrder[MAX_BATTLERS_ORDER_COUNT];
 extern u8 gCurrentTurnActionNumber;
 extern u8 gCurrentActionFuncId;
 extern struct BattlePokemon gBattleMons[MAX_BATTLERS_COUNT];

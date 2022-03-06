@@ -50,6 +50,11 @@ static const u32 battlerTickSpeedTable[] = {
     2264, 2263, 2263, 2262, 2262, 2261, 2261, 2260, 2259, 2259, 2258, 2258, 2257, 2257, 2256, 2255, 2255, 2254, 2254, 2253, 2253, 2252, 2251, 2251, 2250, 2250, 2249, 2249, 2248, 2247, 2247, 2246, 2246, 2245, 2245, 2244, 2243, 2243, 2242, 2242, 2241, 2241, 2240, 2239, 2239, 2238, 2238, 2237, 2237, 2236,
 };
 
+const struct SpritePalette battleIconBgPalettes[2] = {
+    { battleIconBgPlayer_Pal, BATTLE_ICON_BG_PALETTE_TAG + 0 },
+    { battleIconBgOpponent_Pal, BATTLE_ICON_BG_PALETTE_TAG + 1 },
+};
+
 struct SpeciesData getSpeciesData(struct BattlePokemon mon)
 {
     return (struct SpeciesData){mon.species, mon.personality, TRUE};
@@ -108,9 +113,6 @@ void CalculateBattleOrder()
     for (i = 0; i < gBattlersCount; i++)
         gBattlerTicks[i] = gBattlerTicks2[i];
 }
-
-// TODO: move this somewhere else
-#define POKE_ICON_BASE_PAL_TAG 56000
 
 static const struct OamData sMonBattleIconOamData =
 {
@@ -180,10 +182,8 @@ const u8 *GetMonBattleIconPtr(u16 species, u32 personality, bool32 handleDeoxys)
     return GetMonBattleIconTiles(GetIconSpecies(species, personality), handleDeoxys);
 }
 
-u8 CreateBattleMonTurnIcon(u16 species, u32 personality, bool32 handleDeoxys, s16 x, s16 y, u8 subpriority)
+u8 CreateSpriteFromData(void *image, struct OamData oam, u16 paletteTag, s16 x, s16 y, u8 subpriority)
 {
-    struct OamData oam = sMonBattleIconOamData;
-    void *image = (void*) GetMonBattleIconPtr(species, personality, handleDeoxys);
     struct SpriteFrameImage images = {
         NULL,
         sSpriteImageSizes[oam.shape][oam.size],
@@ -194,7 +194,7 @@ u8 CreateBattleMonTurnIcon(u16 species, u32 personality, bool32 handleDeoxys, s1
     struct SpriteTemplate spriteTemplate =
     {
         .tileTag = TAG_NONE,
-        .paletteTag = POKE_ICON_BASE_PAL_TAG + gMonIconPaletteIndices[species],
+        .paletteTag = paletteTag,
         .oam = &oam,
         .anims = gDummySpriteAnimTable,
         .images = &images,
@@ -205,6 +205,17 @@ u8 CreateBattleMonTurnIcon(u16 species, u32 personality, bool32 handleDeoxys, s1
     spriteId = CreateSprite(&spriteTemplate, x, y, subpriority);
     sprite = &gSprites[spriteId];
     sprite->images = (const struct SpriteFrameImage *)image;
+
+    return spriteId;
+}
+
+u8 CreateBattleMonTurnIcon(u16 species, u32 personality, bool32 handleDeoxys, s16 x, s16 y, u8 subpriority)
+{
+    void *image = (void*) GetMonBattleIconPtr(species, personality, handleDeoxys);
+    struct OamData oam = sMonBattleIconOamData;
+    u16 paletteTag = POKE_ICON_BASE_PAL_TAG + gMonIconPaletteIndices[species];
+
+    return CreateSpriteFromData(image, oam, paletteTag, x, y, subpriority);
 }
 
 u8 CreateBattleOrderMonIconSprite(u8 battlerId, s16 x, s16 y)
@@ -223,10 +234,19 @@ u8 CreateBattleOrderMonIconSprite(u8 battlerId, s16 x, s16 y)
     return spriteId;
 }
 
-void UpdateBattleOrderMonIconSprite(u8 spriteId, u8 battlerId, struct SpeciesData oldSpeciesData)
+u8 CreateBattleIconBgSprite(u8 battlerSide, s16 x, s16 y)
+{
+    void *image = (void*) battleIconBg_Gfx;
+    struct OamData oam = sMonBattleIconOamData;
+    u16 paletteTag = BATTLE_ICON_BG_PALETTE_TAG + battlerSide;
+
+    return CreateSpriteFromData(image, oam, paletteTag, x, y, 5);
+}
+
+void UpdateBattleOrderMonIconSprite(u8 spriteId, u8 bgSpriteId, u8 battlerId, struct SpeciesData oldSpeciesData)
 {
     void *image;
-    struct Sprite *sprite;
+    struct Sprite *sprite, *bgSprite;
     struct SpeciesData speciesData = getSpeciesData(gBattleMons[battlerId]);
 
     if (
@@ -244,6 +264,10 @@ void UpdateBattleOrderMonIconSprite(u8 spriteId, u8 battlerId, struct SpeciesDat
         sprite->images = (const struct SpriteFrameImage *)image;
         sprite->oam.paletteNum = IndexOfSpritePaletteTag(POKE_ICON_BASE_PAL_TAG + gMonIconPaletteIndices[speciesData.species]);
         RedrawSprite(sprite);
+
+        bgSprite = &gSprites[bgSpriteId];
+        bgSprite->oam.paletteNum = IndexOfSpritePaletteTag(BATTLE_ICON_BG_PALETTE_TAG + GET_BATTLER_SIDE2(battlerId));
+        RedrawSprite(bgSprite);
     }
 }
 
@@ -255,12 +279,14 @@ void CreateAllBattleOrderMonIconSprites()
     CalculateBattleOrder();
 
     LoadMonIconPalettes();
+
     for (i = 0; i < MAX_BATTLERS_ORDER_COUNT; i++)
     {
         battlerId = gBattlerTurnOrder[i];
         battleIcon_x = 232;
         battleIcon_y = 8 + 16 * i;
         gSpriteTurnOrder[i] = CreateBattleOrderMonIconSprite(battlerId, battleIcon_x, battleIcon_y);
+        gBgTurnOrder[i] = CreateBattleIconBgSprite(GET_BATTLER_SIDE2(battlerId), battleIcon_x, battleIcon_y);
         gSpeciesTurnOrder[i] = getSpeciesData(gBattleMons[battlerId]);
     }
 }
@@ -274,7 +300,7 @@ void UpdateBattleOrderMonIconSprites()
     for (i = 0; i < MAX_BATTLERS_ORDER_COUNT; i++)
     {
         battlerId = gBattlerTurnOrder[i];
-        UpdateBattleOrderMonIconSprite(gSpriteTurnOrder[i], battlerId, gSpeciesTurnOrder[i]);
+        UpdateBattleOrderMonIconSprite(gSpriteTurnOrder[i], gBgTurnOrder[i], battlerId, gSpeciesTurnOrder[i]);
         gSpeciesTurnOrder[i] = getSpeciesData(gBattleMons[battlerId]);
     }
 }

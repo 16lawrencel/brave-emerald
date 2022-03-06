@@ -3282,6 +3282,9 @@ extern const u32 gMonPalette_DoubleQuestionMark[];
 extern const u32 gMonShinyPalette_DoubleQuestionMark[];
 extern const u32 gMonStillFrontPic_DoubleQuestionMark[];
 extern const u16 gMonIconPalettes[][16];
+extern const u8 battleIconBg_Gfx[];
+extern const u16 battleIconBgPlayer_Pal[];
+extern const u16 battleIconBgOpponent_Pal[];
 
 // trainer sprites
 extern const u32 gTrainerFrontPic_Hiker[];

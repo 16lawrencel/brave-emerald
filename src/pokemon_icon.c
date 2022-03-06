@@ -5,8 +5,6 @@
 #include "pokemon_icon.h"
 #include "sprite.h"
 
-#define POKE_ICON_BASE_PAL_TAG 56000
-
 #define INVALID_ICON_SPECIES SPECIES_OLD_UNOWN_J // Oddly specific, used when an icon should be a ?. Any of the 'old unown' would work
 
 struct MonIconSpriteTemplate
@@ -1360,11 +1358,8 @@ const struct SpritePalette gMonIconPaletteTable[] =
     { gMonIconPalettes[0], POKE_ICON_BASE_PAL_TAG + 0 },
     { gMonIconPalettes[1], POKE_ICON_BASE_PAL_TAG + 1 },
     { gMonIconPalettes[2], POKE_ICON_BASE_PAL_TAG + 2 },
-
-// There are only 3 actual palettes. The following are unused
-// and don't point to valid data.
-    { gMonIconPalettes[3], POKE_ICON_BASE_PAL_TAG + 3 },
-    { gMonIconPalettes[4], POKE_ICON_BASE_PAL_TAG + 4 },
+    { battleIconBgPlayer_Pal, BATTLE_ICON_BG_PALETTE_TAG + 0 },
+    { battleIconBgOpponent_Pal, BATTLE_ICON_BG_PALETTE_TAG + 1 },
     { gMonIconPalettes[5], POKE_ICON_BASE_PAL_TAG + 5 },
 };
 
