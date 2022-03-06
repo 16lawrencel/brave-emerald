@@ -22,6 +22,17 @@ def convert_vals_to_bytes(vals):
     return bt
 
 def unpack_tiles(vals, dims: Dims):
+    """
+    Input: values in "packed" tile format: e.g. if dims = 4x4 and
+    tile_dims = 2x2, then input
+    would have indices like this:
+        0  1  4  5
+        2  3  6  7
+        8  9  12 13
+        10 11 14 15
+    Output: a grid with dimensions dims.height x dims.width with
+    the unpacked values.
+    """
     grid = np.zeros(dims)
     idx = 0
     for row_start in range(0, dims.height, TILE_DIMS.height):
@@ -30,19 +41,21 @@ def unpack_tiles(vals, dims: Dims):
                 for c in range(TILE_DIMS.width):
                     grid[row_start+r][col_start+c] = vals[idx]
                     idx += 1
-    return grid.flatten()
+    return grid
 
 def pack_tiles(vals, dims: Dims):
     """
-    The 4bpp file is stored in 8x8 tiles, so we unpack it into the
-    more standard height x width grid format.
+    Input: array with dims.height x dims.width values.
+    Output: "packed" array (as described in unpack_tiles).
     """
-    ret = []
+    ret = [0] * (dims.height * dims.width)
+    idx = 0
     grid = np.array(vals).reshape(dims)
     for row_start in range(0, dims.height, TILE_DIMS.height):
         for col_start in range(0, dims.width, TILE_DIMS.width):
             for r in range(TILE_DIMS.height):
                 for c in range(TILE_DIMS.width):
-                    ret.append(grid[row_start+r][col_start+c])
+                    ret[idx] = grid[row_start+r][col_start+c]
+                    idx += 1
     return ret
 
