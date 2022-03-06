@@ -941,6 +941,7 @@ const u32 gBattleAnimUnusedPal_Unknown2[] = INCBIN_U32("graphics/battle_anims/un
 #include "data/graphics/trainers.h"
 
 const u8 gMonIcon_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mark/icon.4bpp");
+const u8 gMonBattleIcon_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mark/footprint.1bpp");
 const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mark/footprint.1bpp");
 
 const u32 gBattleVSFrame_Gfx[] = INCBIN_U32("graphics/battle_transitions/vs_frame.4bpp.lz");
@@ -1045,6 +1046,7 @@ const u32 gEnemyMonShadow_Gfx[] = INCBIN_U32("graphics/battle_interface/enemy_mo
 const u32 gBattleInterface_BallStatusBarGfx[] = INCBIN_U32("graphics/battle_interface/ball_status_bar.4bpp.lz");
 
 const u8 gMonIcon_Egg[] = INCBIN_U8("graphics/pokemon/egg/icon.4bpp");
+const u8 gMonBattleIcon_Egg[] = INCBIN_U8("graphics/pokemon/egg/battle_icon.4bpp");
 
 const u32 gBattleAnimBgImage_Ghost[] = INCBIN_U32("graphics/battle_anims/backgrounds/ghost.4bpp.lz");
 const u32 gBattleAnimBgPalette_Ghost[] = INCBIN_U32("graphics/battle_anims/backgrounds/ghost.gbapal.lz");
@@ -1503,6 +1505,10 @@ const u16 gMonIconPalettes[][16] =
     INCBIN_U16("graphics/pokemon/icon_palettes/icon_palette_1.gbapal"),
     INCBIN_U16("graphics/pokemon/icon_palettes/icon_palette_2.gbapal"),
 };
+
+const u8 battleIconBg_Gfx[] = INCBIN_U8("graphics/pokemon/battle_icons/battle_icon_bg.4bpp");
+const u16 battleIconBgPlayer_Pal[] = INCBIN_U16("graphics/pokemon/battle_icons/battle_icon_bg_player.gbapal");
+const u16 battleIconBgOpponent_Pal[] = INCBIN_U16("graphics/pokemon/battle_icons/battle_icon_bg_opponent.gbapal");
 
 const u16 gTitleScreenBgPalettes[]         = INCBIN_U16("graphics/title_screen/pokemon_logo.gbapal",
                                                         "graphics/title_screen/rayquaza_and_clouds.gbapal");

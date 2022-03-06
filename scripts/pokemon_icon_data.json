@@ -1,0 +1,2202 @@
+{
+    "abra": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "absol": {
+        "icon_x": 3,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "aerodactyl": {
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "aggron": {
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "aipom": {
+        "icon_x": 3,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "alakazam": {
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": 2
+    },
+    "altaria": {
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "ampharos": {
+        "icon_x": 1,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "anorith": {
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": 0
+    },
+    "arbok": {
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": 2
+    },
+    "arcanine": {
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "ariados": {
+        "icon_x": 3,
+        "icon_y": 15,
+        "palette_num": 0
+    },
+    "armaldo": {
+        "icon_x": 3,
+        "icon_y": 6,
+        "palette_num": 0
+    },
+    "aron": {
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "articuno": {
+        "icon_x": 4,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "azumarill": {
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "azurill": {
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "bagon": {
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "baltoy": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "banette": {
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "barboach": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "bayleef": {
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "beautifly": {
+        "icon_x": 2,
+        "icon_y": 13,
+        "palette_num": 0
+    },
+    "beedrill": {
+        "icon_x": 3,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "beldum": {
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "bellossom": {
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "bellsprout": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "blastoise": {
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "blaziken": {
+        "icon_x": 3,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "blissey": {
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": 1
+    },
+    "breloom": {
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": 1
+    },
+    "bulbasaur": {
+        "icon_x": 5,
+        "icon_y": 14,
+        "palette_num": 1
+    },
+    "butterfree": {
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "cacnea": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "cacturne": {
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": 1
+    },
+    "camerupt": {
+        "icon_x": 0,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "carvanha": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "cascoon": {
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "castform": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "caterpie": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "celebi": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "chansey": {
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "charizard": {
+        "icon_x": 0,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "charmander": {
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "charmeleon": {
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "chikorita": {
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": 1
+    },
+    "chimecho": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "chinchou": {
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "clamperl": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "claydol": {
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "clefable": {
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "clefairy": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "cleffa": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "cloyster": {
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": 2
+    },
+    "combusken": {
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "corphish": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "corsola": {
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "cradily": {
+        "icon_x": 4,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "crawdaunt": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "crobat": {
+        "icon_x": 4,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "croconaw": {
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "cubone": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "cyndaquil": {
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "delcatty": {
+        "icon_x": 3,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "delibird": {
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "deoxys": {
+        "icon_x": 9,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "dewgong": {
+        "icon_x": 3,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "diglett": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "ditto": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "dodrio": {
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "doduo": {
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "donphan": {
+        "icon_x": 4,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "dragonair": {
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "dragonite": {
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "dratini": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "drowzee": {
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": 2
+    },
+    "dugtrio": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "dunsparce": {
+        "icon_x": 3,
+        "icon_y": 15,
+        "palette_num": 2
+    },
+    "dusclops": {
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "duskull": {
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "dustox": {
+        "icon_x": 3,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "eevee": {
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "egg": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "ekans": {
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": 2
+    },
+    "electabuzz": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "electrike": {
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": 1
+    },
+    "electrode": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "elekid": {
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": 1
+    },
+    "entei": {
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": 2
+    },
+    "espeon": {
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "exeggcute": {
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": 0
+    },
+    "exeggutor": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "exploud": {
+        "icon_x": 3,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "farfetchd": {
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "fearow": {
+        "icon_x": 0,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "feebas": {
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "feraligatr": {
+        "icon_x": 2,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "flaaffy": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "flareon": {
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "flygon": {
+        "icon_x": 2,
+        "icon_y": 8,
+        "palette_num": 1
+    },
+    "forretress": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "furret": {
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": 2
+    },
+    "gardevoir": {
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": 1
+    },
+    "gastly": {
+        "icon_x": 3,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "gengar": {
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "geodude": {
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": 1
+    },
+    "girafarig": {
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "glalie": {
+        "icon_x": 7,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "gligar": {
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": 2
+    },
+    "gloom": {
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": 0
+    },
+    "golbat": {
+        "icon_x": 4,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "goldeen": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "golduck": {
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "golem": {
+        "icon_x": 4,
+        "icon_y": 14,
+        "palette_num": 1
+    },
+    "gorebyss": {
+        "icon_x": 2,
+        "icon_y": 15,
+        "palette_num": 0
+    },
+    "granbull": {
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": 2
+    },
+    "graveler": {
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": 1
+    },
+    "grimer": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "groudon": {
+        "icon_x": 3,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "grovyle": {
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "growlithe": {
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "grumpig": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "gulpin": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 1
+    },
+    "gyarados": {
+        "icon_x": 2,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "hariyama": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "haunter": {
+        "icon_x": 3,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "heracross": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "hitmonchan": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "hitmonlee": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "hitmontop": {
+        "icon_x": 8,
+        "icon_y": 14,
+        "palette_num": 2
+    },
+    "ho_oh": {
+        "icon_x": 0,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "hoothoot": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "hoppip": {
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": 1
+    },
+    "horsea": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "houndoom": {
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "houndour": {
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "huntail": {
+        "icon_x": 3,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "hypno": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "igglybuff": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "illumise": {
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "ivysaur": {
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": 1
+    },
+    "jigglypuff": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "jirachi": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "jolteon": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "jumpluff": {
+        "icon_x": 7,
+        "icon_y": 15,
+        "palette_num": 2
+    },
+    "jynx": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "kabuto": {
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "kabutops": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "kadabra": {
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": 2
+    },
+    "kakuna": {
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "kangaskhan": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "kecleon": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "kingdra": {
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "kingler": {
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": 2
+    },
+    "kirlia": {
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "koffing": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "krabby": {
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "kyogre": {
+        "icon_x": 3,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "lairon": {
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "lanturn": {
+        "icon_x": 3,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "lapras": {
+        "icon_x": 2,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "larvitar": {
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": 1
+    },
+    "latias": {
+        "icon_x": 0,
+        "icon_y": 13,
+        "palette_num": 0
+    },
+    "latios": {
+        "icon_x": 0,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "ledian": {
+        "icon_x": 3,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "ledyba": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "lickitung": {
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "lileep": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "linoone": {
+        "icon_x": 4,
+        "icon_y": 15,
+        "palette_num": 2
+    },
+    "lombre": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "lotad": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 1
+    },
+    "loudred": {
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "ludicolo": {
+        "icon_x": 7,
+        "icon_y": 15,
+        "palette_num": 1
+    },
+    "lugia": {
+        "icon_x": 0,
+        "icon_y": 16,
+        "palette_num": 0
+    },
+    "lunatone": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "luvdisc": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "machamp": {
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "machoke": {
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": 2
+    },
+    "machop": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "magby": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "magcargo": {
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "magikarp": {
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "magmar": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "magnemite": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "magneton": {
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "makuhita": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "manectric": {
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "mankey": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "mantine": {
+        "icon_x": 5,
+        "icon_y": 14,
+        "palette_num": 2
+    },
+    "mareep": {
+        "icon_x": 4,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "marill": {
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "marowak": {
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "marshtomp": {
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "masquerain": {
+        "icon_x": 6,
+        "icon_y": 15,
+        "palette_num": 0
+    },
+    "mawile": {
+        "icon_x": 12,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "medicham": {
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "meditite": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "meganium": {
+        "icon_x": 1,
+        "icon_y": 7,
+        "palette_num": 1
+    },
+    "meowth": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "metagross": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "metang": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "metapod": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "mew": {
+        "icon_x": 3,
+        "icon_y": 16,
+        "palette_num": 0
+    },
+    "mewtwo": {
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": 2
+    },
+    "mightyena": {
+        "icon_x": 2,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "milotic": {
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "miltank": {
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": 1
+    },
+    "minun": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "misdreavus": {
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "moltres": {
+        "icon_x": 4,
+        "icon_y": 13,
+        "palette_num": 0
+    },
+    "mr_mime": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "mudkip": {
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "muk": {
+        "icon_x": 4,
+        "icon_y": 14,
+        "palette_num": 2
+    },
+    "murkrow": {
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "natu": {
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "nidoking": {
+        "icon_x": 2,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "nidoqueen": {
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "nidoran_f": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "nidoran_m": {
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "nidorina": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "nidorino": {
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": 2
+    },
+    "nincada": {
+        "icon_x": 4,
+        "icon_y": 12,
+        "palette_num": 1
+    },
+    "ninetales": {
+        "icon_x": 0,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "ninjask": {
+        "icon_x": 4,
+        "icon_y": 14,
+        "palette_num": 1
+    },
+    "noctowl": {
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "nosepass": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "numel": {
+        "icon_x": 4,
+        "icon_y": 14,
+        "palette_num": 1
+    },
+    "nuzleaf": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "octillery": {
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "oddish": {
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": 1
+    },
+    "old_unown_b": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_c": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_d": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_e": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_f": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_g": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_h": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_i": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_j": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_k": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_l": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_m": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_n": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_o": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_p": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_q": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_r": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_s": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_t": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_u": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_v": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_w": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_x": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_y": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "old_unown_z": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "omanyte": {
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": 0
+    },
+    "omastar": {
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": 0
+    },
+    "onix": {
+        "icon_x": 1,
+        "icon_y": 14,
+        "palette_num": 2
+    },
+    "paras": {
+        "icon_x": 9,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "parasect": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "pelipper": {
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "persian": {
+        "icon_x": 3,
+        "icon_y": 13,
+        "palette_num": 1
+    },
+    "phanpy": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "pichu": {
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "pidgeot": {
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "pidgeotto": {
+        "icon_x": 3,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "pidgey": {
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "pikachu": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "piloswine": {
+        "icon_x": 5,
+        "icon_y": 14,
+        "palette_num": 2
+    },
+    "pineco": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "pinsir": {
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "plusle": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "politoed": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "poliwag": {
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "poliwhirl": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "poliwrath": {
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "ponyta": {
+        "icon_x": 3,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "poochyena": {
+        "icon_x": 3,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "porygon": {
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "porygon2": {
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "primeape": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "psyduck": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "pupitar": {
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "quagsire": {
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "quilava": {
+        "icon_x": 3,
+        "icon_y": 12,
+        "palette_num": 1
+    },
+    "qwilfish": {
+        "icon_x": 4,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "raichu": {
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "raikou": {
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "ralts": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "rapidash": {
+        "icon_x": 1,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "raticate": {
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "rattata": {
+        "icon_x": 5,
+        "icon_y": 14,
+        "palette_num": 2
+    },
+    "rayquaza": {
+        "icon_x": 1,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "regice": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "regirock": {
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "registeel": {
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": 2
+    },
+    "relicanth": {
+        "icon_x": 3,
+        "icon_y": 15,
+        "palette_num": 1
+    },
+    "remoraid": {
+        "icon_x": 4,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "rhydon": {
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "rhyhorn": {
+        "icon_x": 3,
+        "icon_y": 14,
+        "palette_num": 1
+    },
+    "roselia": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "sableye": {
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "salamence": {
+        "icon_x": 1,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "sandshrew": {
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "sandslash": {
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "sceptile": {
+        "icon_x": 3,
+        "icon_y": 6,
+        "palette_num": 1
+    },
+    "scizor": {
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": 0
+    },
+    "scyther": {
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "seadra": {
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "seaking": {
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "sealeo": {
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "seedot": {
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": 1
+    },
+    "seel": {
+        "icon_x": 4,
+        "icon_y": 15,
+        "palette_num": 2
+    },
+    "sentret": {
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "seviper": {
+        "icon_x": 2,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "sharpedo": {
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "shedinja": {
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "shelgon": {
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "shellder": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "shiftry": {
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "shroomish": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 1
+    },
+    "shuckle": {
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": 1
+    },
+    "shuppet": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "silcoon": {
+        "icon_x": 5,
+        "icon_y": 14,
+        "palette_num": 2
+    },
+    "skarmory": {
+        "icon_x": 1,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "skiploom": {
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": 1
+    },
+    "skitty": {
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "slaking": {
+        "icon_x": 13,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "slakoth": {
+        "icon_x": 3,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "slowbro": {
+        "icon_x": 2,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "slowking": {
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "slowpoke": {
+        "icon_x": 5,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "slugma": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "smeargle": {
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "smoochum": {
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": 1
+    },
+    "sneasel": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "snorlax": {
+        "icon_x": 12,
+        "icon_y": 8,
+        "palette_num": 1
+    },
+    "snorunt": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "snubbull": {
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "solrock": {
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "spearow": {
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": 0
+    },
+    "spheal": {
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": 2
+    },
+    "spinarak": {
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": 1
+    },
+    "spinda": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "spoink": {
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "squirtle": {
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "stantler": {
+        "icon_x": 2,
+        "icon_y": 8,
+        "palette_num": 2
+    },
+    "starmie": {
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "staryu": {
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": 2
+    },
+    "steelix": {
+        "icon_x": 1,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "sudowoodo": {
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "suicune": {
+        "icon_x": 3,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "sunflora": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 1
+    },
+    "sunkern": {
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": 1
+    },
+    "surskit": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "swablu": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "swalot": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "swampert": {
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "swellow": {
+        "icon_x": 4,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "swinub": {
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "taillow": {
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "tangela": {
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "tauros": {
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "teddiursa": {
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "tentacool": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 2
+    },
+    "tentacruel": {
+        "icon_x": 7,
+        "icon_y": 16,
+        "palette_num": 2
+    },
+    "togepi": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "togetic": {
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "torchic": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "torkoal": {
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": 1
+    },
+    "totodile": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "trapinch": {
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": 1
+    },
+    "treecko": {
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": 1
+    },
+    "tropius": {
+        "icon_x": 1,
+        "icon_y": 8,
+        "palette_num": 1
+    },
+    "typhlosion": {
+        "icon_x": 3,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "tyranitar": {
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": 1
+    },
+    "tyrogue": {
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "umbreon": {
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "unown": {
+        "icon_x": 0,
+        "icon_y": 0,
+        "palette_num": 0
+    },
+    "unown_a": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "unown_b": {
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "unown_c": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "unown_d": {
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "unown_e": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "unown_exclamation_mark": {
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": 0
+    },
+    "unown_f": {
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "unown_g": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "unown_h": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "unown_i": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "unown_j": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "unown_k": {
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "unown_l": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "unown_m": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "unown_n": {
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "unown_o": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "unown_p": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "unown_q": {
+        "icon_x": 9,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "unown_question_mark": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "unown_r": {
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": 0
+    },
+    "unown_s": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "unown_t": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "unown_u": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "unown_v": {
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": 0
+    },
+    "unown_w": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "unown_x": {
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "unown_y": {
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "unown_z": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "ursaring": {
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": 2
+    },
+    "vaporeon": {
+        "icon_x": 3,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "venomoth": {
+        "icon_x": 4,
+        "icon_y": 14,
+        "palette_num": 2
+    },
+    "venonat": {
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "venusaur": {
+        "icon_x": 3,
+        "icon_y": 14,
+        "palette_num": 1
+    },
+    "vibrava": {
+        "icon_x": 2,
+        "icon_y": 14,
+        "palette_num": 1
+    },
+    "victreebel": {
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": 1
+    },
+    "vigoroth": {
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "vileplume": {
+        "icon_x": 5,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "volbeat": {
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "voltorb": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "vulpix": {
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "wailmer": {
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": 2
+    },
+    "wailord": {
+        "icon_x": 1,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "walrein": {
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "wartortle": {
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": 2
+    },
+    "weedle": {
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": 1
+    },
+    "weepinbell": {
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": 1
+    },
+    "weezing": {
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": 2
+    },
+    "whiscash": {
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": 0
+    },
+    "whismur": {
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": 0
+    },
+    "wigglytuff": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "wingull": {
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "wobbuffet": {
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "wooper": {
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": 0
+    },
+    "wurmple": {
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": 0
+    },
+    "wynaut": {
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "xatu": {
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": 0
+    },
+    "yanma": {
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": 1
+    },
+    "zangoose": {
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": 0
+    },
+    "zapdos": {
+        "icon_x": 3,
+        "icon_y": 13,
+        "palette_num": 0
+    },
+    "zigzagoon": {
+        "icon_x": 4,
+        "icon_y": 14,
+        "palette_num": 2
+    },
+    "zubat": {
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": 2
+    }
+}

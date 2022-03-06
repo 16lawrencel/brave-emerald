@@ -38,6 +38,7 @@ static void SpriteCB_ReleasedMonFlyOut(struct Sprite *sprite);
 static void SpriteCB_TradePokeball(struct Sprite *sprite);
 static void SpriteCB_TradePokeballSendOff(struct Sprite *sprite);
 static void SpriteCB_TradePokeballEnd(struct Sprite *sprite);
+static void SpriteCB_HealthboxSlideInDelayedMore(struct Sprite *sprite);
 static void SpriteCB_HealthboxSlideInDelayed(struct Sprite *sprite);
 static void SpriteCB_HealthboxSlideIn(struct Sprite *sprite);
 static void SpriteCB_HitAnimHealthoxEffect(struct Sprite *sprite);
@@ -954,7 +955,7 @@ static void SpriteCB_PlayerMonSendOut_2(struct Sprite *sprite)
             sprite->data[0] = 0;
 
             if (IsTripleBattle() && gBattleSpritesDataPtr->animationData->introAnimActive
-            && sprite->sBattler == GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT))
+            && sprite->sBattler == GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT))
                 sprite->callback = SpriteCB_ReleaseMon3FromBall;
             else if (IsDoubleOrTripleBattle() && gBattleSpritesDataPtr->animationData->introAnimActive
              && sprite->sBattler == GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE))
@@ -1222,14 +1223,34 @@ void StartHealthboxSlideIn(u8 battlerId)
         healthboxSprite->y2 = -healthboxSprite->y2;
     }
     gSprites[healthboxSprite->data[5]].callback(&gSprites[healthboxSprite->data[5]]);
-    if (GetBattlerPosition(battlerId) == B_POSITION_PLAYER_MIDDLE)
-        healthboxSprite->callback = SpriteCB_HealthboxSlideInDelayed;
+    if (IsTripleBattle())
+    {
+        if (GetBattlerPosition(battlerId) == B_POSITION_PLAYER_MIDDLE)
+            healthboxSprite->callback = SpriteCB_HealthboxSlideInDelayed;
+        else if (GetBattlerPosition(battlerId) == B_POSITION_PLAYER_RIGHT)
+            healthboxSprite->callback = SpriteCB_HealthboxSlideInDelayedMore;
+    }
+    else if (IsDoubleBattle())
+    {
+        if (GetBattlerPosition(battlerId) == B_POSITION_PLAYER_MIDDLE)
+            healthboxSprite->callback = SpriteCB_HealthboxSlideInDelayedMore;
+    }
+}
+
+static void SpriteCB_HealthboxSlideInDelayedMore(struct Sprite *sprite)
+{
+    sprite->sDelayTimer++;
+    if (sprite->sDelayTimer == 20)
+    {
+        sprite->sDelayTimer = 0;
+        sprite->callback = SpriteCB_HealthboxSlideIn;
+    }
 }
 
 static void SpriteCB_HealthboxSlideInDelayed(struct Sprite *sprite)
 {
     sprite->sDelayTimer++;
-    if (sprite->sDelayTimer == 20)
+    if (sprite->sDelayTimer == 10)
     {
         sprite->sDelayTimer = 0;
         sprite->callback = SpriteCB_HealthboxSlideIn;

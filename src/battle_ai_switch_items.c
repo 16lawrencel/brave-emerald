@@ -624,12 +624,25 @@ static void ModulateByTypeEffectiveness(u8 atkType, u8 defType1, u8 defType2, u8
     }
 }
 
+u8 GetBattlerToRight(u8 battlerId)
+{
+    return GetBattlerAtPosition(BATTLER_TO_RIGHT(GetBattlerPosition(battlerId)));
+}
+
+u8 GetNonAbsentBattlerToRight(u8 battlerId)
+{
+    u8 nextBattlerId = GetBattlerToRight(battlerId);
+    while (gAbsentBattlerFlags & gBitTable[nextBattlerId])
+        nextBattlerId = GetBattlerToRight(nextBattlerId);
+    return nextBattlerId;
+}
+
 u8 GetMostSuitableMonToSwitchInto(void)
 {
     u8 opposingBattler;
     u8 bestDmg; // Note : should be changed to u32 for obvious reasons.
     u8 bestMonId;
-    u8 battlerIn1, battlerIn2;
+    u8 battlerIn1, battlerIn2, battlerIn3;
     s32 firstId;
     s32 lastId; // + 1
     struct Pokemon *party;
@@ -642,18 +655,13 @@ u8 GetMostSuitableMonToSwitchInto(void)
     if (gBattleTypeFlags & BATTLE_TYPE_ARENA)
         return gBattlerPartyIndexes[gActiveBattler] + 1;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+    if (IsDoubleOrTripleBattle())
     {
         battlerIn1 = gActiveBattler;
-        if (gAbsentBattlerFlags & gBitTable[GetBattlerAtPosition(GetBattlerPosition(gActiveBattler) ^ BIT_FLANK)])
-            battlerIn2 = gActiveBattler;
-        else
-            battlerIn2 = GetBattlerAtPosition(GetBattlerPosition(gActiveBattler) ^ BIT_FLANK);
+        battlerIn2 = GetNonAbsentBattlerToRight(battlerIn1);
+        battlerIn3 = GetNonAbsentBattlerToRight(battlerIn2);
 
-        // UB: It considers the opponent only player's side even though it can battle alongside player.
-        opposingBattler = Random() & BIT_FLANK;
-        if (gAbsentBattlerFlags & gBitTable[opposingBattler])
-            opposingBattler ^= BIT_FLANK;
+        opposingBattler = GetRandomTarget(GetBattlerSide(gActiveBattler));
     }
     else
     {
@@ -665,13 +673,13 @@ u8 GetMostSuitableMonToSwitchInto(void)
     if (gBattleTypeFlags & (BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TOWER_LINK_MULTI))
     {
         if ((gActiveBattler & BIT_FLANK) == B_FLANK_LEFT)
-            firstId = 0, lastId = 3;
+            firstId = 0, lastId = PARTY_SIZE / 2;
         else
-            firstId = 3, lastId = 6;
+            firstId = PARTY_SIZE / 2, lastId = PARTY_SIZE;
     }
     else
     {
-        firstId = 0, lastId = 6;
+        firstId = 0, lastId = PARTY_SIZE;
     }
 
     if (GetBattlerSide(gActiveBattler) == B_SIDE_PLAYER)
@@ -694,8 +702,11 @@ u8 GetMostSuitableMonToSwitchInto(void)
                 && !(gBitTable[i] & invalidMons)
                 && gBattlerPartyIndexes[battlerIn1] != i
                 && gBattlerPartyIndexes[battlerIn2] != i
-                && i != *(gBattleStruct->monToSwitchIntoId + battlerIn1)
-                && i != *(gBattleStruct->monToSwitchIntoId + battlerIn2))
+                && gBattlerPartyIndexes[battlerIn3] != i
+                && i != gBattleStruct->monToSwitchIntoId[battlerIn1]
+                && i != gBattleStruct->monToSwitchIntoId[battlerIn2]
+                && i != gBattleStruct->monToSwitchIntoId[battlerIn3]
+            )
             {
                 u8 type1 = gBaseStats[species].type1;
                 u8 type2 = gBaseStats[species].type2;
@@ -746,17 +757,16 @@ u8 GetMostSuitableMonToSwitchInto(void)
     // If we couldn't find the best mon in terms of typing, find the one that deals most damage.
     for (i = firstId; i < lastId; i++)
     {
-        if ((u16)(GetMonData(&party[i], MON_DATA_SPECIES)) == SPECIES_NONE)
-            continue;
-        if (GetMonData(&party[i], MON_DATA_HP) == 0)
-            continue;
-        if (gBattlerPartyIndexes[battlerIn1] == i)
-            continue;
-        if (gBattlerPartyIndexes[battlerIn2] == i)
-            continue;
-        if (i == *(gBattleStruct->monToSwitchIntoId + battlerIn1))
-            continue;
-        if (i == *(gBattleStruct->monToSwitchIntoId + battlerIn2))
+        if (
+            (u16)(GetMonData(&party[i], MON_DATA_SPECIES)) == SPECIES_NONE
+            || GetMonData(&party[i], MON_DATA_HP) == 0
+            || gBattlerPartyIndexes[battlerIn1] == i
+            || gBattlerPartyIndexes[battlerIn2] == i
+            || gBattlerPartyIndexes[battlerIn3] == i
+            || i == gBattleStruct->monToSwitchIntoId[battlerIn1]
+            || i == gBattleStruct->monToSwitchIntoId[battlerIn2]
+            || i == gBattleStruct->monToSwitchIntoId[battlerIn3]
+        )
             continue;
 
         for (j = 0; j < MAX_MON_MOVES; j++)

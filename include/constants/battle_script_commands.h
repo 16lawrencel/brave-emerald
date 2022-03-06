@@ -63,6 +63,8 @@
 #define BS_OPPONENT1                12
 #define BS_PLAYER2                  13
 #define BS_OPPONENT2                14
+#define BS_PLAYER3                  15
+#define BS_OPPONENT3                16
 
 // Cmd_accuracycheck
 #define NO_ACC_CALC 0xFFFE

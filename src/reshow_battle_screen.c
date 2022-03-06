@@ -15,6 +15,7 @@
 #include "battle_interface.h"
 #include "battle_anim.h"
 #include "data.h"
+#include "battle_order.h"
 
 // this file's functions
 static void CB2_ReshowBattleScreenAfterMenu(void);
@@ -73,7 +74,7 @@ static void CB2_ReshowBattleScreenAfterMenu(void)
         break;
     case 4:
         FreeAllSpritePalettes();
-        gReservedSpritePaletteCount = 4;
+        gReservedSpritePaletteCount = 6;
         break;
     case 5:
         ClearSpritesHealthboxAnimData();
@@ -169,7 +170,7 @@ static void CB2_ReshowBattleScreenAfterMenu(void)
 
             if (IsTripleBattle())
             {
-                opponentBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+                opponentBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
                 species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[opponentBattler]], MON_DATA_SPECIES);
                 SetBattlerShadowSpriteCallback(opponentBattler, species);
             }
@@ -182,6 +183,9 @@ static void CB2_ReshowBattleScreenAfterMenu(void)
                 CreateWirelessStatusIndicatorSprite(0, 0);
             }
         }
+        break;
+    case 26:
+        CreateAllBattleOrderMonIconSprites();
         break;
     default:
         SetVBlankCallback(VBlankCB_Battle);

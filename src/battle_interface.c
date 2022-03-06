@@ -22,6 +22,7 @@
 #include "data.h"
 #include "pokemon_summary_screen.h"
 #include "strings.h"
+#include "pokemon_icon.h"
 #include "constants/battle_anim.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
@@ -1099,17 +1100,17 @@ void InitBattlerHealthboxCoords(u8 battler)
         if (GetBattlerSide(battler) != B_SIDE_PLAYER)
             x = 44, y = 30;
         else
-            x = 158, y = 88;
+            x = 152, y = 88;
     }
     else if (IsDoubleBattle())
     {
         switch (GetBattlerPosition(battler))
         {
         case B_POSITION_PLAYER_LEFT:
-            x = 159, y = 76;
+            x = 150, y = 76;
             break;
         case B_POSITION_PLAYER_MIDDLE:
-            x = 171, y = 101;
+            x = 156, y = 101;
             break;
         case B_POSITION_OPPONENT_LEFT:
             x = 44, y = 19;
@@ -1124,19 +1125,19 @@ void InitBattlerHealthboxCoords(u8 battler)
         switch (GetBattlerPosition(battler))
         {
         case B_POSITION_PLAYER_LEFT:
-            x = 159, y = 69;
+            x = 154, y = 69;
             break;
         case B_POSITION_PLAYER_MIDDLE:
-            x = 164, y = 85;
+            x = 156, y = 85;
             break;
         case B_POSITION_PLAYER_RIGHT:
-            x = 169, y = 101;
+            x = 158, y = 101;
             break;
         case B_POSITION_OPPONENT_LEFT:
-            x = 44, y = 19;
+            x = 38, y = 19;
             break;
         case B_POSITION_OPPONENT_MIDDLE:
-            x = 39, y = 35;
+            x = 36, y = 35;
             break;
         case B_POSITION_OPPONENT_RIGHT:
             x = 34, y = 51;

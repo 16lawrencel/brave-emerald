@@ -901,7 +901,7 @@ static void Task_ClearMonBg(u8 taskId)
     {
         u8 to_BG2;
         u8 position = GetBattlerPosition(gTasks[taskId].data[2]);
-        if (position == B_POSITION_OPPONENT_LEFT || position == B_POSITION_PLAYER_MIDDLE || IsContest())
+        if (position == B_POSITION_OPPONENT_LEFT || position == B_POSITION_PLAYER_MIDDLE || position == B_POSITION_PLAYER_RIGHT || IsContest())
             to_BG2 = FALSE;
         else
             to_BG2 = TRUE;
@@ -946,7 +946,7 @@ static void Cmd_monbg_static(void)
     if (IsBattlerSpriteVisible(battlerId))
     {
         u8 position = GetBattlerPosition(battlerId);
-        if (position == B_POSITION_OPPONENT_LEFT || position == B_POSITION_PLAYER_MIDDLE || IsContest())
+        if (position == B_POSITION_OPPONENT_LEFT || position == B_POSITION_PLAYER_MIDDLE || position == B_POSITION_PLAYER_RIGHT || IsContest())
             toBG_2 = FALSE;
         else
             toBG_2 = TRUE;
@@ -958,7 +958,7 @@ static void Cmd_monbg_static(void)
     if (animBattlerId > 1 && IsBattlerSpriteVisible(battlerId))
     {
         u8 position = GetBattlerPosition(battlerId);
-        if (position == B_POSITION_OPPONENT_LEFT || position == B_POSITION_PLAYER_MIDDLE || IsContest())
+        if (position == B_POSITION_OPPONENT_LEFT || position == B_POSITION_PLAYER_MIDDLE || position == B_POSITION_PLAYER_RIGHT || IsContest())
             toBG_2 = FALSE;
         else
             toBG_2 = TRUE;

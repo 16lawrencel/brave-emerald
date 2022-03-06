@@ -57,6 +57,8 @@
 #define BIT_SIDE        1
 #define BIT_FLANK       2
 
+#define MAX_BATTLERS_ORDER_COUNT 7
+
 // Battle Type Flags
 #define BATTLE_TYPE_DOUBLE             (1 << 0)
 #define BATTLE_TYPE_TRIPLE             (1 << 1)

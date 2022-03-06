@@ -6,6 +6,7 @@
 #include "battle_dome.h"
 #include "battle_interface.h"
 #include "battle_message.h"
+#include "battle_order.h"
 #include "battle_setup.h"
 #include "battle_tv.h"
 #include "bg.h"
@@ -305,47 +306,7 @@ static void HandleInputChooseAction(void)
     }
     else if (JOY_NEW(B_BUTTON) || gPlayerDpadHoldFrames > 59)
     {
-        bool8 canUndoAction = 0;
-
-        if (
-            (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
-            && GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_MIDDLE
-            && !(gAbsentBattlerFlags & gBitTable[GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)])
-        )
-            canUndoAction = 1;
-
-        if (gBattleTypeFlags & BATTLE_TYPE_TRIPLE)
-        {
-            if (
-                GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_MIDDLE
-                && !(gAbsentBattlerFlags & gBitTable[GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)])
-            )
-                canUndoAction = 1;
-            else if (
-                GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_RIGHT
-                && !(gAbsentBattlerFlags & gBitTable[GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)])
-                && !(gAbsentBattlerFlags & gBitTable[GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE)])
-            )
-                canUndoAction = 1;
-        }
-
-        if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
-            canUndoAction = 0;
-
-        if (canUndoAction)
-        {
-            if (gBattleBufferA[gActiveBattler][1] == B_ACTION_USE_ITEM)
-            {
-                // Add item to bag if it is a ball
-                if (itemId <= LAST_BALL)
-                    AddBagItem(itemId, 1);
-                else
-                    return;
-            }
-            PlaySE(SE_SELECT);
-            BtlController_EmitTwoReturnValues(BUFFER_B, B_ACTION_CANCEL_PARTNER, 0);
-            PlayerBufferExecCompleted();
-        }
+        // Can't undo action anymore since every turn only consists of one action
     }
     else if (JOY_NEW(START_BUTTON))
     {
@@ -991,6 +952,7 @@ static void Intro_WaitForShinyAnimAndHealthbox(void)
             healthboxAnimDone = TRUE;
     }
 
+    CreateAllBattleOrderMonIconSprites();
 
     // If healthbox and shiny anim are done
     if (healthboxAnimDone && gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].finishedShinyMonAnim
@@ -1182,6 +1144,7 @@ static void SwitchIn_TryShinyAnimShowHealthbox(void)
         UpdateHealthboxAttribute(gHealthboxSpriteIds[gActiveBattler], &gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], HEALTHBOX_ALL);
         StartHealthboxSlideIn(gActiveBattler);
         SetHealthboxSpriteVisible(gHealthboxSpriteIds[gActiveBattler]);
+        UpdateBattleOrderMonIconSprites();
         gBattlerControllerFuncs[gActiveBattler] = SwitchIn_CleanShinyAnimShowSubstitute;
     }
 }

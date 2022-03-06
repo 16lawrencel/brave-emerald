@@ -107,6 +107,7 @@ void AllocateBattleSpritesData(void)
     gBattleSpritesDataPtr->healthBoxesData = AllocZeroed(sizeof(struct BattleHealthboxInfo) * MAX_BATTLERS_COUNT);
     gBattleSpritesDataPtr->animationData = AllocZeroed(sizeof(struct BattleAnimationInfo));
     gBattleSpritesDataPtr->battleBars = AllocZeroed(sizeof(struct BattleBarInfo) * MAX_BATTLERS_COUNT);
+    gBattleSpritesDataPtr->battleOrderData = AllocZeroed(sizeof(struct BattleOrderInfo) * MAX_BATTLERS_ORDER_COUNT);
 }
 
 void FreeBattleSpritesData(void)
@@ -118,6 +119,7 @@ void FreeBattleSpritesData(void)
     FREE_AND_SET_NULL(gBattleSpritesDataPtr->animationData);
     FREE_AND_SET_NULL(gBattleSpritesDataPtr->healthBoxesData);
     FREE_AND_SET_NULL(gBattleSpritesDataPtr->battlerData);
+    FREE_AND_SET_NULL(gBattleSpritesDataPtr->battleOrderData);
     FREE_AND_SET_NULL(gBattleSpritesDataPtr);
 }
 
@@ -1227,7 +1229,7 @@ void LoadAndCreateEnemyShadowSprites(void)
 
     if (IsTripleBattle())
     {
-        battlerId = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+        battlerId = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
         gBattleSpritesDataPtr->healthBoxesData[battlerId].shadowSpriteId = CreateSprite(&gSpriteTemplate_EnemyShadow,
                                                                                         GetBattlerSpriteCoord(battlerId, BATTLER_COORD_X),
                                                                                         GetBattlerSpriteCoord(battlerId, BATTLER_COORD_Y) + 29,
@@ -1359,6 +1361,8 @@ void FreeMonSpritesGfx(void)
     gMonSpritesGfxPtr->sprites.ptr[B_POSITION_OPPONENT_LEFT] = NULL;
     gMonSpritesGfxPtr->sprites.ptr[B_POSITION_PLAYER_MIDDLE] = NULL;
     gMonSpritesGfxPtr->sprites.ptr[B_POSITION_OPPONENT_MIDDLE] = NULL;
+    gMonSpritesGfxPtr->sprites.ptr[B_POSITION_PLAYER_RIGHT] = NULL;
+    gMonSpritesGfxPtr->sprites.ptr[B_POSITION_OPPONENT_RIGHT] = NULL;
     FREE_AND_SET_NULL(gMonSpritesGfxPtr);
 }
 

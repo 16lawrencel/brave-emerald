@@ -6,6 +6,7 @@
 #include "battle_controllers.h"
 #include "battle_message.h"
 #include "battle_interface.h"
+#include "battle_order.h"
 #include "battle_setup.h"
 #include "battle_tower.h"
 #include "battle_tv.h"
@@ -526,6 +527,7 @@ static void SwitchIn_ShowHealthbox(void)
         StartHealthboxSlideIn(gActiveBattler);
         SetHealthboxSpriteVisible(gHealthboxSpriteIds[gActiveBattler]);
         CopyBattleSpriteInvisibility(gActiveBattler);
+        UpdateBattleOrderMonIconSprites();
         gBattlerControllerFuncs[gActiveBattler] = SwitchIn_ShowSubstitute;
     }
 }
@@ -1661,18 +1663,23 @@ static void OpponentHandleChoosePokemon(void)
 
         if (chosenMonId == PARTY_SIZE)
         {
-            s32 battler1, battler2, firstId, lastId;
+            s32 battler1, battler2, battler3, firstId, lastId;
 
-            if (!(gBattleTypeFlags & BATTLE_TYPE_DOUBLE))
-            {
-                battler2 = battler1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-            }
-            else
+            if (IsTripleBattle())
             {
                 battler1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
                 battler2 = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+                battler3 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
             }
-
+            else if (IsDoubleBattle())
+            {
+                battler1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+                battler3 = battler2 = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
+            }
+            else
+            {
+                battler3 = battler2 = battler1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+            }
             if (gBattleTypeFlags & (BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TOWER_LINK_MULTI))
             {
                 if (gActiveBattler == 1)
@@ -1689,7 +1696,8 @@ static void OpponentHandleChoosePokemon(void)
             {
                 if (GetMonData(&gEnemyParty[chosenMonId], MON_DATA_HP) != 0
                     && chosenMonId != gBattlerPartyIndexes[battler1]
-                    && chosenMonId != gBattlerPartyIndexes[battler2])
+                    && chosenMonId != gBattlerPartyIndexes[battler2]
+                    && chosenMonId != gBattlerPartyIndexes[battler3])
                 {
                     break;
                 }

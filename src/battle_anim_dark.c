@@ -952,11 +952,19 @@ void AnimTask_SetGrayscaleOrOriginalPal(u8 taskId)
         calcSpriteId = TRUE;
         break;
     case 6:
-        position = B_POSITION_OPPONENT_LEFT;
+        position = B_POSITION_PLAYER_RIGHT;
         calcSpriteId = TRUE;
         break;
     case 7:
+        position = B_POSITION_OPPONENT_LEFT;
+        calcSpriteId = TRUE;
+        break;
+    case 8:
         position = B_POSITION_OPPONENT_MIDDLE;
+        calcSpriteId = TRUE;
+        break;
+    case 9:
+        position = B_POSITION_OPPONENT_RIGHT;
         calcSpriteId = TRUE;
         break;
     default:

@@ -576,12 +576,18 @@ struct BattleBarInfo
     s32 currValue;
 };
 
+struct BattleOrderInfo {
+    const u8* spriteCoords;
+    u8 monSpriteId;
+};
+
 struct BattleSpriteData
 {
     struct BattleSpriteInfo *battlerData;
     struct BattleHealthboxInfo *healthBoxesData;
     struct BattleAnimationInfo *animationData;
     struct BattleBarInfo *battleBars;
+    struct BattleOrderInfo *battleOrderData;
 };
 
 #include "sprite.h"
@@ -599,6 +605,13 @@ struct MonSpritesGfx
     u8 *barFontGfx;
     void *unusedPtr;
     u16 *buffer;
+};
+
+struct SpeciesData
+{
+    u16 species;
+    u32 personality;
+    bool32 handleDeoxys;
 };
 
 // All battle variables are declared in battle_main.c
@@ -626,12 +639,19 @@ extern u8 *gBattleAnimBgTilemapBuffer;
 extern u8 gBattleBufferA[MAX_BATTLERS_COUNT][0x200];
 extern u8 gBattleBufferB[MAX_BATTLERS_COUNT][0x200];
 extern u8 gActiveBattler;
+extern u8 gCurrentBattler;
 extern u32 gBattleControllerExecFlags;
 extern u8 gBattlersCount;
 extern u16 gBattlerPartyIndexes[MAX_BATTLERS_COUNT];
 extern u8 gBattlerPositions[MAX_BATTLERS_COUNT];
 extern u8 gActionsByTurnOrder[MAX_BATTLERS_COUNT];
 extern u8 gBattlerByTurnOrder[MAX_BATTLERS_COUNT];
+extern u32 gBattlerTicks[MAX_BATTLERS_COUNT];
+extern u32 gBattlerTicks2[MAX_BATTLERS_COUNT];
+extern u8 gBattlerTurnOrder[MAX_BATTLERS_ORDER_COUNT];
+extern struct SpeciesData gSpeciesTurnOrder[MAX_BATTLERS_ORDER_COUNT];
+extern u8 gSpriteTurnOrder[MAX_BATTLERS_ORDER_COUNT];
+extern u8 gBgTurnOrder[MAX_BATTLERS_ORDER_COUNT];
 extern u8 gCurrentTurnActionNumber;
 extern u8 gCurrentActionFuncId;
 extern struct BattlePokemon gBattleMons[MAX_BATTLERS_COUNT];
