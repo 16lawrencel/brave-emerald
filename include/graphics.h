@@ -7002,6 +7002,10 @@ extern const u8 gMonBattleIcon_ZarudeDada[];
 //extern const u8 gMonBattleIcon_CalyrexShadowRider[];
 extern const u8 gMonBattleIcon_Egg[];
 
+extern const u8 battleIconBg_Gfx[];
+extern const u16 battleIconBgPlayer_Pal[];
+extern const u16 battleIconBgOpponent_Pal[];
+
 extern const u8 gMonFootprint_QuestionMark[];
 extern const u8 gMonFootprint_Bulbasaur[];
 extern const u8 gMonFootprint_Ivysaur[];

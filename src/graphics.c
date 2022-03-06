@@ -1996,6 +1996,10 @@ const u16 gMonIconPalettes[][16] =
     INCBIN_U16("graphics/pokemon/icon_palettes/pal5.gbapal"),
 };
 
+const u8 battleIconBg_Gfx[] = INCBIN_U8("graphics/pokemon/battle_icons/battle_icon_bg.4bpp");
+const u16 battleIconBgPlayer_Pal[] = INCBIN_U16("graphics/pokemon/battle_icons/battle_icon_bg_player.gbapal");
+const u16 battleIconBgOpponent_Pal[] = INCBIN_U16("graphics/pokemon/battle_icons/battle_icon_bg_opponent.gbapal");
+
 const u16 gTitleScreenBgPalettes[]         = INCBIN_U16("graphics/title_screen/pokemon_logo.gbapal",
                                                         "graphics/title_screen/rayquaza_and_clouds.gbapal");
 const u16 gTitleScreenEmeraldVersionPal[]  = INCBIN_U16("graphics/title_screen/emerald_version.gbapal");
