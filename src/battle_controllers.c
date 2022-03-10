@@ -612,75 +612,72 @@ static void InitLinkBtlControllers(void)
     }
 }
 
-bool32 IsValidForBattle(struct Pokemon *mon)
+static bool32 IsValidForBattleIncludeFainted(struct Pokemon *mon, bool8 include_fainted)
 {
     u32 species = GetMonData(mon, MON_DATA_SPECIES2);
     return (species != SPECIES_NONE && species != SPECIES_EGG
-             && GetMonData(mon, MON_DATA_HP) != 0
+             && (include_fainted || GetMonData(mon, MON_DATA_HP) != 0)
              && GetMonData(mon, MON_DATA_IS_EGG) == 0);
+}
+
+bool32 IsValidForBattle(struct Pokemon *mon)
+{
+    return IsValidForBattleIncludeFainted(mon, FALSE);
+}
+
+static s32 GetBattlePartyIndex(s32 i, bool8 include_fainted)
+{
+    s32 j;
+    for (j = 0; j < PARTY_SIZE; j++)
+    {
+        if (i < 2)
+        {
+            if (GET_BATTLER_SIDE2(i) == B_SIDE_PLAYER)
+            {
+                if (IsValidForBattleIncludeFainted(&gPlayerParty[j], include_fainted))
+                    return j;
+            }
+            else
+            {
+                if (IsValidForBattleIncludeFainted(&gEnemyParty[j], include_fainted))
+                    return j;
+            }
+        }
+        else
+        {
+            if (GET_BATTLER_SIDE2(i) == B_SIDE_PLAYER)
+            {
+                if (IsValidForBattleIncludeFainted(&gPlayerParty[j], include_fainted)
+                    && gBattlerPartyIndexes[i - 2] != j
+                    && (i < 4 || gBattlerPartyIndexes[i - 4] != j) // for triple battle
+                )
+                    return j;
+            }
+            else
+            {
+                if (IsValidForBattleIncludeFainted(&gEnemyParty[j], include_fainted)
+                    && gBattlerPartyIndexes[i - 2] != j
+                    && (i < 4 || gBattlerPartyIndexes[i - 4] != j) // for triple battle
+                )
+                    return j;
+            }
+        }
+    }
+    return PARTY_SIZE;
 }
 
 static void SetBattlePartyIds(void)
 {
-    s32 i, j;
+    s32 i, res;
 
     if (!(gBattleTypeFlags & BATTLE_TYPE_MULTI))
     {
         for (i = 0; i < gBattlersCount; i++)
         {
-            for (j = 0; j < PARTY_SIZE; j++)
-            {
-                if (i < 2)
-                {
-                    if (GET_BATTLER_SIDE2(i) == B_SIDE_PLAYER)
-                    {
-                        if (IsValidForBattle(&gPlayerParty[j]))
-                        {
-                            gBattlerPartyIndexes[i] = j;
-                            break;
-                        }
-                    }
-                    else
-                    {
-                        if (IsValidForBattle(&gEnemyParty[j]))
-                        {
-                            gBattlerPartyIndexes[i] = j;
-                            break;
-                        }
-                    }
-                }
-                else
-                {
-                    if (GET_BATTLER_SIDE2(i) == B_SIDE_PLAYER)
-                    {
-                        if (IsValidForBattle(&gPlayerParty[j])
-                            && gBattlerPartyIndexes[i - 2] != j
-                            && (i < 4 || gBattlerPartyIndexes[i - 4] != j) // for triple battle
-                        )
-                        {
-                            gBattlerPartyIndexes[i] = j;
-                            break;
-                        }
-                    }
-                    else
-                    {
-                        if (IsValidForBattle(&gEnemyParty[j])
-                            && gBattlerPartyIndexes[i - 2] != j
-                            && (i < 4 || gBattlerPartyIndexes[i - 4] != j) // for triple battle
-                        )
-                        {
-                            gBattlerPartyIndexes[i] = j;
-                            break;
-                        }
-                    }
-
-                    // No valid mons were found. Add the empty slot.
-                    if (gBattlerPartyIndexes[i - 2] == 0)
-                        gBattlerPartyIndexes[i] = 1;
-                    else
-                        gBattlerPartyIndexes[i] = 0;
-                }
-            }
+            res = GetBattlePartyIndex(i, FALSE);
+            if (res == PARTY_SIZE)
+                res = GetBattlePartyIndex(i, TRUE);
+            gBattlerPartyIndexes[i] = res;
         }
 
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)

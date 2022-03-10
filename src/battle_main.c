@@ -3318,6 +3318,17 @@ static void DoBattleIntro(void)
 
             if (gBattleTypeFlags & BATTLE_TYPE_ARENA)
                 BattleArena_InitPoints();
+
+        }
+
+        for (gActiveBattler = 0; gActiveBattler < MAX_BATTLERS_COUNT; gActiveBattler++)
+        {
+            if (gBattleMons[gActiveBattler].hp == 0
+                || gBattlerPartyIndexes[gActiveBattler] == PARTY_SIZE)
+            {
+                FaintClearSetData();
+                gAbsentBattlerFlags |= gBitTable[gActiveBattler];
+            }
         }
 
         if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
