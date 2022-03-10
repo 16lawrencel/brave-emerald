@@ -16,6 +16,8 @@
 
 #define IS_BATTLER_ABSENT(battler)        ((gAbsentBattlerFlags) & (gBitTable[battler]))
 
+#define IS_BATTLER_ABSENT(battler)        ((gAbsentBattlerFlags) & (gBitTable[battler]))
+
 #define GET_BATTLER_POSITION(battler)     (gBattlerPositions[battler])
 #define GET_BATTLER_SIDE(battler)         (GetBattlerPosition(battler) & BIT_SIDE)
 #define GET_BATTLER_SIDE2(battler)        (GET_BATTLER_POSITION(battler) & BIT_SIDE)
