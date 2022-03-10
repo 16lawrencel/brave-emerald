@@ -602,73 +602,71 @@ static void InitLinkBtlControllers(void)
     }
 }
 
+static s32 GetBattlePartyIndex(s32 i, bool8 include_fainted)
+{
+    s32 j;
+    for (j = 0; j < PARTY_SIZE; j++)
+    {
+        if (i < 2)
+        {
+            if (GET_BATTLER_SIDE2(i) == B_SIDE_PLAYER)
+            {
+                if ((include_fainted || GetMonData(&gPlayerParty[j], MON_DATA_HP) != 0)
+                    && GetMonData(&gPlayerParty[j], MON_DATA_SPECIES2) != SPECIES_NONE
+                    && GetMonData(&gPlayerParty[j], MON_DATA_SPECIES2) != SPECIES_EGG
+                    && GetMonData(&gPlayerParty[j], MON_DATA_IS_EGG) == 0)
+                    return j;
+            }
+            else
+            {
+                if ((include_fainted || GetMonData(&gEnemyParty[j], MON_DATA_HP) != 0)
+                    && GetMonData(&gEnemyParty[j], MON_DATA_SPECIES2) != SPECIES_NONE
+                    && GetMonData(&gEnemyParty[j], MON_DATA_SPECIES2) != SPECIES_EGG
+                    && GetMonData(&gEnemyParty[j], MON_DATA_IS_EGG) == 0)
+                    return j;
+            }
+        }
+        else
+        {
+            if (GET_BATTLER_SIDE2(i) == B_SIDE_PLAYER)
+            {
+                if ((include_fainted || GetMonData(&gPlayerParty[j], MON_DATA_HP) != 0)
+                    && GetMonData(&gPlayerParty[j], MON_DATA_SPECIES2) != SPECIES_NONE
+                    && GetMonData(&gPlayerParty[j], MON_DATA_SPECIES2) != SPECIES_EGG
+                    && GetMonData(&gPlayerParty[j], MON_DATA_IS_EGG) == 0
+                    && gBattlerPartyIndexes[i - 2] != j
+                    && (i < 4 || gBattlerPartyIndexes[i - 4] != j) // for triple battle
+                )
+                    return j;
+            }
+            else
+            {
+                if ((include_fainted || GetMonData(&gEnemyParty[j], MON_DATA_HP) != 0)
+                    && GetMonData(&gEnemyParty[j], MON_DATA_SPECIES2) != SPECIES_NONE
+                    && GetMonData(&gEnemyParty[j], MON_DATA_SPECIES2) != SPECIES_EGG
+                    && GetMonData(&gEnemyParty[j], MON_DATA_IS_EGG) == 0
+                    && gBattlerPartyIndexes[i - 2] != j
+                    && (i < 4 || gBattlerPartyIndexes[i - 4] != j) // for triple battle
+                )
+                    return j;
+            }
+        }
+    }
+    return PARTY_SIZE;
+}
+
 static void SetBattlePartyIds(void)
 {
-    s32 i, j;
+    s32 i, res;
 
     if (!(gBattleTypeFlags & BATTLE_TYPE_MULTI))
     {
         for (i = 0; i < gBattlersCount; i++)
         {
-            for (j = 0; j < PARTY_SIZE; j++)
-            {
-                if (i < 2)
-                {
-                    if (GET_BATTLER_SIDE2(i) == B_SIDE_PLAYER)
-                    {
-                        if (GetMonData(&gPlayerParty[j], MON_DATA_HP) != 0
-                         && GetMonData(&gPlayerParty[j], MON_DATA_SPECIES2) != SPECIES_NONE
-                         && GetMonData(&gPlayerParty[j], MON_DATA_SPECIES2) != SPECIES_EGG
-                         && GetMonData(&gPlayerParty[j], MON_DATA_IS_EGG) == 0)
-                        {
-                            gBattlerPartyIndexes[i] = j;
-                            break;
-                        }
-                    }
-                    else
-                    {
-                        if (GetMonData(&gEnemyParty[j], MON_DATA_HP) != 0
-                         && GetMonData(&gEnemyParty[j], MON_DATA_SPECIES2) != SPECIES_NONE
-                         && GetMonData(&gEnemyParty[j], MON_DATA_SPECIES2) != SPECIES_EGG
-                         && GetMonData(&gEnemyParty[j], MON_DATA_IS_EGG) == 0)
-                        {
-                            gBattlerPartyIndexes[i] = j;
-                            break;
-                        }
-                    }
-                }
-                else
-                {
-                    if (GET_BATTLER_SIDE2(i) == B_SIDE_PLAYER)
-                    {
-                        if (GetMonData(&gPlayerParty[j], MON_DATA_HP) != 0
-                         && GetMonData(&gPlayerParty[j], MON_DATA_SPECIES) != SPECIES_NONE  // Probably a typo by Game Freak. The rest use SPECIES2.
-                         && GetMonData(&gPlayerParty[j], MON_DATA_SPECIES2) != SPECIES_EGG
-                         && GetMonData(&gPlayerParty[j], MON_DATA_IS_EGG) == 0
-                         && gBattlerPartyIndexes[i - 2] != j
-                         && (i < 4 || gBattlerPartyIndexes[i - 4] != j) // for triple battle
-                        )
-                        {
-                            gBattlerPartyIndexes[i] = j;
-                            break;
-                        }
-                    }
-                    else
-                    {
-                        if (GetMonData(&gEnemyParty[j], MON_DATA_HP) != 0
-                         && GetMonData(&gEnemyParty[j], MON_DATA_SPECIES2) != SPECIES_NONE
-                         && GetMonData(&gEnemyParty[j], MON_DATA_SPECIES2) != SPECIES_EGG
-                         && GetMonData(&gEnemyParty[j], MON_DATA_IS_EGG) == 0
-                         && gBattlerPartyIndexes[i - 2] != j
-                         && (i < 4 || gBattlerPartyIndexes[i - 4] != j) // for triple battle
-                        )
-                        {
-                            gBattlerPartyIndexes[i] = j;
-                            break;
-                        }
-                    }
-                }
-            }
+            res = GetBattlePartyIndex(i, FALSE);
+            if (res == PARTY_SIZE)
+                res = GetBattlePartyIndex(i, TRUE);
+            gBattlerPartyIndexes[i] = res;
         }
 
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
