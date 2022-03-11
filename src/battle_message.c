@@ -19,6 +19,7 @@
 #include "strings.h"
 #include "text.h"
 #include "trainer_hill.h"
+#include "util.h"
 #include "window.h"
 #include "constants/abilities.h"
 #include "constants/battle_dome.h"
@@ -400,6 +401,7 @@ static const u8 sText_LinkTrainerMultiSentOutPkmn[] = _("{B_LINK_SCR_TRAINER_NAM
 static const u8 sText_GoPkmn[] = _("Go! {B_PLAYER_MON1_NAME}!");
 static const u8 sText_GoTwoPkmn[] = _("Go! {B_PLAYER_MON1_NAME} and\n{B_PLAYER_MON2_NAME}!");
 static const u8 sText_GoThreePkmn[] = _("Go! {B_PLAYER_MON1_NAME}, {B_PLAYER_MON2_NAME} and\n{B_PLAYER_MON3_NAME}!");
+static const u8 sText_GoError[] = _("Yikes, an error occurred");
 static const u8 sText_GoPkmn2[] = _("Go! {B_BUFF1}!");
 static const u8 sText_DoItPkmn[] = _("Do it! {B_BUFF1}!");
 static const u8 sText_GoForItPkmn[] = _("Go for it, {B_BUFF1}!");
@@ -2571,6 +2573,35 @@ static const struct BattleWindowText *const sBattleTextOnWindowsInfo[] =
 
 static const u8 sRecordedBattleTextSpeeds[] = {8, 4, 1, 0};
 
+static u8 * GetBattlerSendoutStringPtr(bool8 isPlayer)
+{
+    u8 i;
+    u8 numBattlers = 0;
+    for (i = 0; i < MAX_BATTLERS_COUNT / 2; i++)
+    {
+        if (!IS_BATTLER_ABSENT(gActiveBattler))
+            numBattlers++;
+        gActiveBattler = BATTLER_TO_RIGHT(gActiveBattler);
+    }
+
+    if (numBattlers == 1)
+    {
+        if (isPlayer) return (u8*)sText_GoPkmn;
+        return (u8*)sText_Trainer1SentOutPkmn;
+    }
+    if (numBattlers == 2)
+    {
+        if (isPlayer) return (u8*)sText_GoTwoPkmn;
+        return (u8*)sText_Trainer1SentOutTwoPkmn;
+    }
+    if (numBattlers == 3)
+    {
+        if (isPlayer) return (u8*)sText_GoThreePkmn;
+        return (u8*)sText_Trainer1SentOutThreePkmn;
+    }
+    return (u8*)sText_GoError;
+}
+
 void BufferStringBattle(u16 stringID)
 {
     s32 i;
@@ -2660,11 +2691,11 @@ void BufferStringBattle(u16 stringID)
                 else if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
                     stringPtr = sText_LinkPartnerSentOutPkmnGoPkmn;
                 else
-                    stringPtr = sText_GoTwoPkmn;
+                    stringPtr = GetBattlerSendoutStringPtr(TRUE);
             }
             else if (gBattleTypeFlags & BATTLE_TYPE_TRIPLE)
             {
-                stringPtr = sText_GoThreePkmn;
+                stringPtr = GetBattlerSendoutStringPtr(TRUE);
             }
             else
             {
@@ -2686,11 +2717,11 @@ void BufferStringBattle(u16 stringID)
                 else if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK))
                     stringPtr = sText_LinkTrainerSentOutTwoPkmn;
                 else
-                    stringPtr = sText_Trainer1SentOutTwoPkmn;
+                    stringPtr = GetBattlerSendoutStringPtr(FALSE);
             }
             else if (gBattleTypeFlags & BATTLE_TYPE_TRIPLE)
             {
-                stringPtr = sText_Trainer1SentOutThreePkmn;
+                stringPtr = GetBattlerSendoutStringPtr(FALSE);
             }
             else
             {
