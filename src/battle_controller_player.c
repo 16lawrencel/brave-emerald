@@ -1158,11 +1158,10 @@ static void Intro_WaitForShinyAnimAndHealthbox(void)
             healthboxAnimDone = TRUE;
     }
 
-    CreateAllBattleOrderMonIconSprites();
-
     // If healthbox and shiny anim are done
     if (healthboxAnimDone && FinishedAllShinyMonAnims())
     {
+        CreateAllBattleOrderMonIconSprites();
         ResetShinyAnims();
         gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].introEndDelay = 3;
         gBattlerControllerFuncs[gActiveBattler] = Intro_DelayAndEnd;
