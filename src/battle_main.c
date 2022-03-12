@@ -5078,6 +5078,7 @@ static void FreeResetData_ReturnToOvOrDoEvolutions(void)
     }
 
     FreeAllWindowBuffers();
+    FreeBattleOrderMonIconSprites();
     if (!(gBattleTypeFlags & BATTLE_TYPE_LINK))
     {
         FreeMonSpritesGfx();

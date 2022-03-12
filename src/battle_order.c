@@ -304,3 +304,16 @@ void UpdateBattleOrderMonIconSprites()
         gSpeciesTurnOrder[i] = getSpeciesData(gBattleMons[battlerId]);
     }
 }
+
+void FreeBattleOrderMonIconSprites()
+{
+    u8 i;
+
+    FreeMonIconPalettes();
+
+    for (i = 0; i < MAX_BATTLERS_ORDER_COUNT; i++)
+    {
+        FreeAndDestroyMonIconSprite(&gSprites[gSpriteTurnOrder[i]]);
+        FreeAndDestroyMonIconSprite(&gSprites[gBgTurnOrder[i]]);
+    }
+}
