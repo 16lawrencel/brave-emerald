@@ -3832,6 +3832,7 @@ static void Cmd_getexp(void)
     s32 sentIn;
     s32 viaExpShare = 0;
     u32 *exp = &gBattleStruct->expValue;
+    u8 battler;
 
     gBattlerFainted = GetBattlerForBattleScript(gBattlescriptCurrInstr[1]);
     sentIn = gSentPokesToOpponent[(gBattlerFainted & 2) >> 1];
@@ -4089,24 +4090,22 @@ static void Cmd_getexp(void)
                 AdjustFriendship(&gPlayerParty[gBattleStruct->expGetterMonId], FRIENDSHIP_EVENT_GROW_LEVEL);
 
                 // update battle mon structure after level up
-                if (gBattlerPartyIndexes[0] == gBattleStruct->expGetterMonId && gBattleMons[0].hp)
-                    battlerId = 0;
-                else if (gBattlerPartyIndexes[2] == gBattleStruct->expGetterMonId && gBattleMons[2].hp && (gBattleTypeFlags & BATTLE_TYPE_DOUBLE))
-                    battlerId = 2;
-
-                if (battlerId != 0xFF)
+                for (battler = 0; battler < MAX_BATTLERS_COUNT; battler += 2)
                 {
-                    gBattleMons[battlerId].level = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_LEVEL);
-                    gBattleMons[battlerId].hp = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_HP);
-                    gBattleMons[battlerId].maxHP = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_MAX_HP);
-                    gBattleMons[battlerId].attack = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_ATK);
-                    gBattleMons[battlerId].defense = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_DEF);
-                    gBattleMons[battlerId].speed = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPEED);
-                    gBattleMons[battlerId].spAttack = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPATK);
-                    gBattleMons[battlerId].spDefense = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPDEF);
+                    if (gBattlerPartyIndexes[battler] == gBattleStruct->expGetterMonId && gBattleMons[battler].hp)
+                    {
+                        gBattleMons[battler].level = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_LEVEL);
+                        gBattleMons[battler].hp = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_HP);
+                        gBattleMons[battler].maxHP = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_MAX_HP);
+                        gBattleMons[battler].attack = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_ATK);
+                        gBattleMons[battler].defense = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_DEF);
+                        gBattleMons[battler].speed = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPEED);
+                        gBattleMons[battler].spAttack = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPATK);
+                        gBattleMons[battler].spDefense = GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_SPDEF);
 
-                    if (gStatuses3[battlerId] & STATUS3_POWER_TRICK)
-                        SWAP(gBattleMons[battlerId].attack, gBattleMons[battlerId].defense, temp);
+                        if (gStatuses3[battler] & STATUS3_POWER_TRICK)
+                            SWAP(gBattleMons[battler].attack, gBattleMons[battler].defense, temp);
+                    }
                 }
 
                 gBattleScripting.getexpState = 5;
@@ -6392,6 +6391,7 @@ static void Cmd_handlelearnnewmove(void)
 {
     const u8 *learnedMovePtr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
     const u8 *nothingToLearnPtr = T1_READ_PTR(gBattlescriptCurrInstr + 5);
+    u8 battlerPosition;
 
     u16 learnMove = MonTryLearningNewMove(&gPlayerParty[gBattleStruct->expGetterMonId], gBattlescriptCurrInstr[9]);
     while (learnMove == MON_ALREADY_KNOWS_MOVE)
@@ -6407,16 +6407,9 @@ static void Cmd_handlelearnnewmove(void)
     }
     else
     {
-        gActiveBattler = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
-
-        if (gBattlerPartyIndexes[gActiveBattler] == gBattleStruct->expGetterMonId
-            && !(gBattleMons[gActiveBattler].status2 & STATUS2_TRANSFORMED))
+        for (battlerPosition = 0; battlerPosition < MAX_BATTLERS_COUNT; battlerPosition += 2)
         {
-            GiveMoveToBattleMon(&gBattleMons[gActiveBattler], learnMove);
-        }
-        if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
-        {
-            gActiveBattler = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
+            gActiveBattler = GetBattlerAtPosition(battlerPosition);
             if (gBattlerPartyIndexes[gActiveBattler] == gBattleStruct->expGetterMonId
                 && !(gBattleMons[gActiveBattler].status2 & STATUS2_TRANSFORMED))
             {
@@ -7804,12 +7797,17 @@ static void Cmd_various(void)
         gSpecialStatuses[gActiveBattler].switchInAbilityDone = FALSE;
         break;
     case VARIOUS_UPDATE_CHOICE_MOVE_ON_LVL_UP:
-        if (gBattlerPartyIndexes[0] == gBattleStruct->expGetterMonId || gBattlerPartyIndexes[2] == gBattleStruct->expGetterMonId)
+        if (gBattlerPartyIndexes[B_POSITION_PLAYER_LEFT] == gBattleStruct->expGetterMonId
+            || gBattlerPartyIndexes[B_POSITION_PLAYER_MIDDLE] == gBattleStruct->expGetterMonId
+            || gBattlerPartyIndexes[B_POSITION_PLAYER_RIGHT] == gBattleStruct->expGetterMonId
+        )
         {
-            if (gBattlerPartyIndexes[0] == gBattleStruct->expGetterMonId)
-                gActiveBattler = 0;
+            if (gBattlerPartyIndexes[B_POSITION_PLAYER_LEFT] == gBattleStruct->expGetterMonId)
+                gActiveBattler = B_POSITION_PLAYER_LEFT;
+            else if (gBattlerPartyIndexes[B_POSITION_PLAYER_MIDDLE] == gBattleStruct->expGetterMonId)
+                gActiveBattler = B_POSITION_PLAYER_MIDDLE;
             else
-                gActiveBattler = 2;
+                gActiveBattler = B_POSITION_PLAYER_RIGHT;
 
             for (i = 0; i < MAX_MON_MOVES; i++)
             {
