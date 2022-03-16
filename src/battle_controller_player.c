@@ -1106,7 +1106,7 @@ static bool8 FinishedAllShinyMonAnims(void)
     u8 battler = gActiveBattler;
     for (i = 0; i < MAX_BATTLERS_COUNT / 2; i++)
     {
-        if (!IS_BATTLER_ABSENT(battler) && !gBattleSpritesDataPtr->healthBoxesData[battler].finishedShinyMonAnim)
+        if (!IS_BATTLER_INVALID_OR_ABSENT(battler) && !gBattleSpritesDataPtr->healthBoxesData[battler].finishedShinyMonAnim)
             return FALSE;
         battler = BATTLER_TO_RIGHT(battler);
     }
@@ -1124,7 +1124,7 @@ static void ResetShinyAnims() {
         gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].triedShinyMonAnim = FALSE;
         gBattleSpritesDataPtr->healthBoxesData[gActiveBattler].finishedShinyMonAnim = FALSE;
 
-        if (!IS_BATTLER_ABSENT(gActiveBattler))
+        if (!IS_BATTLER_INVALID_OR_ABSENT(gActiveBattler))
         {
             HandleLowHpMusicChange(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], gActiveBattler);
         }
@@ -1190,7 +1190,7 @@ static void Intro_TryShinyAnimShowHealthbox(void)
 
     for (i = 0; i < MAX_BATTLERS_COUNT / 2; i++)
     {
-        if (!IS_BATTLER_ABSENT(gActiveBattler))
+        if (!IS_BATTLER_INVALID_OR_ABSENT(gActiveBattler))
         {
             TryShinyAnimationHelper(gActiveBattler);
         }
@@ -1206,7 +1206,7 @@ static void Intro_TryShinyAnimShowHealthbox(void)
         {
             for (i = 0; i < MAX_BATTLERS_COUNT / 2; i++)
             {
-                if (!IS_BATTLER_ABSENT(gActiveBattler))
+                if (!IS_BATTLER_INVALID_OR_ABSENT(gActiveBattler))
                 {
                     StartHealthboxSlideInHelper(gActiveBattler);
                 }
@@ -1272,7 +1272,7 @@ static void Intro_TryShinyAnimShowHealthbox(void)
     {
         for (i = 0; i < MAX_BATTLERS_COUNT / 2; i++)
         {
-            if (!IS_BATTLER_ABSENT(gActiveBattler))
+            if (!IS_BATTLER_INVALID_OR_ABSENT(gActiveBattler))
             {
                 DestroySprite(&gSprites[gBattleControllerData[gActiveBattler]]);
             }
@@ -3274,7 +3274,7 @@ static void Task_StartSendOutAnim(u8 taskId)
         {
             for (i = 0; i < MAX_BATTLERS_COUNT / 2; i++)
             {
-                if (!IS_BATTLER_ABSENT(gActiveBattler))
+                if (!IS_BATTLER_INVALID_OR_ABSENT(gActiveBattler))
                 {
                     gBattleResources->bufferA[gActiveBattler][1] = gBattlerPartyIndexes[gActiveBattler];
                     BattleLoadPlayerMonSpriteGfx(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], gActiveBattler);
