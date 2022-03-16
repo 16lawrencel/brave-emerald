@@ -2064,7 +2064,7 @@ static u8 * GetBattlerSendoutStringPtr(bool8 isPlayer)
     u8 numBattlers = 0;
     for (i = 0; i < MAX_BATTLERS_COUNT / 2; i++)
     {
-        if (!IS_BATTLER_ABSENT(gActiveBattler))
+        if (!IS_BATTLER_INVALID_OR_ABSENT(gActiveBattler))
             numBattlers++;
         gActiveBattler = BATTLER_TO_RIGHT(gActiveBattler);
     }

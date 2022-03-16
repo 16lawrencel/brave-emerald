@@ -13,7 +13,9 @@
 #include "battle_bg.h"
 #include "pokeball.h"
 
-#define IS_BATTLER_ABSENT(battler)        ((gAbsentBattlerFlags) & (gBitTable[battler]))
+#define IS_BATTLER_ABSENT(battler)            ((gAbsentBattlerFlags) & (gBitTable[battler]))
+#define IS_BATTLER_INVALID(battler)           ((!(gBattleTypeFlags & BATTLE_TYPE_TRIPLE) && ((!(gBattleTypeFlags & BATTLE_TYPE_DOUBLE) && battler >= 2) || (battler >= 4))))
+#define IS_BATTLER_INVALID_OR_ABSENT(battler) ((IS_BATTLER_INVALID(battler)) || (IS_BATTLER_ABSENT(battler)))
 
 #define GET_BATTLER_POSITION(battler)     (gBattlerPositions[battler])
 #define GET_BATTLER_SIDE(battler)         (GetBattlerPosition(battler) & BIT_SIDE)
