@@ -3480,6 +3480,17 @@ static void BattleIntroDrawTrainersOrMonsSprites(void)
         if (gBattleTypeFlags & BATTLE_TYPE_ARENA)
             BattleArena_InitPoints();
     }
+
+    for (gActiveBattler = 0; gActiveBattler < gBattlersCount; gActiveBattler++)
+    {
+        if (gBattleMons[gActiveBattler].hp == 0
+            || gBattlerPartyIndexes[gActiveBattler] == PARTY_SIZE)
+        {
+            FaintClearSetData();
+            gAbsentBattlerFlags |= gBitTable[gActiveBattler];
+        }
+    }
+
     gBattleMainFunc = BattleIntroDrawPartySummaryScreens;
 }
 
@@ -5067,6 +5078,7 @@ static void FreeResetData_ReturnToOvOrDoEvolutions(void)
     }
 
     FreeAllWindowBuffers();
+    FreeBattleOrderMonIconSprites();
     if (!(gBattleTypeFlags & BATTLE_TYPE_LINK))
     {
         FreeMonSpritesGfx();
