@@ -4426,15 +4426,26 @@ static void Cmd_moveend(void)
             gBattleScripting.moveendState++;
             break;
         case MOVEEND_NEXT_TARGET: // For moves hitting two opposing Pokemon.
-            if (!(gHitMarker & HITMARKER_UNABLE_TO_USE_MOVE) && gBattleTypeFlags & BATTLE_TYPE_DOUBLE
+            if (!(gHitMarker & HITMARKER_UNABLE_TO_USE_MOVE) && gBattleTypeFlags & (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TRIPLE)
                 && !gProtectStructs[gBattlerAttacker].chargingTurn && gBattleMoves[gCurrentMove].target == MOVE_TARGET_BOTH
                 && !(gHitMarker & HITMARKER_NO_ATTACKSTRING))
             {
-                u8 battlerId = GetBattlerAtPosition(BATTLE_PARTNER(GetBattlerPosition(gBattlerTarget)));
-                if (gBattleMons[battlerId].hp != 0)
+                u8 battlerId = BATTLER_TO_RIGHT(gBattlerTarget);
+                while (
+                    battlerId != gBattlerOriginalTarget
+                    && (
+                        IS_BATTLER_INVALID(battlerId)
+                        || !TargetValidIfOppositePosition(battlerId, gBattlerAttacker)
+                        || gBattleMons[battlerId].hp == 0
+                    )
+                )
+                {
+                    battlerId = BATTLER_TO_RIGHT(battlerId);
+                }
+
+                if (battlerId != gBattlerOriginalTarget)
                 {
                     gBattlerTarget = battlerId;
-                    gHitMarker |= HITMARKER_NO_ATTACKSTRING;
                     gBattleScripting.moveendState = 0;
                     MoveValuesCleanUp();
                     BattleScriptPush(gBattleScriptsForMoveEffects[gBattleMoves[gCurrentMove].effect]);
