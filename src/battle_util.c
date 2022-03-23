@@ -476,6 +476,7 @@ void HandleAction_UseMove(void)
             gBattlerTarget = GetNonAbsentTarget(gBattlerTarget);
         }
     }
+    gBattlerOriginalTarget = gBattlerTarget;
 
     if (gBattleTypeFlags & BATTLE_TYPE_PALACE && gProtectStructs[gBattlerAttacker].palaceUnableToUseMove)
     {

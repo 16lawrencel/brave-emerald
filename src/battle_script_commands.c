@@ -5253,31 +5253,28 @@ static void Cmd_moveend(void)
                 gProtectStructs[gBattlerAttacker].targetAffected = TRUE;
         
             if (!(gHitMarker & HITMARKER_UNABLE_TO_USE_MOVE)
-                && gBattleTypeFlags & BATTLE_TYPE_DOUBLE
+                && (gBattleTypeFlags & (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TRIPLE))
                 && !gProtectStructs[gBattlerAttacker].chargingTurn
                 && (gBattleMoves[gCurrentMove].target == MOVE_TARGET_BOTH || gBattleMoves[gCurrentMove].target == MOVE_TARGET_FOES_AND_ALLY)
                 && !(gHitMarker & HITMARKER_NO_ATTACKSTRING))
             {
                 u8 battlerId;
 
-                if (gBattleMoves[gCurrentMove].target == MOVE_TARGET_FOES_AND_ALLY)
+                gHitMarker |= HITMARKER_NO_PPDEDUCT;
+                for (battlerId = gBattlerTarget + 1; battlerId != gBattlerOriginalTarget; battlerId=(battlerId+1) % gBattlersCount)
                 {
-                    gHitMarker |= HITMARKER_NO_PPDEDUCT;
-                    for (battlerId = gBattlerTarget + 1; battlerId < gBattlersCount; battlerId++)
-                    {
-                        if (battlerId == gBattlerAttacker)
-                            continue;
-                        if (IsBattlerAlive(battlerId))
-                            break;
-                    }
-                }
-                else
-                {
-                    battlerId = GetBattlerAtPosition(BATTLE_PARTNER(GetBattlerPosition(gBattlerTarget)));
-                    gHitMarker |= HITMARKER_NO_ATTACKSTRING;
+                    if (battlerId == gBattlerAttacker)
+                        continue;
+                    if (
+                        gBattleMoves[gCurrentMove].target == MOVE_TARGET_BOTH
+                        && GET_BATTLER_SIDE2(battlerId) == GET_BATTLER_SIDE2(gBattlerAttacker)
+                    )
+                        continue;
+                    if (IsBattlerAlive(battlerId))
+                        break;
                 }
 
-                if (IsBattlerAlive(battlerId))
+                if (battlerId != gBattlerOriginalTarget)
                 {
                     gBattlerTarget = battlerId;
                     gBattleScripting.moveendState = 0;

@@ -175,6 +175,7 @@ EWRAM_DATA s32 gTakenDmg[MAX_BATTLERS_COUNT] = {0};
 EWRAM_DATA u16 gLastUsedItem = 0;
 EWRAM_DATA u16 gLastUsedAbility = 0;
 EWRAM_DATA u8 gBattlerAttacker = 0;
+EWRAM_DATA u8 gBattlerOriginalTarget = 0;
 EWRAM_DATA u8 gBattlerTarget = 0;
 EWRAM_DATA u8 gBattlerFainted = 0;
 EWRAM_DATA u8 gEffectBattler = 0;
@@ -2932,6 +2933,7 @@ static void BattleStartClearSetData(void)
     gLastUsedBall = 0;
 
     gBattlerAttacker = 0;
+    gBattlerOriginalTarget = 0;
     gBattlerTarget = 0;
     gBattleWeather = 0;
     gHitMarker = 0;

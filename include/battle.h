@@ -868,6 +868,7 @@ extern s32 gTakenDmg[MAX_BATTLERS_COUNT];
 extern u16 gLastUsedItem;
 extern u16 gLastUsedAbility;
 extern u8 gBattlerAttacker;
+extern u8 gBattlerOriginalTarget;
 extern u8 gBattlerTarget;
 extern u8 gBattlerFainted;
 extern u8 gEffectBattler;
