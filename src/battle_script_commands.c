@@ -5259,9 +5259,8 @@ static void Cmd_moveend(void)
                 && !(gHitMarker & HITMARKER_NO_ATTACKSTRING))
             {
                 u8 battlerId;
-
                 gHitMarker |= HITMARKER_NO_PPDEDUCT;
-                for (battlerId = gBattlerTarget + 1; battlerId != gBattlerOriginalTarget; battlerId=(battlerId+1) % gBattlersCount)
+                for (battlerId = (gBattlerTarget + 1) % gBattlersCount; battlerId != gBattlerOriginalTarget; battlerId = (battlerId+1) % gBattlersCount)
                 {
                     if (battlerId == gBattlerAttacker)
                         continue;
@@ -5269,6 +5268,8 @@ static void Cmd_moveend(void)
                         gBattleMoves[gCurrentMove].target == MOVE_TARGET_BOTH
                         && GET_BATTLER_SIDE2(battlerId) == GET_BATTLER_SIDE2(gBattlerAttacker)
                     )
+                        continue;
+                    if (!TargetValidIfOppositePosition(battlerId, gBattlerAttacker))
                         continue;
                     if (IsBattlerAlive(battlerId))
                         break;

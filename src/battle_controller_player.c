@@ -9,6 +9,7 @@
 #include "battle_order.h"
 #include "battle_setup.h"
 #include "battle_tv.h"
+#include "battle_util.h"
 #include "bg.h"
 #include "data.h"
 #include "item.h"
@@ -354,12 +355,15 @@ static bool8 IsValidTarget(u8 target, u16 move)
     )
         return FALSE;
 
+    if (!TargetValidIfOppositePosition(target, gActiveBattler))
+        return FALSE;
+
     switch (GetBattlerPosition(target))
     {
         case B_POSITION_PLAYER_LEFT:
         case B_POSITION_PLAYER_MIDDLE:
         case B_POSITION_PLAYER_RIGHT:
-            if (!IS_OPPOSITE_SIDE(target, gActiveBattler))
+            if (!IS_OPPOSITE_POSITION(target, gActiveBattler))
             {
                 if (gActiveBattler != target)
                     return TRUE;
@@ -370,11 +374,7 @@ static bool8 IsValidTarget(u8 target, u16 move)
         case B_POSITION_OPPONENT_LEFT:
         case B_POSITION_OPPONENT_MIDDLE:
         case B_POSITION_OPPONENT_RIGHT:
-            // If target is opposite side of battler, cannot target
-            // Unless there is one opponent left, in which case we let the opponent target
-            // TODO: abilities that bypass this condition
-            if (!IS_OPPOSITE_SIDE(target, gActiveBattler) || GetNumberOpponentMons() < 2)
-                return TRUE;
+            return TRUE;
             break;
     }
 

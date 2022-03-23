@@ -233,17 +233,31 @@ bool32 IsAffectedByFollowMe(u32 battlerAtk, u32 defSide, u32 move)
     return TRUE;
 }
 
+u8 CountNumberMonsOnSide(u8 battlerSide)
+{
+    return (u8)(!IS_BATTLER_INVALID_OR_ABSENT(0 + battlerSide))
+    + (u8)(!IS_BATTLER_INVALID_OR_ABSENT(2 + battlerSide))
+    + (u8)(!IS_BATTLER_INVALID_OR_ABSENT(4 + battlerSide));
+}
+
+bool8 TargetValidIfOppositePosition(u8 target, u8 battler)
+{
+    if (!IS_OPPOSITE_POSITION(target, battler))
+        return TRUE;
+    return CountNumberMonsOnSide(GET_BATTLER_SIDE(target)) < 2;
+}
+
 static u8 GetNonAbsentTarget(u8 target)
 {
     /*
-    Returns a target that's not absent.
+    Returns a target that's not absent that's also not on opposite side (unless possible).
     While the target is absent, picks a random direction and
     keeps moving in that direction until it finds a non-absent target.
     TODO: what if there is no possible target? And triple battle range limit
     */
 
     bool8 randomDirection = Random() & 1;
-    while (gAbsentBattlerFlags & gBitTable[target])
+    while (!IS_BATTLER_INVALID_OR_ABSENT(target) && TargetValidIfOppositePosition(target, gActiveBattler))
     {
         if (randomDirection)
             target = BATTLER_TO_RIGHT(target);
