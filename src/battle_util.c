@@ -247,6 +247,14 @@ bool8 TargetValidIfOppositePosition(u8 target, u8 battler)
     return CountNumberMonsOnSide(GET_BATTLER_SIDE(target)) < 2;
 }
 
+u8 GetNonAbsentBattler(u8 battlerId)
+{
+    u8 nextBattlerId = battlerId;
+    while (IS_BATTLER_INVALID_OR_ABSENT(nextBattlerId) || !TargetValidIfOppositePosition(nextBattlerId, gActiveBattler))
+        nextBattlerId = BATTLER_TO_RIGHT(nextBattlerId);
+    return nextBattlerId;
+}
+
 static u8 GetNonAbsentTarget(u8 target)
 {
     /*
@@ -257,7 +265,7 @@ static u8 GetNonAbsentTarget(u8 target)
     */
 
     bool8 randomDirection = Random() & 1;
-    while (!IS_BATTLER_INVALID_OR_ABSENT(target) && TargetValidIfOppositePosition(target, gActiveBattler))
+    while (IS_BATTLER_INVALID_OR_ABSENT(target) || !TargetValidIfOppositePosition(target, gActiveBattler))
     {
         if (randomDirection)
             target = BATTLER_TO_RIGHT(target);

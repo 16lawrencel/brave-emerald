@@ -587,8 +587,10 @@ static void HandleInputChooseMove(void)
         if (moveTarget & MOVE_TARGET_USER)
             gMultiUsePlayerCursor = gActiveBattler;
         else
-            // TODO: change for triple battle
+        {
             gMultiUsePlayerCursor = GetBattlerAtPosition((GetBattlerPosition(gActiveBattler) & BIT_SIDE) ^ BIT_SIDE);
+            gMultiUsePlayerCursor = GetNonAbsentBattler(gMultiUsePlayerCursor);
+        }
 
         if (!gBattleResources->bufferA[gActiveBattler][1]) // not a double or triple battle
         {
@@ -609,7 +611,8 @@ static void HandleInputChooseMove(void)
             else if (!(moveTarget & (MOVE_TARGET_USER | MOVE_TARGET_USER_OR_SELECTED)) && CountAliveMonsInBattle(BATTLE_ALIVE_EXCEPT_ACTIVE) <= 1)
             {
                 gMultiUsePlayerCursor = GetDefaultMoveTarget(gActiveBattler);
-                canSelectTarget = 0;
+                gMultiUsePlayerCursor = GetNonAbsentBattler(gMultiUsePlayerCursor);
+                canSelectTarget = FALSE;
             }
 
             // Show all available targets for multi-target moves
@@ -660,6 +663,7 @@ static void HandleInputChooseMove(void)
                 gMultiUsePlayerCursor = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
             else
                 gMultiUsePlayerCursor = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+            gMultiUsePlayerCursor = GetNonAbsentBattler(gMultiUsePlayerCursor);
 
             gSprites[gBattlerSpriteIds[gMultiUsePlayerCursor]].callback = SpriteCb_ShowAsMoveTarget;
             break;

@@ -183,6 +183,7 @@ bool32 CanBeParalyzed(u8 battlerId);
 bool32 CanBeFrozen(u8 battlerId);
 bool32 CanBeConfused(u8 battlerId);
 bool32 IsBattlerTerrainAffected(u8 battlerId, u32 terrainFlag);
+u8 GetNonAbsentBattler(u8 battlerId);
 u8 GetRandomTarget(u8 battlerSide);
 u8 CountNumberMonsOnSide(u8 battlerSide);
 bool8 TargetValidIfOppositePosition(u8 target, u8 battler);
