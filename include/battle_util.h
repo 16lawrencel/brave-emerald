@@ -97,5 +97,7 @@ void HandleAction_RunBattleScript(void);
 u8 GetMoveTarget(u16 move, u8 setTarget);
 u8 IsMonDisobedient(void);
 u8 GetRandomTarget(u8 battlerSide);
+u8 CountNumberMonsOnSide(u8 battlerSide);
+bool8 TargetValidIfOppositePosition(u8 target, u8 battler);
 
 #endif // GUARD_BATTLE_UTIL_H

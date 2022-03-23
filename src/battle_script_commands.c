@@ -4435,6 +4435,7 @@ static void Cmd_moveend(void)
                     battlerId != gBattlerOriginalTarget
                     && (
                         IS_BATTLER_INVALID(battlerId)
+                        || !TargetValidIfOppositePosition(battlerId, gBattlerAttacker)
                         || gBattleMons[battlerId].hp == 0
                     )
                 )
