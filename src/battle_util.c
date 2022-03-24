@@ -76,6 +76,22 @@ static const u8 sPkblToEscapeFactor[][3] = {
 static const u8 sGoNearCounterToCatchFactor[] = {4, 3, 2, 1};
 static const u8 sGoNearCounterToEscapeFactor[] = {4, 4, 4, 4};
 
+bool8 IsOppositePosition(u8 battler1, u8 battler2)
+{
+    if (!(gBattleTypeFlags & BATTLE_TYPE_TRIPLE)) return FALSE;
+    if (battler1 > battler2)
+    {
+        battler1 ^= battler2;
+        battler2 ^= battler1;
+        battler1 ^= battler2;
+    }
+
+    return (battler1 == 0 && battler2 == 1)
+    || (battler1 == 4 && battler2 == 5)
+    || (battler1 == 0 && battler2 == 4)
+    || (battler1 == 1 && battler2 == 5);
+}
+
 u8 CountNumberMonsOnSide(u8 battlerSide)
 {
     return (u8)(!IS_BATTLER_INVALID_OR_ABSENT(0 + battlerSide))
@@ -85,7 +101,7 @@ u8 CountNumberMonsOnSide(u8 battlerSide)
 
 bool8 TargetValidIfOppositePosition(u8 target, u8 battler)
 {
-    if (!IS_OPPOSITE_POSITION(target, battler))
+    if (!IsOppositePosition(target, battler))
         return TRUE;
     return CountNumberMonsOnSide(GET_BATTLER_SIDE(target)) < 2;
 }
