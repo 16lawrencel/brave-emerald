@@ -24,11 +24,6 @@
 #define GET_BATTLER_SIDE(battler)         (GetBattlerPosition(battler) & BIT_SIDE)
 #define GET_BATTLER_SIDE2(battler)        (GET_BATTLER_POSITION(battler) & BIT_SIDE)
 
-// excluding BIT_SIDE, only 3 possibilities: 0, 2, 4
-// battlers are opposite if they are exactly 0 and 4
-// turns out if you take xor, can only get 4 if exactly 0 and 4
-#define IS_OPPOSITE_POSITION(battler1, battler2) ((((battler1) ^ (battler2)) & (~BIT_SIDE)) == 4)
-
 // Used to exclude moves learned temporarily by Transform or Mimic
 #define MOVE_IS_PERMANENT(battler, moveSlot)                        \
    (!(gBattleMons[battler].status2 & STATUS2_TRANSFORMED)           \

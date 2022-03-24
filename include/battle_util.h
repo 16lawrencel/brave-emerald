@@ -186,6 +186,7 @@ bool32 IsBattlerTerrainAffected(u8 battlerId, u32 terrainFlag);
 u8 GetNonAbsentBattler(u8 battlerId);
 u8 GetRandomTarget(u8 battlerSide);
 u8 CountNumberMonsOnSide(u8 battlerSide);
+bool8 IsOppositePosition(u8 battler1, u8 battler2);
 bool8 TargetValidIfOppositePosition(u8 target, u8 battler);
 
 #endif // GUARD_BATTLE_UTIL_H

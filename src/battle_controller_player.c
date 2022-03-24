@@ -363,7 +363,7 @@ static bool8 IsValidTarget(u8 target, u16 move)
         case B_POSITION_PLAYER_LEFT:
         case B_POSITION_PLAYER_MIDDLE:
         case B_POSITION_PLAYER_RIGHT:
-            if (!IS_OPPOSITE_POSITION(target, gActiveBattler))
+            if (!IsOppositePosition(target, gActiveBattler))
             {
                 if (gActiveBattler != target)
                     return TRUE;
