@@ -105,7 +105,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 24,
                 .nature = NATURE_MODEST,
                 .evs = {106, 0, 152, 152, 100, 0},
-                .moves = {MOVE_THUNDER_PUNCH, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH, MOVE_DISABLE},
+                .moves = {MOVE_THUNDERPUNCH, MOVE_FIREPUNCH, MOVE_ICEPUNCH, MOVE_DISABLE},
             },
             {
                 .species = SPECIES_ENTEI,
@@ -113,7 +113,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 24,
                 .nature = NATURE_LONELY,
                 .evs = {100, 152, 152, 0, 100, 6},
-                .moves = {MOVE_FIRE_BLAST, MOVE_CALM_MIND, MOVE_RETURN, MOVE_ROAR},
+                .moves = {MOVE_FIREBLAST, MOVE_CALMMIND, MOVE_RETURN, MOVE_ROAR},
             },
             {
                 .species = SPECIES_SNORLAX,
@@ -121,7 +121,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 24,
                 .nature = NATURE_ADAMANT,
                 .evs = {152, 152, 0, 0, 106, 100},
-                .moves = {MOVE_BODY_SLAM, MOVE_BELLY_DRUM, MOVE_YAWN, MOVE_SHADOW_BALL},
+                .moves = {MOVE_BODYSLAM, MOVE_BELLYDRUM, MOVE_YAWN, MOVE_SHADOWBALL},
             },
         },
         // Gold Symbol.
@@ -132,7 +132,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_MODEST,
                 .evs = {158, 0, 252, 100, 0, 0},
-                .moves = {MOVE_THUNDERBOLT, MOVE_CALM_MIND, MOVE_REFLECT, MOVE_REST},
+                .moves = {MOVE_THUNDERBOLT, MOVE_CALMMIND, MOVE_REFLECT, MOVE_REST},
             },
             {
                 .species = SPECIES_LATIOS,
@@ -140,7 +140,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_MODEST,
                 .evs = {252, 0, 252, 6, 0, 0},
-                .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_RECOVER, MOVE_DRAGON_CLAW},
+                .moves = {MOVE_PSYCHIC, MOVE_CALMMIND, MOVE_RECOVER, MOVE_DRAGONCLAW},
             },
             {
                 .species = SPECIES_SNORLAX,
@@ -148,7 +148,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
                 .evs = {252, 252, 0, 0, 6, 0},
-                .moves = {MOVE_CURSE, MOVE_RETURN, MOVE_REST, MOVE_SHADOW_BALL},
+                .moves = {MOVE_CURSE, MOVE_RETURN, MOVE_REST, MOVE_SHADOWBALL},
             },
         },
     },
@@ -162,7 +162,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 20,
                 .nature = NATURE_BRAVE,
                 .evs = {152, 152, 106, 0, 100, 0},
-                .moves = {MOVE_SURF, MOVE_EARTHQUAKE, MOVE_ICE_BEAM, MOVE_COUNTER},
+                .moves = {MOVE_SURF, MOVE_EARTHQUAKE, MOVE_ICEBEAM, MOVE_COUNTER},
             },
             {
                 .species = SPECIES_SALAMENCE,
@@ -170,7 +170,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 20,
                 .nature = NATURE_ADAMANT,
                 .evs = {152, 152, 106, 100, 0, 0},
-                .moves = {MOVE_EARTHQUAKE, MOVE_BRICK_BREAK, MOVE_DRAGON_CLAW, MOVE_AERIAL_ACE},
+                .moves = {MOVE_EARTHQUAKE, MOVE_BRICKBREAK, MOVE_DRAGONCLAW, MOVE_AERIALACE},
             },
             {
                 .species = SPECIES_CHARIZARD,
@@ -178,7 +178,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 20,
                 .nature = NATURE_QUIET,
                 .evs = {100, 152, 106, 152, 0, 0},
-                .moves = {MOVE_OVERHEAT, MOVE_ROCK_SLIDE, MOVE_AERIAL_ACE, MOVE_EARTHQUAKE},
+                .moves = {MOVE_OVERHEAT, MOVE_ROCKSLIDE, MOVE_AERIALACE, MOVE_EARTHQUAKE},
             },
         },
         // Gold Symbol.
@@ -189,7 +189,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BRAVE,
                 .evs = {252, 252, 6, 0, 0, 0},
-                .moves = {MOVE_SURF, MOVE_EARTHQUAKE, MOVE_ICE_BEAM, MOVE_MIRROR_COAT},
+                .moves = {MOVE_SURF, MOVE_EARTHQUAKE, MOVE_ICEBEAM, MOVE_MIRRORCOAT},
             },
             {
                 .species = SPECIES_METAGROSS,
@@ -197,7 +197,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BRAVE,
                 .evs = {252, 252, 6, 0, 0, 0},
-                .moves = {MOVE_PSYCHIC, MOVE_METEOR_MASH, MOVE_EARTHQUAKE, MOVE_PROTECT},
+                .moves = {MOVE_PSYCHIC, MOVE_METEORMASH, MOVE_EARTHQUAKE, MOVE_PROTECT},
             },
             {
                 .species = SPECIES_LATIAS,
@@ -205,7 +205,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_MODEST,
                 .evs = {252, 0, 252, 6, 0, 0},
-                .moves = {MOVE_THUNDERBOLT, MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_REST},
+                .moves = {MOVE_THUNDERBOLT, MOVE_PSYCHIC, MOVE_CALMMIND, MOVE_REST},
             },
         },
     },
@@ -219,7 +219,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 16,
                 .nature = NATURE_ADAMANT,
                 .evs = {152, 0, 0, 152, 100, 106},
-                .moves = {MOVE_CONFUSE_RAY, MOVE_DOUBLE_TEAM, MOVE_TOXIC, MOVE_FLY},
+                .moves = {MOVE_CONFUSERAY, MOVE_DOUBLETEAM, MOVE_TOXIC, MOVE_FLY},
             },
             {
                 .species = SPECIES_SLAKING,
@@ -227,7 +227,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 16,
                 .nature = NATURE_HARDY,
                 .evs = {152, 152, 0, 106, 100, 0},
-                .moves = {MOVE_EARTHQUAKE, MOVE_SWAGGER, MOVE_SHADOW_BALL, MOVE_BRICK_BREAK},
+                .moves = {MOVE_EARTHQUAKE, MOVE_SWAGGER, MOVE_SHADOWBALL, MOVE_BRICKBREAK},
             },
             {
                 .species = SPECIES_LAPRAS,
@@ -235,7 +235,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 16,
                 .nature = NATURE_QUIET,
                 .evs = {0, 0, 252, 0, 106, 152},
-                .moves = {MOVE_ICE_BEAM, MOVE_HORN_DRILL, MOVE_CONFUSE_RAY, MOVE_PROTECT},
+                .moves = {MOVE_ICEBEAM, MOVE_HORNDRILL, MOVE_CONFUSERAY, MOVE_PROTECT},
             },
         },
         // Gold Symbol.
@@ -246,7 +246,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_HASTY,
                 .evs = {6, 252, 252, 0, 0, 0},
-                .moves = {MOVE_OVERHEAT, MOVE_EXTREME_SPEED, MOVE_ROAR, MOVE_PROTECT},
+                .moves = {MOVE_OVERHEAT, MOVE_EXTREMESPEED, MOVE_ROAR, MOVE_PROTECT},
             },
             {
                 .species = SPECIES_SLAKING,
@@ -254,7 +254,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_HARDY,
                 .evs = {6, 252, 0, 252, 0, 0},
-                .moves = {MOVE_HYPER_BEAM, MOVE_EARTHQUAKE, MOVE_SHADOW_BALL, MOVE_YAWN},
+                .moves = {MOVE_HYPERBEAM, MOVE_EARTHQUAKE, MOVE_SHADOWBALL, MOVE_YAWN},
             },
             {
                 .species = SPECIES_SUICUNE,
@@ -262,7 +262,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_HASTY,
                 .evs = {252, 0, 252, 6, 0, 0},
-                .moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_BITE, MOVE_CALM_MIND},
+                .moves = {MOVE_BLIZZARD, MOVE_SURF, MOVE_BITE, MOVE_CALMMIND},
             },
         },
     },
@@ -276,7 +276,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 20,
                 .nature = NATURE_JOLLY,
                 .evs = {106, 152, 0, 152, 0, 100},
-                .moves = {MOVE_MEGAHORN, MOVE_ROCK_TOMB, MOVE_ENDURE, MOVE_REVERSAL},
+                .moves = {MOVE_MEGAHORN, MOVE_ROCKTOMB, MOVE_ENDURE, MOVE_REVERSAL},
             },
             {
                 .species = SPECIES_UMBREON,
@@ -284,7 +284,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 20,
                 .nature = NATURE_CALM,
                 .evs = {152, 0, 100, 0, 152, 106},
-                .moves = {MOVE_BODY_SLAM, MOVE_CONFUSE_RAY, MOVE_PSYCHIC, MOVE_FAINT_ATTACK},
+                .moves = {MOVE_BODYSLAM, MOVE_CONFUSERAY, MOVE_PSYCHIC, MOVE_FEINTATTACK},
             },
             {
                 .species = SPECIES_SHEDINJA,
@@ -292,7 +292,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 20,
                 .nature = NATURE_ADAMANT,
                 .evs = {0, 252, 6, 252, 0, 0},
-                .moves = {MOVE_SHADOW_BALL, MOVE_RETURN, MOVE_CONFUSE_RAY, MOVE_AERIAL_ACE},
+                .moves = {MOVE_SHADOWBALL, MOVE_RETURN, MOVE_CONFUSERAY, MOVE_AERIALACE},
             },
         },
         // Gold Symbol.
@@ -303,7 +303,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_CALM,
                 .evs = {252, 0, 0, 0, 252, 6},
-                .moves = {MOVE_DOUBLE_EDGE, MOVE_CONFUSE_RAY, MOVE_REST, MOVE_PSYCHIC},
+                .moves = {MOVE_DOUBLEEDGE, MOVE_CONFUSERAY, MOVE_REST, MOVE_PSYCHIC},
             },
             {
                 .species = SPECIES_GENGAR,
@@ -311,7 +311,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_MODEST,
                 .evs = {252, 0, 252, 0, 6, 0},
-                .moves = {MOVE_PSYCHIC, MOVE_HYPNOSIS, MOVE_DREAM_EATER, MOVE_DESTINY_BOND},
+                .moves = {MOVE_PSYCHIC, MOVE_HYPNOSIS, MOVE_DREAMEATER, MOVE_DESTINYBOND},
             },
             {
                 .species = SPECIES_BRELOOM,
@@ -319,7 +319,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_JOLLY,
                 .evs = {6, 252, 0, 252, 0, 0},
-                .moves = {MOVE_SPORE, MOVE_FOCUS_PUNCH, MOVE_GIGA_DRAIN, MOVE_HEADBUTT},
+                .moves = {MOVE_SPORE, MOVE_FOCUSPUNCH, MOVE_GIGADRAIN, MOVE_HEADBUTT},
             },
         },
     },
@@ -334,7 +334,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BRAVE,
                 .evs = {0, 252, 252, 0, 6, 0},
-                .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_METAL_CLAW},
+                .moves = {MOVE_LIGHTSCREEN, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_METALCLAW},
             },
             {
                 .species = SPECIES_SKARMORY,
@@ -342,7 +342,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_IMPISH,
                 .evs = {252, 0, 0, 0, 6, 252},
-                .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_STEEL_WING},
+                .moves = {MOVE_TOXIC, MOVE_AERIALACE, MOVE_PROTECT, MOVE_STEELWING},
             },
             {
                 .species = SPECIES_AGGRON,
@@ -350,7 +350,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
                 .evs = {0, 252, 0, 0, 252, 6},
-                .moves = {MOVE_THUNDERBOLT, MOVE_PROTECT, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW},
+                .moves = {MOVE_THUNDERBOLT, MOVE_PROTECT, MOVE_SOLARBEAM, MOVE_DRAGONCLAW},
             },
         },
         {
@@ -360,7 +360,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BRAVE,
                 .evs = {0, 252, 252, 0, 6, 0},
-                .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_METAL_CLAW},
+                .moves = {MOVE_LIGHTSCREEN, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_METALCLAW},
             },
             {
                 .species = SPECIES_SKARMORY,
@@ -368,7 +368,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_IMPISH,
                 .evs = {252, 0, 0, 0, 6, 252},
-                .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_STEEL_WING},
+                .moves = {MOVE_TOXIC, MOVE_AERIALACE, MOVE_PROTECT, MOVE_STEELWING},
             },
             {
                 .species = SPECIES_AGGRON,
@@ -376,7 +376,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
                 .evs = {0, 252, 0, 0, 252, 6},
-                .moves = {MOVE_THUNDERBOLT, MOVE_PROTECT, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW},
+                .moves = {MOVE_THUNDERBOLT, MOVE_PROTECT, MOVE_SOLARBEAM, MOVE_DRAGONCLAW},
             },
         },
     },
@@ -390,7 +390,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 16,
                 .nature = NATURE_BRAVE,
                 .evs = {252, 0, 252, 0, 6, 0},
-                .moves = {MOVE_SWAGGER, MOVE_CRUNCH, MOVE_POISON_FANG, MOVE_GIGA_DRAIN},
+                .moves = {MOVE_SWAGGER, MOVE_CRUNCH, MOVE_POISONFANG, MOVE_GIGADRAIN},
             },
             {
                 .species = SPECIES_SHUCKLE,
@@ -406,7 +406,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 16,
                 .nature = NATURE_MODEST,
                 .evs = {152, 0, 100, 0, 152, 106},
-                .moves = {MOVE_ICE_BEAM, MOVE_MIRROR_COAT, MOVE_SURF, MOVE_RECOVER},
+                .moves = {MOVE_ICEBEAM, MOVE_MIRRORCOAT, MOVE_SURF, MOVE_RECOVER},
             },
         },
         // Gold Symbol.
@@ -417,7 +417,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BOLD,
                 .evs = {252, 0, 0, 0, 252, 6},
-                .moves = {MOVE_SWAGGER, MOVE_CRUNCH, MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN},
+                .moves = {MOVE_SWAGGER, MOVE_CRUNCH, MOVE_SLUDGEBOMB, MOVE_GIGADRAIN},
             },
             {
                 .species = SPECIES_STEELIX,
@@ -425,7 +425,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BRAVE,
                 .evs = {252, 0, 0, 0, 6, 252},
-                .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_EXPLOSION, MOVE_SCREECH},
+                .moves = {MOVE_EARTHQUAKE, MOVE_ROCKSLIDE, MOVE_EXPLOSION, MOVE_SCREECH},
             },
             {
                 .species = SPECIES_GYARADOS,
@@ -433,7 +433,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
                 .evs = {252, 6, 0, 0, 0, 252},
-                .moves = {MOVE_DRAGON_DANCE, MOVE_RETURN, MOVE_ROAR, MOVE_REST},
+                .moves = {MOVE_DRAGONDANCE, MOVE_RETURN, MOVE_ROAR, MOVE_REST},
             },
         },
     },
@@ -447,7 +447,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 16,
                 .nature = NATURE_ADAMANT,
                 .evs = {152, 152, 0, 0, 106, 100},
-                .moves = {MOVE_EXPLOSION, MOVE_SUPERPOWER, MOVE_EARTHQUAKE, MOVE_ANCIENT_POWER},
+                .moves = {MOVE_EXPLOSION, MOVE_SUPERPOWER, MOVE_EARTHQUAKE, MOVE_ANCIENTPOWER},
             },
             {
                 .species = SPECIES_REGISTEEL,
@@ -455,7 +455,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 16,
                 .nature = NATURE_ADAMANT,
                 .evs = {152, 152, 0, 0, 6, 200},
-                .moves = {MOVE_EARTHQUAKE, MOVE_METAL_CLAW, MOVE_TOXIC, MOVE_IRON_DEFENSE},
+                .moves = {MOVE_EARTHQUAKE, MOVE_METALCLAW, MOVE_TOXIC, MOVE_IRONDEFENSE},
             },
             {
                 .species = SPECIES_REGICE,
@@ -463,7 +463,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 16,
                 .nature = NATURE_MODEST,
                 .evs = {106, 0, 152, 0, 100, 152},
-                .moves = {MOVE_ICE_BEAM, MOVE_AMNESIA, MOVE_THUNDER, MOVE_REST},
+                .moves = {MOVE_ICEBEAM, MOVE_AMNESIA, MOVE_THUNDER, MOVE_REST},
             },
         },
         // Gold Symbol.
@@ -474,7 +474,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_MILD,
                 .evs = {6, 0, 252, 252, 0, 0},
-                .moves = {MOVE_BLIZZARD, MOVE_WATER_PULSE, MOVE_AERIAL_ACE, MOVE_REFLECT},
+                .moves = {MOVE_BLIZZARD, MOVE_WATERPULSE, MOVE_AERIALACE, MOVE_REFLECT},
             },
             {
                 .species = SPECIES_ZAPDOS,
@@ -482,7 +482,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_MILD,
                 .evs = {6, 0, 252, 252, 0, 0},
-                .moves = {MOVE_THUNDER, MOVE_DETECT, MOVE_DRILL_PECK, MOVE_LIGHT_SCREEN},
+                .moves = {MOVE_THUNDER, MOVE_DETECT, MOVE_DRILLPECK, MOVE_LIGHTSCREEN},
             },
             {
                 .species = SPECIES_MOLTRES,
@@ -490,7 +490,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_MILD,
                 .evs = {6, 0, 252, 252, 0, 0},
-                .moves = {MOVE_FIRE_BLAST, MOVE_HYPER_BEAM, MOVE_AERIAL_ACE, MOVE_SAFEGUARD},
+                .moves = {MOVE_FIREBLAST, MOVE_HYPERBEAM, MOVE_AERIALACE, MOVE_SAFEGUARD},
             },
         },
     },

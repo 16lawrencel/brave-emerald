@@ -198,31 +198,31 @@ static const struct {
 } sPokeOutbreakSpeciesList[] = {
     {
         .species = SPECIES_SEEDOT,
-        .moves = {MOVE_BIDE, MOVE_HARDEN, MOVE_LEECH_SEED},
+        .moves = {MOVE_BIDE, MOVE_HARDEN, MOVE_LEECHSEED},
         .level = 3,
         .location = MAP_NUM(ROUTE102)
     },
     {
         .species = SPECIES_NUZLEAF,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
+        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATUREPOWER, MOVE_LEECHSEED},
         .level = 15,
         .location = MAP_NUM(ROUTE114),
     },
     {
         .species = SPECIES_SEEDOT,
-        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
+        .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATUREPOWER, MOVE_LEECHSEED},
         .level = 13,
         .location = MAP_NUM(ROUTE117),
     },
     {
         .species = SPECIES_SEEDOT,
-        .moves = {MOVE_GIGA_DRAIN, MOVE_FRUSTRATION, MOVE_SOLAR_BEAM, MOVE_LEECH_SEED},
+        .moves = {MOVE_GIGADRAIN, MOVE_FRUSTRATION, MOVE_SOLARBEAM, MOVE_LEECHSEED},
         .level = 25,
         .location = MAP_NUM(ROUTE120),
     },
     {
         .species = SPECIES_SKITTY,
-        .moves = {MOVE_GROWL, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_ATTRACT},
+        .moves = {MOVE_GROWL, MOVE_TACKLE, MOVE_TAILWHIP, MOVE_ATTRACT},
         .level = 8,
         .location = MAP_NUM(ROUTE116),
     }

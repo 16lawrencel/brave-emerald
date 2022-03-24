@@ -55,7 +55,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectLightScreen            @ EFFECT_LIGHT_SCREEN
 	.4byte BattleScript_EffectTriAttack              @ EFFECT_TRI_ATTACK
 	.4byte BattleScript_EffectRest                   @ EFFECT_REST
-	.4byte BattleScript_EffectOHKO                   @ EFFECT_OHKO
+	.4byte BattleScript_EffectOHKO                   @ EFFECT_0HKO
 	.4byte BattleScript_EffectRazorWind              @ EFFECT_RAZOR_WIND
 	.4byte BattleScript_EffectSuperFang              @ EFFECT_SUPER_FANG
 	.4byte BattleScript_EffectDragonRage             @ EFFECT_DRAGON_RAGE
@@ -168,7 +168,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectFutureSight            @ EFFECT_FUTURE_SIGHT
 	.4byte BattleScript_EffectGust                   @ EFFECT_GUST
 	.4byte BattleScript_EffectStomp                  @ EFFECT_FLINCH_MINIMIZE_HIT
-	.4byte BattleScript_EffectSolarBeam              @ EFFECT_SOLAR_BEAM
+	.4byte BattleScript_EffectSolarBeam              @ EFFECT_SOLARBEAM
 	.4byte BattleScript_EffectThunder                @ EFFECT_THUNDER
 	.4byte BattleScript_EffectTeleport               @ EFFECT_TELEPORT
 	.4byte BattleScript_EffectBeatUp                 @ EFFECT_BEAT_UP
@@ -610,7 +610,7 @@ BattleScript_EffectMultiHit::
 BattleScript_MultiHitLoop::
 	jumpifhasnohp BS_ATTACKER, BattleScript_MultiHitEnd
 	jumpifhasnohp BS_TARGET, BattleScript_MultiHitPrintStrings
-	jumpifhalfword CMP_EQUAL, gChosenMove, MOVE_SLEEP_TALK, BattleScript_DoMultiHit
+	jumpifhalfword CMP_EQUAL, gChosenMove, MOVE_SLEEPTALK, BattleScript_DoMultiHit
 	jumpifstatus BS_ATTACKER, STATUS1_SLEEP, BattleScript_MultiHitPrintStrings
 BattleScript_DoMultiHit::
 	movevaluescleanup
@@ -786,7 +786,7 @@ BattleScript_TwoTurnMovesSecondTurn::
 	setbyte sB_ANIM_TURN, 1
 	clearstatusfromeffect BS_ATTACKER
 	orword gHitMarker, HITMARKER_NO_PPDEDUCT
-	jumpifnotmove MOVE_SKY_ATTACK, BattleScript_HitFromAccCheck
+	jumpifnotmove MOVE_SKYATTACK, BattleScript_HitFromAccCheck
 	setmoveeffect MOVE_EFFECT_FLINCH
 	goto BattleScript_HitFromAccCheck
 
@@ -1259,7 +1259,7 @@ BattleScript_EffectSnore::
 	ppreduce
 	goto BattleScript_ButItFailed
 BattleScript_SnoreIsAsleep::
-	jumpifhalfword CMP_EQUAL, gChosenMove, MOVE_SLEEP_TALK, BattleScript_DoSnore
+	jumpifhalfword CMP_EQUAL, gChosenMove, MOVE_SLEEPTALK, BattleScript_DoSnore
 	printstring STRINGID_PKMNFASTASLEEP
 	waitmessage B_WAIT_TIME_LONG
 	statusanimation BS_ATTACKER
@@ -1366,7 +1366,7 @@ BattleScript_EffectHealBell::
 	waitanimation
 	printfromtable gPartyStatusHealStringIds
 	waitmessage B_WAIT_TIME_LONG
-	jumpifnotmove MOVE_HEAL_BELL, BattleScript_PartyHealEnd
+	jumpifnotmove MOVE_HEALBELL, BattleScript_PartyHealEnd
 	jumpifbyte CMP_NO_COMMON_BITS, cMULTISTRING_CHOOSER, B_MSG_BELL_SOUNDPROOF_ATTACKER, BattleScript_CheckHealBellMon2Unaffected
 	printstring STRINGID_PKMNSXBLOCKSY
 	waitmessage B_WAIT_TIME_LONG
@@ -1389,7 +1389,7 @@ BattleScript_EffectTripleKick::
 BattleScript_TripleKickLoop::
 	jumpifhasnohp BS_ATTACKER, BattleScript_TripleKickEnd
 	jumpifhasnohp BS_TARGET, BattleScript_TripleKickNoMoreHits
-	jumpifhalfword CMP_EQUAL, gChosenMove, MOVE_SLEEP_TALK, BattleScript_DoTripleKickAttack
+	jumpifhalfword CMP_EQUAL, gChosenMove, MOVE_SLEEPTALK, BattleScript_DoTripleKickAttack
 	jumpifstatus BS_ATTACKER, STATUS1_SLEEP, BattleScript_TripleKickNoMoreHits
 BattleScript_DoTripleKickAttack::
 	accuracycheck BattleScript_TripleKickNoMoreHits, ACC_CURR_MOVE
@@ -3506,10 +3506,10 @@ BattleScript_MonTookFutureAttack::
 	printstring STRINGID_PKMNTOOKATTACK
 	waitmessage B_WAIT_TIME_LONG
 	jumpifbyte CMP_NOT_EQUAL, cMULTISTRING_CHOOSER, B_MSG_FUTURE_SIGHT, BattleScript_CheckDoomDesireMiss
-	accuracycheck BattleScript_FutureAttackMiss, MOVE_FUTURE_SIGHT
+	accuracycheck BattleScript_FutureAttackMiss, MOVE_FUTURESIGHT
 	goto BattleScript_FutureAttackAnimate
 BattleScript_CheckDoomDesireMiss::
-	accuracycheck BattleScript_FutureAttackMiss, MOVE_DOOM_DESIRE
+	accuracycheck BattleScript_FutureAttackMiss, MOVE_DOOMDESIRE
 BattleScript_FutureAttackAnimate::
 	adjustnormaldamage2
 	jumpifbyte CMP_NOT_EQUAL, cMULTISTRING_CHOOSER, B_MSG_FUTURE_SIGHT, BattleScript_FutureHitAnimDoomDesire

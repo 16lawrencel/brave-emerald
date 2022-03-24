@@ -28,9 +28,9 @@ SecretBase_EventScript_CheckEntrance::
 	special GetSecretBaseTypeInFrontOfPlayer
 	special CheckPlayerHasSecretBase
 	goto_if_eq VAR_RESULT, TRUE, SecretBase_EventScript_AlreadyHasSecretBase
-	checkpartymove MOVE_SECRET_POWER
+	checkpartymove MOVE_SECRETPOWER
 	setfieldeffectargument 0, VAR_RESULT
-	buffermovename STR_VAR_2, MOVE_SECRET_POWER
+	buffermovename STR_VAR_2, MOVE_SECRETPOWER
 	goto_if_eq VAR_0x8007, SECRET_BASE_RED_CAVE, SecretBase_EventScript_Cave
 	goto_if_eq VAR_0x8007, SECRET_BASE_BROWN_CAVE, SecretBase_EventScript_Cave
 	goto_if_eq VAR_0x8007, SECRET_BASE_BLUE_CAVE, SecretBase_EventScript_Cave
@@ -186,7 +186,7 @@ SecretBase_EventScript_EnterPlayersBase::
 	end
 
 SecretBase_EventScript_AlreadyHasSecretBase::
-	checkpartymove MOVE_SECRET_POWER
+	checkpartymove MOVE_SECRETPOWER
 	goto_if_eq VAR_RESULT, PARTY_SIZE, SecretBase_EventScript_NoSecretPower
 	setfieldeffectargument 0, VAR_RESULT
 	setorcopyvar VAR_0x8004, VAR_RESULT
@@ -203,7 +203,7 @@ SecretBase_EventScript_AlreadyHasSecretBase::
 	msgbox SecretBase_Text_MovingCompletedUseSecretPower, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, SecretBase_EventScript_CancelOnEntrance
 	bufferpartymonnick STR_VAR_1, VAR_0x8004
-	buffermovename STR_VAR_2, MOVE_SECRET_POWER
+	buffermovename STR_VAR_2, MOVE_SECRETPOWER
 	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
 	closemessage
 	closemessage

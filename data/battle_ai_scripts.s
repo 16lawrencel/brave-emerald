@@ -49,7 +49,7 @@ gBattleAI_ScriptsTable::
 AI_CheckBadMove:
 	if_target_is_ally AI_Ret
 	if_move MOVE_FISSURE, AI_CBM_CheckIfNegatesType
-	if_move MOVE_HORN_DRILL, AI_CBM_CheckIfNegatesType
+	if_move MOVE_HORNDRILL, AI_CBM_CheckIfNegatesType
 	get_how_powerful_move_is
 	if_equal MOVE_POWER_OTHER, AI_CheckBadMove_CheckSoundproof
 AI_CBM_CheckIfNegatesType:
@@ -97,8 +97,8 @@ AI_CheckBadMove_CheckSoundproof:
 	if_move MOVE_SCREECH, Score_Minus10
 	if_move MOVE_SNORE, Score_Minus10
 	if_move MOVE_UPROAR, Score_Minus10
-	if_move MOVE_METAL_SOUND, Score_Minus10
-	if_move MOVE_GRASS_WHISTLE, Score_Minus10
+	if_move MOVE_METALSOUND, Score_Minus10
+	if_move MOVE_GRASSWHISTLE, Score_Minus10
 AI_CheckBadMove_CheckEffect:
 	if_effect EFFECT_SLEEP, AI_CBM_Sleep
 	if_effect EFFECT_EXPLOSION, AI_CBM_Explosion
@@ -122,7 +122,7 @@ AI_CheckBadMove_CheckEffect:
 	if_effect EFFECT_ROAR, AI_CBM_Roar
 	if_effect EFFECT_TOXIC, AI_CBM_Toxic
 	if_effect EFFECT_LIGHT_SCREEN, AI_CBM_LightScreen
-	if_effect EFFECT_OHKO, AI_CBM_OneHitKO
+	if_effect EFFECT_0HKO, AI_CBM_OneHitKO
 	if_effect EFFECT_RAZOR_WIND, AI_CBM_HighRiskForDamage
 	if_effect EFFECT_SUPER_FANG, AI_CBM_HighRiskForDamage
 	if_effect EFFECT_MIST, AI_CBM_Mist
@@ -677,7 +677,7 @@ AI_CheckViability:
 	if_effect EFFECT_TOXIC, AI_CV_Toxic
 	if_effect EFFECT_LIGHT_SCREEN, AI_CV_LightScreen
 	if_effect EFFECT_REST, AI_CV_Rest
-	if_effect EFFECT_OHKO, AI_CV_OneHitKO
+	if_effect EFFECT_0HKO, AI_CV_OneHitKO
 	if_effect EFFECT_RAZOR_WIND, AI_CV_ChargeUpMove
 	if_effect EFFECT_SUPER_FANG, AI_CV_SuperFang
 	if_effect EFFECT_TRAP, AI_CV_Trap
@@ -735,7 +735,7 @@ AI_CheckViability:
 	if_effect EFFECT_PSYCH_UP, AI_CV_PsychUp
 	if_effect EFFECT_MIRROR_COAT, AI_CV_MirrorCoat
 	if_effect EFFECT_SKULL_BASH, AI_CV_ChargeUpMove
-	if_effect EFFECT_SOLAR_BEAM, AI_CV_ChargeUpMove
+	if_effect EFFECT_SOLARBEAM, AI_CV_ChargeUpMove
 	if_effect EFFECT_SEMI_INVULNERABLE, AI_CV_SemiInvulnerable
 	if_effect EFFECT_SOFTBOILED, AI_CV_Heal
 	if_effect EFFECT_FAKE_OUT, AI_CV_FakeOut
@@ -850,36 +850,36 @@ AI_CV_MirrorMove_End:
 	end
 
 AI_CV_MirrorMove_EncouragedMovesToMirror:
-    .2byte MOVE_SLEEP_POWDER
-    .2byte MOVE_LOVELY_KISS
+    .2byte MOVE_SLEEPPOWDER
+    .2byte MOVE_LOVELYKISS
     .2byte MOVE_SPORE
     .2byte MOVE_HYPNOSIS
     .2byte MOVE_SING
-    .2byte MOVE_GRASS_WHISTLE
-    .2byte MOVE_SHADOW_PUNCH
-    .2byte MOVE_SAND_ATTACK
+    .2byte MOVE_GRASSWHISTLE
+    .2byte MOVE_SHADOWPUNCH
+    .2byte MOVE_SANDATTACK
     .2byte MOVE_SMOKESCREEN
     .2byte MOVE_TOXIC
     .2byte MOVE_GUILLOTINE
-    .2byte MOVE_HORN_DRILL
+    .2byte MOVE_HORNDRILL
     .2byte MOVE_FISSURE
-    .2byte MOVE_SHEER_COLD
-    .2byte MOVE_CROSS_CHOP
+    .2byte MOVE_SHEERCOLD
+    .2byte MOVE_CROSSCHOP
     .2byte MOVE_AEROBLAST
-    .2byte MOVE_CONFUSE_RAY
-    .2byte MOVE_SWEET_KISS
+    .2byte MOVE_CONFUSERAY
+    .2byte MOVE_SWEETKISS
     .2byte MOVE_SCREECH
-    .2byte MOVE_COTTON_SPORE
-    .2byte MOVE_SCARY_FACE
-    .2byte MOVE_FAKE_TEARS
-    .2byte MOVE_METAL_SOUND
-    .2byte MOVE_THUNDER_WAVE
+    .2byte MOVE_COTTONSPORE
+    .2byte MOVE_SCARYFACE
+    .2byte MOVE_FAKETEARS
+    .2byte MOVE_METALSOUND
+    .2byte MOVE_THUNDERWAVE
     .2byte MOVE_GLARE
-    .2byte MOVE_POISON_POWDER
-    .2byte MOVE_SHADOW_BALL
-    .2byte MOVE_DYNAMIC_PUNCH
-    .2byte MOVE_HYPER_BEAM
-    .2byte MOVE_EXTREME_SPEED
+    .2byte MOVE_POISONPOWDER
+    .2byte MOVE_SHADOWBALL
+    .2byte MOVE_DYNAMICPUNCH
+    .2byte MOVE_HYPERBEAM
+    .2byte MOVE_EXTREMESPEED
     .2byte MOVE_THIEF
     .2byte MOVE_COVET
     .2byte MOVE_ATTRACT
@@ -888,7 +888,7 @@ AI_CV_MirrorMove_EncouragedMovesToMirror:
     .2byte MOVE_FLATTER
     .2byte MOVE_TRICK
     .2byte MOVE_SUPERPOWER
-    .2byte MOVE_SKILL_SWAP
+    .2byte MOVE_SKILLSWAP
     .2byte -1
 
 AI_CV_AttackUp:
@@ -1129,9 +1129,9 @@ AI_CV_DefenseDown_End:
 	end
 
 AI_CV_SpeedDownFromChance:
-	if_move MOVE_ICY_WIND, AI_CV_SpeedDown
-	if_move MOVE_ROCK_TOMB, AI_CV_SpeedDown
-	if_move MOVE_MUD_SHOT, AI_CV_SpeedDown
+	if_move MOVE_ICYWIND, AI_CV_SpeedDown
+	if_move MOVE_ROCKTOMB, AI_CV_SpeedDown
+	if_move MOVE_MUDSHOT, AI_CV_SpeedDown
 	end
 
 AI_CV_SpeedDown:
@@ -1455,7 +1455,7 @@ AI_CV_HighCrit_End:
 	end
 
 AI_CV_Swagger:
-	if_has_move AI_USER, MOVE_PSYCH_UP, AI_CV_SwaggerHasPsychUp
+	if_has_move AI_USER, MOVE_PSYCHUP, AI_CV_SwaggerHasPsychUp
 AI_CV_Flatter:
 	if_random_less_than 128, AI_CV_Confuse
 	score +1
@@ -1620,7 +1620,7 @@ AI_CV_Counter2:
 	if_random_less_than 100, AI_CV_Counter3
 	score -1
 AI_CV_Counter3:
-	if_has_move AI_USER, MOVE_MIRROR_COAT, AI_CV_Counter7
+	if_has_move AI_USER, MOVE_MIRRORCOAT, AI_CV_Counter7
 	get_last_used_bank_move AI_TARGET
 	get_move_power_from_result
 	if_equal 0, AI_CV_Counter5
@@ -2701,7 +2701,7 @@ AI_Risky_EffectsToEncourage:
     .byte EFFECT_SLEEP
     .byte EFFECT_EXPLOSION
     .byte EFFECT_MIRROR_MOVE
-    .byte EFFECT_OHKO
+    .byte EFFECT_0HKO
     .byte EFFECT_HIGH_CRITICAL
     .byte EFFECT_CONFUSE
     .byte EFFECT_METRONOME
@@ -2728,11 +2728,11 @@ AI_PreferBatonPass:
 	if_has_move_with_effect AI_USER, EFFECT_BATON_PASS, AI_PreferBatonPass_GoForBatonPass
 	if_random_less_than 80, AI_Risky_End
 AI_PreferBatonPass_GoForBatonPass:
-	if_move MOVE_SWORDS_DANCE, AI_PreferBatonPass2
-	if_move MOVE_DRAGON_DANCE, AI_PreferBatonPass2
-	if_move MOVE_CALM_MIND, AI_PreferBatonPass2
+	if_move MOVE_SWORDSDANCE, AI_PreferBatonPass2
+	if_move MOVE_DRAGONDANCE, AI_PreferBatonPass2
+	if_move MOVE_CALMMIND, AI_PreferBatonPass2
 	if_effect EFFECT_PROTECT, AI_PreferBatonPass_End
-	if_move MOVE_BATON_PASS, AI_PreferBatonPass_EncourageIfHighStats
+	if_move MOVE_BATONPASS, AI_PreferBatonPass_EncourageIfHighStats
 	if_random_less_than 20, AI_Risky_End
 	score +3
 AI_PreferBatonPass2:
@@ -2768,7 +2768,7 @@ AI_PreferBatonPassEnd:
 
 AI_DoubleBattle:
 	if_target_is_ally AI_TryOnAlly
-	if_move MOVE_SKILL_SWAP, AI_DoubleBattleSkillSwap
+	if_move MOVE_SKILLSWAP, AI_DoubleBattleSkillSwap
 	get_curr_move_type
 	if_move MOVE_EARTHQUAKE, AI_DoubleBattleAllHittingGroundMove
 	if_move MOVE_MAGNITUDE, AI_DoubleBattleAllHittingGroundMove
@@ -2776,7 +2776,7 @@ AI_DoubleBattle:
 	if_equal TYPE_FIRE, AI_DoubleBattleFireMove
 	get_ability AI_USER
 	if_not_equal ABILITY_GUTS, AI_DoubleBattleCheckUserStatus
-	if_has_move AI_USER_PARTNER, MOVE_HELPING_HAND, AI_DoubleBattlePartnerHasHelpingHand
+	if_has_move AI_USER_PARTNER, MOVE_HELPINGHAND, AI_DoubleBattlePartnerHasHelpingHand
 	end
 
 AI_DoubleBattlePartnerHasHelpingHand:
@@ -2844,10 +2844,10 @@ AI_TryFireMoveOnAlly_FlashFire:
 	goto Score_Plus3
 
 AI_TryStatusMoveOnAlly:
-	if_move MOVE_SKILL_SWAP, AI_TrySkillSwapOnAlly
-	if_move MOVE_WILL_O_WISP, AI_TryStatusOnAlly
+	if_move MOVE_SKILLSWAP, AI_TrySkillSwapOnAlly
+	if_move MOVE_WILLOWISP, AI_TryStatusOnAlly
 	if_move MOVE_TOXIC, AI_TryStatusOnAlly
-	if_move MOVE_HELPING_HAND, AI_TryHelpingHandOnAlly
+	if_move MOVE_HELPINGHAND, AI_TryHelpingHandOnAlly
 	if_move MOVE_SWAGGER, AI_TrySwaggerOnAlly
 	goto Score_Minus30_
 
@@ -2868,11 +2868,11 @@ AI_TrySkillSwapOnAlly:
 
 AI_TrySkillSwapOnAlly2:
 	if_not_equal ABILITY_COMPOUND_EYES, Score_Minus30_
-	if_has_move AI_USER_PARTNER, MOVE_FIRE_BLAST, AI_TrySkillSwapOnAllyPlus3
+	if_has_move AI_USER_PARTNER, MOVE_FIREBLAST, AI_TrySkillSwapOnAllyPlus3
 	if_has_move AI_USER_PARTNER, MOVE_THUNDER, AI_TrySkillSwapOnAllyPlus3
-	if_has_move AI_USER_PARTNER, MOVE_CROSS_CHOP, AI_TrySkillSwapOnAllyPlus3
-	if_has_move AI_USER_PARTNER, MOVE_HYDRO_PUMP, AI_TrySkillSwapOnAllyPlus3
-	if_has_move AI_USER_PARTNER, MOVE_DYNAMIC_PUNCH, AI_TrySkillSwapOnAllyPlus3
+	if_has_move AI_USER_PARTNER, MOVE_CROSSCHOP, AI_TrySkillSwapOnAllyPlus3
+	if_has_move AI_USER_PARTNER, MOVE_HYDROPUMP, AI_TrySkillSwapOnAllyPlus3
+	if_has_move AI_USER_PARTNER, MOVE_DYNAMICPUNCH, AI_TrySkillSwapOnAllyPlus3
 	if_has_move AI_USER_PARTNER, MOVE_BLIZZARD, AI_TrySkillSwapOnAllyPlus3
 	if_has_move AI_USER_PARTNER, MOVE_MEGAHORN, AI_TrySkillSwapOnAllyPlus3
 	goto Score_Minus30_
@@ -3051,7 +3051,7 @@ AI_HPAware_DiscouragedEffectsWhenLowHP:
     .byte EFFECT_BELLY_DRUM
     .byte EFFECT_PSYCH_UP
     .byte EFFECT_MIRROR_COAT
-    .byte EFFECT_SOLAR_BEAM
+    .byte EFFECT_SOLARBEAM
     .byte EFFECT_ERUPTION
     .byte EFFECT_TICKLE
     .byte EFFECT_COSMIC_POWER
@@ -3126,7 +3126,7 @@ AI_HPAware_DiscouragedEffectsWhenTargetLowHP:
     .byte EFFECT_CONVERSION
     .byte EFFECT_TOXIC
     .byte EFFECT_LIGHT_SCREEN
-    .byte EFFECT_OHKO
+    .byte EFFECT_0HKO
     .byte EFFECT_SUPER_FANG //Maybe supposed to be EFFECT_RAZOR_WIND
     .byte EFFECT_SUPER_FANG
     .byte EFFECT_MIST
