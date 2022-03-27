@@ -248,7 +248,7 @@ static void AnimLeechLifeNeedle(struct Sprite *sprite)
 }
 
 // Creates a single web thread that travels from attacker to target.
-// Used by MOVE_STRING_SHOT and MOVE_SPIDER_WEB in their first move phase.
+// Used by MOVE_STRINGSHOT and MOVE_SPIDERWEB in their first move phase.
 // arg 0: x
 // arg 1: y
 // arg 2: controls the left-to-right movement

@@ -2230,7 +2230,7 @@ static void AnimTask_Splash_Step(u8 taskId)
 }
 
 // Grows, pauses, then shrinks the attacking mon.
-// Used by MOVE_SWAGGER and MOVE_BULK_UP
+// Used by MOVE_SWAGGER and MOVE_BULKUP
 // No args.
 void AnimTask_GrowAndShrink(u8 taskId)
 {
@@ -2248,7 +2248,7 @@ static void AnimTask_GrowAndShrink_Step(u8 taskId)
 }
 
 // Animates a little puff of the mon's breath.
-// Used by MOVE_SWAGGER and MOVE_BULK_UP
+// Used by MOVE_SWAGGER and MOVE_BULKUP
 // No args.
 static void AnimBreathPuff(struct Sprite *sprite)
 {
@@ -3407,7 +3407,7 @@ static void AnimTask_ScaryFace_Step(u8 taskId)
 }
 
 // Orbits a sphere in an ellipse around the mon.
-// Used by MOVE_HIDDEN_POWER
+// Used by MOVE_HIDDENPOWER
 // arg 0: duration
 // arg 1: initial wave offset
 static void AnimOrbitFast(struct Sprite *sprite)
@@ -3459,7 +3459,7 @@ static void AnimOrbitFast_Step(struct Sprite *sprite)
 }
 
 // Moves orbs away from the mon, based on where they are in their orbit.
-// Used in MOVE_HIDDEN_POWER.
+// Used in MOVE_HIDDENPOWER.
 // arg 0: initial wave offset
 static void AnimOrbitScatter(struct Sprite *sprite)
 {

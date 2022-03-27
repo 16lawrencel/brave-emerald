@@ -22,7 +22,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_KARATE_CHOP] = {
+    [MOVE_KARATECHOP] = {
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
         { 0xe, 0x0, 0x0, 0x0, 0x0},
@@ -30,7 +30,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DOUBLE_SLAP] = {
+    [MOVE_DOUBLESLAP] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0xa, 0x0, 0x0, 0x0, 0x0},
         { 0x2, 0x0, 0x0, 0x0, 0x0},
@@ -38,7 +38,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_COMET_PUNCH] = {
+    [MOVE_COMETPUNCH] = {
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
         { 0xb, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
@@ -46,7 +46,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MEGA_PUNCH] = {
+    [MOVE_MEGAPUNCH] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
@@ -54,7 +54,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_PAY_DAY] = {
+    [MOVE_PAYDAY] = {
         { 0x5, 0x0, 0x0, 0x0, 0x0},
         { 0x5, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -62,7 +62,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FIRE_PUNCH] = {
+    [MOVE_FIREPUNCH] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
@@ -70,7 +70,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ICE_PUNCH] = {
+    [MOVE_ICEPUNCH] = {
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
         { 0xe, 0x0, 0x0, 0x0, 0x0},
@@ -78,7 +78,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_THUNDER_PUNCH] = {
+    [MOVE_THUNDERPUNCH] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
@@ -94,7 +94,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_VICE_GRIP] = {
+    [MOVE_VICEGRIP] = {
         { 0x14, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -110,7 +110,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_RAZOR_WIND] = {
+    [MOVE_RAZORWIND] = {
         { 0x5, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0xf, 0x0, 0x0, 0x0, 0x0},
@@ -118,7 +118,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SWORDS_DANCE] = {
+    [MOVE_SWORDSDANCE] = {
         { 0x1a, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x1, 0x0, 0x0, 0x0, 0x0},
@@ -142,7 +142,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_WING_ATTACK] = {
+    [MOVE_WINGATTACK] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -182,7 +182,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_VINE_WHIP] = {
+    [MOVE_VINEWHIP] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -198,7 +198,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DOUBLE_KICK] = {
+    [MOVE_DOUBLEKICK] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
@@ -206,7 +206,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MEGA_KICK] = {
+    [MOVE_MEGAKICK] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
@@ -214,7 +214,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_JUMP_KICK] = {
+    [MOVE_JUMPKICK] = {
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -222,7 +222,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ROLLING_KICK] = {
+    [MOVE_ROLLINGKICK] = {
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
@@ -230,7 +230,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SAND_ATTACK] = {
+    [MOVE_SANDATTACK] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -246,7 +246,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_HORN_ATTACK] = {
+    [MOVE_HORNATTACK] = {
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -254,7 +254,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FURY_ATTACK] = {
+    [MOVE_FURYATTACK] = {
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
@@ -262,7 +262,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_HORN_DRILL] = {
+    [MOVE_HORNDRILL] = {
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -278,7 +278,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_BODY_SLAM] = {
+    [MOVE_BODYSLAM] = {
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x2, 0x0, 0x0, 0x0, 0x0},
@@ -294,7 +294,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_TAKE_DOWN] = {
+    [MOVE_TAKEDOWN] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0x23, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -310,7 +310,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DOUBLE_EDGE] = {
+    [MOVE_DOUBLEEDGE] = {
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x24, 0x0, 0x0, 0x0, 0x0},
         { 0xa, 0x0, 0x0, 0x0, 0x0},
@@ -318,7 +318,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_TAIL_WHIP] = {
+    [MOVE_TAILWHIP] = {
         { 0x5, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -326,7 +326,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_POISON_STING] = {
+    [MOVE_POISONSTING] = {
         { 0x1e, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0xe, 0x0, 0x0, 0x0, 0x0},
@@ -342,7 +342,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_PIN_MISSILE] = {
+    [MOVE_PINMISSILE] = {
         { 0xf, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x24, 0x0, 0x0, 0x0, 0x0},
@@ -398,7 +398,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SONIC_BOOM] = {
+    [MOVE_SONICBOOM] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x27, 0x0, 0x0, 0x0, 0x0},
@@ -446,7 +446,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_WATER_GUN] = {
+    [MOVE_WATERGUN] = {
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
         { 0x32, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
@@ -454,7 +454,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_HYDRO_PUMP] = {
+    [MOVE_HYDROPUMP] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
@@ -470,7 +470,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ICE_BEAM] = {
+    [MOVE_ICEBEAM] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -494,7 +494,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_BUBBLE_BEAM] = {
+    [MOVE_BUBBLEBEAM] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x24, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -502,7 +502,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_AURORA_BEAM] = {
+    [MOVE_AURORABEAM] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x1a, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
@@ -510,7 +510,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         NULL_BARD_SOUND
     },
-    [MOVE_HYPER_BEAM] = {
+    [MOVE_HYPERBEAM] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -526,7 +526,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DRILL_PECK] = {
+    [MOVE_DRILLPECK] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0xb, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -542,7 +542,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_LOW_KICK] = {
+    [MOVE_LOWKICK] = {
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -558,7 +558,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SEISMIC_TOSS] = {
+    [MOVE_SEISMICTOSS] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
@@ -582,7 +582,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MEGA_DRAIN] = {
+    [MOVE_MEGADRAIN] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x3, 0x0, 0x0, 0x0, 0x0},
@@ -590,7 +590,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_LEECH_SEED] = {
+    [MOVE_LEECHSEED] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -606,7 +606,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_RAZOR_LEAF] = {
+    [MOVE_RAZORLEAF] = {
         { 0x5, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -614,7 +614,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SOLAR_BEAM] = {
+    [MOVE_SOLARBEAM] = {
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -622,7 +622,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_POISON_POWDER] = {
+    [MOVE_POISONPOWDER] = {
         { 0x1e, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x21, 0x0, 0x0, 0x0, 0x0},
@@ -630,7 +630,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_STUN_SPORE] = {
+    [MOVE_STUNSPORE] = {
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x1a, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -638,7 +638,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SLEEP_POWDER] = {
+    [MOVE_SLEEPPOWDER] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x21, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
@@ -646,7 +646,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_PETAL_DANCE] = {
+    [MOVE_PETALDANCE] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x2, 0x0, 0x0, 0x0, 0x0},
@@ -654,7 +654,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_STRING_SHOT] = {
+    [MOVE_STRINGSHOT] = {
         { 0x32, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
@@ -662,7 +662,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DRAGON_RAGE] = {
+    [MOVE_DRAGONRAGE] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x5, 0x0, 0x0, 0x0, 0x0},
@@ -670,7 +670,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         NULL_BARD_SOUND
     },
-    [MOVE_FIRE_SPIN] = {
+    [MOVE_FIRESPIN] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0xf, 0x0, 0x0, 0x0, 0x0},
@@ -678,7 +678,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_THUNDER_SHOCK] = {
+    [MOVE_THUNDERSHOCK] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
@@ -694,7 +694,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_THUNDER_WAVE] = {
+    [MOVE_THUNDERWAVE] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x5, 0x0, 0x0, 0x0, 0x0},
@@ -710,7 +710,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ROCK_THROW] = {
+    [MOVE_ROCKTHROW] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -790,7 +790,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_QUICK_ATTACK] = {
+    [MOVE_QUICKATTACK] = {
         { 0x27, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
@@ -814,7 +814,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_NIGHT_SHADE] = {
+    [MOVE_NIGHTSHADE] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x5, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -838,7 +838,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DOUBLE_TEAM] = {
+    [MOVE_DOUBLETEAM] = {
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -878,7 +878,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_CONFUSE_RAY] = {
+    [MOVE_CONFUSERAY] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x2d, 0x0, 0x0, 0x0, 0x0},
         { 0x3, 0x0, 0x0, 0x0, 0x0},
@@ -894,7 +894,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DEFENSE_CURL] = {
+    [MOVE_DEFENSECURL] = {
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0xb, 0x0, 0x0, 0x0, 0x0},
         { 0x32, 0x0, 0x0, 0x0, 0x0},
@@ -910,7 +910,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_LIGHT_SCREEN] = {
+    [MOVE_LIGHTSCREEN] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -934,7 +934,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FOCUS_ENERGY] = {
+    [MOVE_FOCUSENERGY] = {
         { 0x1a, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0xb, 0x0, 0x0, 0x0, 0x0},
@@ -958,7 +958,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MIRROR_MOVE] = {
+    [MOVE_MIRRORMOVE] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x32, 0x0, 0x0, 0x0, 0x0},
         { 0x29, 0x0, 0x0, 0x0, 0x0},
@@ -966,7 +966,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SELF_DESTRUCT] = {
+    [MOVE_SELFDESTRUCT] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
@@ -974,7 +974,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_EGG_BOMB] = {
+    [MOVE_EGGBOMB] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1006,7 +1006,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_BONE_CLUB] = {
+    [MOVE_BONECLUB] = {
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1014,7 +1014,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FIRE_BLAST] = {
+    [MOVE_FIREBLAST] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -1046,7 +1046,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SKULL_BASH] = {
+    [MOVE_SKULLBASH] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -1054,7 +1054,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SPIKE_CANNON] = {
+    [MOVE_SPIKECANNON] = {
         { 0x14, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
@@ -1086,7 +1086,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SOFT_BOILED] = {
+    [MOVE_SOFTBOILED] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x1e, 0x0, 0x0, 0x0, 0x0},
         { 0xb, 0x0, 0x0, 0x0, 0x0},
@@ -1094,7 +1094,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_HI_JUMP_KICK] = {
+    [MOVE_HIGHJUMPKICK] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
@@ -1110,7 +1110,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DREAM_EATER] = {
+    [MOVE_DREAMEATER] = {
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
@@ -1118,7 +1118,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_POISON_GAS] = {
+    [MOVE_POISONGAS] = {
         { 0x1e, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -1134,7 +1134,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_LEECH_LIFE] = {
+    [MOVE_LEECHLIFE] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1142,7 +1142,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_LOVELY_KISS] = {
+    [MOVE_LOVELYKISS] = {
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -1150,7 +1150,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         NULL_BARD_SOUND
     },
-    [MOVE_SKY_ATTACK] = {
+    [MOVE_SKYATTACK] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -1174,7 +1174,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DIZZY_PUNCH] = {
+    [MOVE_DIZZYPUNCH] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
@@ -1214,7 +1214,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ACID_ARMOR] = {
+    [MOVE_ACIDARMOR] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
@@ -1238,7 +1238,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         NULL_BARD_SOUND
     },
-    [MOVE_FURY_SWIPES] = {
+    [MOVE_FURYSWIPES] = {
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x12, 0x0, 0x0, 0x0, 0x0},
@@ -1262,7 +1262,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ROCK_SLIDE] = {
+    [MOVE_ROCKSLIDE] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1270,7 +1270,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_HYPER_FANG] = {
+    [MOVE_HYPERFANG] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -1294,7 +1294,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_TRI_ATTACK] = {
+    [MOVE_TRIATTACK] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -1302,7 +1302,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SUPER_FANG] = {
+    [MOVE_SUPERFANG] = {
         { 0x27, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x1, 0x0, 0x0, 0x0, 0x0},
@@ -1342,7 +1342,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_TRIPLE_KICK] = {
+    [MOVE_TRIPLEKICK] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x24, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
@@ -1358,7 +1358,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SPIDER_WEB] = {
+    [MOVE_SPIDERWEB] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x9, 0x0, 0x0, 0x0, 0x0},
@@ -1366,7 +1366,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MIND_READER] = {
+    [MOVE_MINDREADER] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
@@ -1382,7 +1382,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FLAME_WHEEL] = {
+    [MOVE_FLAMEWHEEL] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1414,7 +1414,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_CONVERSION_2] = {
+    [MOVE_CONVERSION2] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
@@ -1430,7 +1430,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_COTTON_SPORE] = {
+    [MOVE_COTTONSPORE] = {
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
         { 0x1a, 0x0, 0x0, 0x0, 0x0},
@@ -1454,7 +1454,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_POWDER_SNOW] = {
+    [MOVE_POWDERSNOW] = {
         { 0x21, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
@@ -1470,7 +1470,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MACH_PUNCH] = {
+    [MOVE_MACHPUNCH] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1478,7 +1478,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SCARY_FACE] = {
+    [MOVE_SCARYFACE] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x3, 0x0, 0x0, 0x0, 0x0},
@@ -1486,7 +1486,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FAINT_ATTACK] = {
+    [MOVE_FEINTATTACK] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -1494,7 +1494,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SWEET_KISS] = {
+    [MOVE_SWEETKISS] = {
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1502,7 +1502,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_BELLY_DRUM] = {
+    [MOVE_BELLYDRUM] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
@@ -1510,7 +1510,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SLUDGE_BOMB] = {
+    [MOVE_SLUDGEBOMB] = {
         { 0x2b, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1518,7 +1518,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MUD_SLAP] = {
+    [MOVE_MUDSLAP] = {
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1542,7 +1542,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ZAP_CANNON] = {
+    [MOVE_ZAPCANNON] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x1, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
@@ -1558,7 +1558,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DESTINY_BOND] = {
+    [MOVE_DESTINYBOND] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0xf, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -1566,7 +1566,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_PERISH_SONG] = {
+    [MOVE_PERISHSONG] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
@@ -1574,7 +1574,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ICY_WIND] = {
+    [MOVE_ICYWIND] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0xf, 0x0, 0x0, 0x0, 0x0},
@@ -1590,7 +1590,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_BONE_RUSH] = {
+    [MOVE_BONERUSH] = {
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1598,7 +1598,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_LOCK_ON] = {
+    [MOVE_LOCKON] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1622,7 +1622,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_GIGA_DRAIN] = {
+    [MOVE_GIGADRAIN] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x3, 0x0, 0x0, 0x0, 0x0},
@@ -1654,7 +1654,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FALSE_SWIPE] = {
+    [MOVE_FALSESWIPE] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1670,7 +1670,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MILK_DRINK] = {
+    [MOVE_MILKDRINK] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1686,7 +1686,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FURY_CUTTER] = {
+    [MOVE_FURYCUTTER] = {
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
@@ -1694,7 +1694,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_STEEL_WING] = {
+    [MOVE_STEELWING] = {
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0xd, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1702,7 +1702,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MEAN_LOOK] = {
+    [MOVE_MEANLOOK] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x24, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1718,7 +1718,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SLEEP_TALK] = {
+    [MOVE_SLEEPTALK] = {
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1726,7 +1726,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_HEAL_BELL] = {
+    [MOVE_HEALBELL] = {
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0xa, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1766,7 +1766,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_PAIN_SPLIT] = {
+    [MOVE_PAINSPLIT] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0xf, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1774,7 +1774,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SACRED_FIRE] = {
+    [MOVE_SACREDFIRE] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x12, 0x0, 0x0, 0x0, 0x0},
@@ -1790,7 +1790,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DYNAMIC_PUNCH] = {
+    [MOVE_DYNAMICPUNCH] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
@@ -1806,7 +1806,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DRAGON_BREATH] = {
+    [MOVE_DRAGONBREATH] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0xb, 0x0, 0x0, 0x0, 0x0},
@@ -1814,7 +1814,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         NULL_BARD_SOUND
     },
-    [MOVE_BATON_PASS] = {
+    [MOVE_BATONPASS] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -1838,7 +1838,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_RAPID_SPIN] = {
+    [MOVE_RAPIDSPIN] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0xf, 0x0, 0x0, 0x0, 0x0},
         { 0xf, 0x0, 0x0, 0x0, 0x0},
@@ -1846,7 +1846,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SWEET_SCENT] = {
+    [MOVE_SWEETSCENT] = {
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0xb, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1854,7 +1854,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_IRON_TAIL] = {
+    [MOVE_IRONTAIL] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x5, 0x0, 0x0, 0x0, 0x0},
@@ -1862,7 +1862,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_METAL_CLAW] = {
+    [MOVE_METALCLAW] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0x24, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
@@ -1870,7 +1870,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_VITAL_THROW] = {
+    [MOVE_VITALTHROW] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x24, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
@@ -1878,7 +1878,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MORNING_SUN] = {
+    [MOVE_MORNINGSUN] = {
         { 0x1a, 0x0, 0x0, 0x0, 0x0},
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
@@ -1902,7 +1902,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_HIDDEN_POWER] = {
+    [MOVE_HIDDENPOWER] = {
         { 0xf, 0x0, 0x0, 0x0, 0x0},
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0x21, 0x0, 0x0, 0x0, 0x0},
@@ -1910,7 +1910,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_CROSS_CHOP] = {
+    [MOVE_CROSSCHOP] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1926,7 +1926,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_RAIN_DANCE] = {
+    [MOVE_RAINDANCE] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1934,7 +1934,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SUNNY_DAY] = {
+    [MOVE_SUNNYDAY] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0x5, 0x0, 0x0, 0x0, 0x0},
@@ -1950,7 +1950,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MIRROR_COAT] = {
+    [MOVE_MIRRORCOAT] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
@@ -1958,7 +1958,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_PSYCH_UP] = {
+    [MOVE_PSYCHUP] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1966,7 +1966,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_EXTREME_SPEED] = {
+    [MOVE_EXTREMESPEED] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -1974,7 +1974,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ANCIENT_POWER] = {
+    [MOVE_ANCIENTPOWER] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x21, 0x0, 0x0, 0x0, 0x0},
@@ -1982,7 +1982,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         NULL_BARD_SOUND
     },
-    [MOVE_SHADOW_BALL] = {
+    [MOVE_SHADOWBALL] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
@@ -1990,7 +1990,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FUTURE_SIGHT] = {
+    [MOVE_FUTURESIGHT] = {
         { 0x27, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x12, 0x0, 0x0, 0x0, 0x0},
@@ -1998,7 +1998,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ROCK_SMASH] = {
+    [MOVE_ROCKSMASH] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2014,7 +2014,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_BEAT_UP] = {
+    [MOVE_BEATUP] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2022,7 +2022,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FAKE_OUT] = {
+    [MOVE_FAKEOUT] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0x21, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2046,7 +2046,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SPIT_UP] = {
+    [MOVE_SPITUP] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2062,7 +2062,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_HEAT_WAVE] = {
+    [MOVE_HEATWAVE] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2094,7 +2094,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_WILL_O_WISP] = {
+    [MOVE_WILLOWISP] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
@@ -2118,7 +2118,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FOCUS_PUNCH] = {
+    [MOVE_FOCUSPUNCH] = {
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
@@ -2126,7 +2126,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SMELLING_SALT] = {
+    [MOVE_SMELLINGSALTS] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
@@ -2134,7 +2134,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FOLLOW_ME] = {
+    [MOVE_FOLLOWME] = {
         { 0x15, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -2142,7 +2142,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_NATURE_POWER] = {
+    [MOVE_NATUREPOWER] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x21, 0x0, 0x0, 0x0, 0x0},
@@ -2166,7 +2166,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_HELPING_HAND] = {
+    [MOVE_HELPINGHAND] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -2182,7 +2182,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ROLE_PLAY] = {
+    [MOVE_ROLEPLAY] = {
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2222,7 +2222,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MAGIC_COAT] = {
+    [MOVE_MAGICCOAT] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
@@ -2246,7 +2246,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_BRICK_BREAK] = {
+    [MOVE_BRICKBREAK] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x5, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2262,7 +2262,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_KNOCK_OFF] = {
+    [MOVE_KNOCKOFF] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2286,7 +2286,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SKILL_SWAP] = {
+    [MOVE_SKILLSWAP] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2326,7 +2326,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SECRET_POWER] = {
+    [MOVE_SECRETPOWER] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0x21, 0x0, 0x0, 0x0, 0x0},
@@ -2342,7 +2342,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ARM_THRUST] = {
+    [MOVE_ARMTHRUST] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2358,7 +2358,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_TAIL_GLOW] = {
+    [MOVE_TAILGLOW] = {
         { 0x4, 0x0, 0x0, 0x0, 0x0},
         { 0x1a, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2366,7 +2366,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_LUSTER_PURGE] = {
+    [MOVE_LUSTERPURGE] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x32, 0x0, 0x0, 0x0, 0x0},
@@ -2374,7 +2374,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MIST_BALL] = {
+    [MOVE_MISTBALL] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2382,7 +2382,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FEATHER_DANCE] = {
+    [MOVE_FEATHERDANCE] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -2390,7 +2390,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_TEETER_DANCE] = {
+    [MOVE_TEETERDANCE] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -2398,7 +2398,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_BLAZE_KICK] = {
+    [MOVE_BLAZEKICK] = {
         { 0x5, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2406,7 +2406,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MUD_SPORT] = {
+    [MOVE_MUDSPORT] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
@@ -2414,7 +2414,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ICE_BALL] = {
+    [MOVE_ICEBALL] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2422,7 +2422,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_NEEDLE_ARM] = {
+    [MOVE_NEEDLEARM] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
@@ -2430,7 +2430,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SLACK_OFF] = {
+    [MOVE_SLACKOFF] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2438,7 +2438,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_HYPER_VOICE] = {
+    [MOVE_HYPERVOICE] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x1e, 0x0, 0x0, 0x0, 0x0},
@@ -2446,7 +2446,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_POISON_FANG] = {
+    [MOVE_POISONFANG] = {
         { 0x1e, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -2454,7 +2454,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_CRUSH_CLAW] = {
+    [MOVE_CRUSHCLAW] = {
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2462,7 +2462,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_BLAST_BURN] = {
+    [MOVE_BLASTBURN] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
@@ -2470,7 +2470,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_HYDRO_CANNON] = {
+    [MOVE_HYDROCANNON] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -2478,7 +2478,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         NULL_BARD_SOUND
     },
-    [MOVE_METEOR_MASH] = {
+    [MOVE_METEORMASH] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
@@ -2494,7 +2494,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_WEATHER_BALL] = {
+    [MOVE_WEATHERBALL] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
@@ -2510,7 +2510,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0xe, 0x0, 0x0, 0x0, 0x0}
     },
-    [MOVE_FAKE_TEARS] = {
+    [MOVE_FAKETEARS] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2518,7 +2518,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_AIR_CUTTER] = {
+    [MOVE_AIRCUTTER] = {
         { 0x5, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
@@ -2534,7 +2534,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ODOR_SLEUTH] = {
+    [MOVE_ODORSLEUTH] = {
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x27, 0x0, 0x0, 0x0, 0x0},
@@ -2542,7 +2542,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ROCK_TOMB] = {
+    [MOVE_ROCKTOMB] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x27, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2550,7 +2550,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SILVER_WIND] = {
+    [MOVE_SILVERWIND] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0xf, 0x0, 0x0, 0x0, 0x0},
@@ -2558,7 +2558,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_METAL_SOUND] = {
+    [MOVE_METALSOUND] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x21, 0x0, 0x0, 0x0, 0x0},
@@ -2566,7 +2566,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_GRASS_WHISTLE] = {
+    [MOVE_GRASSWHISTLE] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x24, 0x0, 0x0, 0x0, 0x0},
@@ -2582,7 +2582,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_COSMIC_POWER] = {
+    [MOVE_COSMICPOWER] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x21, 0x0, 0x0, 0x0, 0x0},
@@ -2590,7 +2590,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_WATER_SPOUT] = {
+    [MOVE_WATERSPOUT] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x21, 0x0, 0x0, 0x0, 0x0},
@@ -2598,7 +2598,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SIGNAL_BEAM] = {
+    [MOVE_SIGNALBEAM] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -2606,7 +2606,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SHADOW_PUNCH] = {
+    [MOVE_SHADOWPUNCH] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
@@ -2622,7 +2622,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         NULL_BARD_SOUND
     },
-    [MOVE_SKY_UPPERCUT] = {
+    [MOVE_SKYUPPERCUT] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
@@ -2630,7 +2630,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SAND_TOMB] = {
+    [MOVE_SANDTOMB] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x27, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2638,7 +2638,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SHEER_COLD] = {
+    [MOVE_SHEERCOLD] = {
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
@@ -2646,7 +2646,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MUDDY_WATER] = {
+    [MOVE_MUDDYWATER] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
@@ -2654,7 +2654,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_BULLET_SEED] = {
+    [MOVE_BULLETSEED] = {
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -2662,7 +2662,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_AERIAL_ACE] = {
+    [MOVE_AERIALACE] = {
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
@@ -2670,7 +2670,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ICICLE_SPEAR] = {
+    [MOVE_ICICLESPEAR] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0xf, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
@@ -2678,7 +2678,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         NULL_BARD_SOUND
     },
-    [MOVE_IRON_DEFENSE] = {
+    [MOVE_IRONDEFENSE] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -2702,7 +2702,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DRAGON_CLAW] = {
+    [MOVE_DRAGONCLAW] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
@@ -2710,7 +2710,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_FRENZY_PLANT] = {
+    [MOVE_FRENZYPLANT] = {
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -2718,7 +2718,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_BULK_UP] = {
+    [MOVE_BULKUP] = {
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2734,7 +2734,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MUD_SHOT] = {
+    [MOVE_MUDSHOT] = {
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2742,7 +2742,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_POISON_TAIL] = {
+    [MOVE_POISONTAIL] = {
         { 0x1e, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x5, 0x0, 0x0, 0x0, 0x0},
@@ -2758,7 +2758,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_VOLT_TACKLE] = {
+    [MOVE_VOLTTACKLE] = {
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -2766,7 +2766,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_MAGICAL_LEAF] = {
+    [MOVE_MAGICALLEAF] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x24, 0x0, 0x0, 0x0, 0x0},
@@ -2774,7 +2774,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         NULL_BARD_SOUND
     },
-    [MOVE_WATER_SPORT] = {
+    [MOVE_WATERSPORT] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x1a, 0x0, 0x0, 0x0, 0x0},
@@ -2782,7 +2782,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_CALM_MIND] = {
+    [MOVE_CALMMIND] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2790,7 +2790,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_LEAF_BLADE] = {
+    [MOVE_LEAFBLADE] = {
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x5, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2798,7 +2798,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DRAGON_DANCE] = {
+    [MOVE_DRAGONDANCE] = {
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
@@ -2806,7 +2806,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ROCK_BLAST] = {
+    [MOVE_ROCKBLAST] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x0, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2814,7 +2814,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SHOCK_WAVE] = {
+    [MOVE_SHOCKWAVE] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x3, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2822,7 +2822,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_WATER_PULSE] = {
+    [MOVE_WATERPULSE] = {
         { 0x1b, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
@@ -2830,7 +2830,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DOOM_DESIRE] = {
+    [MOVE_DOOMDESIRE] = {
         { 0x27, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -2838,7 +2838,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         NULL_BARD_SOUND
     },
-    [MOVE_PSYCHO_BOOST] = {
+    [MOVE_PSYCHOBOOST] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0xf, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},

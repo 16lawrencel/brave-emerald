@@ -3784,7 +3784,7 @@ static void AnimFlickeringPunch(struct Sprite* sprite)
 }
 
 // Moves the sprite in a diagonally slashing motion across the target mon.
-// Used by moves such as MOVE_CUT and MOVE_AERIAL_ACE.
+// Used by moves such as MOVE_CUT and MOVE_AERIALACE.
 // arg 0: initial x pixel offset
 // arg 1: initial y pixel offset
 // arg 2: slice direction; 0 = right-to-left, 1 = left-to-right
