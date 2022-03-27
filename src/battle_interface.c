@@ -1075,20 +1075,136 @@ void DummyBattleInterfaceFunc(u8 healthboxSpriteId, bool8 isDoubleBattleBattlerO
 
 }
 
+
+
+#define hMain_HealthBarSpriteId  data[5]
+
+static void ChangeHealthboxVisibility(u8 spriteId, bool8 hide)
+{
+    struct Sprite* sprite = &gSprites[spriteId];
+
+    // TODO: add this logic
+    // if (gNewBS == NULL) //Battle struct was already freed at end of battle
+    //  return;
+
+
+    if (hide)
+    {
+        if (!sprite->invisible) //Sprite isn't already hidden
+        {
+            sprite->invisible = TRUE;
+            // gNewBS->hiddenHealthboxFlags[spriteId / 8] |= gBitTable[spriteId % 8]; //Set special hidden flag
+        }
+    }
+    else
+    {
+        // if (sprite->invisible && gNewBS->hiddenHealthboxFlags[spriteId / 8] & gBitTable[spriteId % 8]) //Sprite was hidden during animation
+        if (sprite->invisible)
+        {
+            sprite->invisible = FALSE;
+            // gNewBS->hiddenHealthboxFlags[spriteId / 8] &= ~gBitTable[spriteId % 8]; //Remove special hidden flag
+        }
+    }
+}
+
+static void RestoreHiddenHealthboxes(u8 priority)
+{
+    u8 spriteId;
+    for (spriteId = 0; spriteId < MAX_SPRITES; ++spriteId)
+    {
+        switch (gSprites[spriteId].template->tileTag) {
+            case TAG_HEALTHBOX_PLAYER1_TILE:
+            case TAG_HEALTHBOX_PLAYER2_TILE:
+            case TAG_HEALTHBOX_PLAYER3_TILE:
+            case TAG_HEALTHBOX_OPPONENT1_TILE:
+            case TAG_HEALTHBOX_OPPONENT2_TILE:
+            case TAG_HEALTHBOX_OPPONENT3_TILE:
+            case TAG_HEALTHBAR_PLAYER1_TILE:
+            case TAG_HEALTHBAR_PLAYER2_TILE:
+            case TAG_HEALTHBAR_PLAYER3_TILE:
+            case TAG_HEALTHBAR_OPPONENT1_TILE:
+            case TAG_HEALTHBAR_OPPONENT2_TILE:
+            case TAG_HEALTHBAR_OPPONENT3_TILE:
+                switch (priority) {
+                    case 0:
+                        ChangeHealthboxVisibility(spriteId, TRUE);
+                        break;
+                    default:
+                        ChangeHealthboxVisibility(spriteId, FALSE);
+                }
+        }
+    }
+}
+
+
 void UpdateOamPriorityInAllHealthboxes(u8 priority)
 {
-    s32 i;
+    u32 i, spriteId;
 
-    for (i = 0; i < gBattlersCount; i++)
-    {
-        u8 healthboxLeftSpriteId = gHealthboxSpriteIds[i];
-        u8 healthboxRightSpriteId = gSprites[gHealthboxSpriteIds[i]].oam.affineParam;
-        u8 healthbarSpriteId = gSprites[gHealthboxSpriteIds[i]].hMain_HealthBarSpriteId;
+    switch (gBattleBufferA[gBattleAnimAttacker][0]) {
+        case CONTROLLER_MOVEANIMATION: ;
+            // if (sAnimMoveIndex == MOVE_TRANSFORM)
+            //     goto DEFAULT_CASE;
+            goto HIDE_BOXES;
 
-        gSprites[healthboxLeftSpriteId].oam.priority = priority;
-        gSprites[healthboxRightSpriteId].oam.priority = priority;
-        gSprites[healthbarSpriteId].oam.priority = priority;
+        case CONTROLLER_BALLTHROWANIM:
+            goto HIDE_BOXES;
+
+        case CONTROLLER_BATTLEANIMATION:
+            switch (gBattleBufferA[gBattleAnimAttacker][1]) {
+                case B_ANIM_TURN_TRAP:
+                case B_ANIM_LEECH_SEED_DRAIN:
+                case B_ANIM_MON_HIT:
+                case B_ANIM_SNATCH_MOVE:
+                case B_ANIM_FUTURE_SIGHT_HIT:
+                case B_ANIM_DOOM_DESIRE_HIT:
+                case B_ANIM_WISH_HEAL:
+                case B_ANIM_MON_SCARED:
+                case B_ANIM_GHOST_GET_OUT:
+                case B_ANIM_WISHIWASHI_FISH:
+                case B_ANIM_ZYGARDE_CELL_SWIRL:
+                case B_ANIM_ELECTRIC_SURGE:
+                case B_ANIM_GRASSY_SURGE:
+                case B_ANIM_MISTY_SURGE:
+                case B_ANIM_PSYCHIC_SURGE:
+                case B_ANIM_SEA_OF_FIRE:
+                case B_ANIM_LUNAR_DANCE_HEAL:
+                case B_ANIM_HEALING_WISH_HEAL:
+                case B_ANIM_RED_PRIMAL_REVERSION:
+                case B_ANIM_BLUE_PRIMAL_REVERSION:
+                case B_ANIM_POWDER_EXPLOSION:
+                case B_ANIM_BEAK_BLAST_WARM_UP:
+                case B_ANIM_SHELL_TRAP_SET:
+                case B_ANIM_BERRY_EAT:
+                case B_ANIM_ZMOVE_ACTIVATE:
+                case B_ANIM_MEGA_EVOLUTION:
+                case B_ANIM_ULTRA_BURST:
+                case B_ANIM_DYNAMAX_START:
+                case B_ANIM_RAID_BATTLE_ENERGY_BURST:
+                    goto HIDE_BOXES;
+            }
+        default:
+        DEFAULT_CASE:
+            for (i = 0; i < gBattlersCount; i++)
+            {
+                u8 healthboxLeftSpriteId = gHealthboxSpriteIds[i];
+                u8 healthboxRightSpriteId = gSprites[gHealthboxSpriteIds[i]].oam.affineParam;
+                u8 healthbarSpriteId = gSprites[gHealthboxSpriteIds[i]].hMain_HealthBarSpriteId;
+
+                gSprites[healthboxLeftSpriteId].oam.priority = priority;
+                gSprites[healthboxRightSpriteId].oam.priority = priority;
+                gSprites[healthbarSpriteId].oam.priority = priority;
+
+                if (priority > 0) //Restore Hidden Healthboxes
+                {
+                    RestoreHiddenHealthboxes(priority);
+                }
+            }
+            return;
     }
+
+HIDE_BOXES:
+    RestoreHiddenHealthboxes(priority);
 }
 
 void InitBattlerHealthboxCoords(u8 battler)
