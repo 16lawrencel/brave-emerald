@@ -888,6 +888,43 @@ static void Debug_DrawNumberPair(s16 number1, s16 number2, u16 *arg2)
 #define hBar_HealthBoxSpriteId      data[5]
 #define hBar_Data6                  data[6]
 
+void CreateHealthboxSprite(u8 battler)
+{
+    if (battler < gBattlersCount)
+    {
+        u8 healthboxSpriteId;
+
+        if (gBattleTypeFlags & BATTLE_TYPE_SAFARI && battler == B_POSITION_PLAYER_LEFT)
+            healthboxSpriteId = CreateSafariPlayerHealthboxSprites();
+        else if (gBattleTypeFlags & BATTLE_TYPE_WALLY_TUTORIAL && battler == B_POSITION_PLAYER_LEFT)
+            return;
+        else
+            healthboxSpriteId = CreateBattlerHealthboxSprites(battler);
+
+        gHealthboxSpriteIds[battler] = healthboxSpriteId;
+        InitBattlerHealthboxCoords(battler);
+        SetHealthboxSpriteVisible(healthboxSpriteId);
+
+        if (GetBattlerSide(battler) != B_SIDE_PLAYER)
+            UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &gEnemyParty[gBattlerPartyIndexes[battler]], HEALTHBOX_ALL);
+        else if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
+            UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &gPlayerParty[gBattlerPartyIndexes[battler]], HEALTHBOX_SAFARI_ALL_TEXT);
+        else
+            UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &gPlayerParty[gBattlerPartyIndexes[battler]], HEALTHBOX_ALL);
+
+        if (GetBattlerSide(battler) != B_SIDE_PLAYER)
+        {
+            if (gBattlerPartyIndexes[battler] == PARTY_SIZE || GetMonData(&gEnemyParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0)
+                SetHealthboxSpriteInvisible(healthboxSpriteId);
+        }
+        else if (!(gBattleTypeFlags & BATTLE_TYPE_SAFARI))
+        {
+            if (gBattlerPartyIndexes[battler] == PARTY_SIZE || GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0)
+                SetHealthboxSpriteInvisible(healthboxSpriteId);
+        }
+    }
+}
+
 u8 CreateBattlerHealthboxSprites(u8 battlerId)
 {
     s16 data6 = 0;
@@ -1063,51 +1100,23 @@ static void UpdateSpritePos(u8 spriteId, s16 x, s16 y)
     gSprites[spriteId].y = y;
 }
 
-void DestoryHealthboxSprite(u8 healthboxSpriteId)
+void DestroyHealthboxSprite(u8 healthboxSpriteId)
 {
     DestroySprite(&gSprites[gSprites[healthboxSpriteId].oam.affineParam]);
     DestroySprite(&gSprites[gSprites[healthboxSpriteId].hMain_HealthBarSpriteId]);
     DestroySprite(&gSprites[healthboxSpriteId]);
 }
 
-void DummyBattleInterfaceFunc(u8 healthboxSpriteId, bool8 isDoubleBattleBattlerOnly)
+static void CreateAllHealthboxes()
 {
-
-}
-
-
-
-#define hMain_HealthBarSpriteId  data[5]
-
-static void ChangeHealthboxVisibility(u8 spriteId, bool8 hide)
-{
-    struct Sprite* sprite = &gSprites[spriteId];
-
-    // TODO: add this logic
-    // if (gNewBS == NULL) //Battle struct was already freed at end of battle
-    //  return;
-
-
-    if (hide)
+    u8 battlerId;
+    for (battlerId = 0; battlerId < gBattlersCount; battlerId++)
     {
-        if (!sprite->invisible) //Sprite isn't already hidden
-        {
-            sprite->invisible = TRUE;
-            // gNewBS->hiddenHealthboxFlags[spriteId / 8] |= gBitTable[spriteId % 8]; //Set special hidden flag
-        }
-    }
-    else
-    {
-        // if (sprite->invisible && gNewBS->hiddenHealthboxFlags[spriteId / 8] & gBitTable[spriteId % 8]) //Sprite was hidden during animation
-        if (sprite->invisible)
-        {
-            sprite->invisible = FALSE;
-            // gNewBS->hiddenHealthboxFlags[spriteId / 8] &= ~gBitTable[spriteId % 8]; //Remove special hidden flag
-        }
+        CreateHealthboxSprite(battlerId);
     }
 }
 
-static void RestoreHiddenHealthboxes(u8 priority)
+static void DestroyAllHealthboxes()
 {
     u8 spriteId;
     for (spriteId = 0; spriteId < MAX_SPRITES; ++spriteId)
@@ -1125,17 +1134,18 @@ static void RestoreHiddenHealthboxes(u8 priority)
             case TAG_HEALTHBAR_OPPONENT1_TILE:
             case TAG_HEALTHBAR_OPPONENT2_TILE:
             case TAG_HEALTHBAR_OPPONENT3_TILE:
-                switch (priority) {
-                    case 0:
-                        ChangeHealthboxVisibility(spriteId, TRUE);
-                        break;
-                    default:
-                        ChangeHealthboxVisibility(spriteId, FALSE);
-                }
+                DestroyHealthboxSprite(spriteId);
         }
     }
 }
 
+static void RestoreHiddenHealthboxes(u8 priority)
+{
+    if (priority == 0)
+        DestroyAllHealthboxes();
+    else
+        CreateAllHealthboxes();
+}
 
 void UpdateOamPriorityInAllHealthboxes(u8 priority)
 {
