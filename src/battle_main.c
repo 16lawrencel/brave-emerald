@@ -4824,7 +4824,7 @@ static void CheckFocusPunch_ClearVarsBeforeTurnStarts(void)
         {
             gActiveBattler = gBattlerAttacker = gBattleStruct->focusPunchBattlerId;
             gBattleStruct->focusPunchBattlerId++;
-            if (gChosenMoveByBattler[gActiveBattler] == MOVE_FOCUSPUNCH
+            if (gChosenMoveByBattler[gActiveBattler] == MOVE_FOCUS_PUNCH
                 && !(gBattleMons[gActiveBattler].status1 & STATUS1_SLEEP)
                 && !(gDisableStructs[gBattlerAttacker].truantCounter)
                 && !(gProtectStructs[gActiveBattler].noValidMoves))

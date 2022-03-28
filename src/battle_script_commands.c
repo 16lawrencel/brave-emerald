@@ -729,19 +729,19 @@ static const u16 sMovesForbiddenToCopy[] =
     MOVE_MIMIC,
     MIMIC_FORBIDDEN_END,
     MOVE_COUNTER,
-    MOVE_MIRRORCOAT,
+    MOVE_MIRROR_COAT,
     MOVE_PROTECT,
     MOVE_DETECT,
     MOVE_ENDURE,
-    MOVE_DESTINYBOND,
-    MOVE_SLEEPTALK,
+    MOVE_DESTINY_BOND,
+    MOVE_SLEEP_TALK,
     MOVE_THIEF,
-    MOVE_FOLLOWME,
+    MOVE_FOLLOW_ME,
     MOVE_SNATCH,
-    MOVE_HELPINGHAND,
+    MOVE_HELPING_HAND,
     MOVE_COVET,
     MOVE_TRICK,
-    MOVE_FOCUSPUNCH,
+    MOVE_FOCUS_PUNCH,
     METRONOME_FORBIDDEN_END
 };
 
@@ -757,14 +757,14 @@ static const u8 sFlailHpScaleToPowerTable[] =
 
 static const u16 sNaturePowerMoves[] =
 {
-    [BATTLE_TERRAIN_GRASS]      = MOVE_STUNSPORE,
-    [BATTLE_TERRAIN_LONG_GRASS] = MOVE_RAZORLEAF,
+    [BATTLE_TERRAIN_GRASS]      = MOVE_STUN_SPORE,
+    [BATTLE_TERRAIN_LONG_GRASS] = MOVE_RAZOR_LEAF,
     [BATTLE_TERRAIN_SAND]       = MOVE_EARTHQUAKE,
-    [BATTLE_TERRAIN_UNDERWATER] = MOVE_HYDROPUMP,
+    [BATTLE_TERRAIN_UNDERWATER] = MOVE_HYDRO_PUMP,
     [BATTLE_TERRAIN_WATER]      = MOVE_SURF,
-    [BATTLE_TERRAIN_POND]       = MOVE_BUBBLEBEAM,
-    [BATTLE_TERRAIN_MOUNTAIN]   = MOVE_ROCKSLIDE,
-    [BATTLE_TERRAIN_CAVE]       = MOVE_SHADOWBALL,
+    [BATTLE_TERRAIN_POND]       = MOVE_BUBBLE_BEAM,
+    [BATTLE_TERRAIN_MOUNTAIN]   = MOVE_ROCK_SLIDE,
+    [BATTLE_TERRAIN_CAVE]       = MOVE_SHADOW_BALL,
     [BATTLE_TERRAIN_BUILDING]   = MOVE_SWIFT,
     [BATTLE_TERRAIN_PLAIN]      = MOVE_SWIFT
 };
@@ -960,7 +960,7 @@ static void Cmd_attackcanceler(void)
 
     if (gProtectStructs[gBattlerTarget].bounceMove && gBattleMoves[gCurrentMove].flags & FLAG_MAGIC_COAT_AFFECTED)
     {
-        PressurePPLose(gBattlerAttacker, gBattlerTarget, MOVE_MAGICCOAT);
+        PressurePPLose(gBattlerAttacker, gBattlerTarget, MOVE_MAGIC_COAT);
         gProtectStructs[gBattlerTarget].bounceMove = 0;
         BattleScriptPushCursor();
         gBattlescriptCurrInstr = BattleScript_MagicCoatBounce;
@@ -1913,7 +1913,7 @@ static void Cmd_datahpupdate(void)
                 if (!gSpecialStatuses[gActiveBattler].dmg && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE))
                     gSpecialStatuses[gActiveBattler].dmg = gHpDealt;
 
-                if (IS_TYPE_PHYSICAL(moveType) && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE) && gCurrentMove != MOVE_PAINSPLIT)
+                if (IS_TYPE_PHYSICAL(moveType) && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE) && gCurrentMove != MOVE_PAIN_SPLIT)
                 {
                     gProtectStructs[gActiveBattler].physicalDmg = gHpDealt;
                     gSpecialStatuses[gActiveBattler].physicalDmg = gHpDealt;
@@ -4268,7 +4268,7 @@ static void Cmd_moveend(void)
              && gChosenMove != MOVE_STRUGGLE
              && (*choicedMoveAtk == 0 || *choicedMoveAtk == 0xFFFF))
             {
-                if (gChosenMove == MOVE_BATONPASS && !(gMoveResultFlags & MOVE_RESULT_FAILED))
+                if (gChosenMove == MOVE_BATON_PASS && !(gMoveResultFlags & MOVE_RESULT_FAILED))
                 {
                     ++gBattleScripting.moveendState;
                     break;
@@ -7945,7 +7945,7 @@ static void Cmd_trysetencore(void)
 
     if (gLastMoves[gBattlerTarget] == MOVE_STRUGGLE
         || gLastMoves[gBattlerTarget] == MOVE_ENCORE
-        || gLastMoves[gBattlerTarget] == MOVE_MIRRORMOVE)
+        || gLastMoves[gBattlerTarget] == MOVE_MIRROR_MOVE)
     {
         i = 4;
     }
@@ -8115,7 +8115,7 @@ static bool8 IsTwoTurnsMove(u16 move)
     if (gBattleMoves[move].effect == EFFECT_SKULL_BASH
         || gBattleMoves[move].effect == EFFECT_RAZOR_WIND
         || gBattleMoves[move].effect == EFFECT_SKY_ATTACK
-        || gBattleMoves[move].effect == EFFECT_SOLARBEAM
+        || gBattleMoves[move].effect == EFFECT_SOLAR_BEAM
         || gBattleMoves[move].effect == EFFECT_SEMI_INVULNERABLE
         || gBattleMoves[move].effect == EFFECT_BIDE)
         return TRUE;
@@ -8125,8 +8125,8 @@ static bool8 IsTwoTurnsMove(u16 move)
 
 static bool8 IsInvalidForSleepTalkOrAssist(u16 move)
 {
-    if (move == 0 || move == MOVE_SLEEPTALK || move == MOVE_ASSIST
-        || move == MOVE_MIRRORMOVE || move == MOVE_METRONOME)
+    if (move == 0 || move == MOVE_SLEEP_TALK || move == MOVE_ASSIST
+        || move == MOVE_MIRROR_MOVE || move == MOVE_METRONOME)
         return TRUE;
     else
         return FALSE;
@@ -8135,14 +8135,14 @@ static bool8 IsInvalidForSleepTalkOrAssist(u16 move)
 static u8 AttacksThisTurn(u8 battlerId, u16 move) // Note: returns 1 if it's a charging turn, otherwise 2
 {
     // first argument is unused
-    if (gBattleMoves[move].effect == EFFECT_SOLARBEAM
+    if (gBattleMoves[move].effect == EFFECT_SOLAR_BEAM
         && (gBattleWeather & B_WEATHER_SUN))
         return 2;
 
     if (gBattleMoves[move].effect == EFFECT_SKULL_BASH
         || gBattleMoves[move].effect == EFFECT_RAZOR_WIND
         || gBattleMoves[move].effect == EFFECT_SKY_ATTACK
-        || gBattleMoves[move].effect == EFFECT_SOLARBEAM
+        || gBattleMoves[move].effect == EFFECT_SOLAR_BEAM
         || gBattleMoves[move].effect == EFFECT_SEMI_INVULNERABLE
         || gBattleMoves[move].effect == EFFECT_BIDE)
     {
@@ -8160,7 +8160,7 @@ static void Cmd_trychoosesleeptalkmove(void)
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         if (IsInvalidForSleepTalkOrAssist(gBattleMons[gBattlerAttacker].moves[i])
-            || gBattleMons[gBattlerAttacker].moves[i] == MOVE_FOCUSPUNCH
+            || gBattleMons[gBattlerAttacker].moves[i] == MOVE_FOCUS_PUNCH
             || gBattleMons[gBattlerAttacker].moves[i] == MOVE_UPROAR
             || IsTwoTurnsMove(gBattleMons[gBattlerAttacker].moves[i]))
         {
@@ -8287,7 +8287,7 @@ static void Cmd_healpartystatus(void)
     u32 zero = 0;
     u8 toHeal = 0;
 
-    if (gCurrentMove == MOVE_HEALBELL)
+    if (gCurrentMove == MOVE_HEAL_BELL)
     {
         struct Pokemon *party;
         s32 i;
@@ -8848,7 +8848,7 @@ static void Cmd_trysetfutureattack(void)
         if (gProtectStructs[gBattlerAttacker].helpingHand)
             gWishFutureKnock.futureSightDmg[gBattlerTarget] = gWishFutureKnock.futureSightDmg[gBattlerTarget] * 15 / 10;
 
-        if (gCurrentMove == MOVE_DOOMDESIRE)
+        if (gCurrentMove == MOVE_DOOM_DESIRE)
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DOOM_DESIRE;
         else
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_FUTURE_SIGHT;

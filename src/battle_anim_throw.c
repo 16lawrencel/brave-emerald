@@ -2471,13 +2471,13 @@ void AnimTask_SetAttackerTargetLeftPos(u8 taskId)
 
 void AnimTask_GetTrappedMoveAnimId(u8 taskId)
 {
-    if (gBattleSpritesDataPtr->animationData->animArg == MOVE_FIRESPIN)
+    if (gBattleSpritesDataPtr->animationData->animArg == MOVE_FIRE_SPIN)
         gBattleAnimArgs[0] = TRAP_ANIM_FIRE_SPIN;
     else if (gBattleSpritesDataPtr->animationData->animArg == MOVE_WHIRLPOOL)
         gBattleAnimArgs[0] = TRAP_ANIM_WHIRLPOOL;
     else if (gBattleSpritesDataPtr->animationData->animArg == MOVE_CLAMP)
         gBattleAnimArgs[0] = TRAP_ANIM_CLAMP;
-    else if (gBattleSpritesDataPtr->animationData->animArg == MOVE_SANDTOMB)
+    else if (gBattleSpritesDataPtr->animationData->animArg == MOVE_SAND_TOMB)
         gBattleAnimArgs[0] = TRAP_ANIM_SAND_TOMB;
     else
         gBattleAnimArgs[0] = TRAP_ANIM_BIND;

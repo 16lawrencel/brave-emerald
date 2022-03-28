@@ -73,11 +73,11 @@ enum {
 // const rom data
 static const u16 sVariableDmgMoves[] =
 {
-    MOVE_COUNTER, MOVE_FISSURE, MOVE_BIDE, MOVE_MIRRORCOAT,
-    MOVE_HORNDRILL, MOVE_FLAIL, MOVE_REVERSAL, MOVE_HIDDENPOWER,
-    MOVE_SHEERCOLD, MOVE_FOCUSPUNCH, MOVE_ERUPTION,
-    MOVE_WATERSPOUT, MOVE_DREAMEATER, MOVE_WEATHERBALL,
-    MOVE_SNORE, MOVE_PAINSPLIT, MOVE_GUILLOTINE,
+    MOVE_COUNTER, MOVE_FISSURE, MOVE_BIDE, MOVE_MIRROR_COAT,
+    MOVE_HORN_DRILL, MOVE_FLAIL, MOVE_REVERSAL, MOVE_HIDDEN_POWER,
+    MOVE_SHEER_COLD, MOVE_FOCUS_PUNCH, MOVE_ERUPTION,
+    MOVE_WATER_SPOUT, MOVE_DREAM_EATER, MOVE_WEATHER_BALL,
+    MOVE_SNORE, MOVE_PAIN_SPLIT, MOVE_GUILLOTINE,
     MOVE_FRUSTRATION, MOVE_RETURN, MOVE_ENDEAVOR,
     MOVE_PRESENT, MOVE_REVENGE, TABLE_END,
     // those are handled by the function itself
@@ -124,6 +124,7 @@ static const u16 sPoints_MoveEffect[NUM_BATTLE_MOVE_EFFECTS] =
     [EFFECT_LIGHT_SCREEN] = 7,
     [EFFECT_TRI_ATTACK] = 1,
     [EFFECT_REST] = 7,
+    [EFFECT_OHKO] = 7,
     [EFFECT_RAZOR_WIND] = 1,
     [EFFECT_SUPER_FANG] = 5,
     [EFFECT_DRAGON_RAGE] = 2,
@@ -181,6 +182,7 @@ static const u16 sPoints_MoveEffect[NUM_BATTLE_MOVE_EFFECTS] =
     [EFFECT_CONVERSION_2] = 4,
     [EFFECT_LOCK_ON] = 3,
     [EFFECT_SKETCH] = 3,
+    [EFFECT_UNUSED_60] = 3,
     [EFFECT_SLEEP_TALK] = 3,
     [EFFECT_DESTINY_BOND] = 3,
     [EFFECT_FLAIL] = 2,
@@ -194,6 +196,7 @@ static const u16 sPoints_MoveEffect[NUM_BATTLE_MOVE_EFFECTS] =
     [EFFECT_NIGHTMARE] = 3,
     [EFFECT_MINIMIZE] = 1,
     [EFFECT_CURSE] = 2,
+    [EFFECT_UNUSED_6E] = 1,
     [EFFECT_PROTECT] = 5,
     [EFFECT_SPIKES] = 4,
     [EFFECT_FORESIGHT] = 3,
@@ -224,6 +227,7 @@ static const u16 sPoints_MoveEffect[NUM_BATTLE_MOVE_EFFECTS] =
     [EFFECT_DEFENSE_UP_HIT] = 1,
     [EFFECT_ATTACK_UP_HIT] = 1,
     [EFFECT_ALL_STATS_UP_HIT] = 1,
+    [EFFECT_UNUSED_8D] = 1,
     [EFFECT_BELLY_DRUM] = 7,
     [EFFECT_PSYCH_UP] = 7,
     [EFFECT_MIRROR_COAT] = 6,
@@ -233,7 +237,7 @@ static const u16 sPoints_MoveEffect[NUM_BATTLE_MOVE_EFFECTS] =
     [EFFECT_FUTURE_SIGHT] = 1,
     [EFFECT_GUST] = 1,
     [EFFECT_FLINCH_MINIMIZE_HIT] = 1,
-    [EFFECT_SOLARBEAM] = 1,
+    [EFFECT_SOLAR_BEAM] = 1,
     [EFFECT_THUNDER] = 1,
     [EFFECT_TELEPORT] = 1,
     [EFFECT_BEAT_UP] = 2,
@@ -322,79 +326,79 @@ static const u16 sPoints_RainMoves[] =
     MOVE_CLAMP, 3,
     MOVE_WITHDRAW, 3,
     MOVE_CRABHAMMER, 3,
-    MOVE_WATERSPOUT, 3,
+    MOVE_WATER_SPOUT, 3,
     MOVE_DIVE, 3,
     MOVE_WATERFALL, 3,
-    MOVE_MUDDYWATER, 3,
+    MOVE_MUDDY_WATER, 3,
     MOVE_SURF, 3,
-    MOVE_HYDROCANNON, 3,
-    MOVE_HYDROPUMP, 3,
-    MOVE_BUBBLEBEAM, 3,
-    MOVE_WATERSPORT, 0, // Unnecessary, unlisted moves are already given 0 points
-    MOVE_WATERGUN, 3,
-    MOVE_WATERPULSE, 3,
-    MOVE_WEATHERBALL, 3,
+    MOVE_HYDRO_CANNON, 3,
+    MOVE_HYDRO_PUMP, 3,
+    MOVE_BUBBLE_BEAM, 3,
+    MOVE_WATER_SPORT, 0, // Unnecessary, unlisted moves are already given 0 points
+    MOVE_WATER_GUN, 3,
+    MOVE_WATER_PULSE, 3,
+    MOVE_WEATHER_BALL, 3,
     MOVE_THUNDER, 3,
-    MOVE_SOLARBEAM, -4,
+    MOVE_SOLAR_BEAM, -4,
     MOVE_OVERHEAT, -4,
-    MOVE_FLAMEWHEEL, -4,
+    MOVE_FLAME_WHEEL, -4,
     MOVE_FLAMETHROWER, -4,
-    MOVE_SACREDFIRE, -4,
-    MOVE_FIREBLAST, -4,
-    MOVE_HEATWAVE, -4,
+    MOVE_SACRED_FIRE, -4,
+    MOVE_FIRE_BLAST, -4,
+    MOVE_HEAT_WAVE, -4,
     MOVE_EMBER, -4,
-    MOVE_BLASTBURN, -4,
-    MOVE_BLAZEKICK, -4,
+    MOVE_BLAST_BURN, -4,
+    MOVE_BLAZE_KICK, -4,
     MOVE_ERUPTION, -4,
-    MOVE_FIRESPIN, -4,
-    MOVE_FIREPUNCH, -4,
-    MOVE_SOLARBEAM, -4, // Repeated
+    MOVE_FIRE_SPIN, -4,
+    MOVE_FIRE_PUNCH, -4,
+    MOVE_SOLAR_BEAM, -4, // Repeated
     TABLE_END, 0
 };
 static const u16 sPoints_SunMoves[] =
 {
     MOVE_OVERHEAT, 3,
-    MOVE_FLAMEWHEEL, 3,
+    MOVE_FLAME_WHEEL, 3,
     MOVE_FLAMETHROWER, 3,
-    MOVE_SACREDFIRE, 3,
-    MOVE_FIREBLAST, 3,
-    MOVE_HEATWAVE, 3,
+    MOVE_SACRED_FIRE, 3,
+    MOVE_FIRE_BLAST, 3,
+    MOVE_HEAT_WAVE, 3,
     MOVE_EMBER, 3,
-    MOVE_BLASTBURN, 3,
-    MOVE_BLAZEKICK, 3,
+    MOVE_BLAST_BURN, 3,
+    MOVE_BLAZE_KICK, 3,
     MOVE_ERUPTION, 3,
-    MOVE_FIRESPIN, 3,
-    MOVE_FIREPUNCH, 3,
-    MOVE_SOLARBEAM, 5,
+    MOVE_FIRE_SPIN, 3,
+    MOVE_FIRE_PUNCH, 3,
+    MOVE_SOLAR_BEAM, 5,
     MOVE_SYNTHESIS, 3,
-    MOVE_MORNINGSUN, 3,
+    MOVE_MORNING_SUN, 3,
     MOVE_MOONLIGHT, 3,
-    MOVE_WEATHERBALL, 3,
+    MOVE_WEATHER_BALL, 3,
     TABLE_END, 0
 };
 static const u16 sPoints_SandstormMoves[] =
 {
-    MOVE_WEATHERBALL, 3,
-    MOVE_SOLARBEAM, -3,
+    MOVE_WEATHER_BALL, 3,
+    MOVE_SOLAR_BEAM, -3,
     TABLE_END, 0
 };
 static const u16 sPoints_HailMoves[] =
 {
-    MOVE_WEATHERBALL, 3,
-    MOVE_SOLARBEAM, -3,
+    MOVE_WEATHER_BALL, 3,
+    MOVE_SOLAR_BEAM, -3,
     TABLE_END, 0
 };
 static const u16 sPoints_ElectricMoves[] =
 {
     MOVE_THUNDERBOLT, 3,
-    MOVE_THUNDERPUNCH, 3,
+    MOVE_THUNDER_PUNCH, 3,
     MOVE_SPARK, 3,
-    MOVE_THUNDERSHOCK, 3,
-    MOVE_ZAPCANNON, 3,
-    MOVE_SHOCKWAVE, 3,
-    MOVE_THUNDERWAVE, 0, // Unnecessary, unlisted moves are already given 0 points
+    MOVE_THUNDER_SHOCK, 3,
+    MOVE_ZAP_CANNON, 3,
+    MOVE_SHOCK_WAVE, 3,
+    MOVE_THUNDER_WAVE, 0, // Unnecessary, unlisted moves are already given 0 points
     MOVE_THUNDER, 3,
-    MOVE_VOLTTACKLE, 3,
+    MOVE_VOLT_TACKLE, 3,
     TABLE_END, 0
 };
 static const u16 sPoints_StatusDmg[] =
@@ -810,7 +814,7 @@ void BattleTv_SetDataBasedOnString(u16 stringId)
     case STRINGID_PKMNFASTASLEEP:
         if (tvPtr->mon[atkSide][gBattlerPartyIndexes[gBattlerAttacker]].slpMonId != 0
             && gBattleMsgDataPtr->currentMove != MOVE_SNORE
-            && gBattleMsgDataPtr->currentMove != MOVE_SLEEPTALK)
+            && gBattleMsgDataPtr->currentMove != MOVE_SLEEP_TALK)
             AddMovePoints(PTS_STATUS, 3, tvPtr->mon[atkSide][gBattlerPartyIndexes[gBattlerAttacker]].slpMonId - 1, tvPtr->mon[atkSide][gBattlerPartyIndexes[gBattlerAttacker]].slpMoveSlot);
         break;
     case STRINGID_PKMNWASFROZEN:
@@ -896,7 +900,7 @@ void BattleTv_SetDataBasedOnString(u16 stringId)
             tvPtr->side[atkSide].reflectMonId = 0;
             tvPtr->side[atkSide].reflectMoveSlot = 0;
         }
-        if (*finishedMoveId == MOVE_LIGHTSCREEN)
+        if (*finishedMoveId == MOVE_LIGHT_SCREEN)
         {
             tvPtr->side[atkSide].lightScreenMonId = 0;
             tvPtr->side[atkSide].lightScreenMoveSlot = 0;
@@ -998,7 +1002,7 @@ void BattleTv_SetDataBasedOnMove(u16 move, u16 weatherFlags, struct DisableStruc
         tvPtr->side[atkSide].wishMonId = gBattlerPartyIndexes[gBattlerAttacker] + 1;
         tvPtr->side[atkSide].wishMoveSlot = moveSlot;
     }
-    if (move == MOVE_SELFDESTRUCT || move == MOVE_EXPLOSION)
+    if (move == MOVE_SELF_DESTRUCT || move == MOVE_EXPLOSION)
     {
         tvPtr->side[atkSide ^ BIT_SIDE].explosionMonId = gBattlerPartyIndexes[gBattlerAttacker] + 1;
         tvPtr->side[atkSide ^ BIT_SIDE].explosionMoveSlot = moveSlot;
@@ -1427,7 +1431,7 @@ static void TrySetBattleSeminarShow(void)
         return;
     else if (gBattleMons[gBattlerTarget].statStages[STAT_EVASION] > DEFAULT_STAT_STAGE)
         return;
-    else if (gCurrentMove == MOVE_HIDDENPOWER || gCurrentMove == MOVE_WEATHERBALL)
+    else if (gCurrentMove == MOVE_HIDDEN_POWER || gCurrentMove == MOVE_WEATHER_BALL)
         return;
     else if (gBattleTypeFlags & (BATTLE_TYPE_PALACE | BATTLE_TYPE_PIKE | BATTLE_TYPE_PYRAMID))
         return;

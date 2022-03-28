@@ -806,11 +806,11 @@ static void AnimClawSlash(struct Sprite *sprite)
 }
 
 // Makes the attacker metallic and shining.
-// Used by MOVE_HARDEN and MOVE_IRONDEFENSE.
+// Used by MOVE_HARDEN and MOVE_IRON_DEFENSE.
 // arg0: if true won't change battler's palette back
 // arg1: if true, use custom color
 // arg2: custom color
-// Custom color argument is used in MOVE_POISONTAIL to make the mon turn purplish/pinkish as if became cloaked in poison.
+// Custom color argument is used in MOVE_POISON_TAIL to make the mon turn purplish/pinkish as if became cloaked in poison.
 void AnimTask_MetallicShine(u8 taskId)
 {
     u16 species;

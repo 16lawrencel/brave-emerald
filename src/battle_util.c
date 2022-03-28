@@ -747,7 +747,7 @@ void HandleAction_ActionFinished(void)
 static const u16 sSoundMovesTable[] =
 {
     MOVE_GROWL, MOVE_ROAR, MOVE_SING, MOVE_SUPERSONIC, MOVE_SCREECH, MOVE_SNORE,
-    MOVE_UPROAR, MOVE_METALSOUND, MOVE_GRASSWHISTLE, MOVE_HYPERVOICE, 0xFFFF
+    MOVE_UPROAR, MOVE_METAL_SOUND, MOVE_GRASS_WHISTLE, MOVE_HYPER_VOICE, 0xFFFF
 };
 
 u8 GetBattlerForBattleScript(u8 caseId)
@@ -872,7 +872,7 @@ void PressurePPLoseOnUsingPerishSong(u8 attacker)
         {
             for (j = 0; j < MAX_MON_MOVES; j++)
             {
-                if (gBattleMons[attacker].moves[j] == MOVE_PERISHSONG)
+                if (gBattleMons[attacker].moves[j] == MOVE_PERISH_SONG)
                     break;
             }
             if (j != MAX_MON_MOVES)
@@ -1310,7 +1310,7 @@ u8 DoFieldEndTurnEffects(void)
                         gSideStatuses[side] &= ~SIDE_STATUS_LIGHTSCREEN;
                         BattleScriptExecute(BattleScript_SideStatusWoreOff);
                         gBattleCommunication[MULTISTRING_CHOOSER] = side;
-                        PREPARE_MOVE_BUFFER(gBattleTextBuff1, MOVE_LIGHTSCREEN);
+                        PREPARE_MOVE_BUFFER(gBattleTextBuff1, MOVE_LIGHT_SCREEN);
                         effect++;
                     }
                 }
@@ -1855,7 +1855,7 @@ bool8 HandleWishPerishSongOnTurnEnd(void)
              && --gWishFutureKnock.futureSightCounter[gActiveBattler] == 0
              && gBattleMons[gActiveBattler].hp != 0)
             {
-                if (gWishFutureKnock.futureSightMove[gActiveBattler] == MOVE_FUTURESIGHT)
+                if (gWishFutureKnock.futureSightMove[gActiveBattler] == MOVE_FUTURE_SIGHT)
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_FUTURE_SIGHT;
                 else
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DOOM_DESIRE;
@@ -2089,7 +2089,7 @@ u8 AtkCanceller_UnableToUseMove(void)
                         gBattleMons[gBattlerAttacker].status1 -= toSub;
                     if (gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP)
                     {
-                        if (gCurrentMove != MOVE_SNORE && gCurrentMove != MOVE_SLEEPTALK)
+                        if (gCurrentMove != MOVE_SNORE && gCurrentMove != MOVE_SLEEP_TALK)
                         {
                             gBattlescriptCurrInstr = BattleScript_MoveUsedIsAsleep;
                             gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
@@ -4015,7 +4015,7 @@ u8 IsMonDisobedient(void)
     // is not obedient
     if (gCurrentMove == MOVE_RAGE)
         gBattleMons[gBattlerAttacker].status2 &= ~STATUS2_RAGE;
-    if (gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP && (gCurrentMove == MOVE_SNORE || gCurrentMove == MOVE_SLEEPTALK))
+    if (gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP && (gCurrentMove == MOVE_SNORE || gCurrentMove == MOVE_SLEEP_TALK))
     {
         gBattlescriptCurrInstr = BattleScript_IgnoresWhileAsleep;
         return 1;

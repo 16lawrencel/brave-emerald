@@ -47,14 +47,12 @@
 
 #define MOVE_TARGET_SELECTED            0
 #define MOVE_TARGET_DEPENDS             (1 << 0)
-#define MOVE_TARGET_USER_OR_PARTNER     (1 << 1)
+#define MOVE_TARGET_USER_OR_SELECTED    (1 << 1)
 #define MOVE_TARGET_RANDOM              (1 << 2)
 #define MOVE_TARGET_BOTH                (1 << 3)
 #define MOVE_TARGET_USER                (1 << 4)
 #define MOVE_TARGET_FOES_AND_ALLY       (1 << 5)
-#define MOVE_TARGET_ALL                 (1 << 6)
-#define MOVE_TARGET_OPPONENTS_FIELD     (1 << 7)
-#define MOVE_TARGET_USER_OR_SELECTED    (1 << 8) // unused
+#define MOVE_TARGET_OPPONENTS_FIELD     (1 << 6)
 
 // For the second argument of GetMoveTarget, when no target override is needed
 #define NO_TARGET_OVERRIDE 0

@@ -252,9 +252,6 @@ struct BattleMove
     u8 target;
     s8 priority;
     u8 flags;
-    u8 z_move_power;
-    u8 split;
-    u8 z_move_effect;
 };
 
 struct SpindaSpot

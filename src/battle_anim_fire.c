@@ -639,7 +639,7 @@ static void AnimBurnFlame(struct Sprite *sprite)
     sprite->callback = AnimTravelDiagonally;
 }
 
-// Animates the a fire sprite in the first-half of the MOVE_FIREBLAST
+// Animates the a fire sprite in the first-half of the MOVE_FIRE_BLAST
 // animation.  The fire sprite first moves in a circle around the mon,
 // and then it is translated towards the target mon, while still rotating.
 // Lastly, it moves in a circle around the target mon.

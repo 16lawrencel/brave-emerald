@@ -2988,30 +2988,30 @@ static void HideFrontierExchangeCornerItemIcon(u16 menu, u16 unused)
 
 static const u16 sBattleFrontier_TutorMoves1[] =
 {
-    MOVE_SOFTBOILED,
-    MOVE_SEISMICTOSS,
-    MOVE_DREAMEATER,
-    MOVE_MEGAPUNCH,
-    MOVE_MEGAKICK,
-    MOVE_BODYSLAM,
-    MOVE_ROCKSLIDE,
+    MOVE_SOFT_BOILED,
+    MOVE_SEISMIC_TOSS,
+    MOVE_DREAM_EATER,
+    MOVE_MEGA_PUNCH,
+    MOVE_MEGA_KICK,
+    MOVE_BODY_SLAM,
+    MOVE_ROCK_SLIDE,
     MOVE_COUNTER,
-    MOVE_THUNDERWAVE,
-    MOVE_SWORDSDANCE
+    MOVE_THUNDER_WAVE,
+    MOVE_SWORDS_DANCE
 };
 
 static const u16 sBattleFrontier_TutorMoves2[] =
 {
-    MOVE_DEFENSECURL,
+    MOVE_DEFENSE_CURL,
     MOVE_SNORE,
-    MOVE_MUDSLAP,
+    MOVE_MUD_SLAP,
     MOVE_SWIFT,
-    MOVE_ICYWIND,
+    MOVE_ICY_WIND,
     MOVE_ENDURE,
-    MOVE_PSYCHUP,
-    MOVE_ICEPUNCH,
-    MOVE_THUNDERPUNCH,
-    MOVE_FIREPUNCH
+    MOVE_PSYCH_UP,
+    MOVE_ICE_PUNCH,
+    MOVE_THUNDER_PUNCH,
+    MOVE_FIRE_PUNCH
 };
 
 void BufferBattleFrontierTutorMoveName(void)

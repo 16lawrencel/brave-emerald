@@ -95,17 +95,17 @@ static const struct PikeWildMon sLvl50_Mons1[] =
     {
         .species = SPECIES_SEVIPER,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_BODYSLAM, MOVE_SLUDGEBOMB}
+        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_BODY_SLAM, MOVE_SLUDGE_BOMB}
     },
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODYSLAM, MOVE_SURF}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_SURF}
     },
     {
         .species = SPECIES_DUSCLOPS,
         .levelDelta = 5,
-        .moves = {MOVE_WILLOWISP, MOVE_MEANLOOK, MOVE_TOXIC, MOVE_SHADOWPUNCH}
+        .moves = {MOVE_WILL_O_WISP, MOVE_MEAN_LOOK, MOVE_TOXIC, MOVE_SHADOW_PUNCH}
     }
 };
 
@@ -114,17 +114,17 @@ static const struct PikeWildMon sLvl50_Mons2[] =
     {
         .species = SPECIES_SEVIPER,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_BODYSLAM, MOVE_SLUDGEBOMB}
+        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_BODY_SLAM, MOVE_SLUDGE_BOMB}
     },
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODYSLAM, MOVE_SURF}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_SURF}
     },
     {
         .species = SPECIES_ELECTRODE,
         .levelDelta = 5,
-        .moves = {MOVE_EXPLOSION, MOVE_SELFDESTRUCT, MOVE_THUNDER, MOVE_TOXIC}
+        .moves = {MOVE_EXPLOSION, MOVE_SELF_DESTRUCT, MOVE_THUNDER, MOVE_TOXIC}
     }
 };
 
@@ -133,17 +133,17 @@ static const struct PikeWildMon sLvl50_Mons3[] =
     {
         .species = SPECIES_SEVIPER,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_BODYSLAM, MOVE_SLUDGEBOMB}
+        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_BODY_SLAM, MOVE_SLUDGE_BOMB}
     },
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODYSLAM, MOVE_SURF}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_SURF}
     },
     {
         .species = SPECIES_BRELOOM,
         .levelDelta = 5,
-        .moves = {MOVE_SPORE, MOVE_STUNSPORE, MOVE_POISONPOWDER, MOVE_HIDDENPOWER}
+        .moves = {MOVE_SPORE, MOVE_STUN_SPORE, MOVE_POISON_POWDER, MOVE_HIDDEN_POWER}
     }
 };
 
@@ -152,17 +152,17 @@ static const struct PikeWildMon sLvl50_Mons4[] =
     {
         .species = SPECIES_SEVIPER,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_BODYSLAM, MOVE_SLUDGEBOMB}
+        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_BODY_SLAM, MOVE_SLUDGE_BOMB}
     },
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODYSLAM, MOVE_SURF}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_SURF}
     },
     {
         .species = SPECIES_WOBBUFFET,
         .levelDelta = 5,
-        .moves = {MOVE_COUNTER, MOVE_MIRRORCOAT, MOVE_SAFEGUARD, MOVE_DESTINYBOND}
+        .moves = {MOVE_COUNTER, MOVE_MIRROR_COAT, MOVE_SAFEGUARD, MOVE_DESTINY_BOND}
     }
 };
 
@@ -179,17 +179,17 @@ static const struct PikeWildMon sLvlOpen_Mons1[] =
     {
         .species = SPECIES_SEVIPER,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_POISONFANG, MOVE_SLUDGEBOMB}
+        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_POISON_FANG, MOVE_SLUDGE_BOMB}
     },
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODYSLAM, MOVE_ICEBEAM}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_ICE_BEAM}
     },
     {
         .species = SPECIES_DUSCLOPS,
         .levelDelta = 5,
-        .moves = {MOVE_WILLOWISP, MOVE_MEANLOOK, MOVE_TOXIC, MOVE_ICEBEAM}
+        .moves = {MOVE_WILL_O_WISP, MOVE_MEAN_LOOK, MOVE_TOXIC, MOVE_ICE_BEAM}
     }
 };
 
@@ -198,17 +198,17 @@ static const struct PikeWildMon sLvlOpen_Mons2[] =
     {
         .species = SPECIES_SEVIPER,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_POISONFANG, MOVE_SLUDGEBOMB}
+        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_POISON_FANG, MOVE_SLUDGE_BOMB}
     },
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODYSLAM, MOVE_ICEBEAM}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_ICE_BEAM}
     },
     {
         .species = SPECIES_ELECTRODE,
         .levelDelta = 5,
-        .moves = {MOVE_EXPLOSION, MOVE_SELFDESTRUCT, MOVE_THUNDER, MOVE_TOXIC}
+        .moves = {MOVE_EXPLOSION, MOVE_SELF_DESTRUCT, MOVE_THUNDER, MOVE_TOXIC}
     }
 };
 
@@ -217,17 +217,17 @@ static const struct PikeWildMon sLvlOpen_Mons3[] =
     {
         .species = SPECIES_SEVIPER,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_POISONFANG, MOVE_SLUDGEBOMB}
+        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_POISON_FANG, MOVE_SLUDGE_BOMB}
     },
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODYSLAM, MOVE_ICEBEAM}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_ICE_BEAM}
     },
     {
         .species = SPECIES_BRELOOM,
         .levelDelta = 5,
-        .moves = {MOVE_SPORE, MOVE_STUNSPORE, MOVE_POISONPOWDER, MOVE_HIDDENPOWER}
+        .moves = {MOVE_SPORE, MOVE_STUN_SPORE, MOVE_POISON_POWDER, MOVE_HIDDEN_POWER}
     }
 };
 
@@ -236,17 +236,17 @@ static const struct PikeWildMon sLvlOpen_Mons4[] =
     {
         .species = SPECIES_SEVIPER,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_POISONFANG, MOVE_SLUDGEBOMB}
+        .moves = {MOVE_TOXIC, MOVE_GLARE, MOVE_POISON_FANG, MOVE_SLUDGE_BOMB}
     },
     {
         .species = SPECIES_MILOTIC,
         .levelDelta = 4,
-        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODYSLAM, MOVE_ICEBEAM}
+        .moves = {MOVE_TOXIC, MOVE_HYPNOSIS, MOVE_BODY_SLAM, MOVE_ICE_BEAM}
     },
     {
         .species = SPECIES_WOBBUFFET,
         .levelDelta = 5,
-        .moves = {MOVE_COUNTER, MOVE_MIRRORCOAT, MOVE_SAFEGUARD, MOVE_ENCORE}
+        .moves = {MOVE_COUNTER, MOVE_MIRROR_COAT, MOVE_SAFEGUARD, MOVE_ENCORE}
     }
 };
 
@@ -420,7 +420,7 @@ static const struct PikeRoomNPC sNPCTable[] =
 
 static const u16 sNPCSpeeches[][EASY_CHAT_BATTLE_WORDS_COUNT] =
 {
-    {EC_WORD_I_AM, EC_WORD_LOST, EC_WORD_I, EC_WORD_NEED, EC_WORD_A, EC_MOVE2(HELPINGHAND)},
+    {EC_WORD_I_AM, EC_WORD_LOST, EC_WORD_I, EC_WORD_NEED, EC_WORD_A, EC_MOVE2(HELPING_HAND)},
     {EC_WORD_I_VE, EC_WORD_NO, EC_WORD_SENSE, EC_WORD_OF, EC_WORD_WHERE, EC_WORD_I_AM},
     {EC_WORD_WHAT, EC_WORD_SHOULD, EC_WORD_I, EC_WORD_DO, EC_WORD_NOW, EC_WORD_QUES},
     {EC_WORD_THIS, EC_WORD_IS, EC_WORD_TOO, EC_WORD_EXCITING, EC_WORD_FOR, EC_WORD_ME},
@@ -434,7 +434,7 @@ static const u16 sNPCSpeeches[][EASY_CHAT_BATTLE_WORDS_COUNT] =
     {EC_WORD_I_VE, EC_WORD_BEEN, EC_WORD_WANDERING, EC_WORD_ABOUT, EC_WORD_FOREVER, EC_WORD_ELLIPSIS},
     {EC_WORD_I, EC_WORD_THINK, EC_WORD_I, EC_WORD_WILL, EC_WORD_GIVE_UP, EC_EMPTY_WORD},
     {EC_WORD_WHAT, EC_WORD_SHOULD, EC_WORD_I, EC_WORD_DO, EC_WORD_NEXT, EC_WORD_QUES},
-    {EC_WORD_I, EC_WORD_CAN_WIN, EC_WORD_WITH, EC_WORD_MY, EC_MOVE(SHEERCOLD), EC_WORD_GENIUS},
+    {EC_WORD_I, EC_WORD_CAN_WIN, EC_WORD_WITH, EC_WORD_MY, EC_MOVE(SHEER_COLD), EC_WORD_GENIUS},
     {EC_WORD_WON_T, EC_WORD_SOMEONE, EC_WORD_COOL, EC_WORD_SHOW, EC_WORD_UP, EC_WORD_QUES},
     {EC_WORD_BATTLE, EC_WORD_GAME, EC_WORD_IS, EC_WORD_AWESOME, EC_WORD_EXCL, EC_EMPTY_WORD},
     {EC_WORD_I, EC_WORD_CAN_T, EC_WORD_TAKE, EC_WORD_THIS, EC_WORD_ANY, EC_WORD_MORE},
