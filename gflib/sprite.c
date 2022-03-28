@@ -3,6 +3,9 @@
 #include "main.h"
 #include "palette.h"
 
+#include "printf.h"
+#include "mgba.h"
+
 #define MAX_SPRITE_COPY_REQUESTS 64
 
 #define OAM_MATRIX_COUNT 32
@@ -292,6 +295,17 @@ EWRAM_DATA s16 gSpriteCoordOffsetX = 0;
 EWRAM_DATA s16 gSpriteCoordOffsetY = 0;
 EWRAM_DATA struct OamMatrix gOamMatrices[OAM_MATRIX_COUNT] = {0};
 EWRAM_DATA bool8 gAffineAnimsDisabled = FALSE;
+
+void PrintTileAllocStatus(void)
+{
+    u32 i;
+    mgba_printf(MGBA_LOG_DEBUG, "Start\n");
+    for (i = 0; i < 1024; i++)
+    {
+        mgba_printf(MGBA_LOG_DEBUG, "%d ", SPRITE_TILE_IS_ALLOCATED(i));
+    }
+    mgba_printf(MGBA_LOG_DEBUG, "\nDone\n");
+}
 
 void ResetSpriteData(void)
 {

@@ -1107,9 +1107,23 @@ void DestroyHealthboxSprite(u8 healthboxSpriteId)
     DestroySprite(&gSprites[healthboxSpriteId]);
 }
 
+static void LoadAllHealthboxSpriteSheets()
+{
+    u8 state;
+    bool8 res = FALSE;
+    for (state = 0; !res; state++)
+        res = BattleLoadAllHealthBoxesGfx(state);
+}
+
 static void CreateAllHealthboxes()
 {
     u8 battlerId;
+
+    if (gHealthboxVisible) return;
+    gHealthboxVisible = TRUE;
+
+    LoadAllHealthboxSpriteSheets();
+
     for (battlerId = 0; battlerId < gBattlersCount; battlerId++)
     {
         CreateHealthboxSprite(battlerId);
@@ -1119,9 +1133,15 @@ static void CreateAllHealthboxes()
 static void DestroyAllHealthboxes()
 {
     u8 spriteId;
+    u16 tileTag;
+
+    if (!gHealthboxVisible) return;
+    gHealthboxVisible = FALSE;
+
     for (spriteId = 0; spriteId < MAX_SPRITES; ++spriteId)
     {
-        switch (gSprites[spriteId].template->tileTag) {
+        tileTag = gSprites[spriteId].template->tileTag;
+        switch (tileTag) {
             case TAG_HEALTHBOX_PLAYER1_TILE:
             case TAG_HEALTHBOX_PLAYER2_TILE:
             case TAG_HEALTHBOX_PLAYER3_TILE:
@@ -1135,6 +1155,7 @@ static void DestroyAllHealthboxes()
             case TAG_HEALTHBAR_OPPONENT2_TILE:
             case TAG_HEALTHBAR_OPPONENT3_TILE:
                 DestroyHealthboxSprite(spriteId);
+                FreeSpriteTilesByTag(tileTag);
         }
     }
 }
