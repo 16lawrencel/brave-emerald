@@ -888,6 +888,43 @@ static void Debug_DrawNumberPair(s16 number1, s16 number2, u16 *arg2)
 #define hBar_HealthBoxSpriteId      data[5]
 #define hBar_Data6                  data[6]
 
+void CreateHealthboxSprite(u8 battler)
+{
+    if (battler < gBattlersCount)
+    {
+        u8 healthboxSpriteId;
+
+        if (gBattleTypeFlags & BATTLE_TYPE_SAFARI && battler == B_POSITION_PLAYER_LEFT)
+            healthboxSpriteId = CreateSafariPlayerHealthboxSprites();
+        else if (gBattleTypeFlags & BATTLE_TYPE_WALLY_TUTORIAL && battler == B_POSITION_PLAYER_LEFT)
+            return;
+        else
+            healthboxSpriteId = CreateBattlerHealthboxSprites(battler);
+
+        gHealthboxSpriteIds[battler] = healthboxSpriteId;
+        InitBattlerHealthboxCoords(battler);
+        SetHealthboxSpriteVisible(healthboxSpriteId);
+
+        if (GetBattlerSide(battler) != B_SIDE_PLAYER)
+            UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &gEnemyParty[gBattlerPartyIndexes[battler]], HEALTHBOX_ALL);
+        else if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
+            UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &gPlayerParty[gBattlerPartyIndexes[battler]], HEALTHBOX_SAFARI_ALL_TEXT);
+        else
+            UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &gPlayerParty[gBattlerPartyIndexes[battler]], HEALTHBOX_ALL);
+
+        if (GetBattlerSide(battler) != B_SIDE_PLAYER)
+        {
+            if (gBattlerPartyIndexes[battler] == PARTY_SIZE || GetMonData(&gEnemyParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0)
+                SetHealthboxSpriteInvisible(healthboxSpriteId);
+        }
+        else if (!(gBattleTypeFlags & BATTLE_TYPE_SAFARI))
+        {
+            if (gBattlerPartyIndexes[battler] == PARTY_SIZE || GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0)
+                SetHealthboxSpriteInvisible(healthboxSpriteId);
+        }
+    }
+}
+
 u8 CreateBattlerHealthboxSprites(u8 battlerId)
 {
     s16 data6 = 0;
@@ -1063,32 +1100,142 @@ static void UpdateSpritePos(u8 spriteId, s16 x, s16 y)
     gSprites[spriteId].y = y;
 }
 
-void DestoryHealthboxSprite(u8 healthboxSpriteId)
+void DestroyHealthboxSprite(u8 healthboxSpriteId)
 {
     DestroySprite(&gSprites[gSprites[healthboxSpriteId].oam.affineParam]);
     DestroySprite(&gSprites[gSprites[healthboxSpriteId].hMain_HealthBarSpriteId]);
     DestroySprite(&gSprites[healthboxSpriteId]);
 }
 
-void DummyBattleInterfaceFunc(u8 healthboxSpriteId, bool8 isDoubleBattleBattlerOnly)
+static void LoadAllHealthboxSpriteSheets()
 {
+    u8 state;
+    bool8 res = FALSE;
+    for (state = 0; !res; state++)
+        res = BattleLoadAllHealthBoxesGfx(state);
+}
 
+static void CreateAllHealthboxes()
+{
+    u8 battlerId;
+
+    if (gHealthboxVisible) return;
+    gHealthboxVisible = TRUE;
+
+    LoadAllHealthboxSpriteSheets();
+
+    for (battlerId = 0; battlerId < gBattlersCount; battlerId++)
+    {
+        CreateHealthboxSprite(battlerId);
+    }
+}
+
+static void DestroyAllHealthboxes()
+{
+    u8 spriteId;
+    u16 tileTag;
+
+    if (!gHealthboxVisible) return;
+    gHealthboxVisible = FALSE;
+
+    for (spriteId = 0; spriteId < MAX_SPRITES; ++spriteId)
+    {
+        tileTag = gSprites[spriteId].template->tileTag;
+        switch (tileTag) {
+            case TAG_HEALTHBOX_PLAYER1_TILE:
+            case TAG_HEALTHBOX_PLAYER2_TILE:
+            case TAG_HEALTHBOX_PLAYER3_TILE:
+            case TAG_HEALTHBOX_OPPONENT1_TILE:
+            case TAG_HEALTHBOX_OPPONENT2_TILE:
+            case TAG_HEALTHBOX_OPPONENT3_TILE:
+            case TAG_HEALTHBAR_PLAYER1_TILE:
+            case TAG_HEALTHBAR_PLAYER2_TILE:
+            case TAG_HEALTHBAR_PLAYER3_TILE:
+            case TAG_HEALTHBAR_OPPONENT1_TILE:
+            case TAG_HEALTHBAR_OPPONENT2_TILE:
+            case TAG_HEALTHBAR_OPPONENT3_TILE:
+                DestroyHealthboxSprite(spriteId);
+                FreeSpriteTilesByTag(tileTag);
+        }
+    }
+}
+
+static void RestoreHiddenHealthboxes(u8 priority)
+{
+    if (priority == 0)
+        DestroyAllHealthboxes();
+    else
+        CreateAllHealthboxes();
 }
 
 void UpdateOamPriorityInAllHealthboxes(u8 priority)
 {
-    s32 i;
+    u32 i, spriteId;
 
-    for (i = 0; i < gBattlersCount; i++)
-    {
-        u8 healthboxLeftSpriteId = gHealthboxSpriteIds[i];
-        u8 healthboxRightSpriteId = gSprites[gHealthboxSpriteIds[i]].oam.affineParam;
-        u8 healthbarSpriteId = gSprites[gHealthboxSpriteIds[i]].hMain_HealthBarSpriteId;
+    switch (gBattleBufferA[gBattleAnimAttacker][0]) {
+        case CONTROLLER_MOVEANIMATION: ;
+            // if (sAnimMoveIndex == MOVE_TRANSFORM)
+            //     goto DEFAULT_CASE;
+            goto HIDE_BOXES;
 
-        gSprites[healthboxLeftSpriteId].oam.priority = priority;
-        gSprites[healthboxRightSpriteId].oam.priority = priority;
-        gSprites[healthbarSpriteId].oam.priority = priority;
+        case CONTROLLER_BALLTHROWANIM:
+            goto HIDE_BOXES;
+
+        case CONTROLLER_BATTLEANIMATION:
+            switch (gBattleBufferA[gBattleAnimAttacker][1]) {
+                case B_ANIM_TURN_TRAP:
+                case B_ANIM_LEECH_SEED_DRAIN:
+                case B_ANIM_MON_HIT:
+                case B_ANIM_SNATCH_MOVE:
+                case B_ANIM_FUTURE_SIGHT_HIT:
+                case B_ANIM_DOOM_DESIRE_HIT:
+                case B_ANIM_WISH_HEAL:
+                case B_ANIM_MON_SCARED:
+                case B_ANIM_GHOST_GET_OUT:
+                case B_ANIM_WISHIWASHI_FISH:
+                case B_ANIM_ZYGARDE_CELL_SWIRL:
+                case B_ANIM_ELECTRIC_SURGE:
+                case B_ANIM_GRASSY_SURGE:
+                case B_ANIM_MISTY_SURGE:
+                case B_ANIM_PSYCHIC_SURGE:
+                case B_ANIM_SEA_OF_FIRE:
+                case B_ANIM_LUNAR_DANCE_HEAL:
+                case B_ANIM_HEALING_WISH_HEAL:
+                case B_ANIM_RED_PRIMAL_REVERSION:
+                case B_ANIM_BLUE_PRIMAL_REVERSION:
+                case B_ANIM_POWDER_EXPLOSION:
+                case B_ANIM_BEAK_BLAST_WARM_UP:
+                case B_ANIM_SHELL_TRAP_SET:
+                case B_ANIM_BERRY_EAT:
+                case B_ANIM_ZMOVE_ACTIVATE:
+                case B_ANIM_MEGA_EVOLUTION:
+                case B_ANIM_ULTRA_BURST:
+                case B_ANIM_DYNAMAX_START:
+                case B_ANIM_RAID_BATTLE_ENERGY_BURST:
+                    goto HIDE_BOXES;
+            }
+        default:
+        DEFAULT_CASE:
+            for (i = 0; i < gBattlersCount; i++)
+            {
+                u8 healthboxLeftSpriteId = gHealthboxSpriteIds[i];
+                u8 healthboxRightSpriteId = gSprites[gHealthboxSpriteIds[i]].oam.affineParam;
+                u8 healthbarSpriteId = gSprites[gHealthboxSpriteIds[i]].hMain_HealthBarSpriteId;
+
+                gSprites[healthboxLeftSpriteId].oam.priority = priority;
+                gSprites[healthboxRightSpriteId].oam.priority = priority;
+                gSprites[healthbarSpriteId].oam.priority = priority;
+
+                if (priority > 0) //Restore Hidden Healthboxes
+                {
+                    RestoreHiddenHealthboxes(priority);
+                }
+            }
+            return;
     }
+
+HIDE_BOXES:
+    RestoreHiddenHealthboxes(priority);
 }
 
 void InitBattlerHealthboxCoords(u8 battler)
