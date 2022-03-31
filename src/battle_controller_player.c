@@ -3252,17 +3252,17 @@ static void Task_StartSendOutAnim(u8 taskId)
         {
             gBattleResources->bufferA[gActiveBattler][1] = gBattlerPartyIndexes[gActiveBattler];
             StartSendOutAnim(gActiveBattler, FALSE);
-            gActiveBattler = (gActiveBattler + 2) % MAX_BATTLERS_COUNT_2;
+            gActiveBattler = (gActiveBattler + 2) % MAX_BATTLERS_COUNT;
 
             gBattleResources->bufferA[gActiveBattler][1] = gBattlerPartyIndexes[gActiveBattler];
             BattleLoadPlayerMonSpriteGfx(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], gActiveBattler);
             StartSendOutAnim(gActiveBattler, FALSE);
-            gActiveBattler = (gActiveBattler + 2) % MAX_BATTLERS_COUNT_2;
+            gActiveBattler = (gActiveBattler + 2) % MAX_BATTLERS_COUNT;
 
             gBattleResources->bufferA[gActiveBattler][1] = gBattlerPartyIndexes[gActiveBattler];
             BattleLoadPlayerMonSpriteGfx(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], gActiveBattler);
             StartSendOutAnim(gActiveBattler, FALSE);
-            gActiveBattler = (gActiveBattler + 2) % MAX_BATTLERS_COUNT_2;
+            gActiveBattler = (gActiveBattler + 2) % MAX_BATTLERS_COUNT;
         }
         gBattlerControllerFuncs[gActiveBattler] = Intro_TryShinyAnimShowHealthbox;
         gActiveBattler = savedActiveBattler;

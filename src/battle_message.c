@@ -2585,7 +2585,7 @@ void BufferStringBattle(u16 stringID)
     gPotentialItemEffectBattler = gBattleMsgDataPtr->itemEffectBattler;
     gBattleStruct->stringMoveType = gBattleMsgDataPtr->moveType;
 
-    for (i = 0; i < MAX_BATTLERS_COUNT_2; i++)
+    for (i = 0; i < MAX_BATTLERS_COUNT; i++)
     {
         sBattlerAbilities[i] = gBattleMsgDataPtr->abilities[i];
     }
