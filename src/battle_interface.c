@@ -1100,22 +1100,22 @@ void GetBattlerHealthboxCoords(u8 battler, s16 *x, s16 *y)
         switch (GetBattlerPosition(battler))
         {
         case B_POSITION_PLAYER_LEFT:
-            x = 159, y = 51;
+            *x = 159, *y = 51;
             break;
         case B_POSITION_PLAYER_MIDDLE:
-            x = 165, y = 76;
+            *x = 165, *y = 76;
             break;
         case B_POSITION_PLAYER_RIGHT:
-            x = 171, y = 101;
+            *x = 171, *y = 101;
             break;
         case B_POSITION_OPPONENT_LEFT:
-            x = 44, y = 19;
+            *x = 44, *y = 19;
             break;
         case B_POSITION_OPPONENT_MIDDLE:
-            x = 38, y = 44;
+            *x = 38, *y = 44;
             break;
         case B_POSITION_OPPONENT_RIGHT:
-            x = 32, y = 69;
+            *x = 32, *y = 69;
             break;
         }
     }
