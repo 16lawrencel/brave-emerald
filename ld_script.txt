@@ -11,7 +11,7 @@ SECTIONS {
     {
         gHeap = .;
 
-        . = 0x1C000;
+        . = 0x20000;
 
         INCLUDE "sym_ewram.ld"
 

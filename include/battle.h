@@ -279,7 +279,7 @@ struct AI_ThinkingStruct
     u8 aiAction;
     u8 aiLogicId;
     s32 simulatedDmg[MAX_BATTLERS_COUNT][MAX_BATTLERS_COUNT][MAX_MON_MOVES]; // attacker, target, move
-    struct AI_SavedBattleMon saved[4];
+    struct AI_SavedBattleMon saved[MAX_BATTLERS_COUNT];
     bool8 switchMon; // Because all available moves have no/little effect.
 };
 

@@ -177,12 +177,22 @@ void InitHeap(void *heapStart, u32 heapSize)
 
 void *Alloc(u32 size)
 {
-    return AllocInternal(sHeapStart, size);
+    void *res = AllocInternal(sHeapStart, size);
+    if (!res)
+    {
+        while (1) {}
+    }
+    return res;
 }
 
 void *AllocZeroed(u32 size)
 {
-    return AllocZeroedInternal(sHeapStart, size);
+    void *res = AllocZeroedInternal(sHeapStart, size);
+    if (!res)
+    {
+        while (1) {}
+    }
+    return res;
 }
 
 void Free(void *pointer)
