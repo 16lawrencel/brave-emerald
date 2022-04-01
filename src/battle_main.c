@@ -3282,14 +3282,14 @@ static void DoBattleIntro(void)
                     gBattleResults.lastOpponentSpecies = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gActiveBattler]], MON_DATA_SPECIES, NULL);
                 }
                 break;
-            case B_POSITION_PLAYER_RIGHT:
+            case B_POSITION_PLAYER_MIDDLE:
                 if (gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER)) // partner sprite
                 {
                     BtlController_EmitDrawTrainerPic(BUFFER_A);
                     MarkBattlerForControllerExec(gActiveBattler);
                 }
                 break;
-            case B_POSITION_OPPONENT_RIGHT:
+            case B_POSITION_OPPONENT_MIDDLE:
                 if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                 {
                     if (gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_TWO_OPPONENTS) && !BATTLE_TWO_VS_ONE_OPPONENT) // opponent 2 if exists
@@ -3423,9 +3423,9 @@ static void DoBattleIntro(void)
         if (gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_TWO_OPPONENTS) && !BATTLE_TWO_VS_ONE_OPPONENT)
         {
             if (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK && !(gBattleTypeFlags & BATTLE_TYPE_RECORDED_IS_MASTER))
-                gActiveBattler = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                gActiveBattler = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
             else
-                gActiveBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+                gActiveBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
 
             BtlController_EmitIntroTrainerBallThrow(BUFFER_A);
             MarkBattlerForControllerExec(gActiveBattler);
@@ -3490,9 +3490,9 @@ static void DoBattleIntro(void)
         if (gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER))
         {
             if (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK && !(gBattleTypeFlags & BATTLE_TYPE_RECORDED_IS_MASTER))
-                gActiveBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+                gActiveBattler = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
             else
-                gActiveBattler = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                gActiveBattler = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
 
             BtlController_EmitIntroTrainerBallThrow(BUFFER_A);
             MarkBattlerForControllerExec(gActiveBattler);
@@ -3758,7 +3758,7 @@ u8 IsRunningFromBattleImpossible(void)
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DONT_LEAVE_BIRCH;
         return 1;
     }
-    if (GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_RIGHT && WILD_DOUBLE_BATTLE
+    if (GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_MIDDLE && WILD_DOUBLE_BATTLE
         && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))) // The second pokemon cannot run from a double wild battle, unless it's the only alive mon.
     {
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CANT_ESCAPE;
@@ -3873,7 +3873,7 @@ static void HandleTurnActionSelectionState(void)
                         gBattleCommunication[gActiveBattler] = STATE_WAIT_ACTION_CONFIRMED_STANDBY;
                     }
                     else if (WILD_DOUBLE_BATTLE
-                             && position == B_POSITION_PLAYER_RIGHT
+                             && position == B_POSITION_PLAYER_MIDDLE
                              && (gBattleStruct->throwingPokeBall || gChosenActionByBattler[GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)] == B_ACTION_RUN))
                     {
                         gBattleStruct->throwingPokeBall = FALSE;

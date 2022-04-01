@@ -465,9 +465,9 @@ bool32 IsBattlerAIControlled(u32 battlerId)
         return FALSE;
     case B_POSITION_OPPONENT_LEFT:
         return TRUE;
-    case B_POSITION_PLAYER_RIGHT:
+    case B_POSITION_PLAYER_MIDDLE:
         return ((gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER) != 0);
-    case B_POSITION_OPPONENT_RIGHT:
+    case B_POSITION_OPPONENT_MIDDLE:
         return TRUE;
     }
 }

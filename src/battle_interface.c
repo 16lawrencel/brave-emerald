@@ -1084,13 +1084,13 @@ void GetBattlerHealthboxCoords(u8 battler, s16 *x, s16 *y)
         case B_POSITION_PLAYER_LEFT:
             *x = 159, *y = 76;
             break;
-        case B_POSITION_PLAYER_RIGHT:
+        case B_POSITION_PLAYER_MIDDLE:
             *x = 171, *y = 101;
             break;
         case B_POSITION_OPPONENT_LEFT:
             *x = 44, *y = 19;
             break;
-        case B_POSITION_OPPONENT_RIGHT:
+        case B_POSITION_OPPONENT_MIDDLE:
             *x = 32, *y = 44;
             break;
         }
@@ -1604,8 +1604,8 @@ static const s8 sIndicatorPositions[][2] =
 {
     [B_POSITION_PLAYER_LEFT] = {52, -9},
     [B_POSITION_OPPONENT_LEFT] = {44, -9},
-    [B_POSITION_PLAYER_RIGHT] = {52, -9},
-    [B_POSITION_OPPONENT_RIGHT] = {44, -9},
+    [B_POSITION_PLAYER_MIDDLE] = {52, -9},
+    [B_POSITION_OPPONENT_MIDDLE] = {44, -9},
 };
 
 u32 CreateMegaIndicatorSprite(u32 battlerId, u32 which)
@@ -1707,7 +1707,7 @@ u8 CreatePartyStatusSummarySprites(u8 battlerId, struct HpAndStatus *partyInfo, 
     u8 ballIconSpritesIds[PARTY_SIZE];
     u8 taskId;
 
-    if (!arg2 || GetBattlerPosition(battlerId) != B_POSITION_OPPONENT_RIGHT)
+    if (!arg2 || GetBattlerPosition(battlerId) != B_POSITION_OPPONENT_MIDDLE)
     {
         if (GetBattlerSide(battlerId) == B_SIDE_PLAYER)
         {

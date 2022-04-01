@@ -343,14 +343,14 @@ void HandleAction_UseMove(void)
                     if (Random() & 1)
                         gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
                     else
-                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
                 }
                 else
                 {
                     if (Random() & 1)
                         gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
                     else
-                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                        gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
                 }
             }
             else if (gBattleMoves[gChosenMove].target & MOVE_TARGET_FOES_AND_ALLY)
@@ -401,14 +401,14 @@ void HandleAction_UseMove(void)
             if (Random() & 1)
                 gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
             else
-                gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+                gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
         }
         else
         {
             if (Random() & 1)
                 gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
             else
-                gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
         }
 
         if (gAbsentBattlerFlags & gBitTable[gBattlerTarget]
@@ -1266,10 +1266,10 @@ u8 GetBattlerForBattleScript(u8 caseId)
         ret = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
         break;
     case BS_PLAYER2:
-        ret = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+        ret = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
         break;
     case BS_OPPONENT2:
-        ret = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+        ret = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
         break;
     case BS_ABILITY_BATTLER:
         ret = gBattlerAbility;
@@ -3626,7 +3626,7 @@ bool8 HasNoMonsToSwitch(u8 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2)
     if (BATTLE_TWO_VS_ONE_OPPONENT && GetBattlerSide(battler) == B_SIDE_OPPONENT)
     {
         id2 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-        id1 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+        id1 = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
         party = gEnemyParty;
 
         if (partyIdBattlerOn1 == PARTY_SIZE)
@@ -3725,13 +3725,13 @@ bool8 HasNoMonsToSwitch(u8 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2)
         if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
         {
             id2 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-            id1 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+            id1 = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
             party = gEnemyParty;
         }
         else
         {
             id2 = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
-            id1 = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+            id1 = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
             party = gPlayerParty;
         }
 
@@ -7238,8 +7238,8 @@ u32 SetRandomTarget(u32 battlerId)
     u32 target;
     static const u8 targets[2][2] =
     {
-        [B_SIDE_PLAYER] = {B_POSITION_OPPONENT_LEFT, B_POSITION_OPPONENT_RIGHT},
-        [B_SIDE_OPPONENT] = {B_POSITION_PLAYER_LEFT, B_POSITION_PLAYER_RIGHT},
+        [B_SIDE_PLAYER] = {B_POSITION_OPPONENT_LEFT, B_POSITION_OPPONENT_MIDDLE},
+        [B_SIDE_OPPONENT] = {B_POSITION_PLAYER_LEFT, B_POSITION_PLAYER_MIDDLE},
     };
 
     if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
@@ -9125,7 +9125,7 @@ bool32 CanMegaEvolve(u8 battlerId)
 
 #ifdef ITEM_EXPANSION
     // Check if Player has a Mega Ring
-    if ((GetBattlerPosition(battlerId) == B_POSITION_PLAYER_LEFT || (!(gBattleTypeFlags & BATTLE_TYPE_MULTI) && GetBattlerPosition(battlerId) == B_POSITION_PLAYER_RIGHT))
+    if ((GetBattlerPosition(battlerId) == B_POSITION_PLAYER_LEFT || (!(gBattleTypeFlags & BATTLE_TYPE_MULTI) && GetBattlerPosition(battlerId) == B_POSITION_PLAYER_MIDDLE))
      && !CheckBagHasItem(ITEM_MEGA_RING, 1))
         return FALSE;
 #endif

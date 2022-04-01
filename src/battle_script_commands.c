@@ -3945,7 +3945,7 @@ static void Cmd_getexp(void)
                 if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                     && (gBattleMons[0].hp || (gBattleTypeFlags & BATTLE_TYPE_DOUBLE && gBattleMons[2].hp))
                     && !IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT))
-                    && !IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT))
+                    && !IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE))
                     && !gBattleStruct->wildVictorySong)
                 {
                     BattleStopLowHpSound();
@@ -5637,7 +5637,7 @@ bool32 CanBattlerSwitch(u32 battlerId)
     if (BATTLE_TWO_VS_ONE_OPPONENT && GetBattlerSide(battlerId) == B_SIDE_OPPONENT)
     {
         battlerIn1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-        battlerIn2 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+        battlerIn2 = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
         party = gEnemyParty;
 
         for (i = 0; i < PARTY_SIZE; i++)
@@ -5723,7 +5723,7 @@ bool32 CanBattlerSwitch(u32 battlerId)
         party = gEnemyParty;
 
         lastMonId = 0;
-        if (battlerId == B_POSITION_OPPONENT_RIGHT)
+        if (battlerId == B_POSITION_OPPONENT_MIDDLE)
             lastMonId = PARTY_SIZE / 2;
 
         for (i = lastMonId; i < lastMonId + (PARTY_SIZE / 2); i++)
@@ -5744,7 +5744,7 @@ bool32 CanBattlerSwitch(u32 battlerId)
             battlerIn1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
 
             if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
-                battlerIn2 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+                battlerIn2 = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
             else
                 battlerIn2 = battlerIn1;
 
@@ -5756,7 +5756,7 @@ bool32 CanBattlerSwitch(u32 battlerId)
             battlerIn1 = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
 
             if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
-                battlerIn2 = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                battlerIn2 = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
             else
                 battlerIn2 = battlerIn1;
 
@@ -6394,7 +6394,7 @@ static void Cmd_handlelearnnewmove(void)
         }
         if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
         {
-            gActiveBattler = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+            gActiveBattler = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
             if (gBattlerPartyIndexes[gActiveBattler] == gBattleStruct->expGetterMonId
                 && !(gBattleMons[gActiveBattler].status2 & STATUS2_TRANSFORMED))
             {
@@ -8300,7 +8300,7 @@ static void Cmd_various(void)
             u16 megaSpecies;
             gBattleStruct->mega.evolvedSpecies[gActiveBattler] = gBattleMons[gActiveBattler].species;
             if (GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_LEFT
-                || (GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_RIGHT && !(gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER))))
+                || (GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_MIDDLE && !(gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER))))
             {
                 gBattleStruct->mega.playerEvolvedSpecies = gBattleStruct->mega.evolvedSpecies[gActiveBattler];
             }
@@ -8347,7 +8347,7 @@ static void Cmd_various(void)
             u16 primalSpecies;
             gBattleStruct->mega.primalRevertedSpecies[gActiveBattler] = gBattleMons[gActiveBattler].species;
             if (GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_LEFT
-                || (GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_RIGHT && !(gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER))))
+                || (GetBattlerPosition(gActiveBattler) == B_POSITION_PLAYER_MIDDLE && !(gBattleTypeFlags & (BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER))))
             {
                 gBattleStruct->mega.playerPrimalRevertedSpecies = gBattleStruct->mega.primalRevertedSpecies[gActiveBattler];
             }
@@ -11743,9 +11743,9 @@ static void Cmd_jumpifnopursuitswitchdmg(void)
     else
     {
         if (GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER)
-            gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+            gBattlerTarget = GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
         else
-            gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+            gBattlerTarget = GetBattlerAtPosition(B_POSITION_PLAYER_MIDDLE);
     }
 
     if (gChosenActionByBattler[gBattlerTarget] == B_ACTION_USE_MOVE
@@ -13187,7 +13187,7 @@ u8 GetCatchingBattler(void)
     if (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)))
         return GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
     else
-        return GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+        return GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE);
 }
 
 static void Cmd_handleballthrow(void)

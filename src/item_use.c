@@ -951,7 +951,7 @@ void ItemUseOutOfBattle_EvolutionStone(u8 taskId)
 u32 CanThrowBall(void)
 {
     if (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT))
-        && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT))) 
+        && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_MIDDLE))) 
     {
         return 1;   // There are two present pokemon.
     }
