@@ -6,6 +6,7 @@
 #include "battle_dome.h"
 #include "battle_interface.h"
 #include "battle_message.h"
+#include "battle_order.h"
 #include "battle_setup.h"
 #include "battle_tv.h"
 #include "bg.h"

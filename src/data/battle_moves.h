@@ -1,4 +1,4 @@
-#define DEFAULT_MOVE_SPEED 3
+#include "battle_order.h"
 
 const struct BattleMove gBattleMoves[MOVES_COUNT] =
 {
