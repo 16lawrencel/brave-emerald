@@ -4,6 +4,7 @@
 extern const u8 gMonIconPaletteIndices[];
 extern const u8 gMonIconPaletteIndicesFemale[];
 extern const u8 *const gMonIconTable[];
+extern const u8 *const gMonBattleIconTable[];
 extern const struct SpritePalette gMonIconPaletteTable[];
 
 const u8 *GetMonIconTiles(u16 species, u32 personality);
