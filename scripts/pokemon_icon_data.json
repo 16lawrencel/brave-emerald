@@ -1,0 +1,6860 @@
+{
+    "Abomasnow": {
+        "icon_file": "graphics/pokemon/abomasnow/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "AbomasnowMega": {
+        "icon_file": "graphics/pokemon/mega_abomasnow/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Abra": {
+        "icon_file": "graphics/pokemon/abra/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Absol": {
+        "icon_file": "graphics/pokemon/absol/icon.png",
+        "icon_x": 3,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "AbsolMega": {
+        "icon_file": "graphics/pokemon/mega_absol/icon.png",
+        "icon_x": 4,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Accelgor": {
+        "icon_file": "graphics/pokemon/accelgor/icon.png",
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Aegislash": {
+        "icon_file": "graphics/pokemon/aegislash/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "AegislashBlade": {
+        "icon_file": "graphics/pokemon/aegislash/blade/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Aerodactyl": {
+        "icon_file": "graphics/pokemon/aerodactyl/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "AerodactylMega": {
+        "icon_file": "graphics/pokemon/mega_aerodactyl/icon.png",
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Aggron": {
+        "icon_file": "graphics/pokemon/aggron/icon.png",
+        "icon_x": 4,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "AggronMega": {
+        "icon_file": "graphics/pokemon/mega_aggron/icon.png",
+        "icon_x": 4,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Aipom": {
+        "icon_file": "graphics/pokemon/aipom/icon.png",
+        "icon_x": 3,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Alakazam": {
+        "icon_file": "graphics/pokemon/alakazam/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "AlakazamMega": {
+        "icon_file": "graphics/pokemon/mega_alakazam/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Alcremie": {
+        "icon_file": "graphics/pokemon/alcremie/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Alomomola": {
+        "icon_file": "graphics/pokemon/alomomola/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Altaria": {
+        "icon_file": "graphics/pokemon/altaria/icon.png",
+        "icon_x": 9,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "AltariaMega": {
+        "icon_file": "graphics/pokemon/mega_altaria/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Amaura": {
+        "icon_file": "graphics/pokemon/amaura/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Ambipom": {
+        "icon_file": "graphics/pokemon/ambipom/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Amoonguss": {
+        "icon_file": "graphics/pokemon/amoonguss/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Ampharos": {
+        "icon_file": "graphics/pokemon/ampharos/icon.png",
+        "icon_x": 5,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "AmpharosMega": {
+        "icon_file": "graphics/pokemon/mega_ampharos/icon.png",
+        "icon_x": 3,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Anorith": {
+        "icon_file": "graphics/pokemon/anorith/icon.png",
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Appletun": {
+        "icon_file": "graphics/pokemon/appletun/icon.png",
+        "icon_x": 3,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Applin": {
+        "icon_file": "graphics/pokemon/applin/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Araquanid": {
+        "icon_file": "graphics/pokemon/araquanid/icon.png",
+        "icon_x": 4,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Arbok": {
+        "icon_file": "graphics/pokemon/arbok/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Arcanine": {
+        "icon_file": "graphics/pokemon/arcanine/icon.png",
+        "icon_x": 3,
+        "icon_y": 7,
+        "palette_num": "3"
+    },
+    "Arceus": {
+        "icon_file": "graphics/pokemon/arceus/icon.png",
+        "icon_x": 3,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Archen": {
+        "icon_file": "graphics/pokemon/archen/icon.png",
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Archeops": {
+        "icon_file": "graphics/pokemon/archeops/icon.png",
+        "icon_x": 3,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Arctovish": {
+        "icon_file": "graphics/pokemon/arctovish/icon.png",
+        "icon_x": 3,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Arctozolt": {
+        "icon_file": "graphics/pokemon/arctozolt/icon.png",
+        "icon_x": 5,
+        "icon_y": 3,
+        "palette_num": "2"
+    },
+    "Ariados": {
+        "icon_file": "graphics/pokemon/ariados/icon.png",
+        "icon_x": 4,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Armaldo": {
+        "icon_file": "graphics/pokemon/armaldo/icon.png",
+        "icon_x": 3,
+        "icon_y": 4,
+        "palette_num": "2"
+    },
+    "Aromatisse": {
+        "icon_file": "graphics/pokemon/aromatisse/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Aron": {
+        "icon_file": "graphics/pokemon/aron/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Arrokuda": {
+        "icon_file": "graphics/pokemon/arrokuda/icon.png",
+        "icon_x": 3,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Articuno": {
+        "icon_file": "graphics/pokemon/articuno/icon.png",
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "ArticunoGalarian": {
+        "icon_file": "graphics/pokemon/articuno/galarian/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Audino": {
+        "icon_file": "graphics/pokemon/audino/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "AudinoMega": {
+        "icon_file": "graphics/pokemon/mega_audino/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Aurorus": {
+        "icon_file": "graphics/pokemon/aurorus/icon.png",
+        "icon_x": 4,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "Avalugg": {
+        "icon_file": "graphics/pokemon/avalugg/icon.png",
+        "icon_x": 3,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "Axew": {
+        "icon_file": "graphics/pokemon/axew/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Azelf": {
+        "icon_file": "graphics/pokemon/azelf/icon.png",
+        "icon_x": 2,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Azumarill": {
+        "icon_file": "graphics/pokemon/azumarill/icon.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Azurill": {
+        "icon_file": "graphics/pokemon/azurill/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Bagon": {
+        "icon_file": "graphics/pokemon/bagon/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Baltoy": {
+        "icon_file": "graphics/pokemon/baltoy/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Banette": {
+        "icon_file": "graphics/pokemon/banette/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "BanetteMega": {
+        "icon_file": "graphics/pokemon/mega_banette/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Barbaracle": {
+        "icon_file": "graphics/pokemon/barbaracle/icon.png",
+        "icon_x": 8,
+        "icon_y": 3,
+        "palette_num": "2"
+    },
+    "Barboach": {
+        "icon_file": "graphics/pokemon/barboach/icon.png",
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Barraskewda": {
+        "icon_file": "graphics/pokemon/barraskewda/icon.png",
+        "icon_x": 2,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Basculin": {
+        "icon_file": "graphics/pokemon/basculin/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "BasculinBlueStriped": {
+        "icon_file": "graphics/pokemon/basculin/blue_striped/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Bastiodon": {
+        "icon_file": "graphics/pokemon/bastiodon/icon.png",
+        "icon_x": 3,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Bayleef": {
+        "icon_file": "graphics/pokemon/bayleef/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Beartic": {
+        "icon_file": "graphics/pokemon/beartic/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Beautifly": {
+        "icon_file": "graphics/pokemon/beautifly/icon.png",
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Beedrill": {
+        "icon_file": "graphics/pokemon/beedrill/icon.png",
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "BeedrillMega": {
+        "icon_file": "graphics/pokemon/mega_beedrill/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Beheeyem": {
+        "icon_file": "graphics/pokemon/beheeyem/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Beldum": {
+        "icon_file": "graphics/pokemon/beldum/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Bellossom": {
+        "icon_file": "graphics/pokemon/bellossom/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Bellsprout": {
+        "icon_file": "graphics/pokemon/bellsprout/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "1"
+    },
+    "Bergmite": {
+        "icon_file": "graphics/pokemon/bergmite/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Bewear": {
+        "icon_file": "graphics/pokemon/bewear/icon.png",
+        "icon_x": 7,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "Bibarel": {
+        "icon_file": "graphics/pokemon/bibarel/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Bidoof": {
+        "icon_file": "graphics/pokemon/bidoof/icon.png",
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Binacle": {
+        "icon_file": "graphics/pokemon/binacle/icon.png",
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Bisharp": {
+        "icon_file": "graphics/pokemon/bisharp/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Blacephalon": {
+        "icon_file": "graphics/pokemon/blacephalon/icon.png",
+        "icon_x": 7,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "Blastoise": {
+        "icon_file": "graphics/pokemon/blastoise/icon.png",
+        "icon_x": 3,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "BlastoiseMega": {
+        "icon_file": "graphics/pokemon/mega_blastoise/icon.png",
+        "icon_x": 8,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Blaziken": {
+        "icon_file": "graphics/pokemon/blaziken/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "BlazikenMega": {
+        "icon_file": "graphics/pokemon/mega_blaziken/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Blipbug": {
+        "icon_file": "graphics/pokemon/blipbug/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Blissey": {
+        "icon_file": "graphics/pokemon/blissey/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Blitzle": {
+        "icon_file": "graphics/pokemon/blitzle/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Boldore": {
+        "icon_file": "graphics/pokemon/boldore/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Boltund": {
+        "icon_file": "graphics/pokemon/boltund/icon.png",
+        "icon_x": 5,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Bonsly": {
+        "icon_file": "graphics/pokemon/bonsly/icon.png",
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Bouffalant": {
+        "icon_file": "graphics/pokemon/bouffalant/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Bounsweet": {
+        "icon_file": "graphics/pokemon/bounsweet/icon.png",
+        "icon_x": 7,
+        "icon_y": 14,
+        "palette_num": "1"
+    },
+    "Braixen": {
+        "icon_file": "graphics/pokemon/braixen/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Braviary": {
+        "icon_file": "graphics/pokemon/braviary/icon.png",
+        "icon_x": 2,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Breloom": {
+        "icon_file": "graphics/pokemon/breloom/icon.png",
+        "icon_x": 5,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Brionne": {
+        "icon_file": "graphics/pokemon/brionne/icon.png",
+        "icon_x": 5,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Bronzong": {
+        "icon_file": "graphics/pokemon/bronzong/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Bronzor": {
+        "icon_file": "graphics/pokemon/bronzor/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Bruxish": {
+        "icon_file": "graphics/pokemon/bruxish/icon.png",
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Budew": {
+        "icon_file": "graphics/pokemon/budew/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Buizel": {
+        "icon_file": "graphics/pokemon/buizel/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Bulbasaur": {
+        "icon_file": "graphics/pokemon/bulbasaur/icon.png",
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": "4"
+    },
+    "Buneary": {
+        "icon_file": "graphics/pokemon/buneary/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Bunnelby": {
+        "icon_file": "graphics/pokemon/bunnelby/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Burmy": {
+        "icon_file": "graphics/pokemon/burmy/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "1"
+    },
+    "BurmySandyCloak": {
+        "icon_file": "graphics/pokemon/burmy/sandy_cloak/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "BurmyTrashCloak": {
+        "icon_file": "graphics/pokemon/burmy/trash_cloak/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Butterfree": {
+        "icon_file": "graphics/pokemon/butterfree/icon.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Buzzwole": {
+        "icon_file": "graphics/pokemon/buzzwole/icon.png",
+        "icon_x": 6,
+        "icon_y": 2,
+        "palette_num": "0"
+    },
+    "Cacnea": {
+        "icon_file": "graphics/pokemon/cacnea/icon.png",
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Cacturne": {
+        "icon_file": "graphics/pokemon/cacturne/icon.png",
+        "icon_x": 8,
+        "icon_y": 5,
+        "palette_num": "1"
+    },
+    "Camerupt": {
+        "icon_file": "graphics/pokemon/camerupt/icon.png",
+        "icon_x": 2,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "CameruptMega": {
+        "icon_file": "graphics/pokemon/mega_camerupt/icon.png",
+        "icon_x": 0,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Carbink": {
+        "icon_file": "graphics/pokemon/carbink/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Carkol": {
+        "icon_file": "graphics/pokemon/carkol/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Carnivine": {
+        "icon_file": "graphics/pokemon/carnivine/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Carracosta": {
+        "icon_file": "graphics/pokemon/carracosta/icon.png",
+        "icon_x": 5,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Carvanha": {
+        "icon_file": "graphics/pokemon/carvanha/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Cascoon": {
+        "icon_file": "graphics/pokemon/cascoon/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Castform": {
+        "icon_file": "graphics/pokemon/castform/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "CastformRainy": {
+        "icon_file": "graphics/pokemon/castform/rainy/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "CastformSnowy": {
+        "icon_file": "graphics/pokemon/castform/snowy/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "CastformSunny": {
+        "icon_file": "graphics/pokemon/castform/sunny/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Caterpie": {
+        "icon_file": "graphics/pokemon/caterpie/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Celebi": {
+        "icon_file": "graphics/pokemon/celebi/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Celesteela": {
+        "icon_file": "graphics/pokemon/celesteela/icon.png",
+        "icon_x": 8,
+        "icon_y": 2,
+        "palette_num": "0"
+    },
+    "Centiskorch": {
+        "icon_file": "graphics/pokemon/centiskorch/icon.png",
+        "icon_x": 0,
+        "icon_y": 1,
+        "palette_num": "0"
+    },
+    "Chandelure": {
+        "icon_file": "graphics/pokemon/chandelure/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Chansey": {
+        "icon_file": "graphics/pokemon/chansey/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Charizard": {
+        "icon_file": "graphics/pokemon/charizard/icon.png",
+        "icon_x": 0,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "CharizardMegaX": {
+        "icon_file": "graphics/pokemon/mega_charizard_x/icon.png",
+        "icon_x": 0,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "CharizardMegaY": {
+        "icon_file": "graphics/pokemon/mega_charizard_y/icon.png",
+        "icon_x": 0,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Charjabug": {
+        "icon_file": "graphics/pokemon/charjabug/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Charmander": {
+        "icon_file": "graphics/pokemon/charmander/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Charmeleon": {
+        "icon_file": "graphics/pokemon/charmeleon/icon.png",
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Chatot": {
+        "icon_file": "graphics/pokemon/chatot/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Cherrim": {
+        "icon_file": "graphics/pokemon/cherrim/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "CherrimSunshine": {
+        "icon_file": "graphics/pokemon/cherrim/sunshine/icon.png",
+        "icon_x": 9,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Cherubi": {
+        "icon_file": "graphics/pokemon/cherubi/icon.png",
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Chesnaught": {
+        "icon_file": "graphics/pokemon/chesnaught/icon.png",
+        "icon_x": 9,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Chespin": {
+        "icon_file": "graphics/pokemon/chespin/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Chewtle": {
+        "icon_file": "graphics/pokemon/chewtle/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Chikorita": {
+        "icon_file": "graphics/pokemon/chikorita/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Chimchar": {
+        "icon_file": "graphics/pokemon/chimchar/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Chimecho": {
+        "icon_file": "graphics/pokemon/chimecho/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Chinchou": {
+        "icon_file": "graphics/pokemon/chinchou/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Chingling": {
+        "icon_file": "graphics/pokemon/chingling/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Cinccino": {
+        "icon_file": "graphics/pokemon/cinccino/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Cinderace": {
+        "icon_file": "graphics/pokemon/cinderace/icon.png",
+        "icon_x": 7,
+        "icon_y": 2,
+        "palette_num": "0"
+    },
+    "Clamperl": {
+        "icon_file": "graphics/pokemon/clamperl/icon.png",
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Clauncher": {
+        "icon_file": "graphics/pokemon/clauncher/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Clawitzer": {
+        "icon_file": "graphics/pokemon/clawitzer/icon.png",
+        "icon_x": 0,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Claydol": {
+        "icon_file": "graphics/pokemon/claydol/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Clefable": {
+        "icon_file": "graphics/pokemon/clefable/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Clefairy": {
+        "icon_file": "graphics/pokemon/clefairy/icon.png",
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Cleffa": {
+        "icon_file": "graphics/pokemon/cleffa/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Clobbopus": {
+        "icon_file": "graphics/pokemon/clobbopus/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Cloyster": {
+        "icon_file": "graphics/pokemon/cloyster/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Coalossal": {
+        "icon_file": "graphics/pokemon/coalossal/icon.png",
+        "icon_x": 3,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Cobalion": {
+        "icon_file": "graphics/pokemon/cobalion/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Cofagrigus": {
+        "icon_file": "graphics/pokemon/cofagrigus/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Combee": {
+        "icon_file": "graphics/pokemon/combee/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Combusken": {
+        "icon_file": "graphics/pokemon/combusken/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Comfey": {
+        "icon_file": "graphics/pokemon/comfey/icon.png",
+        "icon_x": 2,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Conkeldurr": {
+        "icon_file": "graphics/pokemon/conkeldurr/icon.png",
+        "icon_x": 7,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Copperajah": {
+        "icon_file": "graphics/pokemon/copperajah/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Corphish": {
+        "icon_file": "graphics/pokemon/corphish/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Corsola": {
+        "icon_file": "graphics/pokemon/corsola/icon.png",
+        "icon_x": 5,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "CorsolaGalarian": {
+        "icon_file": "graphics/pokemon/corsola/galarian/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Corviknight": {
+        "icon_file": "graphics/pokemon/corviknight/icon.png",
+        "icon_x": 2,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Corvisquire": {
+        "icon_file": "graphics/pokemon/corvisquire/icon.png",
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Cosmoem": {
+        "icon_file": "graphics/pokemon/cosmoem/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Cosmog": {
+        "icon_file": "graphics/pokemon/cosmog/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Cottonee": {
+        "icon_file": "graphics/pokemon/cottonee/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Crabominable": {
+        "icon_file": "graphics/pokemon/crabominable/icon.png",
+        "icon_x": 10,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Crabrawler": {
+        "icon_file": "graphics/pokemon/crabrawler/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Cradily": {
+        "icon_file": "graphics/pokemon/cradily/icon.png",
+        "icon_x": 3,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Cramorant": {
+        "icon_file": "graphics/pokemon/cramorant/icon.png",
+        "icon_x": 4,
+        "icon_y": 1,
+        "palette_num": "0"
+    },
+    "CramorantGorging": {
+        "icon_file": "graphics/pokemon/cramorant/gorging/icon.png",
+        "icon_x": 7,
+        "icon_y": 0,
+        "palette_num": "0"
+    },
+    "CramorantGulping": {
+        "icon_file": "graphics/pokemon/cramorant/gulping/icon.png",
+        "icon_x": 7,
+        "icon_y": 0,
+        "palette_num": "0"
+    },
+    "Cranidos": {
+        "icon_file": "graphics/pokemon/cranidos/icon.png",
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Crawdaunt": {
+        "icon_file": "graphics/pokemon/crawdaunt/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Cresselia": {
+        "icon_file": "graphics/pokemon/cresselia/icon.png",
+        "icon_x": 3,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Croagunk": {
+        "icon_file": "graphics/pokemon/croagunk/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Crobat": {
+        "icon_file": "graphics/pokemon/crobat/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Croconaw": {
+        "icon_file": "graphics/pokemon/croconaw/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Crustle": {
+        "icon_file": "graphics/pokemon/crustle/icon.png",
+        "icon_x": 4,
+        "icon_y": 14,
+        "palette_num": "2"
+    },
+    "Cryogonal": {
+        "icon_file": "graphics/pokemon/cryogonal/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Cubchoo": {
+        "icon_file": "graphics/pokemon/cubchoo/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Cubone": {
+        "icon_file": "graphics/pokemon/cubone/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Cufant": {
+        "icon_file": "graphics/pokemon/cufant/icon.png",
+        "icon_x": 9,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Cursola": {
+        "icon_file": "graphics/pokemon/cursola/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Cutiefly": {
+        "icon_file": "graphics/pokemon/cutiefly/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Cyndaquil": {
+        "icon_file": "graphics/pokemon/cyndaquil/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "3"
+    },
+    "Darkrai": {
+        "icon_file": "graphics/pokemon/darkrai/icon.png",
+        "icon_x": 5,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Darmanitan": {
+        "icon_file": "graphics/pokemon/darmanitan/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "DarmanitanGalarian": {
+        "icon_file": "graphics/pokemon/darmanitan/galarian/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "DarmanitanZenMode": {
+        "icon_file": "graphics/pokemon/darmanitan/zen_mode/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "DarmanitanZenModeGalarian": {
+        "icon_file": "graphics/pokemon/darmanitan/zen_mode/galarian/icon.png",
+        "icon_x": 9,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Dartrix": {
+        "icon_file": "graphics/pokemon/dartrix/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Darumaka": {
+        "icon_file": "graphics/pokemon/darumaka/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "DarumakaGalarian": {
+        "icon_file": "graphics/pokemon/darumaka/galarian/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Decidueye": {
+        "icon_file": "graphics/pokemon/decidueye/icon.png",
+        "icon_x": 7,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Dedenne": {
+        "icon_file": "graphics/pokemon/dedenne/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Deerling": {
+        "icon_file": "graphics/pokemon/deerling/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "DeerlingAutumn": {
+        "icon_file": "graphics/pokemon/deerling/autumn/icon.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "DeerlingSummer": {
+        "icon_file": "graphics/pokemon/deerling/summer/icon.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "DeerlingWinter": {
+        "icon_file": "graphics/pokemon/deerling/winter/icon.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Deino": {
+        "icon_file": "graphics/pokemon/deino/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Delcatty": {
+        "icon_file": "graphics/pokemon/delcatty/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Delibird": {
+        "icon_file": "graphics/pokemon/delibird/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Delphox": {
+        "icon_file": "graphics/pokemon/delphox/icon.png",
+        "icon_x": 3,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Deoxys": {
+        "icon_file": "graphics/pokemon/deoxys/icon.png",
+        "icon_x": 8,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "DeoxysAttack": {
+        "icon_file": "graphics/pokemon/deoxys/attack/icon.png",
+        "icon_x": 9,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "DeoxysDefense": {
+        "icon_file": "graphics/pokemon/deoxys/defense/icon.png",
+        "icon_x": 8,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "DeoxysSpeed": {
+        "icon_file": "graphics/pokemon/deoxys/speed/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Dewgong": {
+        "icon_file": "graphics/pokemon/dewgong/icon.png",
+        "icon_x": 3,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Dewott": {
+        "icon_file": "graphics/pokemon/dewott/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Dewpider": {
+        "icon_file": "graphics/pokemon/dewpider/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Dhelmise": {
+        "icon_file": "graphics/pokemon/dhelmise/icon.png",
+        "icon_x": 8,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Dialga": {
+        "icon_file": "graphics/pokemon/dialga/icon.png",
+        "icon_x": 1,
+        "icon_y": 3,
+        "palette_num": "2"
+    },
+    "Diancie": {
+        "icon_file": "graphics/pokemon/diancie/icon.png",
+        "icon_x": 9,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "DiancieMega": {
+        "icon_file": "graphics/pokemon/mega_diancie/icon.png",
+        "icon_x": 7,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Diggersby": {
+        "icon_file": "graphics/pokemon/diggersby/icon.png",
+        "icon_x": 8,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Diglett": {
+        "icon_file": "graphics/pokemon/diglett/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "DiglettAlolan": {
+        "icon_file": "graphics/pokemon/alolan_diglett/icon.png",
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Ditto": {
+        "icon_file": "graphics/pokemon/ditto/icon.png",
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Dodrio": {
+        "icon_file": "graphics/pokemon/dodrio/icon.png",
+        "icon_x": 1,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Doduo": {
+        "icon_file": "graphics/pokemon/doduo/icon.png",
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Donphan": {
+        "icon_file": "graphics/pokemon/donphan/icon.png",
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Dottler": {
+        "icon_file": "graphics/pokemon/dottler/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Doublade": {
+        "icon_file": "graphics/pokemon/doublade/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Dracovish": {
+        "icon_file": "graphics/pokemon/dracovish/icon.png",
+        "icon_x": 3,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "Dracozolt": {
+        "icon_file": "graphics/pokemon/dracozolt/icon.png",
+        "icon_x": 2,
+        "icon_y": 2,
+        "palette_num": "1"
+    },
+    "Dragalge": {
+        "icon_file": "graphics/pokemon/dragalge/icon.png",
+        "icon_x": 0,
+        "icon_y": 7,
+        "palette_num": "5"
+    },
+    "Dragapult": {
+        "icon_file": "graphics/pokemon/dragapult/icon.png",
+        "icon_x": 7,
+        "icon_y": 2,
+        "palette_num": "0"
+    },
+    "Dragonair": {
+        "icon_file": "graphics/pokemon/dragonair/icon.png",
+        "icon_x": 10,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Dragonite": {
+        "icon_file": "graphics/pokemon/dragonite/icon.png",
+        "icon_x": 3,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Drakloak": {
+        "icon_file": "graphics/pokemon/drakloak/icon.png",
+        "icon_x": 5,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Drampa": {
+        "icon_file": "graphics/pokemon/drampa/icon.png",
+        "icon_x": 2,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Drapion": {
+        "icon_file": "graphics/pokemon/drapion/icon.png",
+        "icon_x": 4,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Dratini": {
+        "icon_file": "graphics/pokemon/dratini/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Drednaw": {
+        "icon_file": "graphics/pokemon/drednaw/icon.png",
+        "icon_x": 2,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Dreepy": {
+        "icon_file": "graphics/pokemon/dreepy/icon.png",
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Drifblim": {
+        "icon_file": "graphics/pokemon/drifblim/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Drifloon": {
+        "icon_file": "graphics/pokemon/drifloon/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Drilbur": {
+        "icon_file": "graphics/pokemon/drilbur/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Drizzile": {
+        "icon_file": "graphics/pokemon/drizzile/icon.png",
+        "icon_x": 4,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Drowzee": {
+        "icon_file": "graphics/pokemon/drowzee/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Druddigon": {
+        "icon_file": "graphics/pokemon/druddigon/icon.png",
+        "icon_x": 1,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Dubwool": {
+        "icon_file": "graphics/pokemon/dubwool/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Ducklett": {
+        "icon_file": "graphics/pokemon/ducklett/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Dugtrio": {
+        "icon_file": "graphics/pokemon/dugtrio/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "DugtrioAlolan": {
+        "icon_file": "graphics/pokemon/alolan_dugtrio/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Dunsparce": {
+        "icon_file": "graphics/pokemon/dunsparce/icon.png",
+        "icon_x": 3,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "Duosion": {
+        "icon_file": "graphics/pokemon/duosion/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "1"
+    },
+    "Duraludon": {
+        "icon_file": "graphics/pokemon/duraludon/icon.png",
+        "icon_x": 7,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "Durant": {
+        "icon_file": "graphics/pokemon/durant/icon.png",
+        "icon_x": 4,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Dusclops": {
+        "icon_file": "graphics/pokemon/dusclops/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Dusknoir": {
+        "icon_file": "graphics/pokemon/dusknoir/icon.png",
+        "icon_x": 8,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Duskull": {
+        "icon_file": "graphics/pokemon/duskull/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Dustox": {
+        "icon_file": "graphics/pokemon/dustox/icon.png",
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": "5"
+    },
+    "Dwebble": {
+        "icon_file": "graphics/pokemon/dwebble/icon.png",
+        "icon_x": 4,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "Eelektrik": {
+        "icon_file": "graphics/pokemon/eelektrik/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Eelektross": {
+        "icon_file": "graphics/pokemon/eelektross/icon.png",
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Eevee": {
+        "icon_file": "graphics/pokemon/eevee/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Egg": {
+        "icon_file": "graphics/pokemon/egg/icon.png",
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Eiscue": {
+        "icon_file": "graphics/pokemon/eiscue/icon.png",
+        "icon_x": 8,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "EiscueNoiceFace": {
+        "icon_file": "graphics/pokemon/eiscue/noice_face/icon.png",
+        "icon_x": 9,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Ekans": {
+        "icon_file": "graphics/pokemon/ekans/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Eldegoss": {
+        "icon_file": "graphics/pokemon/eldegoss/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Electabuzz": {
+        "icon_file": "graphics/pokemon/electabuzz/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Electivire": {
+        "icon_file": "graphics/pokemon/electivire/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Electrike": {
+        "icon_file": "graphics/pokemon/electrike/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Electrode": {
+        "icon_file": "graphics/pokemon/electrode/icon.png",
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Elekid": {
+        "icon_file": "graphics/pokemon/elekid/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Elgyem": {
+        "icon_file": "graphics/pokemon/elgyem/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Emboar": {
+        "icon_file": "graphics/pokemon/emboar/icon.png",
+        "icon_x": 7,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Emolga": {
+        "icon_file": "graphics/pokemon/emolga/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Empoleon": {
+        "icon_file": "graphics/pokemon/empoleon/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Entei": {
+        "icon_file": "graphics/pokemon/entei/icon.png",
+        "icon_x": 4,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Escavalier": {
+        "icon_file": "graphics/pokemon/escavalier/icon.png",
+        "icon_x": 8,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Espeon": {
+        "icon_file": "graphics/pokemon/espeon/icon.png",
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Espurr": {
+        "icon_file": "graphics/pokemon/espurr/icon.png",
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Eternatus": {
+        "icon_file": "graphics/pokemon/eternatus/icon.png",
+        "icon_x": 0,
+        "icon_y": 2,
+        "palette_num": "0"
+    },
+    "EternatusEternamax": {
+        "icon_file": "graphics/pokemon/eternatus/eternamax/icon.png",
+        "icon_x": 0,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "Excadrill": {
+        "icon_file": "graphics/pokemon/excadrill/icon.png",
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Exeggcute": {
+        "icon_file": "graphics/pokemon/exeggcute/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Exeggutor": {
+        "icon_file": "graphics/pokemon/exeggutor/icon.png",
+        "icon_x": 8,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "ExeggutorAlolan": {
+        "icon_file": "graphics/pokemon/alolan_exeggutor/icon.png",
+        "icon_x": 7,
+        "icon_y": 1,
+        "palette_num": "1"
+    },
+    "Exploud": {
+        "icon_file": "graphics/pokemon/exploud/icon.png",
+        "icon_x": 3,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Falinks": {
+        "icon_file": "graphics/pokemon/falinks/icon.png",
+        "icon_x": 2,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Farfetchd": {
+        "icon_file": "graphics/pokemon/farfetchd/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "FarfetchdGalarian": {
+        "icon_file": "graphics/pokemon/farfetchd/galarian/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "1"
+    },
+    "Fearow": {
+        "icon_file": "graphics/pokemon/fearow/icon.png",
+        "icon_x": 1,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "Feebas": {
+        "icon_file": "graphics/pokemon/feebas/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Fennekin": {
+        "icon_file": "graphics/pokemon/fennekin/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Feraligatr": {
+        "icon_file": "graphics/pokemon/feraligatr/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Ferroseed": {
+        "icon_file": "graphics/pokemon/ferroseed/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Ferrothorn": {
+        "icon_file": "graphics/pokemon/ferrothorn/icon.png",
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Finneon": {
+        "icon_file": "graphics/pokemon/finneon/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Flaaffy": {
+        "icon_file": "graphics/pokemon/flaaffy/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Flabebe": {
+        "icon_file": "graphics/pokemon/flabebe/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "FlabebeBlueFlower": {
+        "icon_file": "graphics/pokemon/flabebe/blue_flower/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "FlabebeOrangeFlower": {
+        "icon_file": "graphics/pokemon/flabebe/orange_flower/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "FlabebeWhiteFlower": {
+        "icon_file": "graphics/pokemon/flabebe/white_flower/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "FlabebeYellowFlower": {
+        "icon_file": "graphics/pokemon/flabebe/yellow_flower/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Flapple": {
+        "icon_file": "graphics/pokemon/flapple/icon.png",
+        "icon_x": 1,
+        "icon_y": 5,
+        "palette_num": "1"
+    },
+    "Flareon": {
+        "icon_file": "graphics/pokemon/flareon/icon.png",
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": "3"
+    },
+    "Fletchinder": {
+        "icon_file": "graphics/pokemon/fletchinder/icon.png",
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Fletchling": {
+        "icon_file": "graphics/pokemon/fletchling/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Floatzel": {
+        "icon_file": "graphics/pokemon/floatzel/icon.png",
+        "icon_x": 3,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Floette": {
+        "icon_file": "graphics/pokemon/floette/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "FloetteBlueFlower": {
+        "icon_file": "graphics/pokemon/floette/blue_flower/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "FloetteEternalFlower": {
+        "icon_file": "graphics/pokemon/floette/eternal_flower/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "FloetteOrangeFlower": {
+        "icon_file": "graphics/pokemon/floette/orange_flower/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "FloetteWhiteFlower": {
+        "icon_file": "graphics/pokemon/floette/white_flower/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "FloetteYellowFlower": {
+        "icon_file": "graphics/pokemon/floette/yellow_flower/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Florges": {
+        "icon_file": "graphics/pokemon/florges/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "FlorgesBlueFlower": {
+        "icon_file": "graphics/pokemon/florges/blue_flower/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "FlorgesOrangeFlower": {
+        "icon_file": "graphics/pokemon/florges/orange_flower/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "FlorgesWhiteFlower": {
+        "icon_file": "graphics/pokemon/florges/white_flower/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "FlorgesYellowFlower": {
+        "icon_file": "graphics/pokemon/florges/yellow_flower/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Flygon": {
+        "icon_file": "graphics/pokemon/flygon/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Fomantis": {
+        "icon_file": "graphics/pokemon/fomantis/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Foongus": {
+        "icon_file": "graphics/pokemon/foongus/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Forretress": {
+        "icon_file": "graphics/pokemon/forretress/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Fraxure": {
+        "icon_file": "graphics/pokemon/fraxure/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Frillish": {
+        "icon_file": "graphics/pokemon/frillish/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "FrillishF": {
+        "icon_file": "graphics/pokemon/frillish/iconf.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Froakie": {
+        "icon_file": "graphics/pokemon/froakie/icon.png",
+        "icon_x": 8,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Frogadier": {
+        "icon_file": "graphics/pokemon/frogadier/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Froslass": {
+        "icon_file": "graphics/pokemon/froslass/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Frosmoth": {
+        "icon_file": "graphics/pokemon/frosmoth/icon.png",
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Furfrou": {
+        "icon_file": "graphics/pokemon/furfrou/icon.png",
+        "icon_x": 4,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "FurfrouDandyTrim": {
+        "icon_file": "graphics/pokemon/furfrou/dandy_trim/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "FurfrouDebutanteTrim": {
+        "icon_file": "graphics/pokemon/furfrou/debutante_trim/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "2"
+    },
+    "FurfrouDiamondTrim": {
+        "icon_file": "graphics/pokemon/furfrou/diamond_trim/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "FurfrouHeartTrim": {
+        "icon_file": "graphics/pokemon/furfrou/heart_trim/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "FurfrouKabukiTrim": {
+        "icon_file": "graphics/pokemon/furfrou/kabuki_trim/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "FurfrouLaReineTrim": {
+        "icon_file": "graphics/pokemon/furfrou/la_reine_trim/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "FurfrouMatronTrim": {
+        "icon_file": "graphics/pokemon/furfrou/matron_trim/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "2"
+    },
+    "FurfrouPharaohTrim": {
+        "icon_file": "graphics/pokemon/furfrou/pharaoh_trim/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "FurfrouStarTrim": {
+        "icon_file": "graphics/pokemon/furfrou/star_trim/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Furret": {
+        "icon_file": "graphics/pokemon/furret/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Gabite": {
+        "icon_file": "graphics/pokemon/gabite/icon.png",
+        "icon_x": 3,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Gallade": {
+        "icon_file": "graphics/pokemon/gallade/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "1"
+    },
+    "GalladeMega": {
+        "icon_file": "graphics/pokemon/mega_gallade/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Galvantula": {
+        "icon_file": "graphics/pokemon/galvantula/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Garbodor": {
+        "icon_file": "graphics/pokemon/garbodor/icon.png",
+        "icon_x": 9,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Garchomp": {
+        "icon_file": "graphics/pokemon/garchomp/icon.png",
+        "icon_x": 2,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "GarchompMega": {
+        "icon_file": "graphics/pokemon/mega_garchomp/icon.png",
+        "icon_x": 1,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Gardevoir": {
+        "icon_file": "graphics/pokemon/gardevoir/icon.png",
+        "icon_x": 5,
+        "icon_y": 5,
+        "palette_num": "1"
+    },
+    "GardevoirMega": {
+        "icon_file": "graphics/pokemon/mega_gardevoir/icon.png",
+        "icon_x": 5,
+        "icon_y": 5,
+        "palette_num": "1"
+    },
+    "Gastly": {
+        "icon_file": "graphics/pokemon/gastly/icon.png",
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Gastrodon": {
+        "icon_file": "graphics/pokemon/gastrodon/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "GastrodonEastSea": {
+        "icon_file": "graphics/pokemon/gastrodon/east_sea/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Genesect": {
+        "icon_file": "graphics/pokemon/genesect/icon.png",
+        "icon_x": 5,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Gengar": {
+        "icon_file": "graphics/pokemon/gengar/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "GengarMega": {
+        "icon_file": "graphics/pokemon/mega_gengar/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Geodude": {
+        "icon_file": "graphics/pokemon/geodude/icon.png",
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "GeodudeAlolan": {
+        "icon_file": "graphics/pokemon/alolan_geodude/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Gible": {
+        "icon_file": "graphics/pokemon/gible/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Gigalith": {
+        "icon_file": "graphics/pokemon/gigalith/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Girafarig": {
+        "icon_file": "graphics/pokemon/girafarig/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Giratina": {
+        "icon_file": "graphics/pokemon/giratina/icon.png",
+        "icon_x": 1,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "GiratinaOrigin": {
+        "icon_file": "graphics/pokemon/giratina/origin/icon.png",
+        "icon_x": 2,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Glaceon": {
+        "icon_file": "graphics/pokemon/glaceon/icon.png",
+        "icon_x": 2,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Glalie": {
+        "icon_file": "graphics/pokemon/glalie/icon.png",
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "GlalieMega": {
+        "icon_file": "graphics/pokemon/mega_glalie/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Glameow": {
+        "icon_file": "graphics/pokemon/glameow/icon.png",
+        "icon_x": 3,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Glastrier": {
+        "icon_file": "graphics/pokemon/glastrier/icon.png",
+        "icon_x": 3,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Gligar": {
+        "icon_file": "graphics/pokemon/gligar/icon.png",
+        "icon_x": 8,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Gliscor": {
+        "icon_file": "graphics/pokemon/gliscor/icon.png",
+        "icon_x": 9,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Gloom": {
+        "icon_file": "graphics/pokemon/gloom/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Gogoat": {
+        "icon_file": "graphics/pokemon/gogoat/icon.png",
+        "icon_x": 3,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Golbat": {
+        "icon_file": "graphics/pokemon/golbat/icon.png",
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Goldeen": {
+        "icon_file": "graphics/pokemon/goldeen/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Golduck": {
+        "icon_file": "graphics/pokemon/golduck/icon.png",
+        "icon_x": 2,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Golem": {
+        "icon_file": "graphics/pokemon/golem/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "GolemAlolan": {
+        "icon_file": "graphics/pokemon/alolan_golem/icon.png",
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": "2"
+    },
+    "Golett": {
+        "icon_file": "graphics/pokemon/golett/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Golisopod": {
+        "icon_file": "graphics/pokemon/golisopod/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Golurk": {
+        "icon_file": "graphics/pokemon/golurk/icon.png",
+        "icon_x": 8,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Goodra": {
+        "icon_file": "graphics/pokemon/goodra/icon.png",
+        "icon_x": 3,
+        "icon_y": 5,
+        "palette_num": "5"
+    },
+    "Goomy": {
+        "icon_file": "graphics/pokemon/goomy/icon.png",
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": "5"
+    },
+    "Gorebyss": {
+        "icon_file": "graphics/pokemon/gorebyss/icon.png",
+        "icon_x": 2,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Gossifleur": {
+        "icon_file": "graphics/pokemon/gossifleur/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Gothita": {
+        "icon_file": "graphics/pokemon/gothita/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Gothitelle": {
+        "icon_file": "graphics/pokemon/gothitelle/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Gothorita": {
+        "icon_file": "graphics/pokemon/gothorita/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Gourgeist": {
+        "icon_file": "graphics/pokemon/gourgeist/icon.png",
+        "icon_x": 8,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Granbull": {
+        "icon_file": "graphics/pokemon/granbull/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Grapploct": {
+        "icon_file": "graphics/pokemon/grapploct/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Graveler": {
+        "icon_file": "graphics/pokemon/graveler/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "GravelerAlolan": {
+        "icon_file": "graphics/pokemon/alolan_graveler/icon.png",
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": "2"
+    },
+    "Greedent": {
+        "icon_file": "graphics/pokemon/greedent/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Greninja": {
+        "icon_file": "graphics/pokemon/greninja/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "GreninjaAsh": {
+        "icon_file": "graphics/pokemon/greninja/ash/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Grimer": {
+        "icon_file": "graphics/pokemon/grimer/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "GrimerAlolan": {
+        "icon_file": "graphics/pokemon/alolan_grimer/icon.png",
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Grimmsnarl": {
+        "icon_file": "graphics/pokemon/grimmsnarl/icon.png",
+        "icon_x": 7,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Grookey": {
+        "icon_file": "graphics/pokemon/grookey/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "1"
+    },
+    "Grotle": {
+        "icon_file": "graphics/pokemon/grotle/icon.png",
+        "icon_x": 4,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Groudon": {
+        "icon_file": "graphics/pokemon/groudon/icon.png",
+        "icon_x": 0,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "GroudonPrimal": {
+        "icon_file": "graphics/pokemon/primal_groudon/icon.png",
+        "icon_x": 0,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Grovyle": {
+        "icon_file": "graphics/pokemon/grovyle/icon.png",
+        "icon_x": 3,
+        "icon_y": 5,
+        "palette_num": "1"
+    },
+    "Growlithe": {
+        "icon_file": "graphics/pokemon/growlithe/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "3"
+    },
+    "Grubbin": {
+        "icon_file": "graphics/pokemon/grubbin/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Grumpig": {
+        "icon_file": "graphics/pokemon/grumpig/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Gulpin": {
+        "icon_file": "graphics/pokemon/gulpin/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Gumshoos": {
+        "icon_file": "graphics/pokemon/gumshoos/icon.png",
+        "icon_x": 6,
+        "icon_y": 4,
+        "palette_num": "2"
+    },
+    "Gurdurr": {
+        "icon_file": "graphics/pokemon/gurdurr/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Guzzlord": {
+        "icon_file": "graphics/pokemon/guzzlord/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Gyarados": {
+        "icon_file": "graphics/pokemon/gyarados/icon.png",
+        "icon_x": 2,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "GyaradosMega": {
+        "icon_file": "graphics/pokemon/mega_gyarados/icon.png",
+        "icon_x": 2,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Hakamoo": {
+        "icon_file": "graphics/pokemon/hakamo_o/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Happiny": {
+        "icon_file": "graphics/pokemon/happiny/icon.png",
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Hariyama": {
+        "icon_file": "graphics/pokemon/hariyama/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Hatenna": {
+        "icon_file": "graphics/pokemon/hatenna/icon.png",
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Hatterene": {
+        "icon_file": "graphics/pokemon/hatterene/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Hattrem": {
+        "icon_file": "graphics/pokemon/hattrem/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Haunter": {
+        "icon_file": "graphics/pokemon/haunter/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Hawlucha": {
+        "icon_file": "graphics/pokemon/hawlucha/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Haxorus": {
+        "icon_file": "graphics/pokemon/haxorus/icon.png",
+        "icon_x": 2,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Heatmor": {
+        "icon_file": "graphics/pokemon/heatmor/icon.png",
+        "icon_x": 1,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Heatran": {
+        "icon_file": "graphics/pokemon/heatran/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Heliolisk": {
+        "icon_file": "graphics/pokemon/heliolisk/icon.png",
+        "icon_x": 4,
+        "icon_y": 3,
+        "palette_num": "2"
+    },
+    "Helioptile": {
+        "icon_file": "graphics/pokemon/helioptile/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Heracross": {
+        "icon_file": "graphics/pokemon/heracross/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "HeracrossMega": {
+        "icon_file": "graphics/pokemon/mega_heracross/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Herdier": {
+        "icon_file": "graphics/pokemon/herdier/icon.png",
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Hippopotas": {
+        "icon_file": "graphics/pokemon/hippopotas/icon.png",
+        "icon_x": 4,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Hippowdon": {
+        "icon_file": "graphics/pokemon/hippowdon/icon.png",
+        "icon_x": 2,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Hitmonchan": {
+        "icon_file": "graphics/pokemon/hitmonchan/icon.png",
+        "icon_x": 9,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Hitmonlee": {
+        "icon_file": "graphics/pokemon/hitmonlee/icon.png",
+        "icon_x": 9,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Hitmontop": {
+        "icon_file": "graphics/pokemon/hitmontop/icon.png",
+        "icon_x": 8,
+        "icon_y": 15,
+        "palette_num": "2"
+    },
+    "HoOh": {
+        "icon_file": "graphics/pokemon/ho_oh/icon.png",
+        "icon_x": 2,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Honchkrow": {
+        "icon_file": "graphics/pokemon/honchkrow/icon.png",
+        "icon_x": 2,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Honedge": {
+        "icon_file": "graphics/pokemon/honedge/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Hoopa": {
+        "icon_file": "graphics/pokemon/hoopa/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "HoopaUnbound": {
+        "icon_file": "graphics/pokemon/hoopa/unbound/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Hoothoot": {
+        "icon_file": "graphics/pokemon/hoothoot/icon.png",
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Hoppip": {
+        "icon_file": "graphics/pokemon/hoppip/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Horsea": {
+        "icon_file": "graphics/pokemon/horsea/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Houndoom": {
+        "icon_file": "graphics/pokemon/houndoom/icon.png",
+        "icon_x": 5,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "HoundoomMega": {
+        "icon_file": "graphics/pokemon/mega_houndoom/icon.png",
+        "icon_x": 5,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "Houndour": {
+        "icon_file": "graphics/pokemon/houndour/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Huntail": {
+        "icon_file": "graphics/pokemon/huntail/icon.png",
+        "icon_x": 4,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Hydreigon": {
+        "icon_file": "graphics/pokemon/hydreigon/icon.png",
+        "icon_x": 2,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Hypno": {
+        "icon_file": "graphics/pokemon/hypno/icon.png",
+        "icon_x": 8,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Igglybuff": {
+        "icon_file": "graphics/pokemon/igglybuff/icon.png",
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Illumise": {
+        "icon_file": "graphics/pokemon/illumise/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Impidimp": {
+        "icon_file": "graphics/pokemon/impidimp/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Incineroar": {
+        "icon_file": "graphics/pokemon/incineroar/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Indeedee": {
+        "icon_file": "graphics/pokemon/indeedee/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "IndeedeeFemale": {
+        "icon_file": "graphics/pokemon/indeedee/female/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Infernape": {
+        "icon_file": "graphics/pokemon/infernape/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Inkay": {
+        "icon_file": "graphics/pokemon/inkay/icon.png",
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Inteleon": {
+        "icon_file": "graphics/pokemon/inteleon/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Ivysaur": {
+        "icon_file": "graphics/pokemon/ivysaur/icon.png",
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": "4"
+    },
+    "Jangmoo": {
+        "icon_file": "graphics/pokemon/jangmo_o/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Jellicent": {
+        "icon_file": "graphics/pokemon/jellicent/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "JellicentF": {
+        "icon_file": "graphics/pokemon/jellicent/iconf.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Jigglypuff": {
+        "icon_file": "graphics/pokemon/jigglypuff/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Jirachi": {
+        "icon_file": "graphics/pokemon/jirachi/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Jolteon": {
+        "icon_file": "graphics/pokemon/jolteon/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Joltik": {
+        "icon_file": "graphics/pokemon/joltik/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Jumpluff": {
+        "icon_file": "graphics/pokemon/jumpluff/icon.png",
+        "icon_x": 8,
+        "icon_y": 14,
+        "palette_num": "2"
+    },
+    "Jynx": {
+        "icon_file": "graphics/pokemon/jynx/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Kabuto": {
+        "icon_file": "graphics/pokemon/kabuto/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Kabutops": {
+        "icon_file": "graphics/pokemon/kabutops/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Kadabra": {
+        "icon_file": "graphics/pokemon/kadabra/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Kakuna": {
+        "icon_file": "graphics/pokemon/kakuna/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Kangaskhan": {
+        "icon_file": "graphics/pokemon/kangaskhan/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "KangaskhanMega": {
+        "icon_file": "graphics/pokemon/mega_kangaskhan/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Karrablast": {
+        "icon_file": "graphics/pokemon/karrablast/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Kartana": {
+        "icon_file": "graphics/pokemon/kartana/icon.png",
+        "icon_x": 8,
+        "icon_y": 1,
+        "palette_num": "0"
+    },
+    "Kecleon": {
+        "icon_file": "graphics/pokemon/kecleon/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Keldeo": {
+        "icon_file": "graphics/pokemon/keldeo/icon.png",
+        "icon_x": 4,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "KeldeoResolute": {
+        "icon_file": "graphics/pokemon/keldeo/resolute/icon.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Kingdra": {
+        "icon_file": "graphics/pokemon/kingdra/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Kingler": {
+        "icon_file": "graphics/pokemon/kingler/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Kirlia": {
+        "icon_file": "graphics/pokemon/kirlia/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Klang": {
+        "icon_file": "graphics/pokemon/klang/icon.png",
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Klefki": {
+        "icon_file": "graphics/pokemon/klefki/icon.png",
+        "icon_x": 9,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Klink": {
+        "icon_file": "graphics/pokemon/klink/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Klinklang": {
+        "icon_file": "graphics/pokemon/klinklang/icon.png",
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Koffing": {
+        "icon_file": "graphics/pokemon/koffing/icon.png",
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Komala": {
+        "icon_file": "graphics/pokemon/komala/icon.png",
+        "icon_x": 9,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Kommoo": {
+        "icon_file": "graphics/pokemon/kommo_o/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "2"
+    },
+    "Krabby": {
+        "icon_file": "graphics/pokemon/krabby/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Kricketot": {
+        "icon_file": "graphics/pokemon/kricketot/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Kricketune": {
+        "icon_file": "graphics/pokemon/kricketune/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Krokorok": {
+        "icon_file": "graphics/pokemon/krokorok/icon.png",
+        "icon_x": 4,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Krookodile": {
+        "icon_file": "graphics/pokemon/krookodile/icon.png",
+        "icon_x": 2,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Kubfu": {
+        "icon_file": "graphics/pokemon/kubfu/icon.png",
+        "icon_x": 7,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Kyogre": {
+        "icon_file": "graphics/pokemon/kyogre/icon.png",
+        "icon_x": 3,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "KyogrePrimal": {
+        "icon_file": "graphics/pokemon/primal_kyogre/icon.png",
+        "icon_x": 3,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Kyurem": {
+        "icon_file": "graphics/pokemon/kyurem/icon.png",
+        "icon_x": 0,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "KyuremBlack": {
+        "icon_file": "graphics/pokemon/kyurem/black/icon.png",
+        "icon_x": 1,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "KyuremWhite": {
+        "icon_file": "graphics/pokemon/kyurem/white/icon.png",
+        "icon_x": 1,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Lairon": {
+        "icon_file": "graphics/pokemon/lairon/icon.png",
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Lampent": {
+        "icon_file": "graphics/pokemon/lampent/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Landorus": {
+        "icon_file": "graphics/pokemon/landorus/icon.png",
+        "icon_x": 10,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "LandorusTherian": {
+        "icon_file": "graphics/pokemon/landorus/therian/icon.png",
+        "icon_x": 1,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Lanturn": {
+        "icon_file": "graphics/pokemon/lanturn/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Lapras": {
+        "icon_file": "graphics/pokemon/lapras/icon.png",
+        "icon_x": 3,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Larvesta": {
+        "icon_file": "graphics/pokemon/larvesta/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Larvitar": {
+        "icon_file": "graphics/pokemon/larvitar/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Latias": {
+        "icon_file": "graphics/pokemon/latias/icon.png",
+        "icon_x": 1,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "LatiasMega": {
+        "icon_file": "graphics/pokemon/mega_latias/icon.png",
+        "icon_x": 0,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Latios": {
+        "icon_file": "graphics/pokemon/latios/icon.png",
+        "icon_x": 0,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "LatiosMega": {
+        "icon_file": "graphics/pokemon/mega_latios/icon.png",
+        "icon_x": 0,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Leafeon": {
+        "icon_file": "graphics/pokemon/leafeon/icon.png",
+        "icon_x": 3,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Leavanny": {
+        "icon_file": "graphics/pokemon/leavanny/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Ledian": {
+        "icon_file": "graphics/pokemon/ledian/icon.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Ledyba": {
+        "icon_file": "graphics/pokemon/ledyba/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Lickilicky": {
+        "icon_file": "graphics/pokemon/lickilicky/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Lickitung": {
+        "icon_file": "graphics/pokemon/lickitung/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Liepard": {
+        "icon_file": "graphics/pokemon/liepard/icon.png",
+        "icon_x": 2,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Lileep": {
+        "icon_file": "graphics/pokemon/lileep/icon.png",
+        "icon_x": 9,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Lilligant": {
+        "icon_file": "graphics/pokemon/lilligant/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Lillipup": {
+        "icon_file": "graphics/pokemon/lillipup/icon.png",
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Linoone": {
+        "icon_file": "graphics/pokemon/linoone/icon.png",
+        "icon_x": 4,
+        "icon_y": 14,
+        "palette_num": "2"
+    },
+    "LinooneGalarian": {
+        "icon_file": "graphics/pokemon/linoone/galarian/icon.png",
+        "icon_x": 4,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "Litleo": {
+        "icon_file": "graphics/pokemon/litleo/icon.png",
+        "icon_x": 4,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Litten": {
+        "icon_file": "graphics/pokemon/litten/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Litwick": {
+        "icon_file": "graphics/pokemon/litwick/icon.png",
+        "icon_x": 7,
+        "icon_y": 14,
+        "palette_num": "2"
+    },
+    "Lombre": {
+        "icon_file": "graphics/pokemon/lombre/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Lopunny": {
+        "icon_file": "graphics/pokemon/lopunny/icon.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "LopunnyMega": {
+        "icon_file": "graphics/pokemon/mega_lopunny/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Lotad": {
+        "icon_file": "graphics/pokemon/lotad/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "4"
+    },
+    "Loudred": {
+        "icon_file": "graphics/pokemon/loudred/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Lucario": {
+        "icon_file": "graphics/pokemon/lucario/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "LucarioMega": {
+        "icon_file": "graphics/pokemon/mega_lucario/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Ludicolo": {
+        "icon_file": "graphics/pokemon/ludicolo/icon.png",
+        "icon_x": 7,
+        "icon_y": 14,
+        "palette_num": "1"
+    },
+    "Lugia": {
+        "icon_file": "graphics/pokemon/lugia/icon.png",
+        "icon_x": 0,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Lumineon": {
+        "icon_file": "graphics/pokemon/lumineon/icon.png",
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Lunala": {
+        "icon_file": "graphics/pokemon/lunala/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Lunatone": {
+        "icon_file": "graphics/pokemon/lunatone/icon.png",
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Lurantis": {
+        "icon_file": "graphics/pokemon/lurantis/icon.png",
+        "icon_x": 8,
+        "icon_y": 5,
+        "palette_num": "1"
+    },
+    "Luvdisc": {
+        "icon_file": "graphics/pokemon/luvdisc/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Luxio": {
+        "icon_file": "graphics/pokemon/luxio/icon.png",
+        "icon_x": 1,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Luxray": {
+        "icon_file": "graphics/pokemon/luxray/icon.png",
+        "icon_x": 1,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Lycanroc": {
+        "icon_file": "graphics/pokemon/lycanroc/icon.png",
+        "icon_x": 4,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "LycanrocDusk": {
+        "icon_file": "graphics/pokemon/lycanroc/dusk/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "LycanrocMidnight": {
+        "icon_file": "graphics/pokemon/lycanroc/midnight/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Machamp": {
+        "icon_file": "graphics/pokemon/machamp/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Machoke": {
+        "icon_file": "graphics/pokemon/machoke/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Machop": {
+        "icon_file": "graphics/pokemon/machop/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Magby": {
+        "icon_file": "graphics/pokemon/magby/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Magcargo": {
+        "icon_file": "graphics/pokemon/magcargo/icon.png",
+        "icon_x": 4,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Magearna": {
+        "icon_file": "graphics/pokemon/magearna/icon.png",
+        "icon_x": 8,
+        "icon_y": 2,
+        "palette_num": "0"
+    },
+    "MagearnaOriginalColor": {
+        "icon_file": "graphics/pokemon/magearna/original_color/icon.png",
+        "icon_x": 8,
+        "icon_y": 2,
+        "palette_num": "0"
+    },
+    "Magikarp": {
+        "icon_file": "graphics/pokemon/magikarp/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Magmar": {
+        "icon_file": "graphics/pokemon/magmar/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Magmortar": {
+        "icon_file": "graphics/pokemon/magmortar/icon.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Magnemite": {
+        "icon_file": "graphics/pokemon/magnemite/icon.png",
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Magneton": {
+        "icon_file": "graphics/pokemon/magneton/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Magnezone": {
+        "icon_file": "graphics/pokemon/magnezone/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Makuhita": {
+        "icon_file": "graphics/pokemon/makuhita/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Malamar": {
+        "icon_file": "graphics/pokemon/malamar/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Mamoswine": {
+        "icon_file": "graphics/pokemon/mamoswine/icon.png",
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Manaphy": {
+        "icon_file": "graphics/pokemon/manaphy/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Mandibuzz": {
+        "icon_file": "graphics/pokemon/mandibuzz/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Manectric": {
+        "icon_file": "graphics/pokemon/manectric/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "ManectricMega": {
+        "icon_file": "graphics/pokemon/mega_manectric/icon.png",
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Mankey": {
+        "icon_file": "graphics/pokemon/mankey/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Mantine": {
+        "icon_file": "graphics/pokemon/mantine/icon.png",
+        "icon_x": 1,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Mantyke": {
+        "icon_file": "graphics/pokemon/mantyke/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Maractus": {
+        "icon_file": "graphics/pokemon/maractus/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Mareanie": {
+        "icon_file": "graphics/pokemon/mareanie/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Mareep": {
+        "icon_file": "graphics/pokemon/mareep/icon.png",
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Marill": {
+        "icon_file": "graphics/pokemon/marill/icon.png",
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Marowak": {
+        "icon_file": "graphics/pokemon/marowak/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "MarowakAlolan": {
+        "icon_file": "graphics/pokemon/alolan_marowak/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Marshadow": {
+        "icon_file": "graphics/pokemon/marshadow/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Marshtomp": {
+        "icon_file": "graphics/pokemon/marshtomp/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Masquerain": {
+        "icon_file": "graphics/pokemon/masquerain/icon.png",
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "Mawile": {
+        "icon_file": "graphics/pokemon/mawile/icon.png",
+        "icon_x": 14,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "MawileMega": {
+        "icon_file": "graphics/pokemon/mega_mawile/icon.png",
+        "icon_x": 14,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Medicham": {
+        "icon_file": "graphics/pokemon/medicham/icon.png",
+        "icon_x": 8,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "MedichamMega": {
+        "icon_file": "graphics/pokemon/mega_medicham/icon.png",
+        "icon_x": 7,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Meditite": {
+        "icon_file": "graphics/pokemon/meditite/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Meganium": {
+        "icon_file": "graphics/pokemon/meganium/icon.png",
+        "icon_x": 4,
+        "icon_y": 3,
+        "palette_num": "1"
+    },
+    "Melmetal": {
+        "icon_file": "graphics/pokemon/melmetal/icon.png",
+        "icon_x": 6,
+        "icon_y": 0,
+        "palette_num": "2"
+    },
+    "Meloetta": {
+        "icon_file": "graphics/pokemon/meloetta/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "4"
+    },
+    "MeloettaPirouette": {
+        "icon_file": "graphics/pokemon/meloetta/pirouette/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Meltan": {
+        "icon_file": "graphics/pokemon/meltan/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Meowstic": {
+        "icon_file": "graphics/pokemon/meowstic/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "MeowsticFemale": {
+        "icon_file": "graphics/pokemon/meowstic/female/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Meowth": {
+        "icon_file": "graphics/pokemon/meowth/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "MeowthAlolan": {
+        "icon_file": "graphics/pokemon/alolan_meowth/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "MeowthGalarian": {
+        "icon_file": "graphics/pokemon/meowth/galarian/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Mesprit": {
+        "icon_file": "graphics/pokemon/mesprit/icon.png",
+        "icon_x": 2,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Metagross": {
+        "icon_file": "graphics/pokemon/metagross/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "MetagrossMega": {
+        "icon_file": "graphics/pokemon/mega_metagross/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Metang": {
+        "icon_file": "graphics/pokemon/metang/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Metapod": {
+        "icon_file": "graphics/pokemon/metapod/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Mew": {
+        "icon_file": "graphics/pokemon/mew/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Mewtwo": {
+        "icon_file": "graphics/pokemon/mewtwo/icon.png",
+        "icon_x": 6,
+        "icon_y": 4,
+        "palette_num": "2"
+    },
+    "MewtwoMegaX": {
+        "icon_file": "graphics/pokemon/mega_mewtwo_x/icon.png",
+        "icon_x": 6,
+        "icon_y": 3,
+        "palette_num": "2"
+    },
+    "MewtwoMegaY": {
+        "icon_file": "graphics/pokemon/mega_mewtwo_y/icon.png",
+        "icon_x": 8,
+        "icon_y": 2,
+        "palette_num": "2"
+    },
+    "Mienfoo": {
+        "icon_file": "graphics/pokemon/mienfoo/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Mienshao": {
+        "icon_file": "graphics/pokemon/mienshao/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Mightyena": {
+        "icon_file": "graphics/pokemon/mightyena/icon.png",
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Milcery": {
+        "icon_file": "graphics/pokemon/milcery/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "1"
+    },
+    "Milotic": {
+        "icon_file": "graphics/pokemon/milotic/icon.png",
+        "icon_x": 4,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Miltank": {
+        "icon_file": "graphics/pokemon/miltank/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "MimeJr": {
+        "icon_file": "graphics/pokemon/mime_jr/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Mimikyu": {
+        "icon_file": "graphics/pokemon/mimikyu/icon.png",
+        "icon_x": 9,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "MimikyuBusted": {
+        "icon_file": "graphics/pokemon/mimikyu/busted/icon.png",
+        "icon_x": 8,
+        "icon_y": 14,
+        "palette_num": "1"
+    },
+    "Minccino": {
+        "icon_file": "graphics/pokemon/minccino/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Minior": {
+        "icon_file": "graphics/pokemon/minior/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "MiniorCoreBlue": {
+        "icon_file": "graphics/pokemon/minior/core/blue/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "MiniorCoreGreen": {
+        "icon_file": "graphics/pokemon/minior/core/green/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "1"
+    },
+    "MiniorCoreIndigo": {
+        "icon_file": "graphics/pokemon/minior/core/indigo/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "MiniorCoreOrange": {
+        "icon_file": "graphics/pokemon/minior/core/orange/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "MiniorCoreRed": {
+        "icon_file": "graphics/pokemon/minior/core/red/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "MiniorCoreViolet": {
+        "icon_file": "graphics/pokemon/minior/core/violet/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "MiniorCoreYellow": {
+        "icon_file": "graphics/pokemon/minior/core/yellow/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Minun": {
+        "icon_file": "graphics/pokemon/minun/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Misdreavus": {
+        "icon_file": "graphics/pokemon/misdreavus/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Mismagius": {
+        "icon_file": "graphics/pokemon/mismagius/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Moltres": {
+        "icon_file": "graphics/pokemon/moltres/icon.png",
+        "icon_x": 4,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "MoltresGalarian": {
+        "icon_file": "graphics/pokemon/moltres/galarian/icon.png",
+        "icon_x": 2,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Monferno": {
+        "icon_file": "graphics/pokemon/monferno/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Morelull": {
+        "icon_file": "graphics/pokemon/morelull/icon.png",
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Morgrem": {
+        "icon_file": "graphics/pokemon/morgrem/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Morpeko": {
+        "icon_file": "graphics/pokemon/morpeko/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "MorpekoHangry": {
+        "icon_file": "graphics/pokemon/morpeko/hangry/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Mothim": {
+        "icon_file": "graphics/pokemon/mothim/icon.png",
+        "icon_x": 2,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "MrMime": {
+        "icon_file": "graphics/pokemon/mr_mime/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "MrMimeGalarian": {
+        "icon_file": "graphics/pokemon/mr_mime/galarian/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "MrRime": {
+        "icon_file": "graphics/pokemon/mr_rime/icon.png",
+        "icon_x": 9,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Mudbray": {
+        "icon_file": "graphics/pokemon/mudbray/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Mudkip": {
+        "icon_file": "graphics/pokemon/mudkip/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Mudsdale": {
+        "icon_file": "graphics/pokemon/mudsdale/icon.png",
+        "icon_x": 4,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Muk": {
+        "icon_file": "graphics/pokemon/muk/icon.png",
+        "icon_x": 4,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "MukAlolan": {
+        "icon_file": "graphics/pokemon/alolan_muk/icon.png",
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Munchlax": {
+        "icon_file": "graphics/pokemon/munchlax/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "3"
+    },
+    "Munna": {
+        "icon_file": "graphics/pokemon/munna/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Murkrow": {
+        "icon_file": "graphics/pokemon/murkrow/icon.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Musharna": {
+        "icon_file": "graphics/pokemon/musharna/icon.png",
+        "icon_x": 7,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "Naganadel": {
+        "icon_file": "graphics/pokemon/naganadel/icon.png",
+        "icon_x": 0,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Natu": {
+        "icon_file": "graphics/pokemon/natu/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Necrozma": {
+        "icon_file": "graphics/pokemon/necrozma/icon.png",
+        "icon_x": 8,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "NecrozmaDawnWings": {
+        "icon_file": "graphics/pokemon/necrozma/dawn_wings/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "NecrozmaDuskMane": {
+        "icon_file": "graphics/pokemon/necrozma/dusk_mane/icon.png",
+        "icon_x": 0,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "NecrozmaUltra": {
+        "icon_file": "graphics/pokemon/necrozma/ultra/icon.png",
+        "icon_x": 4,
+        "icon_y": 1,
+        "palette_num": "2"
+    },
+    "Nickit": {
+        "icon_file": "graphics/pokemon/nickit/icon.png",
+        "icon_x": 3,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Nidoking": {
+        "icon_file": "graphics/pokemon/nidoking/icon.png",
+        "icon_x": 1,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Nidoqueen": {
+        "icon_file": "graphics/pokemon/nidoqueen/icon.png",
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "NidoranF": {
+        "icon_file": "graphics/pokemon/nidoran_f/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "NidoranM": {
+        "icon_file": "graphics/pokemon/nidoran_m/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Nidorina": {
+        "icon_file": "graphics/pokemon/nidorina/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Nidorino": {
+        "icon_file": "graphics/pokemon/nidorino/icon.png",
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Nihilego": {
+        "icon_file": "graphics/pokemon/nihilego/icon.png",
+        "icon_x": 8,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Nincada": {
+        "icon_file": "graphics/pokemon/nincada/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Ninetales": {
+        "icon_file": "graphics/pokemon/ninetales/icon.png",
+        "icon_x": 3,
+        "icon_y": 8,
+        "palette_num": "3"
+    },
+    "NinetalesAlolan": {
+        "icon_file": "graphics/pokemon/alolan_ninetales/icon.png",
+        "icon_x": 1,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Ninjask": {
+        "icon_file": "graphics/pokemon/ninjask/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Noctowl": {
+        "icon_file": "graphics/pokemon/noctowl/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Noibat": {
+        "icon_file": "graphics/pokemon/noibat/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Noivern": {
+        "icon_file": "graphics/pokemon/noivern/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Nosepass": {
+        "icon_file": "graphics/pokemon/nosepass/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Numel": {
+        "icon_file": "graphics/pokemon/numel/icon.png",
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": "1"
+    },
+    "Nuzleaf": {
+        "icon_file": "graphics/pokemon/nuzleaf/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Obstagoon": {
+        "icon_file": "graphics/pokemon/obstagoon/icon.png",
+        "icon_x": 1,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Octillery": {
+        "icon_file": "graphics/pokemon/octillery/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Oddish": {
+        "icon_file": "graphics/pokemon/oddish/icon.png",
+        "icon_x": 9,
+        "icon_y": 11,
+        "palette_num": "4"
+    },
+    "Omanyte": {
+        "icon_file": "graphics/pokemon/omanyte/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Omastar": {
+        "icon_file": "graphics/pokemon/omastar/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Onix": {
+        "icon_file": "graphics/pokemon/onix/icon.png",
+        "icon_x": 1,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Oranguru": {
+        "icon_file": "graphics/pokemon/oranguru/icon.png",
+        "icon_x": 9,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Orbeetle": {
+        "icon_file": "graphics/pokemon/orbeetle/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Oricorio": {
+        "icon_file": "graphics/pokemon/oricorio/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "OricorioPau": {
+        "icon_file": "graphics/pokemon/oricorio/pau/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "OricorioPomPom": {
+        "icon_file": "graphics/pokemon/oricorio/pom_pom/icon.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "OricorioSensu": {
+        "icon_file": "graphics/pokemon/oricorio/sensu/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Oshawott": {
+        "icon_file": "graphics/pokemon/oshawott/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Pachirisu": {
+        "icon_file": "graphics/pokemon/pachirisu/icon.png",
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Palkia": {
+        "icon_file": "graphics/pokemon/palkia/icon.png",
+        "icon_x": 0,
+        "icon_y": 3,
+        "palette_num": "2"
+    },
+    "Palossand": {
+        "icon_file": "graphics/pokemon/palossand/icon.png",
+        "icon_x": 9,
+        "icon_y": 4,
+        "palette_num": "2"
+    },
+    "Palpitoad": {
+        "icon_file": "graphics/pokemon/palpitoad/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Pancham": {
+        "icon_file": "graphics/pokemon/pancham/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Pangoro": {
+        "icon_file": "graphics/pokemon/pangoro/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "1"
+    },
+    "Panpour": {
+        "icon_file": "graphics/pokemon/panpour/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Pansage": {
+        "icon_file": "graphics/pokemon/pansage/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Pansear": {
+        "icon_file": "graphics/pokemon/pansear/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Paras": {
+        "icon_file": "graphics/pokemon/paras/icon.png",
+        "icon_x": 9,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Parasect": {
+        "icon_file": "graphics/pokemon/parasect/icon.png",
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Passimian": {
+        "icon_file": "graphics/pokemon/passimian/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Patrat": {
+        "icon_file": "graphics/pokemon/patrat/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Pawniard": {
+        "icon_file": "graphics/pokemon/pawniard/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Pelipper": {
+        "icon_file": "graphics/pokemon/pelipper/icon.png",
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Perrserker": {
+        "icon_file": "graphics/pokemon/perrserker/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Persian": {
+        "icon_file": "graphics/pokemon/persian/icon.png",
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": "1"
+    },
+    "PersianAlolan": {
+        "icon_file": "graphics/pokemon/alolan_persian/icon.png",
+        "icon_x": 3,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Petilil": {
+        "icon_file": "graphics/pokemon/petilil/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Phanpy": {
+        "icon_file": "graphics/pokemon/phanpy/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Phantump": {
+        "icon_file": "graphics/pokemon/phantump/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Pheromosa": {
+        "icon_file": "graphics/pokemon/pheromosa/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Phione": {
+        "icon_file": "graphics/pokemon/phione/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Pichu": {
+        "icon_file": "graphics/pokemon/pichu/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "PichuSpikyEared": {
+        "icon_file": "graphics/pokemon/pichu/spiky_eared/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Pidgeot": {
+        "icon_file": "graphics/pokemon/pidgeot/icon.png",
+        "icon_x": 2,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "PidgeotMega": {
+        "icon_file": "graphics/pokemon/mega_pidgeot/icon.png",
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Pidgeotto": {
+        "icon_file": "graphics/pokemon/pidgeotto/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Pidgey": {
+        "icon_file": "graphics/pokemon/pidgey/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Pidove": {
+        "icon_file": "graphics/pokemon/pidove/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Pignite": {
+        "icon_file": "graphics/pokemon/pignite/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Pikachu": {
+        "icon_file": "graphics/pokemon/pikachu/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "PikachuAlolaCap": {
+        "icon_file": "graphics/pokemon/pikachu/alola_cap/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "PikachuBelle": {
+        "icon_file": "graphics/pokemon/pikachu/belle/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "PikachuCosplay": {
+        "icon_file": "graphics/pokemon/pikachu/cosplay/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "PikachuHoennCap": {
+        "icon_file": "graphics/pokemon/pikachu/hoenn_cap/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "PikachuKalosCap": {
+        "icon_file": "graphics/pokemon/pikachu/kalos_cap/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "PikachuLibre": {
+        "icon_file": "graphics/pokemon/pikachu/libre/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "PikachuOriginalCap": {
+        "icon_file": "graphics/pokemon/pikachu/original_cap/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "PikachuPartnerCap": {
+        "icon_file": "graphics/pokemon/pikachu/partner_cap/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "PikachuPhD": {
+        "icon_file": "graphics/pokemon/pikachu/ph_d/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "PikachuPopStar": {
+        "icon_file": "graphics/pokemon/pikachu/pop_star/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "PikachuRockStar": {
+        "icon_file": "graphics/pokemon/pikachu/rock_star/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "PikachuSinnohCap": {
+        "icon_file": "graphics/pokemon/pikachu/sinnoh_cap/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "PikachuUnovaCap": {
+        "icon_file": "graphics/pokemon/pikachu/unova_cap/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Pikipek": {
+        "icon_file": "graphics/pokemon/pikipek/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Piloswine": {
+        "icon_file": "graphics/pokemon/piloswine/icon.png",
+        "icon_x": 5,
+        "icon_y": 14,
+        "palette_num": "2"
+    },
+    "Pincurchin": {
+        "icon_file": "graphics/pokemon/pincurchin/icon.png",
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Pineco": {
+        "icon_file": "graphics/pokemon/pineco/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Pinsir": {
+        "icon_file": "graphics/pokemon/pinsir/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "PinsirMega": {
+        "icon_file": "graphics/pokemon/mega_pinsir/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Piplup": {
+        "icon_file": "graphics/pokemon/piplup/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Plusle": {
+        "icon_file": "graphics/pokemon/plusle/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Poipole": {
+        "icon_file": "graphics/pokemon/poipole/icon.png",
+        "icon_x": 5,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Politoed": {
+        "icon_file": "graphics/pokemon/politoed/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Poliwag": {
+        "icon_file": "graphics/pokemon/poliwag/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Poliwhirl": {
+        "icon_file": "graphics/pokemon/poliwhirl/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Poliwrath": {
+        "icon_file": "graphics/pokemon/poliwrath/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Polteageist": {
+        "icon_file": "graphics/pokemon/polteageist/icon.png",
+        "icon_x": 9,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Ponyta": {
+        "icon_file": "graphics/pokemon/ponyta/icon.png",
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": "3"
+    },
+    "PonytaGalarian": {
+        "icon_file": "graphics/pokemon/ponyta/galarian/icon.png",
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Poochyena": {
+        "icon_file": "graphics/pokemon/poochyena/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Popplio": {
+        "icon_file": "graphics/pokemon/popplio/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Porygon": {
+        "icon_file": "graphics/pokemon/porygon/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Porygon2": {
+        "icon_file": "graphics/pokemon/porygon2/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Porygon_Z": {
+        "icon_file": "graphics/pokemon/porygon_z/icon.png",
+        "icon_x": 4,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Primarina": {
+        "icon_file": "graphics/pokemon/primarina/icon.png",
+        "icon_x": 5,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Primeape": {
+        "icon_file": "graphics/pokemon/primeape/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Prinplup": {
+        "icon_file": "graphics/pokemon/prinplup/icon.png",
+        "icon_x": 8,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Probopass": {
+        "icon_file": "graphics/pokemon/probopass/icon.png",
+        "icon_x": 3,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "Psyduck": {
+        "icon_file": "graphics/pokemon/psyduck/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Pumpkaboo": {
+        "icon_file": "graphics/pokemon/pumpkaboo/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Pupitar": {
+        "icon_file": "graphics/pokemon/pupitar/icon.png",
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Purrloin": {
+        "icon_file": "graphics/pokemon/purrloin/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Purugly": {
+        "icon_file": "graphics/pokemon/purugly/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Pyroar": {
+        "icon_file": "graphics/pokemon/pyroar/icon.png",
+        "icon_x": 1,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "PyroarF": {
+        "icon_file": "graphics/pokemon/pyroar/iconf.png",
+        "icon_x": 1,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Pyukumuku": {
+        "icon_file": "graphics/pokemon/pyukumuku/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Quagsire": {
+        "icon_file": "graphics/pokemon/quagsire/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "QuestionMark": {
+        "icon_file": "graphics/pokemon/question_mark/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Quilava": {
+        "icon_file": "graphics/pokemon/quilava/icon.png",
+        "icon_x": 4,
+        "icon_y": 12,
+        "palette_num": "3"
+    },
+    "Quilladin": {
+        "icon_file": "graphics/pokemon/quilladin/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Qwilfish": {
+        "icon_file": "graphics/pokemon/qwilfish/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Raboot": {
+        "icon_file": "graphics/pokemon/raboot/icon.png",
+        "icon_x": 8,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Raichu": {
+        "icon_file": "graphics/pokemon/raichu/icon.png",
+        "icon_x": 4,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "RaichuAlolan": {
+        "icon_file": "graphics/pokemon/alolan_raichu/icon.png",
+        "icon_x": 7,
+        "icon_y": 2,
+        "palette_num": "2"
+    },
+    "Raikou": {
+        "icon_file": "graphics/pokemon/raikou/icon.png",
+        "icon_x": 1,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Ralts": {
+        "icon_file": "graphics/pokemon/ralts/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Rampardos": {
+        "icon_file": "graphics/pokemon/rampardos/icon.png",
+        "icon_x": 2,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Rapidash": {
+        "icon_file": "graphics/pokemon/rapidash/icon.png",
+        "icon_x": 1,
+        "icon_y": 8,
+        "palette_num": "3"
+    },
+    "RapidashGalarian": {
+        "icon_file": "graphics/pokemon/rapidash/galarian/icon.png",
+        "icon_x": 1,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Raticate": {
+        "icon_file": "graphics/pokemon/raticate/icon.png",
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "RaticateAlolan": {
+        "icon_file": "graphics/pokemon/alolan_raticate/icon.png",
+        "icon_x": 4,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Rattata": {
+        "icon_file": "graphics/pokemon/rattata/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "RattataAlolan": {
+        "icon_file": "graphics/pokemon/alolan_rattata/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Rayquaza": {
+        "icon_file": "graphics/pokemon/rayquaza/icon.png",
+        "icon_x": 1,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "RayquazaMega": {
+        "icon_file": "graphics/pokemon/mega_rayquaza/icon.png",
+        "icon_x": 0,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Regice": {
+        "icon_file": "graphics/pokemon/regice/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Regidrago": {
+        "icon_file": "graphics/pokemon/regidrago/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Regieleki": {
+        "icon_file": "graphics/pokemon/regieleki/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Regigigas": {
+        "icon_file": "graphics/pokemon/regigigas/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Regirock": {
+        "icon_file": "graphics/pokemon/regirock/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Registeel": {
+        "icon_file": "graphics/pokemon/registeel/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Relicanth": {
+        "icon_file": "graphics/pokemon/relicanth/icon.png",
+        "icon_x": 3,
+        "icon_y": 15,
+        "palette_num": "2"
+    },
+    "Remoraid": {
+        "icon_file": "graphics/pokemon/remoraid/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Reshiram": {
+        "icon_file": "graphics/pokemon/reshiram/icon.png",
+        "icon_x": 1,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Reuniclus": {
+        "icon_file": "graphics/pokemon/reuniclus/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Rhydon": {
+        "icon_file": "graphics/pokemon/rhydon/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Rhyhorn": {
+        "icon_file": "graphics/pokemon/rhyhorn/icon.png",
+        "icon_x": 3,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Rhyperior": {
+        "icon_file": "graphics/pokemon/rhyperior/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Ribombee": {
+        "icon_file": "graphics/pokemon/ribombee/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Rillaboom": {
+        "icon_file": "graphics/pokemon/rillaboom/icon.png",
+        "icon_x": 7,
+        "icon_y": 3,
+        "palette_num": "1"
+    },
+    "Riolu": {
+        "icon_file": "graphics/pokemon/riolu/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Rockruff": {
+        "icon_file": "graphics/pokemon/rockruff/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Roggenrola": {
+        "icon_file": "graphics/pokemon/roggenrola/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Rolycoly": {
+        "icon_file": "graphics/pokemon/rolycoly/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Rookidee": {
+        "icon_file": "graphics/pokemon/rookidee/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Roselia": {
+        "icon_file": "graphics/pokemon/roselia/icon.png",
+        "icon_x": 9,
+        "icon_y": 7,
+        "palette_num": "4"
+    },
+    "Roserade": {
+        "icon_file": "graphics/pokemon/roserade/icon.png",
+        "icon_x": 10,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Rotom": {
+        "icon_file": "graphics/pokemon/rotom/icon.png",
+        "icon_x": 9,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "RotomFan": {
+        "icon_file": "graphics/pokemon/rotom/fan/icon.png",
+        "icon_x": 7,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "RotomFrost": {
+        "icon_file": "graphics/pokemon/rotom/frost/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "5"
+    },
+    "RotomHeat": {
+        "icon_file": "graphics/pokemon/rotom/heat/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "RotomMow": {
+        "icon_file": "graphics/pokemon/rotom/mow/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "RotomWash": {
+        "icon_file": "graphics/pokemon/rotom/wash/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Rowlet": {
+        "icon_file": "graphics/pokemon/rowlet/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Rufflet": {
+        "icon_file": "graphics/pokemon/rufflet/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Runerigus": {
+        "icon_file": "graphics/pokemon/runerigus/icon.png",
+        "icon_x": 4,
+        "icon_y": 3,
+        "palette_num": "2"
+    },
+    "Sableye": {
+        "icon_file": "graphics/pokemon/sableye/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "SableyeMega": {
+        "icon_file": "graphics/pokemon/mega_sableye/icon.png",
+        "icon_x": 11,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Salamence": {
+        "icon_file": "graphics/pokemon/salamence/icon.png",
+        "icon_x": 0,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "SalamenceMega": {
+        "icon_file": "graphics/pokemon/mega_salamence/icon.png",
+        "icon_x": 0,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Salandit": {
+        "icon_file": "graphics/pokemon/salandit/icon.png",
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Salazzle": {
+        "icon_file": "graphics/pokemon/salazzle/icon.png",
+        "icon_x": 5,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Samurott": {
+        "icon_file": "graphics/pokemon/samurott/icon.png",
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": "2"
+    },
+    "Sandaconda": {
+        "icon_file": "graphics/pokemon/sandaconda/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "1"
+    },
+    "Sandile": {
+        "icon_file": "graphics/pokemon/sandile/icon.png",
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": "1"
+    },
+    "Sandshrew": {
+        "icon_file": "graphics/pokemon/sandshrew/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "SandshrewAlolan": {
+        "icon_file": "graphics/pokemon/alolan_sandshrew/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Sandslash": {
+        "icon_file": "graphics/pokemon/sandslash/icon.png",
+        "icon_x": 3,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "SandslashAlolan": {
+        "icon_file": "graphics/pokemon/alolan_sandslash/icon.png",
+        "icon_x": 2,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Sandygast": {
+        "icon_file": "graphics/pokemon/sandygast/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Sawk": {
+        "icon_file": "graphics/pokemon/sawk/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Sawsbuck": {
+        "icon_file": "graphics/pokemon/sawsbuck/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "SawsbuckAutumn": {
+        "icon_file": "graphics/pokemon/sawsbuck/autumn/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "SawsbuckSummer": {
+        "icon_file": "graphics/pokemon/sawsbuck/summer/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "SawsbuckWinter": {
+        "icon_file": "graphics/pokemon/sawsbuck/winter/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Scatterbug": {
+        "icon_file": "graphics/pokemon/scatterbug/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Sceptile": {
+        "icon_file": "graphics/pokemon/sceptile/icon.png",
+        "icon_x": 4,
+        "icon_y": 2,
+        "palette_num": "1"
+    },
+    "SceptileMega": {
+        "icon_file": "graphics/pokemon/mega_sceptile/icon.png",
+        "icon_x": 2,
+        "icon_y": 3,
+        "palette_num": "1"
+    },
+    "Scizor": {
+        "icon_file": "graphics/pokemon/scizor/icon.png",
+        "icon_x": 10,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "ScizorMega": {
+        "icon_file": "graphics/pokemon/mega_scizor/icon.png",
+        "icon_x": 9,
+        "icon_y": 2,
+        "palette_num": "0"
+    },
+    "Scolipede": {
+        "icon_file": "graphics/pokemon/scolipede/icon.png",
+        "icon_x": 2,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Scorbunny": {
+        "icon_file": "graphics/pokemon/scorbunny/icon.png",
+        "icon_x": 9,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Scrafty": {
+        "icon_file": "graphics/pokemon/scrafty/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Scraggy": {
+        "icon_file": "graphics/pokemon/scraggy/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Scyther": {
+        "icon_file": "graphics/pokemon/scyther/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Seadra": {
+        "icon_file": "graphics/pokemon/seadra/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Seaking": {
+        "icon_file": "graphics/pokemon/seaking/icon.png",
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Sealeo": {
+        "icon_file": "graphics/pokemon/sealeo/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Seedot": {
+        "icon_file": "graphics/pokemon/seedot/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Seel": {
+        "icon_file": "graphics/pokemon/seel/icon.png",
+        "icon_x": 4,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "Seismitoad": {
+        "icon_file": "graphics/pokemon/seismitoad/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Sentret": {
+        "icon_file": "graphics/pokemon/sentret/icon.png",
+        "icon_x": 8,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Serperior": {
+        "icon_file": "graphics/pokemon/serperior/icon.png",
+        "icon_x": 9,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Servine": {
+        "icon_file": "graphics/pokemon/servine/icon.png",
+        "icon_x": 4,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Seviper": {
+        "icon_file": "graphics/pokemon/seviper/icon.png",
+        "icon_x": 2,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Sewaddle": {
+        "icon_file": "graphics/pokemon/sewaddle/icon.png",
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Sharpedo": {
+        "icon_file": "graphics/pokemon/sharpedo/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "SharpedoMega": {
+        "icon_file": "graphics/pokemon/mega_sharpedo/icon.png",
+        "icon_x": 4,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Shaymin": {
+        "icon_file": "graphics/pokemon/shaymin/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "ShayminSky": {
+        "icon_file": "graphics/pokemon/shaymin/sky/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Shedinja": {
+        "icon_file": "graphics/pokemon/shedinja/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "1"
+    },
+    "Shelgon": {
+        "icon_file": "graphics/pokemon/shelgon/icon.png",
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": "2"
+    },
+    "Shellder": {
+        "icon_file": "graphics/pokemon/shellder/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Shellos": {
+        "icon_file": "graphics/pokemon/shellos/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "ShellosEastSea": {
+        "icon_file": "graphics/pokemon/shellos/east_sea/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Shelmet": {
+        "icon_file": "graphics/pokemon/shelmet/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Shieldon": {
+        "icon_file": "graphics/pokemon/shieldon/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Shiftry": {
+        "icon_file": "graphics/pokemon/shiftry/icon.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "5"
+    },
+    "Shiinotic": {
+        "icon_file": "graphics/pokemon/shiinotic/icon.png",
+        "icon_x": 8,
+        "icon_y": 5,
+        "palette_num": "1"
+    },
+    "Shinx": {
+        "icon_file": "graphics/pokemon/shinx/icon.png",
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Shroomish": {
+        "icon_file": "graphics/pokemon/shroomish/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Shuckle": {
+        "icon_file": "graphics/pokemon/shuckle/icon.png",
+        "icon_x": 6,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Shuppet": {
+        "icon_file": "graphics/pokemon/shuppet/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Sigilyph": {
+        "icon_file": "graphics/pokemon/sigilyph/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Silcoon": {
+        "icon_file": "graphics/pokemon/silcoon/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Silicobra": {
+        "icon_file": "graphics/pokemon/silicobra/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Silvally": {
+        "icon_file": "graphics/pokemon/silvally/icon.png",
+        "icon_x": 3,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "Simipour": {
+        "icon_file": "graphics/pokemon/simipour/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Simisage": {
+        "icon_file": "graphics/pokemon/simisage/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Simisear": {
+        "icon_file": "graphics/pokemon/simisear/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Sinistea": {
+        "icon_file": "graphics/pokemon/sinistea/icon.png",
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Sirfetchd": {
+        "icon_file": "graphics/pokemon/sirfetchd/icon.png",
+        "icon_x": 7,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Sizzlipede": {
+        "icon_file": "graphics/pokemon/sizzlipede/icon.png",
+        "icon_x": 3,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Skarmory": {
+        "icon_file": "graphics/pokemon/skarmory/icon.png",
+        "icon_x": 3,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Skiddo": {
+        "icon_file": "graphics/pokemon/skiddo/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "1"
+    },
+    "Skiploom": {
+        "icon_file": "graphics/pokemon/skiploom/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Skitty": {
+        "icon_file": "graphics/pokemon/skitty/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Skorupi": {
+        "icon_file": "graphics/pokemon/skorupi/icon.png",
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "Skrelp": {
+        "icon_file": "graphics/pokemon/skrelp/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Skuntank": {
+        "icon_file": "graphics/pokemon/skuntank/icon.png",
+        "icon_x": 3,
+        "icon_y": 14,
+        "palette_num": "2"
+    },
+    "Skwovet": {
+        "icon_file": "graphics/pokemon/skwovet/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Slaking": {
+        "icon_file": "graphics/pokemon/slaking/icon.png",
+        "icon_x": 13,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Slakoth": {
+        "icon_file": "graphics/pokemon/slakoth/icon.png",
+        "icon_x": 4,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Sliggoo": {
+        "icon_file": "graphics/pokemon/sliggoo/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "5"
+    },
+    "Slowbro": {
+        "icon_file": "graphics/pokemon/slowbro/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "SlowbroGalarian": {
+        "icon_file": "graphics/pokemon/slowbro/galarian/icon.png",
+        "icon_x": 6,
+        "icon_y": 2,
+        "palette_num": "0"
+    },
+    "SlowbroMega": {
+        "icon_file": "graphics/pokemon/mega_slowbro/icon.png",
+        "icon_x": 9,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "Slowking": {
+        "icon_file": "graphics/pokemon/slowking/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "SlowkingGalarian": {
+        "icon_file": "graphics/pokemon/slowking/galarian/icon.png",
+        "icon_x": 7,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Slowpoke": {
+        "icon_file": "graphics/pokemon/slowpoke/icon.png",
+        "icon_x": 5,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "SlowpokeGalarian": {
+        "icon_file": "graphics/pokemon/slowpoke/galarian/icon.png",
+        "icon_x": 2,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Slugma": {
+        "icon_file": "graphics/pokemon/slugma/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Slurpuff": {
+        "icon_file": "graphics/pokemon/slurpuff/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Smeargle": {
+        "icon_file": "graphics/pokemon/smeargle/icon.png",
+        "icon_x": 9,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Smoochum": {
+        "icon_file": "graphics/pokemon/smoochum/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Sneasel": {
+        "icon_file": "graphics/pokemon/sneasel/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Snivy": {
+        "icon_file": "graphics/pokemon/snivy/icon.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Snom": {
+        "icon_file": "graphics/pokemon/snom/icon.png",
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "Snorlax": {
+        "icon_file": "graphics/pokemon/snorlax/icon.png",
+        "icon_x": 15,
+        "icon_y": 3,
+        "palette_num": "3"
+    },
+    "Snorunt": {
+        "icon_file": "graphics/pokemon/snorunt/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Snover": {
+        "icon_file": "graphics/pokemon/snover/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Snubbull": {
+        "icon_file": "graphics/pokemon/snubbull/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Sobble": {
+        "icon_file": "graphics/pokemon/sobble/icon.png",
+        "icon_x": 4,
+        "icon_y": 5,
+        "palette_num": "2"
+    },
+    "Solgaleo": {
+        "icon_file": "graphics/pokemon/solgaleo/icon.png",
+        "icon_x": 1,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Solosis": {
+        "icon_file": "graphics/pokemon/solosis/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Solrock": {
+        "icon_file": "graphics/pokemon/solrock/icon.png",
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Spearow": {
+        "icon_file": "graphics/pokemon/spearow/icon.png",
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Spectrier": {
+        "icon_file": "graphics/pokemon/spectrier/icon.png",
+        "icon_x": 3,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Spewpa": {
+        "icon_file": "graphics/pokemon/spewpa/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Spheal": {
+        "icon_file": "graphics/pokemon/spheal/icon.png",
+        "icon_x": 5,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Spinarak": {
+        "icon_file": "graphics/pokemon/spinarak/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Spinda": {
+        "icon_file": "graphics/pokemon/spinda/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Spiritomb": {
+        "icon_file": "graphics/pokemon/spiritomb/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "5"
+    },
+    "Spoink": {
+        "icon_file": "graphics/pokemon/spoink/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Spritzee": {
+        "icon_file": "graphics/pokemon/spritzee/icon.png",
+        "icon_x": 7,
+        "icon_y": 14,
+        "palette_num": "0"
+    },
+    "Squirtle": {
+        "icon_file": "graphics/pokemon/squirtle/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Stakataka": {
+        "icon_file": "graphics/pokemon/stakataka/icon.png",
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Stantler": {
+        "icon_file": "graphics/pokemon/stantler/icon.png",
+        "icon_x": 3,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Staraptor": {
+        "icon_file": "graphics/pokemon/staraptor/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Staravia": {
+        "icon_file": "graphics/pokemon/staravia/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Starly": {
+        "icon_file": "graphics/pokemon/starly/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Starmie": {
+        "icon_file": "graphics/pokemon/starmie/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Staryu": {
+        "icon_file": "graphics/pokemon/staryu/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Steelix": {
+        "icon_file": "graphics/pokemon/steelix/icon.png",
+        "icon_x": 1,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "SteelixMega": {
+        "icon_file": "graphics/pokemon/mega_steelix/icon.png",
+        "icon_x": 0,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Steenee": {
+        "icon_file": "graphics/pokemon/steenee/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Stonjourner": {
+        "icon_file": "graphics/pokemon/stonjourner/icon.png",
+        "icon_x": 8,
+        "icon_y": 2,
+        "palette_num": "2"
+    },
+    "Stoutland": {
+        "icon_file": "graphics/pokemon/stoutland/icon.png",
+        "icon_x": 3,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Stufful": {
+        "icon_file": "graphics/pokemon/stufful/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Stunfisk": {
+        "icon_file": "graphics/pokemon/stunfisk/icon.png",
+        "icon_x": 6,
+        "icon_y": 14,
+        "palette_num": "2"
+    },
+    "StunfiskGalarian": {
+        "icon_file": "graphics/pokemon/stunfisk/galarian/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Stunky": {
+        "icon_file": "graphics/pokemon/stunky/icon.png",
+        "icon_x": 3,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Sudowoodo": {
+        "icon_file": "graphics/pokemon/sudowoodo/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "Suicune": {
+        "icon_file": "graphics/pokemon/suicune/icon.png",
+        "icon_x": 3,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Sunflora": {
+        "icon_file": "graphics/pokemon/sunflora/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Sunkern": {
+        "icon_file": "graphics/pokemon/sunkern/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Surskit": {
+        "icon_file": "graphics/pokemon/surskit/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Swablu": {
+        "icon_file": "graphics/pokemon/swablu/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Swadloon": {
+        "icon_file": "graphics/pokemon/swadloon/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Swalot": {
+        "icon_file": "graphics/pokemon/swalot/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Swampert": {
+        "icon_file": "graphics/pokemon/swampert/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "SwampertMega": {
+        "icon_file": "graphics/pokemon/mega_swampert/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Swanna": {
+        "icon_file": "graphics/pokemon/swanna/icon.png",
+        "icon_x": 0,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Swellow": {
+        "icon_file": "graphics/pokemon/swellow/icon.png",
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Swinub": {
+        "icon_file": "graphics/pokemon/swinub/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Swirlix": {
+        "icon_file": "graphics/pokemon/swirlix/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Swoobat": {
+        "icon_file": "graphics/pokemon/swoobat/icon.png",
+        "icon_x": 4,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Sylveon": {
+        "icon_file": "graphics/pokemon/sylveon/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Taillow": {
+        "icon_file": "graphics/pokemon/taillow/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Talonflame": {
+        "icon_file": "graphics/pokemon/talonflame/icon.png",
+        "icon_x": 1,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Tangela": {
+        "icon_file": "graphics/pokemon/tangela/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Tangrowth": {
+        "icon_file": "graphics/pokemon/tangrowth/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "TapuBulu": {
+        "icon_file": "graphics/pokemon/tapu_bulu/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "TapuFini": {
+        "icon_file": "graphics/pokemon/tapu_fini/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "TapuKoko": {
+        "icon_file": "graphics/pokemon/tapu_koko/icon.png",
+        "icon_x": 8,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "TapuLele": {
+        "icon_file": "graphics/pokemon/tapu_lele/icon.png",
+        "icon_x": 7,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Tauros": {
+        "icon_file": "graphics/pokemon/tauros/icon.png",
+        "icon_x": 3,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Teddiursa": {
+        "icon_file": "graphics/pokemon/teddiursa/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Tentacool": {
+        "icon_file": "graphics/pokemon/tentacool/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Tentacruel": {
+        "icon_file": "graphics/pokemon/tentacruel/icon.png",
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Tepig": {
+        "icon_file": "graphics/pokemon/tepig/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Terrakion": {
+        "icon_file": "graphics/pokemon/terrakion/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Thievul": {
+        "icon_file": "graphics/pokemon/thievul/icon.png",
+        "icon_x": 1,
+        "icon_y": 2,
+        "palette_num": "2"
+    },
+    "Throh": {
+        "icon_file": "graphics/pokemon/throh/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Thundurus": {
+        "icon_file": "graphics/pokemon/thundurus/icon.png",
+        "icon_x": 11,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "ThundurusTherian": {
+        "icon_file": "graphics/pokemon/thundurus/therian/icon.png",
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Thwackey": {
+        "icon_file": "graphics/pokemon/thwackey/icon.png",
+        "icon_x": 5,
+        "icon_y": 5,
+        "palette_num": "1"
+    },
+    "Timburr": {
+        "icon_file": "graphics/pokemon/timburr/icon.png",
+        "icon_x": 6,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Tirtouga": {
+        "icon_file": "graphics/pokemon/tirtouga/icon.png",
+        "icon_x": 5,
+        "icon_y": 14,
+        "palette_num": "2"
+    },
+    "Togedemaru": {
+        "icon_file": "graphics/pokemon/togedemaru/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Togekiss": {
+        "icon_file": "graphics/pokemon/togekiss/icon.png",
+        "icon_x": 3,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Togepi": {
+        "icon_file": "graphics/pokemon/togepi/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Togetic": {
+        "icon_file": "graphics/pokemon/togetic/icon.png",
+        "icon_x": 6,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Torchic": {
+        "icon_file": "graphics/pokemon/torchic/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Torkoal": {
+        "icon_file": "graphics/pokemon/torkoal/icon.png",
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Tornadus": {
+        "icon_file": "graphics/pokemon/tornadus/icon.png",
+        "icon_x": 11,
+        "icon_y": 3,
+        "palette_num": "1"
+    },
+    "TornadusTherian": {
+        "icon_file": "graphics/pokemon/tornadus/therian/icon.png",
+        "icon_x": 3,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Torracat": {
+        "icon_file": "graphics/pokemon/torracat/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Torterra": {
+        "icon_file": "graphics/pokemon/torterra/icon.png",
+        "icon_x": 2,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Totodile": {
+        "icon_file": "graphics/pokemon/totodile/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Toucannon": {
+        "icon_file": "graphics/pokemon/toucannon/icon.png",
+        "icon_x": 4,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Toxapex": {
+        "icon_file": "graphics/pokemon/toxapex/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Toxel": {
+        "icon_file": "graphics/pokemon/toxel/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Toxicroak": {
+        "icon_file": "graphics/pokemon/toxicroak/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Toxtricity": {
+        "icon_file": "graphics/pokemon/toxtricity/icon.png",
+        "icon_x": 7,
+        "icon_y": 3,
+        "palette_num": "2"
+    },
+    "ToxtricityLowKey": {
+        "icon_file": "graphics/pokemon/toxtricity/low_key/icon.png",
+        "icon_x": 9,
+        "icon_y": 3,
+        "palette_num": "2"
+    },
+    "Tranquill": {
+        "icon_file": "graphics/pokemon/tranquill/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Trapinch": {
+        "icon_file": "graphics/pokemon/trapinch/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Treecko": {
+        "icon_file": "graphics/pokemon/treecko/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Trevenant": {
+        "icon_file": "graphics/pokemon/trevenant/icon.png",
+        "icon_x": 8,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Tropius": {
+        "icon_file": "graphics/pokemon/tropius/icon.png",
+        "icon_x": 0,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Trubbish": {
+        "icon_file": "graphics/pokemon/trubbish/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "1"
+    },
+    "Trumbeak": {
+        "icon_file": "graphics/pokemon/trumbeak/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Tsareena": {
+        "icon_file": "graphics/pokemon/tsareena/icon.png",
+        "icon_x": 7,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Turtonator": {
+        "icon_file": "graphics/pokemon/turtonator/icon.png",
+        "icon_x": 11,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "Turtwig": {
+        "icon_file": "graphics/pokemon/turtwig/icon.png",
+        "icon_x": 6,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Tympole": {
+        "icon_file": "graphics/pokemon/tympole/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Tynamo": {
+        "icon_file": "graphics/pokemon/tynamo/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "TypeNull": {
+        "icon_file": "graphics/pokemon/type_null/icon.png",
+        "icon_x": 3,
+        "icon_y": 4,
+        "palette_num": "0"
+    },
+    "Typhlosion": {
+        "icon_file": "graphics/pokemon/typhlosion/icon.png",
+        "icon_x": 3,
+        "icon_y": 6,
+        "palette_num": "3"
+    },
+    "Tyranitar": {
+        "icon_file": "graphics/pokemon/tyranitar/icon.png",
+        "icon_x": 6,
+        "icon_y": 4,
+        "palette_num": "4"
+    },
+    "TyranitarMega": {
+        "icon_file": "graphics/pokemon/mega_tyranitar/icon.png",
+        "icon_x": 6,
+        "icon_y": 0,
+        "palette_num": "1"
+    },
+    "Tyrantrum": {
+        "icon_file": "graphics/pokemon/tyrantrum/icon.png",
+        "icon_x": 0,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Tyrogue": {
+        "icon_file": "graphics/pokemon/tyrogue/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Tyrunt": {
+        "icon_file": "graphics/pokemon/tyrunt/icon.png",
+        "icon_x": 5,
+        "icon_y": 14,
+        "palette_num": "2"
+    },
+    "Umbreon": {
+        "icon_file": "graphics/pokemon/umbreon/icon.png",
+        "icon_x": 4,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Unfezant": {
+        "icon_file": "graphics/pokemon/unfezant/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "UnfezantF": {
+        "icon_file": "graphics/pokemon/unfezant/iconf.png",
+        "icon_x": 5,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "Unown": {
+        "icon_file": "graphics/pokemon/unown/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "UnownB": {
+        "icon_file": "graphics/pokemon/unown/b/icon.png",
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "UnownC": {
+        "icon_file": "graphics/pokemon/unown/c/icon.png",
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "UnownD": {
+        "icon_file": "graphics/pokemon/unown/d/icon.png",
+        "icon_x": 9,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "UnownE": {
+        "icon_file": "graphics/pokemon/unown/e/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "UnownExclamationMark": {
+        "icon_file": "graphics/pokemon/unown/exclamation_mark/icon.png",
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "UnownF": {
+        "icon_file": "graphics/pokemon/unown/f/icon.png",
+        "icon_x": 9,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "UnownG": {
+        "icon_file": "graphics/pokemon/unown/g/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "UnownH": {
+        "icon_file": "graphics/pokemon/unown/h/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "UnownI": {
+        "icon_file": "graphics/pokemon/unown/i/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "UnownJ": {
+        "icon_file": "graphics/pokemon/unown/j/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "UnownK": {
+        "icon_file": "graphics/pokemon/unown/k/icon.png",
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "UnownL": {
+        "icon_file": "graphics/pokemon/unown/l/icon.png",
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "UnownM": {
+        "icon_file": "graphics/pokemon/unown/m/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "UnownN": {
+        "icon_file": "graphics/pokemon/unown/n/icon.png",
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "UnownO": {
+        "icon_file": "graphics/pokemon/unown/o/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "UnownP": {
+        "icon_file": "graphics/pokemon/unown/p/icon.png",
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "UnownQ": {
+        "icon_file": "graphics/pokemon/unown/q/icon.png",
+        "icon_x": 9,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "UnownQuestionMark": {
+        "icon_file": "graphics/pokemon/unown/question_mark/icon.png",
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "UnownR": {
+        "icon_file": "graphics/pokemon/unown/r/icon.png",
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "UnownS": {
+        "icon_file": "graphics/pokemon/unown/s/icon.png",
+        "icon_x": 7,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "UnownT": {
+        "icon_file": "graphics/pokemon/unown/t/icon.png",
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "UnownU": {
+        "icon_file": "graphics/pokemon/unown/u/icon.png",
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "UnownV": {
+        "icon_file": "graphics/pokemon/unown/v/icon.png",
+        "icon_x": 9,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "UnownW": {
+        "icon_file": "graphics/pokemon/unown/w/icon.png",
+        "icon_x": 8,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "UnownX": {
+        "icon_file": "graphics/pokemon/unown/x/icon.png",
+        "icon_x": 8,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "UnownY": {
+        "icon_file": "graphics/pokemon/unown/y/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "UnownZ": {
+        "icon_file": "graphics/pokemon/unown/z/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Ursaring": {
+        "icon_file": "graphics/pokemon/ursaring/icon.png",
+        "icon_x": 6,
+        "icon_y": 4,
+        "palette_num": "2"
+    },
+    "Urshifu": {
+        "icon_file": "graphics/pokemon/urshifu/icon.png",
+        "icon_x": 7,
+        "icon_y": 3,
+        "palette_num": "2"
+    },
+    "Uxie": {
+        "icon_file": "graphics/pokemon/uxie/icon.png",
+        "icon_x": 2,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Vanillish": {
+        "icon_file": "graphics/pokemon/vanillish/icon.png",
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Vanillite": {
+        "icon_file": "graphics/pokemon/vanillite/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Vanilluxe": {
+        "icon_file": "graphics/pokemon/vanilluxe/icon.png",
+        "icon_x": 7,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Vaporeon": {
+        "icon_file": "graphics/pokemon/vaporeon/icon.png",
+        "icon_x": 3,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Venipede": {
+        "icon_file": "graphics/pokemon/venipede/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Venomoth": {
+        "icon_file": "graphics/pokemon/venomoth/icon.png",
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Venonat": {
+        "icon_file": "graphics/pokemon/venonat/icon.png",
+        "icon_x": 8,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Venusaur": {
+        "icon_file": "graphics/pokemon/venusaur/icon.png",
+        "icon_x": 2,
+        "icon_y": 14,
+        "palette_num": "4"
+    },
+    "VenusaurMega": {
+        "icon_file": "graphics/pokemon/mega_venusaur/icon.png",
+        "icon_x": 2,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Vespiquen": {
+        "icon_file": "graphics/pokemon/vespiquen/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Vibrava": {
+        "icon_file": "graphics/pokemon/vibrava/icon.png",
+        "icon_x": 3,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Victini": {
+        "icon_file": "graphics/pokemon/victini/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Victreebel": {
+        "icon_file": "graphics/pokemon/victreebel/icon.png",
+        "icon_x": 8,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "Vigoroth": {
+        "icon_file": "graphics/pokemon/vigoroth/icon.png",
+        "icon_x": 8,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Vikavolt": {
+        "icon_file": "graphics/pokemon/vikavolt/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Vileplume": {
+        "icon_file": "graphics/pokemon/vileplume/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Virizion": {
+        "icon_file": "graphics/pokemon/virizion/icon.png",
+        "icon_x": 4,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Vivillon": {
+        "icon_file": "graphics/pokemon/vivillon/meadow/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "VivillonArchipelago": {
+        "icon_file": "graphics/pokemon/vivillon/archipelago/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "VivillonContinental": {
+        "icon_file": "graphics/pokemon/vivillon/continental/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "VivillonElegant": {
+        "icon_file": "graphics/pokemon/vivillon/elegant/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "VivillonFancy": {
+        "icon_file": "graphics/pokemon/vivillon/fancy/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "VivillonGarden": {
+        "icon_file": "graphics/pokemon/vivillon/garden/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "VivillonHighPlains": {
+        "icon_file": "graphics/pokemon/vivillon/high_plains/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "VivillonJungle": {
+        "icon_file": "graphics/pokemon/vivillon/jungle/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "VivillonMarine": {
+        "icon_file": "graphics/pokemon/vivillon/marine/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "VivillonMeadow": {
+        "icon_file": "graphics/pokemon/vivillon/meadow/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "VivillonModern": {
+        "icon_file": "graphics/pokemon/vivillon/modern/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "VivillonMonsoon": {
+        "icon_file": "graphics/pokemon/vivillon/monsoon/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "VivillonOcean": {
+        "icon_file": "graphics/pokemon/vivillon/ocean/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "VivillonPokeBall": {
+        "icon_file": "graphics/pokemon/vivillon/poke_ball/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "VivillonPolar": {
+        "icon_file": "graphics/pokemon/vivillon/polar/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "VivillonRiver": {
+        "icon_file": "graphics/pokemon/vivillon/river/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "VivillonSandstorm": {
+        "icon_file": "graphics/pokemon/vivillon/sandstorm/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "1"
+    },
+    "VivillonSavanna": {
+        "icon_file": "graphics/pokemon/vivillon/savanna/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "VivillonSun": {
+        "icon_file": "graphics/pokemon/vivillon/sun/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "VivillonTundra": {
+        "icon_file": "graphics/pokemon/vivillon/tundra/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Volbeat": {
+        "icon_file": "graphics/pokemon/volbeat/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Volcanion": {
+        "icon_file": "graphics/pokemon/volcanion/icon.png",
+        "icon_x": 3,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Volcarona": {
+        "icon_file": "graphics/pokemon/volcarona/icon.png",
+        "icon_x": 6,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Voltorb": {
+        "icon_file": "graphics/pokemon/voltorb/icon.png",
+        "icon_x": 8,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Vullaby": {
+        "icon_file": "graphics/pokemon/vullaby/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Vulpix": {
+        "icon_file": "graphics/pokemon/vulpix/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "5"
+    },
+    "VulpixAlolan": {
+        "icon_file": "graphics/pokemon/alolan_vulpix/icon.png",
+        "icon_x": 5,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Wailmer": {
+        "icon_file": "graphics/pokemon/wailmer/icon.png",
+        "icon_x": 6,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Wailord": {
+        "icon_file": "graphics/pokemon/wailord/icon.png",
+        "icon_x": 1,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Walrein": {
+        "icon_file": "graphics/pokemon/walrein/icon.png",
+        "icon_x": 3,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Wartortle": {
+        "icon_file": "graphics/pokemon/wartortle/icon.png",
+        "icon_x": 4,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Watchog": {
+        "icon_file": "graphics/pokemon/watchog/icon.png",
+        "icon_x": 5,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Weavile": {
+        "icon_file": "graphics/pokemon/weavile/icon.png",
+        "icon_x": 8,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Weedle": {
+        "icon_file": "graphics/pokemon/weedle/icon.png",
+        "icon_x": 9,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Weepinbell": {
+        "icon_file": "graphics/pokemon/weepinbell/icon.png",
+        "icon_x": 7,
+        "icon_y": 14,
+        "palette_num": "1"
+    },
+    "Weezing": {
+        "icon_file": "graphics/pokemon/weezing/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "WeezingGalarian": {
+        "icon_file": "graphics/pokemon/weezing/galarian/icon.png",
+        "icon_x": 4,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Whimsicott": {
+        "icon_file": "graphics/pokemon/whimsicott/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "1"
+    },
+    "Whirlipede": {
+        "icon_file": "graphics/pokemon/whirlipede/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Whiscash": {
+        "icon_file": "graphics/pokemon/whiscash/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Whismur": {
+        "icon_file": "graphics/pokemon/whismur/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "1"
+    },
+    "Wigglytuff": {
+        "icon_file": "graphics/pokemon/wigglytuff/icon.png",
+        "icon_x": 8,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Wimpod": {
+        "icon_file": "graphics/pokemon/wimpod/icon.png",
+        "icon_x": 4,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "Wingull": {
+        "icon_file": "graphics/pokemon/wingull/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Wishiwashi": {
+        "icon_file": "graphics/pokemon/wishiwashi/icon.png",
+        "icon_x": 6,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "WishiwashiSchool": {
+        "icon_file": "graphics/pokemon/wishiwashi/school/icon.png",
+        "icon_x": 3,
+        "icon_y": 12,
+        "palette_num": "0"
+    },
+    "Wobbuffet": {
+        "icon_file": "graphics/pokemon/wobbuffet/icon.png",
+        "icon_x": 7,
+        "icon_y": 9,
+        "palette_num": "0"
+    },
+    "Woobat": {
+        "icon_file": "graphics/pokemon/woobat/icon.png",
+        "icon_x": 5,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Wooloo": {
+        "icon_file": "graphics/pokemon/wooloo/icon.png",
+        "icon_x": 7,
+        "icon_y": 11,
+        "palette_num": "0"
+    },
+    "Wooper": {
+        "icon_file": "graphics/pokemon/wooper/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Wormadam": {
+        "icon_file": "graphics/pokemon/wormadam/icon.png",
+        "icon_x": 5,
+        "icon_y": 9,
+        "palette_num": "1"
+    },
+    "WormadamSandyCloak": {
+        "icon_file": "graphics/pokemon/wormadam/sandy_cloak/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "1"
+    },
+    "WormadamTrashCloak": {
+        "icon_file": "graphics/pokemon/wormadam/trash_cloak/icon.png",
+        "icon_x": 7,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Wurmple": {
+        "icon_file": "graphics/pokemon/wurmple/icon.png",
+        "icon_x": 6,
+        "icon_y": 10,
+        "palette_num": "0"
+    },
+    "Wynaut": {
+        "icon_file": "graphics/pokemon/wynaut/icon.png",
+        "icon_x": 7,
+        "icon_y": 8,
+        "palette_num": "0"
+    },
+    "Xatu": {
+        "icon_file": "graphics/pokemon/xatu/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "1"
+    },
+    "Xerneas": {
+        "icon_file": "graphics/pokemon/xerneas/icon.png",
+        "icon_x": 6,
+        "icon_y": 1,
+        "palette_num": "0"
+    },
+    "XerneasActive": {
+        "icon_file": "graphics/pokemon/xerneas/active/icon.png",
+        "icon_x": 7,
+        "icon_y": 1,
+        "palette_num": "0"
+    },
+    "Xurkitree": {
+        "icon_file": "graphics/pokemon/xurkitree/icon.png",
+        "icon_x": 7,
+        "icon_y": 2,
+        "palette_num": "0"
+    },
+    "Yamask": {
+        "icon_file": "graphics/pokemon/yamask/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "YamaskGalarian": {
+        "icon_file": "graphics/pokemon/yamask/galarian/icon.png",
+        "icon_x": 7,
+        "icon_y": 13,
+        "palette_num": "2"
+    },
+    "Yamper": {
+        "icon_file": "graphics/pokemon/yamper/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Yanma": {
+        "icon_file": "graphics/pokemon/yanma/icon.png",
+        "icon_x": 4,
+        "icon_y": 10,
+        "palette_num": "1"
+    },
+    "Yanmega": {
+        "icon_file": "graphics/pokemon/yanmega/icon.png",
+        "icon_x": 2,
+        "icon_y": 13,
+        "palette_num": "1"
+    },
+    "Yungoos": {
+        "icon_file": "graphics/pokemon/yungoos/icon.png",
+        "icon_x": 3,
+        "icon_y": 11,
+        "palette_num": "2"
+    },
+    "Yveltal": {
+        "icon_file": "graphics/pokemon/yveltal/icon.png",
+        "icon_x": 12,
+        "icon_y": 3,
+        "palette_num": "0"
+    },
+    "Zacian": {
+        "icon_file": "graphics/pokemon/zacian/icon.png",
+        "icon_x": 2,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "ZacianCrownedSword": {
+        "icon_file": "graphics/pokemon/zacian/crowned_sword/icon.png",
+        "icon_x": 2,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Zamazenta": {
+        "icon_file": "graphics/pokemon/zamazenta/icon.png",
+        "icon_x": 2,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "ZamazentaCrownedShield": {
+        "icon_file": "graphics/pokemon/zamazenta/crowned_shield/icon.png",
+        "icon_x": 3,
+        "icon_y": 7,
+        "palette_num": "2"
+    },
+    "Zangoose": {
+        "icon_file": "graphics/pokemon/zangoose/icon.png",
+        "icon_x": 7,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Zapdos": {
+        "icon_file": "graphics/pokemon/zapdos/icon.png",
+        "icon_x": 3,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "ZapdosGalarian": {
+        "icon_file": "graphics/pokemon/zapdos/galarian/icon.png",
+        "icon_x": 1,
+        "icon_y": 5,
+        "palette_num": "0"
+    },
+    "Zarude": {
+        "icon_file": "graphics/pokemon/zarude/icon.png",
+        "icon_x": 1,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "ZarudeDada": {
+        "icon_file": "graphics/pokemon/zarude/dada/icon.png",
+        "icon_x": 2,
+        "icon_y": 4,
+        "palette_num": "1"
+    },
+    "Zebstrika": {
+        "icon_file": "graphics/pokemon/zebstrika/icon.png",
+        "icon_x": 1,
+        "icon_y": 6,
+        "palette_num": "2"
+    },
+    "Zekrom": {
+        "icon_file": "graphics/pokemon/zekrom/icon.png",
+        "icon_x": 3,
+        "icon_y": 3,
+        "palette_num": "2"
+    },
+    "Zeraora": {
+        "icon_file": "graphics/pokemon/zeraora/icon.png",
+        "icon_x": 6,
+        "icon_y": 6,
+        "palette_num": "0"
+    },
+    "Zigzagoon": {
+        "icon_file": "graphics/pokemon/zigzagoon/icon.png",
+        "icon_x": 4,
+        "icon_y": 12,
+        "palette_num": "2"
+    },
+    "ZigzagoonGalarian": {
+        "icon_file": "graphics/pokemon/zigzagoon/galarian/icon.png",
+        "icon_x": 5,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Zoroark": {
+        "icon_file": "graphics/pokemon/zoroark/icon.png",
+        "icon_x": 2,
+        "icon_y": 7,
+        "palette_num": "0"
+    },
+    "Zorua": {
+        "icon_file": "graphics/pokemon/zorua/icon.png",
+        "icon_x": 6,
+        "icon_y": 13,
+        "palette_num": "0"
+    },
+    "Zubat": {
+        "icon_file": "graphics/pokemon/zubat/icon.png",
+        "icon_x": 5,
+        "icon_y": 10,
+        "palette_num": "2"
+    },
+    "Zweilous": {
+        "icon_file": "graphics/pokemon/zweilous/icon.png",
+        "icon_x": 3,
+        "icon_y": 8,
+        "palette_num": "2"
+    },
+    "Zygarde": {
+        "icon_file": "graphics/pokemon/zygarde/icon.png",
+        "icon_x": 2,
+        "icon_y": 2,
+        "palette_num": "1"
+    },
+    "Zygarde10": {
+        "icon_file": "graphics/pokemon/zygarde/10_percent/icon.png",
+        "icon_x": 1,
+        "icon_y": 1,
+        "palette_num": "1"
+    },
+    "ZygardeComplete": {
+        "icon_file": "graphics/pokemon/zygarde/complete/icon.png",
+        "icon_x": 5,
+        "icon_y": 3,
+        "palette_num": "1"
+    }
+}
