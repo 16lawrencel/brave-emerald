@@ -843,6 +843,7 @@ extern u8 gActiveBattler;
 extern u8 gCurrentBattler;
 extern u32 gBattleControllerExecFlags;
 extern u8 gBattlersCount;
+extern bool8 gHealthboxVisible;
 extern u16 gBattlerPartyIndexes[MAX_BATTLERS_COUNT];
 extern u8 gBattlerPositions[MAX_BATTLERS_COUNT];
 extern u8 gActionsByTurnOrder[MAX_BATTLERS_COUNT];

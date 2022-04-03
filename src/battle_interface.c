@@ -812,6 +812,43 @@ static void InitLastUsedBallAssets(void)
     gBattleStruct->ballSpriteIds[1] = MAX_SPRITES;
 }
 
+void CreateHealthboxSprite(u8 battler)
+{
+    if (battler < gBattlersCount)
+    {
+        u8 healthboxSpriteId;
+
+        if (gBattleTypeFlags & BATTLE_TYPE_SAFARI && battler == B_POSITION_PLAYER_LEFT)
+            healthboxSpriteId = CreateSafariPlayerHealthboxSprites();
+        else if (gBattleTypeFlags & BATTLE_TYPE_WALLY_TUTORIAL && battler == B_POSITION_PLAYER_LEFT)
+            return;
+        else
+            healthboxSpriteId = CreateBattlerHealthboxSprites(battler);
+
+        gHealthboxSpriteIds[battler] = healthboxSpriteId;
+        InitBattlerHealthboxCoords(battler);
+        SetHealthboxSpriteVisible(healthboxSpriteId);
+
+        if (GetBattlerSide(battler) != B_SIDE_PLAYER)
+            UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &gEnemyParty[gBattlerPartyIndexes[battler]], HEALTHBOX_ALL);
+        else if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
+            UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &gPlayerParty[gBattlerPartyIndexes[battler]], HEALTHBOX_SAFARI_ALL_TEXT);
+        else
+            UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &gPlayerParty[gBattlerPartyIndexes[battler]], HEALTHBOX_ALL);
+
+        if (GetBattlerSide(battler) != B_SIDE_PLAYER)
+        {
+            if (gBattlerPartyIndexes[battler] == PARTY_SIZE || GetMonData(&gEnemyParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0)
+                SetHealthboxSpriteInvisible(healthboxSpriteId);
+        }
+        else if (!(gBattleTypeFlags & BATTLE_TYPE_SAFARI))
+        {
+            if (gBattlerPartyIndexes[battler] == PARTY_SIZE || GetMonData(&gPlayerParty[gBattlerPartyIndexes[battler]], MON_DATA_HP) == 0)
+                SetHealthboxSpriteInvisible(healthboxSpriteId);
+        }
+    }
+}
+
 u8 CreateBattlerHealthboxSprites(u8 battlerId)
 {
     s16 data6 = 0;
@@ -1020,62 +1057,89 @@ static void UpdateSpritePos(u8 spriteId, s16 x, s16 y)
     gSprites[spriteId].y = y;
 }
 
-void DestoryHealthboxSprite(u8 healthboxSpriteId)
+static void LoadAllHealthboxSpriteSheets()
 {
-    DestroyMegaIndicatorSprite(healthboxSpriteId);
-    DestroySprite(&gSprites[gSprites[healthboxSpriteId].oam.affineParam]);
-    DestroySprite(&gSprites[gSprites[healthboxSpriteId].hMain_HealthBarSpriteId]);
-    DestroySprite(&gSprites[healthboxSpriteId]);
+    u8 state;
+    bool8 res = FALSE;
+    for (state = 0; !res; state++)
+        res = BattleLoadAllHealthBoxesGfx(state);
 }
 
-void DummyBattleInterfaceFunc(u8 healthboxSpriteId, bool8 isDoubleBattleBattlerOnly)
+static void CreateAllHealthboxes()
 {
+    u8 battlerId;
 
-}
+    if (gHealthboxVisible) return;
+    gHealthboxVisible = TRUE;
 
-static void TryToggleHealboxVisibility(u8 priority, u8 healthboxLeftSpriteId, u8 healthboxRightSpriteId, u8 healthbarSpriteId, u8 indicatorSpriteId)
-{
-    u8 spriteIds[4] = {healthboxLeftSpriteId, healthboxRightSpriteId, healthbarSpriteId, indicatorSpriteId};
-    int i;
+    LoadAllHealthboxSpriteSheets();
 
-    for (i = 0; i < NELEMS(spriteIds); i++)
+    for (battlerId = 0; battlerId < gBattlersCount; battlerId++)
     {
-        if (spriteIds[i] == 0xFF)
-            continue;
-
-        switch (priority)
-        {
-        case 0: //start of anim -> make invisible
-            gSprites[spriteIds[i]].invisible = TRUE;
-            break;
-        case 1: //end of anim -> make visible
-            gSprites[spriteIds[i]].invisible = FALSE;
-            break;
-        }
+        CreateHealthboxSprite(battlerId);
+        if (!IsBattlerAlive(battlerId))
+            gSprites[gHealthboxSpriteIds[battlerId]].invisible = TRUE;
     }
 }
 
-void UpdateOamPriorityInAllHealthboxes(u8 priority, bool32 hideHPBoxes)
+static void DestroyHealthboxSprite(u8 spriteId)
+{
+    u16 tileTag = gSprites[spriteId].template->tileTag;
+    if (spriteId == 0xFF)
+        return;
+    DestroySprite(&gSprites[spriteId]);
+    FreeSpriteTilesByTag(tileTag);
+}
+
+static void DestroyAllHealthboxes()
+{
+    u8 battlerId;
+
+    if (!gHealthboxVisible) return;
+    gHealthboxVisible = FALSE;
+
+    for (battlerId = 0; battlerId < gBattlersCount; battlerId++)
+    {
+        u8 healthboxLeftSpriteId = gHealthboxSpriteIds[battlerId];
+        u8 healthboxRightSpriteId = gSprites[gHealthboxSpriteIds[battlerId]].oam.affineParam;
+        u8 healthbarSpriteId = gSprites[gHealthboxSpriteIds[battlerId]].hMain_HealthBarSpriteId;
+        u8 indicatorSpriteId = GetMegaIndicatorSpriteId(healthboxLeftSpriteId);
+
+        DestroyHealthboxSprite(healthboxLeftSpriteId);
+        DestroyHealthboxSprite(healthboxRightSpriteId);
+        DestroyHealthboxSprite(healthbarSpriteId);
+        DestroyHealthboxSprite(indicatorSpriteId);
+        gHealthboxSpriteIds[battlerId] = 0xFF;
+    }
+}
+
+void UpdateOamPriorityInAllHealthboxes(u8 priority, bool32 hideHpBoxes)
 {
     s32 i;
 
+    if (hideHpBoxes)
+    {
+        if (priority == 0)
+            DestroyAllHealthboxes();
+        else
+            CreateAllHealthboxes();
+    }
+
     for (i = 0; i < gBattlersCount; i++)
     {
-        u8 healthboxLeftSpriteId = gHealthboxSpriteIds[i];
-        u8 healthboxRightSpriteId = gSprites[gHealthboxSpriteIds[i]].oam.affineParam;
-        u8 healthbarSpriteId = gSprites[gHealthboxSpriteIds[i]].hMain_HealthBarSpriteId;
-        u8 indicatorSpriteId = GetMegaIndicatorSpriteId(healthboxLeftSpriteId);
+        if (IsBattlerAlive(i))
+        {
+            u8 healthboxLeftSpriteId = gHealthboxSpriteIds[i];
+            u8 healthboxRightSpriteId = gSprites[gHealthboxSpriteIds[i]].oam.affineParam;
+            u8 healthbarSpriteId = gSprites[gHealthboxSpriteIds[i]].hMain_HealthBarSpriteId;
+            u8 indicatorSpriteId = GetMegaIndicatorSpriteId(healthboxLeftSpriteId);
 
-        gSprites[healthboxLeftSpriteId].oam.priority = priority;
-        gSprites[healthboxRightSpriteId].oam.priority = priority;
-        gSprites[healthbarSpriteId].oam.priority = priority;
-        if (indicatorSpriteId != 0xFF)
-            gSprites[indicatorSpriteId].oam.priority = priority;
-
-        #if B_HIDE_HEALTHBOX_IN_ANIMS
-        if (hideHPBoxes && IsBattlerAlive(i))
-            TryToggleHealboxVisibility(priority, healthboxLeftSpriteId, healthboxRightSpriteId, healthbarSpriteId, indicatorSpriteId);
-        #endif
+            gSprites[healthboxLeftSpriteId].oam.priority = priority;
+            gSprites[healthboxRightSpriteId].oam.priority = priority;
+            gSprites[healthbarSpriteId].oam.priority = priority;
+            if (indicatorSpriteId != 0xFF)
+                gSprites[indicatorSpriteId].oam.priority = priority;
+        }
     }
 }
 
