@@ -50,11 +50,6 @@ static const u32 battlerTickSpeedTable[] = {
     2264, 2263, 2263, 2262, 2262, 2261, 2261, 2260, 2259, 2259, 2258, 2258, 2257, 2257, 2256, 2255, 2255, 2254, 2254, 2253, 2253, 2252, 2251, 2251, 2250, 2250, 2249, 2249, 2248, 2247, 2247, 2246, 2246, 2245, 2245, 2244, 2243, 2243, 2242, 2242, 2241, 2241, 2240, 2239, 2239, 2238, 2238, 2237, 2237, 2236,
 };
 
-const struct SpritePalette battleIconBgPalettes[2] = {
-    { battleIconBgPlayer_Pal, BATTLE_ICON_BG_PALETTE_TAG + 0 },
-    { battleIconBgOpponent_Pal, BATTLE_ICON_BG_PALETTE_TAG + 1 },
-};
-
 struct SpeciesData getSpeciesData(struct BattlePokemon mon)
 {
     return (struct SpeciesData){mon.species, mon.personality};
@@ -228,11 +223,18 @@ u8 CreateBattleOrderMonIconSprite(u8 battlerId, s16 x, s16 y)
     return spriteId;
 }
 
+void *GetBattleIconBgImageForSide(u8 side)
+{
+    if (side == 0)
+        return (void*) battleIconBgPlayer_Gfx;
+    return (void*) battleIconBgOpponent_Gfx;
+}
+
 u8 CreateBattleIconBgSprite(u8 battlerSide, s16 x, s16 y)
 {
-    void *image = (void*) battleIconBg_Gfx;
+    void *image = GetBattleIconBgImageForSide(battlerSide);
     struct OamData oam = sMonBattleIconOamData;
-    u16 paletteTag = BATTLE_ICON_BG_PALETTE_TAG + battlerSide;
+    u16 paletteTag = BATTLE_ICON_BG_PALETTE_TAG;
 
     return CreateSpriteFromData(image, oam, paletteTag, x, y, 5);
 }
@@ -258,7 +260,8 @@ void UpdateBattleOrderMonIconSprite(u8 spriteId, u8 bgSpriteId, u8 battlerId, st
         RedrawSprite(sprite);
 
         bgSprite = &gSprites[bgSpriteId];
-        bgSprite->oam.paletteNum = IndexOfSpritePaletteTag(BATTLE_ICON_BG_PALETTE_TAG + GET_BATTLER_SIDE2(battlerId));
+        bgSprite->oam.paletteNum = IndexOfSpritePaletteTag(BATTLE_ICON_BG_PALETTE_TAG);
+        bgSprite->images = GetBattleIconBgImageForSide(GET_BATTLER_SIDE2(battlerId));
         RedrawSprite(bgSprite);
     }
 }

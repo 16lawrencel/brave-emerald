@@ -2,7 +2,7 @@
 #define GUARD_POKEMON_ICON_H
 
 #define POKE_ICON_BASE_PAL_TAG 56000
-#define BATTLE_ICON_BG_PALETTE_TAG 7777
+#define BATTLE_ICON_BG_PALETTE_TAG POKE_ICON_BASE_PAL_TAG + 0 // use same palette for battle icon bg
 
 extern const u8 gMonIconPaletteIndices[];
 extern const u8 gMonIconPaletteIndicesFemale[];
