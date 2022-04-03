@@ -80,7 +80,7 @@ u8 GetBattlerWithLowestTicks()
 
 u32 GetBattlerTickSpeed(u8 battlerId)
 {
-    u16 speed = gBattleMons[battlerId].speed;
+    u32 speed = GetBattlerTotalSpeedStat(battlerId);
     if (speed >= MAX_BATTLER_SPEED)
         speed = MAX_BATTLER_SPEED - 1;
     return battlerTickSpeedTable[speed];
