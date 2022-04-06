@@ -9333,7 +9333,7 @@ static void Cmd_setprotectlike(void)
     if (!(gBattleMoves[gLastResultingMoves[gBattlerAttacker]].flags & FLAG_PROTECTION_MOVE))
         gDisableStructs[gBattlerAttacker].protectUses = 0;
 
-    if (gCurrentTurnActionNumber == (gBattlersCount - 1))
+    if (gCurrentTurnActionNumber == 0)
         notLastTurn = FALSE;
 
     if (sProtectSuccessRates[gDisableStructs[gBattlerAttacker].protectUses] >= Random() && notLastTurn)
@@ -12657,7 +12657,7 @@ static void Cmd_trysetmagiccoat(void)
 {
     gBattlerTarget = gBattlerAttacker;
     gSpecialStatuses[gBattlerAttacker].ppNotAffectedByPressure = TRUE;
-    if (gCurrentTurnActionNumber == gBattlersCount - 1) // moves last turn
+    if (gCurrentTurnActionNumber == 0) // moves last turn
     {
         gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
     }
@@ -12671,7 +12671,7 @@ static void Cmd_trysetmagiccoat(void)
 static void Cmd_trysetsnatch(void) // snatch
 {
     gSpecialStatuses[gBattlerAttacker].ppNotAffectedByPressure = TRUE;
-    if (gCurrentTurnActionNumber == gBattlersCount - 1) // moves last turn
+    if (gCurrentTurnActionNumber == 0) // moves last turn
     {
         gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
     }
@@ -13786,7 +13786,7 @@ static void Cmd_finishaction(void)
 static void Cmd_finishturn(void)
 {
     gCurrentActionFuncId = B_ACTION_FINISHED;
-    gCurrentTurnActionNumber = gBattlersCount;
+    gCurrentTurnActionNumber = 1;
 }
 
 static void Cmd_trainerslideout(void)
