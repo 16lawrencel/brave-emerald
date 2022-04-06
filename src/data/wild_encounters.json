@@ -38,75 +38,33 @@
                     "land_mons": {
                         "encounter_rate": 20,
                         "mons": [{
-                                "min_level": 2,
-                                "max_level": 2,
+                                "min_level": 3,
+                                "max_level": 4,
                                 "species": "SPECIES_WURMPLE",
                                 "encounter_rate": 20
                             },
                             {
-                                "min_level": 2,
-                                "max_level": 2,
+                                "min_level": 4,
+                                "max_level": 5,
                                 "species": "SPECIES_POOCHYENA",
                                 "encounter_rate": 20
                             },
                             {
-                                "min_level": 2,
-                                "max_level": 2,
-                                "species": "SPECIES_WURMPLE",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_WURMPLE",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_POOCHYENA",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_POOCHYENA",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_WURMPLE",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_POOCHYENA",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 2,
-                                "max_level": 2,
+                                "min_level": 4,
+                                "max_level": 5,
                                 "species": "SPECIES_ZIGZAGOON",
                                 "encounter_rate": 20
                             },
                             {
-                                "min_level": 2,
-                                "max_level": 2,
-                                "species": "SPECIES_ZIGZAGOON",
+                                "min_level": 4,
+                                "max_level": 5,
+                                "species": "SPECIES_LILLIPUP",
                                 "encounter_rate": 20
                             },
                             {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_ZIGZAGOON",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_ZIGZAGOON",
+                                "min_level": 4,
+                                "max_level": 5,
+                                "species": "SPECIES_LITLEO",
                                 "encounter_rate": 20
                             }
                         ]
@@ -118,77 +76,36 @@
                     "land_mons": {
                         "encounter_rate": 20,
                         "mons": [{
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_POOCHYENA",
+                                "min_level": 5,
+                                "max_level": 6,
+                                "species": "SPECIES_PURRLOIN",
+                                "encounter_rate": 30
+                            },
+                            {
+                                "min_level": 5,
+                                "max_level": 6,
+                                "species": "SPECIES_PATRAT",
                                 "encounter_rate": 20
                             },
                             {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_WURMPLE",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 4,
-                                "max_level": 4,
-                                "species": "SPECIES_POOCHYENA",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 4,
-                                "max_level": 4,
-                                "species": "SPECIES_WURMPLE",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
+                                "min_level": 5,
+                                "max_level": 6,
                                 "species": "SPECIES_LOTAD",
                                 "encounter_rate": 20
                             },
                             {
-                                "min_level": 4,
-                                "max_level": 4,
-                                "species": "SPECIES_LOTAD",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_ZIGZAGOON",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_ZIGZAGOON",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 4,
-                                "max_level": 4,
-                                "species": "SPECIES_ZIGZAGOON",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 4,
-                                "max_level": 4,
-                                "species": "SPECIES_RALTS",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 4,
-                                "max_level": 4,
-                                "species": "SPECIES_ZIGZAGOON",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
+                                "min_level": 5,
+                                "max_level": 6,
                                 "species": "SPECIES_SEEDOT",
                                 "encounter_rate": 20
+                            },
+                            {
+                                "min_level": 5,
+                                "max_level": 6,
+                                "species": "SPECIES_RALTS",
+                                "encounter_rate": 10
                             }
+
                         ]
                     },
                     "water_mons": {
@@ -296,75 +213,33 @@
                     "land_mons": {
                         "encounter_rate": 20,
                         "mons": [{
-                                "min_level": 2,
-                                "max_level": 2,
-                                "species": "SPECIES_POOCHYENA",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_POOCHYENA",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_POOCHYENA",
+                                "min_level": 4,
+                                "max_level": 5,
+                                "species": "SPECIES_BUNNELBY",
                                 "encounter_rate": 20
                             },
                             {
                                 "min_level": 4,
-                                "max_level": 4,
-                                "species": "SPECIES_POOCHYENA",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 2,
-                                "max_level": 2,
-                                "species": "SPECIES_WINGULL",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_ZIGZAGOON",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_ZIGZAGOON",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 4,
-                                "max_level": 4,
-                                "species": "SPECIES_ZIGZAGOON",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_WINGULL",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 3,
-                                "max_level": 3,
-                                "species": "SPECIES_WINGULL",
-                                "encounter_rate": 20
-                            },
-                            {
-                                "min_level": 2,
-                                "max_level": 2,
+                                "max_level": 5,
                                 "species": "SPECIES_WINGULL",
                                 "encounter_rate": 20
                             },
                             {
                                 "min_level": 4,
-                                "max_level": 4,
-                                "species": "SPECIES_WINGULL",
+                                "max_level": 5,
+                                "species": "SPECIES_FLETCHLING",
+                                "encounter_rate": 20
+                            },
+                            {
+                                "min_level": 4,
+                                "max_level": 5,
+                                "species": "SPECIES_TYMPOLE",
+                                "encounter_rate": 20
+                            },
+                            {
+                                "min_level": 4,
+                                "max_level": 5,
+                                "species": "SPECIES_PIDOVE",
                                 "encounter_rate": 20
                             }
                         ]
