@@ -1,21 +1,18 @@
 #ifndef GUARD_WILD_ENCOUNTER_H
 #define GUARD_WILD_ENCOUNTER_H
 
-#define LAND_WILD_COUNT     12
-#define WATER_WILD_COUNT    5
-#define ROCK_WILD_COUNT     5
-#define FISH_WILD_COUNT     10
-
 struct WildPokemon
 {
     u8 minLevel;
     u8 maxLevel;
     u16 species;
+    u16 encounterRate;
 };
 
 struct WildPokemonInfo
 {
     u8 encounterRate;
+    u8 wildPokemonLength;
     const struct WildPokemon *wildPokemon;
 };
 
