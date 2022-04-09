@@ -7279,7 +7279,7 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemCustomMoves = sParty_WallyVR1},
     },
 
-    [TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
+    [TRAINER_BRENDAN_ROUTE_103_WATER] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
@@ -7289,8 +7289,8 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .battleType = TYPE_SINGLE_BATTLE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanRoute103Mudkip),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRoute103Mudkip},
+        .partySize = ARRAY_COUNT(sParty_BrendanRoute103Water),
+        .party = {.NoItemDefaultMoves = sParty_BrendanRoute103Water},
     },
 
     [TRAINER_BRENDAN_ROUTE_110_MUDKIP] =
@@ -7321,7 +7321,7 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_BrendanRoute119Mudkip},
     },
 
-    [TRAINER_BRENDAN_ROUTE_103_TREECKO] =
+    [TRAINER_BRENDAN_ROUTE_103_GRASS] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
@@ -7331,8 +7331,8 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .battleType = TYPE_SINGLE_BATTLE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
-        .partySize = ARRAY_COUNT(sParty_BrendanRoute103Treecko),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRoute103Treecko},
+        .partySize = ARRAY_COUNT(sParty_BrendanRoute103Grass),
+        .party = {.NoItemDefaultMoves = sParty_BrendanRoute103Grass},
     },
 
     [TRAINER_BRENDAN_ROUTE_110_TREECKO] =
@@ -7363,7 +7363,7 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_BrendanRoute119Treecko},
     },
 
-    [TRAINER_BRENDAN_ROUTE_103_TORCHIC] =
+    [TRAINER_BRENDAN_ROUTE_103_FIRE] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
@@ -7373,8 +7373,8 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .battleType = TYPE_SINGLE_BATTLE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_BrendanRoute103Torchic),
-        .party = {.NoItemDefaultMoves = sParty_BrendanRoute103Torchic},
+        .partySize = ARRAY_COUNT(sParty_BrendanRoute103Fire),
+        .party = {.NoItemDefaultMoves = sParty_BrendanRoute103Fire},
     },
 
     [TRAINER_BRENDAN_ROUTE_110_TORCHIC] =
@@ -7405,7 +7405,7 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_BrendanRoute119Torchic},
     },
 
-    [TRAINER_MAY_ROUTE_103_MUDKIP] =
+    [TRAINER_MAY_ROUTE_103_WATER] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
@@ -7415,8 +7415,8 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .battleType = TYPE_SINGLE_BATTLE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_MayRoute103Mudkip),
-        .party = {.NoItemDefaultMoves = sParty_MayRoute103Mudkip},
+        .partySize = ARRAY_COUNT(sParty_MayRoute103Water),
+        .party = {.NoItemDefaultMoves = sParty_MayRoute103Water},
     },
 
     [TRAINER_MAY_ROUTE_110_MUDKIP] =
@@ -7447,7 +7447,7 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_MayRoute119Mudkip},
     },
 
-    [TRAINER_MAY_ROUTE_103_TREECKO] =
+    [TRAINER_MAY_ROUTE_103_GRASS] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
@@ -7457,8 +7457,8 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .battleType = TYPE_SINGLE_BATTLE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_MayRoute103Treecko),
-        .party = {.NoItemDefaultMoves = sParty_MayRoute103Treecko},
+        .partySize = ARRAY_COUNT(sParty_MayRoute103Grass),
+        .party = {.NoItemDefaultMoves = sParty_MayRoute103Grass},
     },
 
     [TRAINER_MAY_ROUTE_110_TREECKO] =
@@ -7489,7 +7489,7 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_MayRoute119Treecko},
     },
 
-    [TRAINER_MAY_ROUTE_103_TORCHIC] =
+    [TRAINER_MAY_ROUTE_103_FIRE] =
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_RIVAL,
@@ -7499,8 +7499,8 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .battleType = TYPE_SINGLE_BATTLE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .partySize = ARRAY_COUNT(sParty_MayRoute103Torchic),
-        .party = {.NoItemDefaultMoves = sParty_MayRoute103Torchic},
+        .partySize = ARRAY_COUNT(sParty_MayRoute103Fire),
+        .party = {.NoItemDefaultMoves = sParty_MayRoute103Fire},
     },
 
     [TRAINER_MAY_ROUTE_110_TORCHIC] =
