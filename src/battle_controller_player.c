@@ -628,10 +628,20 @@ static void HandleInputChooseMove(void)
                 }
                 else if (moveTarget & (MOVE_TARGET_OPPONENTS_FIELD | MOVE_TARGET_BOTH | MOVE_TARGET_FOES_AND_ALLY))
                 {
-                    TryShowAsTarget(gMultiUsePlayerCursor);
-                    TryShowAsTarget(BATTLE_PARTNER(gMultiUsePlayerCursor));
-                    if (moveTarget & MOVE_TARGET_FOES_AND_ALLY)
-                        TryShowAsTarget(BATTLE_PARTNER(gActiveBattler));
+                    u8 battlerId = 0;
+                    for (battlerId = 0; battlerId < gBattlersCount; battlerId++)
+                    {
+                        if (!(moveTarget & MOVE_TARGET_OPPONENTS_FIELD) && battlerId == gActiveBattler)
+                            continue;
+
+                        if ((moveTarget & MOVE_TARGET_BOTH) && GET_BATTLER_SIDE2(battlerId) == GET_BATTLER_SIDE2(gActiveBattler))
+                            continue;
+
+                        if (!(moveTarget & MOVE_TARGET_OPPONENTS_FIELD) && !TargetValidIfOppositePosition(battlerId, gActiveBattler))
+                            continue;
+
+                        TryShowAsTarget(battlerId);
+                    }
                     canSelectTarget = 2;
                 }
             }
